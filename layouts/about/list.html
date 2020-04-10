@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+{{"<!-- about -->" | safeHTML }}
+{{ with .Site.Data.about.about }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 pr-lg-4 mb-4 mb-md-0">
+        <div class="position-relative" data-aos="fade-right">
+          <img src="{{ .aboutImg | absURL }}" class="img-fluid rounded-sm" alt="{{ .aboutAlt }}">
+        </div>
+      </div>
+      <div class="col-md-6 align-self-center pl-lg-4">
+        <p class="subtitle" data-aos="fade-up">{{ .subtitle }}</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          {{ .content | markdownify }} <br><br>
+            Take a look to our open solutions <a href="{{.github }}" class="p-2 text-reset"><i class="fa fa-2x fa-github icon-gray"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{"<!-- about -->" | safeHTML }}
+
+<!--{{ partial "services.html" . }}-->
+
+<!-- {{ partial "subscription-white.html" . }} -->
+
+{{ end }}

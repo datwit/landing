@@ -1,0 +1,37 @@
+# Pricing
+pricing:
+  subtitle : "Our packages"
+#  title : "choose your plan"
+  pricingTable:
+    - title : "Basic"
+      price : "$49"
+      pricePer : "mo"
+      description : "Best for small individuals"
+      btnText : "Know more"
+      URL : "#"
+      service:
+        - name : "Express Service"
+        - name : "Customs Clearance"
+        - name : "Time-Critical Services"
+        
+    - title : "Professional"
+      price : "$79"
+      pricePer : "mo"
+      description : "Best for small individuals"
+      btnText : "select plan"
+      URL : "#"
+      service:
+        - name : "Express Service"
+        - name : "Customs Clearance"
+        - name : "Time-Critical Services"
+        
+    - title : "Business"
+      price : "$99"
+      pricePer : "mo"
+      description : "Best for small individuals"
+      btnText : "select plan"
+      URL : "#"
+      service:
+        - name : "Express Service"
+        - name : "Customs Clearance"
+        - name : "Time-Critical Services"

@@ -1,0 +1,107 @@
+# Banner
+banner:
+  bgImage : "images/background/banner.png"
+  title : "Build Your Business Together"
+  watermark : "Build"
+  content : "Cupidatat non proident sunt culpa qui officia deserunt mollit <br> anim idest laborum sed ut perspiciatis."
+  image : "images/banner/banner-1.png"
+  button:
+    btnText : "Get Agico"
+    URL : "#"
+
+# Partners
+partners:
+  - pertnersLogo : "images/partner/client-logo-1.png"
+    
+  - pertnersLogo : "images/partner/client-logo-2.png"
+    
+  - pertnersLogo : "images/partner/client-logo-3.png"
+    
+  - pertnersLogo : "images/partner/client-logo-4.png"
+    
+  - pertnersLogo : "images/partner/client-logo-5.png"
+
+# Features
+feature:
+  subtitle : "fetures"
+  title : "exclusive features"
+
+# About
+about:
+  image : "images/about/about-1.png"
+  subtitle : "about agico"
+  title : "Eausmod tempor magna nostrud exercitation"
+  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+          exercitation ullamco laboris nisi aliquip commodo consequat. duis aute."
+  button:
+    btnText : "read more"
+    URL : "#"
+    
+about2:
+  image : "images/about/about-2.png"
+  subtitle : "about agico"
+  title : "Rehenderit volupate velit proident sunt culpa"
+  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+          exercitation ullamco laboris nisi aliquip commodo consequat. duis aute."
+  button:
+    btnText : "read more"
+    URL : "#"
+
+# video
+video:
+  videoThumb : "images/check-video.png"
+  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
+  subtitle : "Check Video"
+  title : "Best Way to Chat Your Customers."
+  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat. duis aute.
+  <br><br>
+  Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
+
+# testimonial
+testimonial:
+  subtitle : "testimonial"
+  title : "What Our Clients Says?"
+  testimonialItem:
+    - name : "Alice kelly"
+      designation : "Happy client"
+      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+            
+    - name : "Alice kelly"
+      designation : "Happy client"
+      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+            
+    - name : "Alice kelly"
+      designation : "Happy client"
+      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+            
+    - name : "Alice kelly"
+      designation : "Happy client"
+      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+            
+    - name : "Alice kelly"
+      designation : "Happy client"
+      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+
+# Download
+download:
+  title : "Download Agico Now"
+  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation."
+  playstore:
+    btnText : "Google Play"
+    URL : "#"
+  appstore:
+    btnText : "app store"
+    URL : "#"
+  image : "images/download-mobile-img.jpg"

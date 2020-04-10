@@ -1,0 +1,65 @@
+# service
+service:
+  subtitle : "Services"
+  title : "Our Service Area"
+  serviceItem:
+    - title : "Networking"
+      icon : "fa-object-ungroup"
+      iconColor : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+    - title : "Social Activity"
+      icon : "fa-users"
+      iconColor : "yellow" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+    - title : "Web Design"
+      icon : "fa-desktop"
+      iconColor : "purple" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+    - title : "Cloud Service"
+      icon : "fa-cloud"
+      iconColor : "cyan" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "Consulting"
+      icon : "fa-comments"
+      iconColor : "red" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "SEO Optimization"
+      icon : "fa-search-plus"
+      iconColor : "green" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "Usability Testing"
+      icon : "fa-line-chart"
+      iconColor : "orange" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "UX Prototyping"
+      icon : "fa-wpexplorer"
+      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+
+#Features
+feature:
+  subtitle : "fetures"
+  title : "exclusive features"
+  featureItem:
+    - title : "Exclusive Design"
+      icon : "fa-desktop"
+      iconColor : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
+      
+    - title : "Easy Customize"
+      icon : "fa-gears"
+      iconColor : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."
+      
+    - title : "Extreme Security"
+      icon : "fa-shield"
+      iconColor : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore dolore magna."

@@ -1,0 +1,42 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	Project Name
+VERSION:	Versoin Number
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+
+@import 'variables';
+
+@import 'mixins';
+
+@import 'typography';
+
+@import 'buttons';
+
+@import 'common';
+
+@import 'templates/navigation';
+
+@import 'templates/banner';
+
+@import 'templates/homepage1';
+
+@import 'templates/homepage2';
+
+@import 'templates/homepage3';
+
+@import 'templates/card';
+
+@import 'templates/team';
+
+@import 'templates/services';
+
+@import 'templates/career';
+
+@import 'templates/blog';
+
+@import 'templates/footer';

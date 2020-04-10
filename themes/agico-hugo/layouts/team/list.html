@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+{{"<!-- team -->" | safeHTML}}
+<section class="section section-lg-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        {{ with .Site.Data.team.team}}
+        <h4 class="subtitle" data-aos="fade-up">{{ .subtitle }}</h4>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>
+        {{ end }}
+      </div>
+      {{ range $index, $element:= .Site.Data.team.team.teamMember }}
+      {{ $delay := mul $index 200}}
+      {{"<!-- team member -->" | safeHTML}}
+      <div class="col-lg-4 col-sm-6 mb-100" data-aos="fade-up" data-aos-delay="{{$delay}}">
+        <div class="team-member text-center">
+          <img src="{{ .image | absURL }}" class="img-fluid w-100 rounded-sm" alt="{{.name}}">
+          <div class="team-member-content p-4">
+            <h5 class="team-member-name text-white">{{.name}}</h5>
+            <p class="team-member-designation text-light">{{ .designation }}</p>
+            <ul class="list-inline team-member-social">
+              {{ range .socialIcon }}
+              <li class="list-inline-item"><a href="{{.URL }}" class="p-2"><i class="fa {{ .icon }} text-white"></i></a></li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{"<!-- /team -->" | safeHTML}}
+
+{{ partial "subscription-white.html" . }}
+
+{{ end }}

@@ -1,0 +1,22 @@
+{{"<!-- team partners -->"| safeHTML}}
+{{ if .Site.Data.team.partners }}
+<section class="section bg-gray-light mt-0 pt-5 pb-0 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        {{ with .Site.Data.team.partners }}
+        <h4 class="subtitle" data-aos="fade-up">{{ .subtitle }}</h4>
+        {{ end }}
+      </div>
+      <div class="col-lg-12">
+        <div class="py-3 py-lg-5 align-items-center text-center" data-aos="fade-up">
+          {{ range .Site.Data.team.partners.ourPartners }}
+          <img class="img-fluid p-2 d-inline d-inline-flex" src="{{ .partnerLogo | absURL }}" alt="{{ .partnerAlt }}">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{"<!-- /team partners -->"| safeHTML}}

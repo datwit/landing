@@ -1,0 +1,139 @@
+.naviagtion {
+  padding: 45px 0;
+
+  @include desktop {
+    background: $bg-gradient-secondary;
+    padding: 15px 0;
+  }
+
+  &.nav-bg {
+    background: $bg-gradient-secondary;
+    padding: 15px 0;
+  }
+
+  &.naviagtion-white {
+    &.nav-bg {
+      background: $white;
+      box-shadow: 0px 10px 20px 0px rgba(0, 141, 236, 0.1);
+
+      .btn {
+        color: $primary-color !important;
+
+        &:hover {
+          color: $white !important;
+        }
+      }
+    }
+
+    @include desktop {
+      background: $white;
+
+      .btn {
+        color: $primary-color !important;
+
+        &:hover {
+          color: $white !important;
+        }
+      }
+    }
+
+    .dropdown{
+      &-menu{
+        background: $white;
+      }
+      &-item{
+        color: $text-dark;
+      }
+    }
+  }
+}
+
+.navbar {
+
+  .nav-item {
+
+    .nav-link {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 20px 22px;
+      font-family: $primary-font;
+      transition: all ease 0.3s;
+
+      @include desktop-lg {
+        padding: 20px 15px;
+      }
+
+      &.active {
+        color: $secondary-color;
+      }
+
+      &:hover {
+        color: $secondary-color !important;
+      }
+    }
+  }
+
+  .dropdown {
+    &:hover {
+      .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+
+    &-menu {
+      box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+      padding: 15px;
+      border: 0;
+      top: 50px;
+      left: -20px;
+      border-radius: 0;
+      display: block;
+      visibility: hidden;
+      transition: .3s ease;
+      opacity: 0;
+      transform: scale(.8);
+      background: $bg-gradient-secondary;
+
+      @include desktop {
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        transform-origin: unset;
+      }
+
+      &.show {
+        visibility: hidden;
+
+        @include desktop {
+          visibility: visible;
+          display: block;
+        }
+      }
+    }
+
+    &-item {
+      position: relative;
+      color: $white;
+      transition: .2s ease;
+      font-family: $primary-font;
+
+      @include desktop {
+        text-align: center;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &:hover {
+        color: $secondary-color !important;
+        background: transparent;
+      }
+    }
+  }
+}
+
+// nav css end

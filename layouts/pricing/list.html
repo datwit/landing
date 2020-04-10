@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+{{"<!-- pricing -->"| safeHTML}}
+<section class="section section-lg-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        {{ with .Site.Data.pricing.pricing }}
+        <p class="subtitle" data-aos="fade-up">{{ .subtitle }}</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">{{ .title }}</h2>
+        {{ end }}
+      </div>
+      {{ partial "pricing-table.html" . }}
+    </div>
+  </div>
+</section>
+{{"<!-- pricing -->"| safeHTML}}
+
+{{ partial "subscription-white.html" . }}
+
+{{ end }}

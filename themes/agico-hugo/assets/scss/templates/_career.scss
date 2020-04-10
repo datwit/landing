@@ -1,0 +1,17 @@
+.category-slider {
+    .slick-slide {
+        margin-bottom: 40px;
+    }
+
+    .nextarrow {
+        &::before {
+            left: calc(60% + 10px);
+            border-color: $secondary-color;
+        }
+
+        &::after {
+            width: 25px;
+            background: $secondary-color;
+        }
+    }
+}

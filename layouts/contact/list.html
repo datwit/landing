@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-7 rounded-xs mobile-height mb-5 mb-lg-0" id="map_canvas" data-latitude="{{ with .Site.Params.mapLatitude }} {{ . }} {{ end }}" data-longitude="{{ with .Site.Params.mapLongitude }} {{ . }} {{ end }}" data-marker="{{ with .Site.Params.mapMarker }} {{ . | absURL }} {{ end }}"></div>
+      <div class="col-lg-4">
+        <div class="p-5 rounded-xs shadow">
+          {{ with .Site.Data.contact.contact }}
+          <h3 class="text-dark">{{ .title }}</h3>
+          <p class="border-bottom pb-4">{{ .content | markdownify }}</p>
+          {{ end }}
+          <ul class="list-unstyled">
+            {{ range $index, $element:= .Site.Data.contact.contact.contactItem }}
+            {{ $delay := mul $index 100}}
+            <li class="d-flex mb-4" data-aos="fade-up" data-aos-delay="{{$delay}}">
+              <i class="fa {{ .icon }} icon-primary"></i>
+              <div class="pl-3">
+                <h6 class="text-dark">{{.title }}</h6>
+                <ul class="list-unstyled">
+                  {{ range .contactList }}
+                  <li>{{.contactListItem}}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-lg-bottom bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        {{ with .Site.Data.contact.contactForm }}
+        <p class="subtitle">{{ .subtitle }}</p>
+        <h2 class="section-title">{{ .title }}</h2>
+        {{ end }}
+      </div>
+      <div class="col-lg-12 text-center p-0">
+        <form action="{{ .Site.Data.contact.contactForm.formAction }}" class="row">
+          <div class="col-lg-6">
+            <input type="text" class="form-control mb-4 border" placeholder="Your email">
+          </div>
+          <div class="col-lg-6">
+            <input type="text" class="form-control mb-4 border" placeholder="Your Name">
+          </div>
+          <div class="col-lg-12">
+            <input type="text" class="form-control mb-4 border" placeholder="Subject">
+          </div>
+          <div class="col-lg-12">
+            <textarea name="message" class="form-control mb-4 border" placeholder="Message"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-primary">Send Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "subscription-white.html" . }}
+
+{{ end }}

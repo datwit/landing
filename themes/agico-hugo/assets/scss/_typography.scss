@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700');
+
+body {
+    line-height: 1.6;
+    font-family: $secondary-font;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    color: $text-color;
+}
+
+p,
+.paragraph {
+    font-weight: 400;
+    color: $text-color;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: $secondary-font;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $text-dark;
+    font-family: $primary-font;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.2;
+    transition: .2s ease;
+}
+
+h1,
+.h1 {
+    font-size: 60px;
+}
+
+h2,
+.h2 {
+    font-size: 40px;
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+}
+
+h4,
+.h4 {
+    font-size: 22px;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+}

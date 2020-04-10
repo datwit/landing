@@ -1,0 +1,80 @@
+team:
+  subtitle : "Meet our team"
+#  title : "Expert Person"
+  teamMember:
+    # team member
+    - name : "Leonel Salazar Videaux"
+      image : "images/team/lordford.jpg"
+      designation : "Founder / CEO"
+      socialIcon:
+        - icon : "fa-twitter"
+          URL : "https://twitter.com/leonel_lordford"
+
+        - icon : "fa-linkedin"
+          URL : "https://www.linkedin.com/in/leonel-salazar-videaux"
+
+        - icon : "fa-github"
+          URL : "https://github.com/leonel-lordford"
+          
+    # team member
+    - name: "Abel Meneses-Abad"
+      image: "images/team/abelma.jpg"
+      designation: "Founder / COO"
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/abelma1980"
+
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/meneses-abad"
+
+        - icon: "fa-github"
+          URL: "https://github.com/sorice"
+
+    # team member
+    - name: "Alejandro N&uacute;&ntilde;ez Madrazo"
+      image: "images/team/alejandrojnm.jpg"
+      designation: "Founder / CTO"
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/alejandrojnm"
+
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/alejandrojnm"
+
+        - icon: "fa-github"
+          URL: "https://github.com/alejandrojnm"
+
+    # team member
+#    - name: "Karel Rodr&iacute;z Varona"
+#      image: "images/team/team-member-1.jpg"
+#      designation: "Founder / Data Analyst"
+#      socialIcon:
+#        - icon: "fa-twitter"
+#          URL: "#"
+
+#        - icon: "fa-linkedin"
+#          URL: "#"
+
+#        - icon: "fa-github"
+#          URL: "#"
+
+    # team member
+#    - name: "Jorge Palacio"
+#      image: "images/team/team-member-1.jpg"
+#      designation: "Software Developer"
+#      socialIcon:
+#        - icon: "fa-twitter"
+#          URL: "#"
+
+#        - icon: "fa-linkedin"
+#          URL: "#"
+
+#        - icon: "fa-github"
+#          URL: "#"
+
+# partners
+#partners:
+#  subtitle: "We are proud of our great partners"
+#  ourPartners:
+#    - partnerAlt: "legal advisory agency"
+#      partnerLogo: "images/toolset/vuejs.png"

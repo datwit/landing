@@ -1,0 +1,187 @@
+baseURL = "https://www.wittylytics.com/"
+
+languageCode = "en-us"
+title = "WittyLytics | Dynamic Witty Analytics"
+theme = "agico-hugo"
+summaryLength = "10"
+paginate = 6
+
+[outputs]
+  home = ["HTML", "AMP", "RSS", "JSON"]
+  page = ["HTML"]
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/font-awesome/font-awesome.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+  [[params.plugins.css]]
+  URL = "plugins/aos/aos.css"
+  # last one for our own styles
+  [[params.plugins.css]]
+  URL = "plugins/wittylytics/style.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+#  [[params.plugins.js]]
+#  URL = "plugins/google-map/gmap.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+  [[params.plugins.js]]
+  URL = "plugins/aos/aos.js"
+  # last one for our own scripts
+  [[params.plugins.js]]
+  URL = "plugins/wittylytics/script.js"
+
+  
+# navigation
+[menu]
+    
+  [[menu.main]]
+  name = "About Us"
+  URL = "about"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Services"
+  URL = "service"
+  weight = 3
+  
+  [[menu.main]]
+  name = "Team"
+  URL = "team"
+  weight = 4
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 5
+
+
+#  [[menu.main]]
+#  name = "Contact"
+#  URL = "contact"
+#  weight = 7
+
+#  [[menu.main]]
+#  weight = 8
+#  name = "More"
+#  hasChildren = true
+
+#    [[menu.main]]
+#    parent = "More"
+#    name = "Terms"
+#    URL = "terms"
+
+#    [[menu.main]]
+#    parent = "More"
+#    name = "Privacy"
+#    URL = "privacy"
+
+# Footer
+
+  [params.footer]
+#  content = "Follow us all over the web"
+
+#    [[params.footer.socialIcon]]
+#    icon = "fa-facebook"
+#    URL = "https://facebook.com/wittylytics"
+
+#    [[params.footer.socialIcon]]
+#    icon = "fa-twitter"
+#    URL = "https://twitter.com/wittylytics"
+
+#    [[params.footer.socialIcon]]
+#    icon = "fa-linkedin"
+#    URL = "https://linkedin.com/wittylytics"
+
+#    [[params.footer.socialIcon]]
+#    icon = "fa-github"
+#    URL = "https://github.com/wittylytics"
+
+#    [[params.footer.socialIcon]]
+#    icon = "fa-instagram"
+#    URL = "https://instagram.com/wittylytics"
+
+  [params.footer.service]
+  title = "Data Protection"
+
+  [params.footer.contact]
+  title = "Contact Info"
+#  address = "Serbian address"
+#  mobile = "+1234567890"
+  email = "contact@wittylytics.com"
+
+  # copyright
+  [params.copyright]
+  copyright = "Dynamic Witty Analytics"
+
+#Footer menu
+
+  [[menu.footer]]
+  name = "Privacy Policy"
+  URL = "privacy"
+
+  [[menu.footer]]
+  name = "Terms and conditions"
+  URL = "terms"
+
+[params]
+logo = "images/logo.png"
+home = "Home"
+# Meta data
+description = "Dynamic Witty Analytics Company"
+author = "WittyLytics Team"
+# google map
+#gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+#mapLatitude = "51.5223477"
+#mapLongitude = "-0.1622023"
+#mapMarker = "images/marker.png"
+# Google Analitycs
+#googleAnalitycsID = "Your ID"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+
+  # Navigation get start button
+#  [params.navBtn]
+#  enable = true
+#  btnText = "sign up"
+#  URL = "#"
+
+  # Subscription
+#  [params.subscription]
+#  title = "Subscribe <br> to our newsletter"
+#  formAction = "#"
+
+# share blog post
+[[params.sharePost]]
+icon = "fa-facebook"
+URL = "https://facebook.com/wittylytics"
+
+[[params.sharePost]]
+icon = "fa-twitter"
+URL = "https://twitter.com/wittylytics"
+
+[[params.sharePost]]
+icon = "fa-linkedin"
+URL = "https://linkedin.com/wittylytics"

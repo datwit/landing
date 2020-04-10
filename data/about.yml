@@ -1,0 +1,30 @@
+# about
+about:
+#  videoThumbBg : "images/about/about-3.jpg"
+#  videoThumb : "images/about/about-4.jpg"
+#  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
+  aboutImg: "images/about/about-us.svg"
+  aboutAlt: "about wittylytics"
+#  subtitle: "About WittyLytics"
+  title: "Dynamic Witty Analytics"
+  content: "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern techniques
+          like Cloud Computing, Machine Learning, Data Analysis and microservices.
+          Also, Wittylytics was founded to develop in the future Artificial Intelligence Solutions and Witty Data Analytics."
+  github: "https://github.com/wittylytics"
+
+#  button:
+#    btnText : "Contact Us"
+#    URL : "/contact"
+
+# counter
+#counter:
+#  - count : "8000"
+#    description : "Downloads per day"
+#  - count : "20"
+#    description : "Design awards"
+    
+#  - count : "25000"
+#    description : "Totally satisfied users"
+    
+#  - count : "30000"
+#    description : "People behind this app"

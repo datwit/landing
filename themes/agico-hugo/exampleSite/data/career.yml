@@ -1,0 +1,49 @@
+categories:
+  subtitle : "jobs"
+  title : "Find Jobs by Categories"
+  content : "Lorem ipsum dolor sit amet consectetur adipicing elit sed do usmod tempor incididunt.enim <br> ad minim veniam quis nostrud exer citation ullamco laboris nisi ut aliquip commodo."
+  categoriesItem:
+    - title : "Networking"
+      icon : "fa-object-ungroup"
+      iconColor : "primary" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+    - title : "Social Activity"
+      icon : "fa-users"
+      iconColor : "yellow" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+    - title : "Web Design"
+      icon : "fa-desktop"
+      iconColor : "purple" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+    - title : "Cloud Service"
+      icon : "fa-cloud"
+      iconColor : "cyan" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "Consulting"
+      icon : "fa-comments"
+      iconColor : "red" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "SEO Optimization"
+      icon : "fa-search-plus"
+      iconColor : "green" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "Usability Testing"
+      icon : "fa-line-chart"
+      iconColor : "orange" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+      
+    - title : "UX Prototyping"
+      icon : "fa-wpexplorer"
+      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+      content : "Lorem ipsum dolor sit amet consectetur elit sed do"
+
+
+career:
+  subtitle : "Best Jobs"
+  title : "Featured Jobs"

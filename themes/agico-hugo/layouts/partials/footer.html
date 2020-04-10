@@ -1,0 +1,90 @@
+{{"<!-- footer part start -->" | safeHTML }}
+<footer class="bg-secondary pt-5">
+  <section class="section border-bottom border-color">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" class="mb-4" alt="agico"></a>
+          <p class="text-light mb-4">{{ .Site.Params.footer.content | markdownify }}</p>
+          <ul class="list-inline social-icons">
+            {{ range .Site.Params.footer.socialIcon }}
+            <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h4 class="text-white mb-4">{{ .Site.Params.footer.service.title }}</h4>
+          <ul class="list-styled list-hover-underline">
+            {{ range .Site.Menus.footer }}
+            <li class="mb-3 text-light"><a href="{{ .URL | absURL }}" class="text-light">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="text-white mb-4">{{ .Site.Params.footer.contact.title }}</h4>
+          <p class="text-light">{{ .Site.Params.footer.contact.address }}</p>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-light" href="tel:{{.Site.Params.footer.contact.mobile}}">{{.Site.Params.footer.contact.mobile}}</a></li>
+            <li class="mb-3"><a class="text-light" href="mailto:{{.Site.Params.footer.contact.email}}">{{.Site.Params.footer.contact.email}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{{"  <!-- footer part end -->" | safeHTML }}
+
+{{"  <!-- copyright part start -->" | safeHTML }}
+  <section class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-0 text-light">Copyright &copy;
+            <script>
+              var CurrentYear = new Date().getFullYear();
+              document.write(CurrentYear);
+            </script> {{ .Site.Params.copyright.copyright }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{{"  <!-- copyright part end -->" | safeHTML }}
+</footer>
+  
+
+
+{{ $script:= "script" }}
+{{ $scriptTag:= "<" }}
+{{$scriptTag | safeHTML }}{{$script}} type="text/javascript">
+  
+  {{ $.Scratch.Set "counter" 0 }}
+  {{ range .Site.Params.plugins.css }}
+  {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+  var css{{$.Scratch.Get `counter`}} = document.createElement('link');
+  css{{$.Scratch.Get `counter`}}.rel = 'stylesheet';
+  css{{$.Scratch.Get `counter`}}.href = '{{ .URL | absURL }}';
+  css{{$.Scratch.Get `counter`}}.type = 'text/css';
+  var fastCSS{{$.Scratch.Get `counter`}} = document.getElementsByTagName('link')[0];
+  fastCSS{{$.Scratch.Get `counter`}}.parentNode.insertBefore(css{{$.Scratch.Get `counter`}}, fastCSS{{$.Scratch.Get `counter`}});
+  {{ end }}
+
+</script>
+
+  
+{{ "<!-- Google Map API -->" | safeHTML }}
+<script src="{{ .Site.Params.gmapAPI | absURL }}"></script>
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+{{ "<!-- google analitycs -->" | safeHTML }}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
+  ga('send', 'pageview');
+</script>

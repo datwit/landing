@@ -1,0 +1,39 @@
+/* feature */
+.feature-bg-shape-1{
+  position: absolute;
+  left: -150px;
+  top: -400px;
+  z-index: -1;
+}
+
+.feature-bg-shape-2{
+  position: absolute;
+  left: 0px;
+  top: -200px;
+  z-index: -1;
+}
+
+.bg-map{
+  position: relative;
+  &::before{
+    position: absolute;
+    background-image: url(../images/background/map.png);
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 50%;
+    @include tablet {
+      width: 100%;
+      height: 40%;
+    }
+  }
+}
+
+.testimonial-slider-single{
+  .slick-arrow{
+    top: 100%;
+  }
+}

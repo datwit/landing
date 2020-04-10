@@ -1,0 +1,132 @@
+# Banner
+banner:
+  bgImage : "images/background/banner.png"
+  title : "Bring your idea, we'll make it real!"
+  watermark : "Dream"
+  #content : "Multi purpose software solutions integrated with Machine Learning microservices."
+  image : "images/banner/banner-1.svg"
+#  button:
+#    btnText : "See more"
+#    URL : "#"
+
+# Toolset
+toolset:
+#    - tool: "vuejs"
+#      toolsetLogo: "images/toolset/vuejs.png"
+
+    - tool: "python"
+      toolName: "Python"
+      toolsetLogo: "images/toolset/python.png"
+
+    - tool: "aws"
+      toolName: "Amazon Web Services"
+      toolsetLogo: "images/toolset/aws.png"
+
+    - tool: "gcloud"
+      toolName: "Google Cloud"
+      toolsetLogo: "images/toolset/gcloud.png"
+
+    - tool: "tensorflow"
+      toolName: "TensorFlow Library"
+      toolsetLogo: "images/toolset/tensorflow.png"
+
+    - tool: "sklearn"
+      toolName: "Sklearn Toolkit"
+      toolsetLogo: "images/toolset/sklearn.png"
+
+    - tool: "panel"
+      toolName: "Panel Dashboards for Python"
+      toolsetLogo: "images/toolset/panel.png"
+
+    - tool: "bokeh"
+      toolName: "Bokeh Visualization Library"
+      toolsetLogo: "images/toolset/bokeh.png"
+
+# About
+about:
+  image : "images/about/about-1.svg"
+  subtitle : "Multi purpose software"
+  title : "Ready to use"
+  content : "Creating multi purpose software thinking in what you need.
+          Delivering on time and only well tested software, always ready for production."
+#  button:
+#    btnText : "read more"
+#    URL : "#"
+    
+about2:
+  image : "images/about/about-2.svg"
+  subtitle : "For today and tomorrow"
+  title : "More complex processes and more simpler tools"
+  content : "Integrating high standards, Machine Learning and Artificial Intelligence.
+          Take advantage of our complete software solutions and get the most of your software and your data."
+#  button:
+#    btnText : "read more"
+#    URL : "#"
+
+about3:
+  image : "images/about/about-3.svg"
+  subtitle : "Data Analysis"
+  title : "Make it simpler"
+  content : "Providing data analysis, dashboards and much more for you. Know your data better and
+          decide what to do with it right now."
+#  button:
+#    btnText : "read more"
+#    URL : "#"
+
+# video
+#video:
+#  videoThumb : "images/check-video.png"
+#  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
+#  subtitle : "Check Video"
+#  title : "Best Way to Chat Your Customers."
+#  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat. duis aute.
+#  <br><br>
+#  Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
+
+# testimonial
+#testimonial:
+#  subtitle : "testimonial"
+#  title : "What Our Clients Says?"
+#  testimonialItem:
+#    - name : "Alice kelly"
+#      designation : "Happy client"
+#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+#
+#    - name : "Alice kelly"
+#      designation : "Happy client"
+#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+#
+#    - name : "Alice kelly"
+#      designation : "Happy client"
+#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+#
+#    - name : "Alice kelly"
+#      designation : "Happy client"
+#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+#
+#    - name : "Alice kelly"
+#      designation : "Happy client"
+#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
+#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
+#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
+
+# Know more
+know_more:
+  title : "About WittyLytics"
+  content : "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern
+          techniques like Cloud Computing, Machine Learning, Data Analysis and microservices."
+  morebtn:
+    btnText : "Know more"
+    URL : "about"
+#  appstore:
+#    btnText : "app store"
+#    URL : "#"
+  image : "images/about/about-us.svg"
