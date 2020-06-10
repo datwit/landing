@@ -2,7 +2,7 @@
   font-size: 16px;
   font-family: $primary-font;
   text-transform: capitalize;
-  padding: 14px 45px;
+  padding-left: 30px;
   border-radius: 45px;
   font-weight: 500;
   border: 1px solid;
@@ -10,7 +10,11 @@
   z-index: 1;
   transition: .3s ease-in;
   overflow: hidden;
-
+  display: flex;
+  align-items: center;
+  background-color: $primary-color;
+  
+  
   &:focus {
     outline: 0;
     box-shadow: none !important;
@@ -19,10 +23,19 @@
   &:active {
     box-shadow: none;
   }
+
+  &:hover{
+    background-color: #2d4258;
+  }
 }
 
+
 .btn-lg{
-  padding: 20px 40px;
+  /*padding: 20px 30px;*/
+  margin-left: auto;
+  margin-right: auto;
+
+  
 }
 
 .btn-sm{

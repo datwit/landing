@@ -1,0 +1,45 @@
+/*
+Hugo-materialized
+CSS overrides
+(c) Jeremy Atkinson
+
+*/
+
+header, main, footer {
+    padding-left: 240px;
+  }
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+
+.social-buttons {
+    display: inline-block !important;
+}
+.social-share-margin {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+i.menu-icon {
+    line-height: inherit;
+    height: inherit;
+}
+
+#sidenav-photo {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:auto;
+    margin-top: 20px;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #e0e0e0;
+    border: 2px solid #e0e0e0;
+
+}
+
+.italic {
+    font-style: italic !important;
+}

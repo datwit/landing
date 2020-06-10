@@ -1,7 +1,8 @@
 // banner css start
 .hero-area {
   padding: 200px 0 260px;
-
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) 0 2px 10px 0 rgba(0,0,0,0.12);
+  
   @include mobile-xs {
     padding: 190px 0 100px;
   }
@@ -14,15 +15,27 @@
     opacity: 0.70;
   }
 
-  h1 {
-    line-height: 68px;
+  /*h1 {
+    line-height: 60px;
     z-index: 1;
 
-    @include mobile-xs {
-      font-size: 50px;
-    }
+    
   }
-
+  .text-white {
+    position-relative {
+      aos-init { 
+        aos-animate{
+           h1{
+            @include mobile-xs {
+              font-size: 50px;
+            }
+           }
+        }
+      }
+      
+    }
+   
+  }*/
   .bg-shape-1 {
     position: absolute;
     top: 0px;

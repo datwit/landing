@@ -5,17 +5,21 @@
 <section class="section section-lg-bottom">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col s12 m8">
         <div class="row">
           {{ $paginator := .Paginate .Data.Pages }}
           {{ range $paginator.Pages }}
           {{ "<!-- blog post -->" | safeHTML }}
-          <div class="col-sm-6 mb-4">
-            <article class="card border shadow rounded-lg">
-              <img src="{{ .Params.Image | absURL }}" class="img-fluid card-img-top rounded-top-lg" alt="post-thumb">
-              <div class="card-body">
-                <p class="card-date">{{ .PublishDate.Format "Jan 02, 2006" }}</p>
-                <h5><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h5>
+          <div class="col s12 m5">
+            <article>
+              <div class="card">
+                <div class="card-image">
+                  <img src="{{ .Params.Image | absURL }}" class="img-fluid " alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <p class="card-date">{{ .PublishDate.Format "Jan 02, 2006" }}</p>
+                  <h5><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                </div>
               </div>
             </article>
           </div>

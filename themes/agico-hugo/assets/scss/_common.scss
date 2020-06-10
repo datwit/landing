@@ -140,13 +140,23 @@ a.text-light {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #0E1E2F;
+  background-color: #01161f;
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
+  
   img{
-    max-width: 500px;
+    max-height: 500px;
+    min-width: 500px;
+  /*@include desktop-lg{
+    min-width: 1500px;
+    max-height: 1100px;
+  } 
+  @include desktop-xl{
+    min-width: 2000px;
+    max-height: 1250px;
+  } */ 
   }
 }
 /* /preloader */
@@ -156,8 +166,8 @@ a.text-light {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  
 }
-
 // background img
 
 // border-radius 
@@ -171,6 +181,12 @@ a.text-light {
 
 .rounded-sm {
   border-radius: 15px;
+  
+/*@include mobile-xs{
+  object-fit: cover;
+  width: 250px;
+}*/
+
 }
 
 .rounded-xs {
@@ -243,6 +259,7 @@ a.text-light {
   color: $text-color;
   font-family: $primary-font;
   font-weight: 400;
+  line-height: normal;
 }
 
 // section-gap
@@ -268,7 +285,12 @@ a.text-light {
 }
 
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  /*space between the two member pictures*/
+  margin: {
+    left: 45px;
+    right: 70px;
+  }
 }
 
 .mt-100 {
@@ -289,6 +311,12 @@ a.text-light {
 
 .sticky-top {
   top: 100px;
+}
+
+.section{
+  .toolset{
+    background-color: #c3c1be;
+  }
 }
 
 // pulse animtion
@@ -382,6 +410,7 @@ a.text-light {
 
 // pulse animtion
 
+
 // slick slider 
 .slick-slide {
   outline: 0;
@@ -393,7 +422,7 @@ a.text-light {
   height: 25px;
   display: block;
   position: absolute;
-  top: -77px;
+  top: -45px;
   right: 20px;
   cursor: pointer;
 
@@ -445,7 +474,7 @@ a.text-light {
   height: 25px;
   display: block;
   position: absolute;
-  top: -77px;
+  top: -45px;
   right: 55px;
   cursor: pointer;
 
@@ -517,6 +546,11 @@ a.text-light {
   }
 }
 
+.icon-block{
+ text-align: center;
+
+
+}
 /* / social icon */
 
 /* list style */

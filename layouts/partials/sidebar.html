@@ -1,31 +1,37 @@
-<div class="col-lg-4">
-  <div class="rounded-sm shadow bg-white pb-4">
+
+{{ "<!-- sidebar -->" | safeHTML }}
+<div class="col s6 m4">
+  <div class="row">
     <div class="widget">
-      <h4>Search</h4>
+      <h3>Search</h3>
       <form action="{{ .Site.BaseURL }}/search">
         <div class="position-relative">
-          <input id="search-query" name="s" type="search" placeholder="Search here" class="border-bottom form-control rounded-0 px-0">
-          <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+          <i class="material-icons prefix">search<input id="search-query" name="" type="search"></i>
+          
         </div>
       </form>
     </div>
+  </div><!----------------------------------------------------->
+  <div class="row">  
     <div class="widget">
-      <h4>Category</h4>
-      {{- if isset .Site.Taxonomies "categories" }}
-      {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
-      <ul class="list-styled list-bordered">
-        {{- range $name, $items := .Site.Taxonomies.categories }}
-        <li><a class="text-color d-block py-3" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+        <h3>Category</h3>
+        {{- if isset .Site.Taxonomies "categories" }}
+        {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+        <ul class="list-unstyled col s16 m4">
+          {{- range $name, $items := .Site.Taxonomies.categories }}
+          <li><a class="text-color" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+          {{- end }}
+        </ul>
         {{- end }}
-      </ul>
-      {{- end }}
-      {{- end }}
+        {{- end }}
     </div>
+  </div> <!--------------------------------------------------->
+  <div class="row">
     <div class="widget">
-      <h4>Latest Article</h4>
+      <h3>Latest Article</h3>
       <ul class="list-unstyled list-bordered">
         {{ range first 3 ( where .Site.Pages "Type" "post" )}}
-        <li class="media border-bottom py-3">
+        <li class="media border-bottom">
           <img src="{{ .Params.Image | absURL }}" class="rounded-sm mr-3" alt="post-thumb">
           <div class="media-body">
             <h6 class="mt-0"><a href="{{ .Permalink }}" class="text-dark">{{ .Title }}</a></h6>
@@ -35,13 +41,15 @@
         {{ end }}
       </ul>
     </div>
+  </div>
+  <div class="row"><!-------------------------------------------->
     <div class="widget">
-      <h4>Tags</h4>
+      <h3>Tags</h3>
       {{- if isset .Site.Taxonomies "tags" }}
       {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
-      <ul class="list-inline tag-list mt-4">
+      <ul>
         {{- range $name, $items := .Site.Taxonomies.tags }}
-        <li class="list-inline-item mb-3"><a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}" class="text-color shadow">{{ $name | humanize }}</a></li>
+      <li><a class=" tag col s6" href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
         {{- end }}
       </ul>
       {{- end }}
@@ -49,3 +57,4 @@
     </div>
   </div>
 </div>
+{{ "<!-- /sidebar -->" | safeHTML }}

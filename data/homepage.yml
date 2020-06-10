@@ -2,12 +2,13 @@
 banner:
   bgImage : "images/background/banner.png"
   title : "Bring your idea, we'll make it real!"
-  watermark : "Dream"
+  #watermark : "Dream"
   #content : "Multi purpose software solutions integrated with Machine Learning microservices."
-  image : "images/banner/banner-1.svg"
+  #image : "images/banner/banner-1.svg"
 #  button:
 #    btnText : "See more"
 #    URL : "#"
+
 
 # Toolset
 toolset:
@@ -44,11 +45,12 @@ toolset:
 
 # About
 about:
-  image : "images/about/about-1.svg"
+  image : "images/about/about-1.png"
   subtitle : "Multi purpose software"
   title : "Ready to use"
   content : "Creating multi purpose software thinking in what you need.
           Delivering on time and only well tested software, always ready for production."
+  linktext: "More"
 #  button:
 #    btnText : "read more"
 #    URL : "#"

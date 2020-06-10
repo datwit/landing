@@ -1,10 +1,13 @@
 team:
-  subtitle : "Meet our team"
+  title : "The Team"
+  subtitle: "Meet our team"
+  description: "We are a self-driven and enthusiastic young people who want to experiment and have fun."
 #  title : "Expert Person"
   teamMember:
     # team member
     - name : "Leonel Salazar Videaux"
-      image : "images/team/lordford.jpg"
+      image : "images/team/lordford.png"
+      image2: "images/team/lordford2.png"
       designation : "Founder / CEO"
       socialIcon:
         - icon : "fa-twitter"
@@ -17,8 +20,9 @@ team:
           URL : "https://github.com/leonel-lordford"
           
     # team member
-    - name: "Abel Meneses-Abad"
-      image: "images/team/abelma.jpg"
+    - name: "Abel Meneses Abad"
+      image: "images/team/abelma.png"
+      image2: "images/team/abelma2.png"
       designation: "Founder / COO"
       socialIcon:
         - icon: "fa-twitter"
@@ -31,18 +35,18 @@ team:
           URL: "https://github.com/sorice"
 
     # team member
-    - name: "Alejandro N&uacute;&ntilde;ez Madrazo"
-      image: "images/team/alejandrojnm.jpg"
-      designation: "Founder / CTO"
-      socialIcon:
-        - icon: "fa-twitter"
-          URL: "https://twitter.com/alejandrojnm"
+    #- name: "Alejandro N&uacute;&ntilde;ez Madrazo"
+    #  image: "images/team/alejandrojnm.jpg"
+    #  designation: "Founder / CTO"
+    #  socialIcon:
+    #    - icon: "fa-twitter"
+    #      URL: "https://twitter.com/alejandrojnm"
 
-        - icon: "fa-linkedin"
-          URL: "https://www.linkedin.com/in/alejandrojnm"
+    #    - icon: "fa-linkedin"
+    #      URL: "https://www.linkedin.com/in/alejandrojnm"
 
-        - icon: "fa-github"
-          URL: "https://github.com/alejandrojnm"
+    #    - icon: "fa-github"
+    #      URL: "https://github.com/alejandrojnm"
 
     # team member
 #    - name: "Karel Rodr&iacute;z Varona"

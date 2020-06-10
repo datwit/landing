@@ -1,43 +1,34 @@
 {{"<!-- footer part start -->" | safeHTML }}
-<footer class="bg-secondary pt-5">
-  <section class="section border-bottom border-color">
+<footer class="bg-secondary pt-5 z-depth-2">
+  <section class="section border-color">
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-md-5 mb-4 mb-md-0">
-          <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" class="mb-4" alt="wittylytics"></a>
-          <p class="text-light mb-4">{{ .Site.Params.footer.content | markdownify }}</p>
-          <ul class="list-inline social-icons">
-            {{ range .Site.Params.footer.socialIcon }}
-            <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
-            {{ end }}
+     
+      <div class="row">
+        <div class="col s6">
+          <h4 class="text-white">{{ .Site.Params.footer.service.title }}</h4>
+          {{ range .Site.Menus.footer }}
+          <ul class="list-styled list-hover-underline"></ul>
+            <li><a href="{{ .URL | absURL }}" class="text-light">{{ .Name }}</a></li>
+          {{ end }}
           </ul>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <h4 class="text-white mb-4">{{ .Site.Params.footer.service.title }}</h4>
-          <ul class="list-styled list-hover-underline">
-            {{ range .Site.Menus.footer }}
-            <li class="mb-3 text-light"><a href="{{ .URL | absURL }}" class="text-light">{{ .Name }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <h4 class="text-white mb-4">{{ .Site.Params.footer.contact.title }}</h4>
-          <p class="text-light">{{ .Site.Params.footer.contact.address }}</p>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-light" href="tel:{{.Site.Params.footer.contact.mobile}}">{{.Site.Params.footer.contact.mobile}}</a></li>
-            <li class="mb-3"><a class="text-light" href="mailto:{{.Site.Params.footer.contact.email}}">{{.Site.Params.footer.contact.email}}</a></li>
+        <div class="col s6">
+          <h4 class="text-white">{{ .Site.Params.footer.contact.title }}</h4>
+          <ul class=" list-hover-underline">
+            <li><i class="material-icons prefix">email</i><a href="mailto:{{.Site.Params.footer.contact.email}}" class="text-light">{{.Site.Params.footer.contact.email}}</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+
 {{"  <!-- footer part end -->" | safeHTML }}
 
 {{"  <!-- copyright part start -->" | safeHTML }}
-  <section class="py-4">
+  <section>
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col s12">
           <p class="mb-0 text-light">Copyright &copy;
             <script>
               var CurrentYear = new Date().getFullYear();
@@ -88,3 +79,5 @@
   ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
   ga('send', 'pageview');
 </script>
+
+<script src="assets/js/jquery.min.js"></script>
