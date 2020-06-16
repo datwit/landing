@@ -39,4 +39,4 @@ jobs:
 
       - name: Push files to bucket
         run: |
-          aws s3 sync . s3://datwit.com --delete --dryrun
+          aws s3 sync . s3://datwit.com --delete
