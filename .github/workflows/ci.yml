@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    name: build-site
+    name: Build site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,9 +21,9 @@ jobs:
           path: './public'
 
   deploy:
-    name: deploy-to-aws
+    name: Deploy to AWS
     runs-on: ubuntu-latest
-    needs: build-site
+    needs: build
     steps:
       - name: Checkout
         uses: actions/checkout@v2
