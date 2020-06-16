@@ -37,5 +37,6 @@ jobs:
         with:
           name: website
 
-      - name: Display structure of local files
-        run: ls -l -a
+      - name: Push files to bucket
+        run: |
+          aws s3 sync . s3://datwit.com --delete --dryrun
