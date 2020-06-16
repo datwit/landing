@@ -5,18 +5,42 @@ on:
 
 jobs:
   build:
-    name: hello
+    name: Build site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      
+      - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
+        with:
+          args: --minify
+      
+      - uses: actions/upload-artifact@v2
+        with:
+          name: website
+          path: './public'
+
+  deploy:
+    name: Deploy to AWS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+  
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
-      - name: List current files
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: my-artifact
+
+      - name: List remote files
         run: |
           aws s3 ls s3://datwit.com
 
+      - name: Display structure of local files
+        run: ls -R
