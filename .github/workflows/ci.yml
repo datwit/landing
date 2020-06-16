@@ -24,10 +24,7 @@ jobs:
     name: Deploy to AWS
     runs-on: ubuntu-latest
     needs: build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-  
+    steps: 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -35,13 +32,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
 
+      # download assets to current dir
       - uses: actions/download-artifact@v2
         with:
           name: website
 
-      - name: List remote files
-        run: |
-          aws s3 ls s3://datwit.com
-
       - name: Display structure of local files
-        run: ls -R
+        run: ls -l -a
