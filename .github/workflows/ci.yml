@@ -1,7 +1,9 @@
 name: CI
 
 on: 
-  push
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -42,8 +44,8 @@ jobs:
           aws s3 sync . s3://datwit.com --delete
 
       # Leave commented for now
-      - name: Invalidate entry point
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id E3Q248S6PCUHON \
-            --paths "/index.html"
+      # - name: Invalidate entry point
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #       --distribution-id E3Q248S6PCUHON \
+      #       --paths "/index.html"
