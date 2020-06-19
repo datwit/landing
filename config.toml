@@ -7,7 +7,7 @@
 ###        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ###
 
-baseURL = "https://www.wittylytics.com/"
+baseURL = "https://www.datwit.com/"
 
 languageCode = "en-us"
 title = "DATWIT | Dynamic Witty Analytics"
@@ -23,8 +23,6 @@ paginate = 6
 [params.plugins]
 
   # CSS Plugins
-  #[[params.plugins.css]]
-  #URL = "plugins/bootstrap/bootstrap.css"
   [[params.plugins.css]]
   URL = "plugins/slick/slick.css"
   [[params.plugins.css]]
@@ -33,19 +31,18 @@ paginate = 6
   URL = "plugins/venobox/venobox.css"
   [[params.plugins.css]]
   URL = "plugins/aos/aos.css"
-  # last one for our own styles
-  [[params.plugins.css]]
-  URL = "plugins/wittylytics/style.css"
   [[params.plugins.css]]
   URL = "plugins/materializecss/MaterialIcons/material-icons.css"
   [[params.plugins.css]]
   URL = "plugins/materializecss/materialize.css"
+  # last one for our own styles
+  [[params.plugins.css]]
+  URL = "plugins/wittylytics/style.css"
+  
 
   # JS Plugins
   [[params.plugins.js]]
   URL = "plugins/jQuery/jquery.min.js"
-  #[[params.plugins.js]]
-  #URL = "plugins/bootstrap/bootstrap.min.js"
   [[params.plugins.js]]
   URL = "plugins/slick/slick.min.js"
   [[params.plugins.js]]
@@ -60,11 +57,12 @@ paginate = 6
   URL = "plugins/search/search.js"
   [[params.plugins.js]]
   URL = "plugins/aos/aos.js"
+  [[params.plugins.js]]
+  URL = "plugins/materializecss/materialize.min.js"
   # last one for our own scripts
   [[params.plugins.js]]
   URL = "plugins/wittylytics/script.js"
-  [[params.plugins.js]]
-  URL = "plugins/materializecss/materialize.min.js"
+  
 
 
   
@@ -160,7 +158,7 @@ logo = "images/logo.png"
 home = "Home"
 # Meta data
 description = "Dynamic Witty Analytics Company"
-author = "WittyLytics Team"
+author = "DATWIT Team"
 # google map
 #gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 #mapLatitude = "51.5223477"

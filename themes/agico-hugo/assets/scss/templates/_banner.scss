@@ -3,16 +3,30 @@
   padding: 200px 0 260px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16) 0 2px 10px 0 rgba(0,0,0,0.12);
   
-  @include mobile-xs {
-    padding: 190px 0 100px;
-  }
 
+  /***************test cropping images****************************************/
+  @include mobile-xs {
+    /*padding: 190px 0 100px;*/
+    object-fit: cover;
+    width: fit-content;
+  }
+  /*************************************************************/
   @include desktop-xl {
-    padding: 150px 0 260px;
+    padding: 250px 0 240px;
   }
 
   p {
     opacity: 0.70;
+  }
+  
+  #adsize{
+  @include mobile-xs {
+    content:url("images/background/mobile-500.png");
+  } 
+  @include mobile{
+    content:url("images/background/mobile-850.png");
+  }
+
   }
 
   /*h1 {

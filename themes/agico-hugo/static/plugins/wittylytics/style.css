@@ -6,11 +6,119 @@
  * Copyright (c) 2020 WittyLytics
  */
 
-.navbar-toggler {
+/*.navbar-toggler {
     margin: 0 auto;
     margin-top: 10px;
+}*/
+
+/*****navbar height adjustment****************/
+.navbar {
+    height: 85px;
+    padding-top: 0px;
+    padding-left: 15px;
+    background-color: #2d4258;
+    /*fixed navbar*/
+    position: fixed; 
+    top:0;          
+    width: 100%;
+    z-index: 2;
+    box-shadow: none;
+}
+/*******visibility setting on small devices******/
+@media only screen and (max-width: 600px) {
+    .navbar-nav.hide-on-small{
+        display: none;
+    }
 }
 
+/********** menu alignment***********************/
+ul.navbar-nav{
+   margin-right: 0px;
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 10px;
+}
+/**************icon alignment********************/
+.navbar-brand img{
+    padding-top: 10px;
+}
+/**********card title goals card reveal************/
+.card .card-content .card-title{
+    line-height: 25px !important;
+    display:flex !important;
+    justify-content:space-between;
+}
+
+.card .card-reveal .card-title{
+    line-height: 25px !important;
+    display:flex !important;
+    justify-content:space-between;
+}
+.card .card-reveal{
+    z-index:1 !important;
+}
+
+h3.crev {
+    margin:0px;
+    line-height:25px;
+    padding-bottom:0px;
+    font-size: 24px;
+}
+
+i.vright{
+    float:right !important;
+}
+/**********link icon alignment team*************/
+#link{
+    margin-left: 30px;
+    margin-top: 12px;
+}
+/***********feature section adjustments***********/
+@media only screen and (max-width: 600px) {
+    .row.frow .col.s4{
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 40px;
+    }
+}
+/*************copyright alignment****************/
+#copy{
+    display: flex;
+    justify-content: center;
+}
+/*************icon button contact******************/
+i.right{
+    margin-top: 0 !important; 
+    margin-left: 5px;
+}
+
+/*********trying to adjust banner*****************************************/
+@media screen and (max-width: 500px) {
+    #adsize {
+      content:url("images/background/mobile-500.png");
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    #adsize {
+      content:url("images/background/mobile-850.png");
+    }
+  }
+/*****************Adjusting blog card*****************/
+.card .card-content p{
+    padding-bottom: 20px;
+}
+
+h5.h5left {
+    text-align: left;
+    line-height: normal;
+}
+/*****************aligning breadcrumbs***************/
+#breadcrumb{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+/**************************************************/
 .section {
     padding-top: 1px !important;
     padding-bottom: 40px !important;

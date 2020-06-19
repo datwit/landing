@@ -49,12 +49,14 @@
   }
 }
 
+
+/******************menu items adjustments ************************/
 .navbar {
 
   .nav-item {
 
     .nav-link {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 500;
       /*padding: 20px 22px;*/
       font-family: $primary-font;
@@ -73,7 +75,7 @@
       }
     }
   }
-
+  /***************************************************************/
   .dropdown {
     &:hover {
       .dropdown-menu {

@@ -1,8 +1,9 @@
 {{ "<!-- page-header -->" | safeHTML }}
-<section class="page-title" data-background="{{ .Params.BgImage | absURL }}">
-  <div class="container">
+<section> 
+  <div class="page-title" data-background="{{ .Params.BgImage | absURL }}">
+  
     <div class="row"><!--------------breadcrumb---------------------------->
-      <div class="col s11">
+      <div class="col s12" id="breadcrumb">
         <span class="flow-text"><a href="{{ .Site.BaseURL }}" class="text-white">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>/
         <a class="breadcrumb-item text-white" aria-current="page">{{ .Title }}</a></span>
       </div>

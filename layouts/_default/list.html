@@ -16,9 +16,9 @@
                 <div class="card-image">
                   <img src="{{ .Params.Image | absURL }}" class="img-fluid " alt="post-thumb">
                 </div>
-                <div class="card-body">
+                <div class="card-content">
                   <p class="card-date">{{ .PublishDate.Format "Jan 02, 2006" }}</p>
-                  <h5><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                  <h5 class="h5left"><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h5>
                 </div>
               </div>
             </article>

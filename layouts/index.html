@@ -27,13 +27,13 @@
       </div><!-------------/first row title------------>
     </div>  
         
-    <div class="row"><!----------second row icon---> 
+    <div class="row frow"><!----------second row icon---> 
         {{ range $element:= .Site.Data.service.service.serviceItem }} 
       <div class="col s4"><!--------------one column per icon-->
         <div class="icon-block">
           <div class="text-center">
             <i class="fa {{ .icon }} icon-lg icon-{{ .iconColor }} icon-bg-{{ .iconColor }} icon-bg-circle mb-3 text-center"></i>
-            <h3 class="mt-4 mb-3">{{ .title }}</h3>
+            <h3>{{ .title }}</h3>
           </div>
         </div>
       </div><!------------------------/second row icon--->
@@ -83,26 +83,44 @@
       {{ with .Site.Data.homepage.about }}
       <div class="col s12 m4">
         <div class="card">
-          <div class="card-image">
-            <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-            <span class="card-title">{{ .title}}</span>
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
           </div>
           <div class="card-content">
+            <span class="card-title activator">
+              <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
+              <i class="material-icons right grey-text text-darken-4">more_vert</i>
+            </span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title activator">
+              <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
+              <i class="material-icons right grey-text text-darken-4">close</i>
+          </span>
             <p>{{ .content | markdownify }}</p>
           </div>
         </div>
       </div>  
       {{ end }}
-  <!--/first card------------------------> 
-  <!--second card------------------------>
+      <!--/first card------------------------> 
+      <!--second card------------------------>
     {{ with .Site.Data.homepage.about2 }}
     <div class="col s12 m4">
       <div class="card">
-        <div class="card-image">
-          <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-          <span class="card-title">{{ .title}}</span>
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
         </div>
         <div class="card-content">
+          <span class="card-title activator">
+            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
+            <i class="material-icons right grey-text text-darken-4">more_vert</i>
+          </span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title activator">
+            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
+            <i class="material-icons right grey-text text-darken-4">close</i>
+          </span>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
@@ -113,11 +131,20 @@
     {{ with .Site.Data.homepage.about3 }}
     <div class="col s12 m4">
       <div class="card">
-        <div class="card-image">
-          <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-          <span class="card-title">{{ .title}}</span>
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
         </div>
         <div class="card-content">
+          <span class="card-title activator">
+            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
+            <i class="material-icons right grey-text text-darken-4">more_vert</i>
+          </span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title activator">
+            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
+            <i class="material-icons right grey-text text-darken-4">close</i>
+          </span>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
@@ -137,7 +164,7 @@
         {{ with .Site.Data.team.team }}
         <h2 class="section-title">{{ .title }}</h2>
         <h6 class="section-desc subtitle">{{.description}}</h6>
-        <h5 class="section-sub subtitle">{{.subtitle}}</h5>
+        <h5 class="section-sub subtitle">{{.subtitle}}<a href="about#jump"><i class="small material-icons" id="link">chevron_right</i></a></h5>
         {{ end }}
       </div>
     </div><!---------------------------     --/first row title----------------->

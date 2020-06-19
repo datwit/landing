@@ -9,13 +9,13 @@
       </div><!-------------/first row title------------>
     </div>  
         
-    <div class="row"><!----------second row icon---> 
+    <div class="row frow"><!----------second row icon---> 
         {{ range $element:= .Site.Data.service.service.serviceItem }} 
       <div class="col s4"><!--------------one column per icon-->
         <div class="icon-block">
           <div class="text-center">
             <i class="fa {{ .icon }} icon-lg icon-{{ .iconColor }} icon-bg-{{ .iconColor }} icon-bg-circle mb-3 text-center"></i>
-            <h3 class="mt-4 mb-3">{{ .title }}</h3>
+            <h3>{{ .title }}</h3>
           </div>
         </div>
       </div><!------------------------/second row icon--->

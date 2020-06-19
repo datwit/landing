@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700');
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700');*/
 
 body {
     line-height: 1.6;
@@ -32,6 +32,7 @@ h1,
     font-size: 60px;
     color: white;
     line-height: 1.2;
+    margin: 0px;
 
     @include mobile-xs {
       font-size: 40px;
@@ -50,7 +51,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: 30px;
+    font-size: 25px;
     color:#2d4258;
 
     @include mobile-xs {
@@ -65,9 +66,6 @@ h4,
 .h4 {
     font-size: 22px;
     color:white;
-
-
-
 }
 
 h5,
