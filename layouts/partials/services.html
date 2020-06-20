@@ -5,24 +5,53 @@
       <div class="col s12"><!--------first row title-->
         {{ with .Site.Data.service.service }}
         <h2 class="section-title">{{ .title }}</h2>
+        <h3 class="subtitle">{{.description}}</h3>
         {{ end }}
       </div><!-------------/first row title------------>
     </div>  
-        
-    <div class="row frow"><!----------second row icon---> 
-        {{ range $element:= .Site.Data.service.service.serviceItem }} 
-      <div class="col s4"><!--------------one column per icon-->
-        <div class="icon-block">
-          <div class="text-center">
-            <i class="fa {{ .icon }} icon-lg icon-{{ .iconColor }} icon-bg-{{ .iconColor }} icon-bg-circle mb-3 text-center"></i>
-            <h3>{{ .title }}</h3>
-          </div>
-        </div>
-      </div><!------------------------/second row icon--->
-        {{ end }}
-    </div>  
     
-  <div class="divider"></div> 
+    <div class="row"><!--------first row blocks-->
+      <div class="col s5">
+        {{ with .Site.Data.service.serviceItem1 }}
+        <h3 class="section-title">{{ .title }}</h3>
+        <p>{{ .content }}</p>
+        {{ end }}
+      </div>
+      <div class="col s7 collage">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+      </div>
+    </div><!-------------/first row blocks------------>
+    <div class="row esp"><!--------second row blocks-->
+      <div class="col s7 collage">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+      </div>
+      <div class="col s5">
+        {{ with .Site.Data.service.serviceItem2 }}
+        <h3 class="section-title">{{ .title }}</h3>
+        <p>{{ .content }}</p>
+        {{ end }}
+      </div>
+    </div><!-------------/second row blocks------------>
+    
+    <div class="row esp"><!--------third row blocks-->
+      <div class="col s5">
+        {{ with .Site.Data.service.serviceItem3 }}
+        <h3 class="section-title">{{ .title }}</h3>
+        <p>{{ .content }}</p>
+        {{ end }}
+      </div>
+      <div class="col s7 collage">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+      </div>
+    </div><!-------------/third row blocks------------>
+    
+  
   </div> 
 </section>
 {{"<!-- service -->" | safeHTML }}

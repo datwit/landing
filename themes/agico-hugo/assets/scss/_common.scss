@@ -254,12 +254,13 @@ a.text-light {
 }
 
 .subtitle {
-  text-transform: capitalize;
+  
   font-size: 18px;
   color: $text-color;
   font-family: $primary-font;
   font-weight: 400;
-  line-height: normal;
+  line-height: 30px;
+  text-align: center;
 }
 
 // section-gap

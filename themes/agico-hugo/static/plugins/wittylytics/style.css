@@ -71,7 +71,7 @@ i.vright{
 /**********link icon alignment team*************/
 #link{
     margin-left: 30px;
-    margin-top: 12px;
+    
 }
 /***********feature section adjustments***********/
 @media only screen and (max-width: 600px) {
@@ -118,7 +118,44 @@ h5.h5left {
     display: flex !important;
     justify-content: flex-end !important;
 }
-/**************************************************/
+/************what we do blocks(provisional)**********/
+.collage{
+    position: relative;
+}
+
+.img1{
+    position: absolute;
+    background-color: #a3d3ee;
+    width: 200px;
+    height: 160px;
+    border-radius: 10%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    left:30px;
+}
+.img2{
+    position: absolute;
+    background-color: #a3d3ee;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    top: 50px;
+    left: 250px;
+}
+.img3{
+    position: absolute;
+    background-color: #a3d3ee;
+    width: 200px;
+    height: 160px;
+    border-radius: 10%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    top:170px;
+    left:10px;
+}
+.row.esp{
+    margin-top: 100px;
+}
+/********************************************************************/
 .section {
     padding-top: 1px !important;
     padding-bottom: 40px !important;
