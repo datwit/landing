@@ -85,10 +85,15 @@ paginate = 6
   URL = "blog"
   weight = 5
 
-[[menu.main]]
-name = "About Us"
-URL = "about"
-weight = 7
+  [[menu.main]]
+  name = "About Us"
+  URL = "about"
+  weight = 7
+
+  [[menu.main]]
+    name = "Contact us"
+    URL = "contact"
+    weight = 8
 
 #  [[menu.main]]
 #  weight = 8

@@ -177,6 +177,22 @@ h5.h5left {
         margin-top: 0px;
     }
 }
+/*****************contact us page***************************/
+.i{
+    height: 90vh;
+    background-color:  #a3d3ee;
+}
+.i2{
+    height: 90vh;
+    background-color:  #a3d3ee;
+}
+
+h3{
+    text-align: center !important;
+}
+
+
+
 /**********************************************************/
 .section {
     padding-top: 1px !important;

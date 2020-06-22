@@ -1,6 +1,10 @@
 contact:
   title : "Keep in Touch"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
+  content : "We're always in to great adventures. Tell us all about that exciting idea. Fill in the form below so we can reach you!"
+  subject: "I'm interested in..."
+  localization: "We are located in Belgrade"
+  localization2: "Our doors are always open, so feel free to drop by to spot us in our natural habitat."
+  
   contactItem:
     - icon : "fa-map-o"
       title : "Address"
