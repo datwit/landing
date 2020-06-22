@@ -26,65 +26,35 @@
       <div class="col s12"><!--------first row title-->
         {{ with .Site.Data.product.pgtitle }}
         <h2 class="section-title">{{ .title }}</h2>
+        <h3 class="subtitle">{{ .description }}</h3>
         {{ end }}
       </div><!-------------/first row title------------>
     </div> 
     <div class="row">
-      <!--first card------------------------>
-      {{ with .Site.Data.product.product }}
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
+      <!--listed images------------------------>
+      <div class="col s12 m4 waves-effect waves-blue waves-block" id="ceprod">
+      {{ range .Site.Data.product.pgtitle.productItem}}
             <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-            <span class="card-title">{{ .title}}</span>
-          </div>
-          <div class="card-content">
-            <p>{{ .content | markdownify }}</p>
-          </div>
-          <div class="card-action">
-            <a href="{{ .URL }}">{{ .linktext }}</a>
-          </div>
-        </div>
-      </div>  
-      {{ end }}
-  <!--/first card------------------------> 
-  <!--second card------------------------>
-  {{ with .Site.Data.product.product2 }}
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-            <span class="card-title">{{ .title}}</span>
-          </div>
-          <div class="card-content">
-            <p>{{ .content | markdownify }}</p>
-          </div>
-          <div class="card-action">
-            <a href="{{ .URL }}">{{ .linktext }}</a>
-          </div>
-        </div>
-      </div>  
-      {{ end }}
-  <!--/second card------------------------> 
-  <!--third card------------------------>
-  {{ with .Site.Data.product.product3 }}
-  <div class="col s12 m4">
-    <div class="card">
-      <div class="card-image">
-        <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-        <span class="card-title">{{ .title}}</span>
-      </div>
-      <div class="card-content">
-        <p>{{ .content | markdownify }}</p>
-      </div>
-      <div class="card-action">
-        <a href="{{ .URL }}">{{ .linktext }}</a>
+            <h3 class="card-title">{{ .title}}</h3>
+      {{ end }} 
       </div>
     </div>
-  </div>  
-  {{ end }}
-  <!--/third card------------------------>   
-   </div>      
- </div>
-</section>    
+  <div class="divider"></div> 
+  </div>
+</section> 
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        {{ with .Site.Data.contact.contactForm }}
+        <h2 class="section-title">{{ .title }}</h2>
+        {{ end }}
+      </div>
+      <div class="col s12 m6">
+        <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Get in touch
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>   
+  </div>
+</section>  
 {{ end }}
