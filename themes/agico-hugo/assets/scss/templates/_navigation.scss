@@ -7,8 +7,9 @@
   }
 
   &.nav-bg {
-    background: $bg-gradient-secondary;
+    /*background: $bg-gradient-secondary;*/
     padding: 15px 0;
+    background-color: #2d4258;
   }
 
   &.naviagtion-white {
@@ -48,14 +49,16 @@
   }
 }
 
+
+/******************menu items adjustments ************************/
 .navbar {
 
   .nav-item {
 
     .nav-link {
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 500;
-      padding: 20px 22px;
+      /*padding: 20px 22px;*/
       font-family: $primary-font;
       transition: all ease 0.3s;
 
@@ -64,15 +67,15 @@
       }
 
       &.active {
-        color: $secondary-color;
+        color: $primary-color;
       }
 
       &:hover {
-        color: $secondary-color !important;
+        color: $primary-color !important;
       }
     }
   }
-
+  /***************************************************************/
   .dropdown {
     &:hover {
       .dropdown-menu {

@@ -1,76 +1,44 @@
 # service
 service:
 #  subtitle : "Services"
-  title : "Our Services"
-  serviceItem:
-    - title : "Software Development"
-      icon : "fa-connectdevelop"
-      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : ""
+  title : "What we do"
+  description: "This is what make us enjoy working on new projects whatever the size. We love to provide not only
+  a intuitive design but also a great development to back it up. We're here for making the product of your dreams..."
 
-    - title : "Cloud Solutions"
-      icon : "fa-cloud"
-      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : ""
+serviceItem1:
+  title : "Software Development"
+  icon : "fa-connectdevelop"
+  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
-    - title : "Infrastructure"
-      icon : "fa-object-ungroup"
-      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : ""
-
-    - title : "Data Analysis"
-      icon : "fa-database"
-      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : ""
-
-    - title : "Data Visualization"
-      icon : "fa-bar-chart"
-      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : ""
-
-    - title : "Consulting"
-      icon : "fa-comments"
-      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : ""
-
-
-#    - title : "UX Prototyping"
-#      icon : "fa-wpexplorer"
-#      iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-#      content : ""
-
-#    - title : "Social Activity"
-#      icon : "fa-users"
-#      iconColor : "yellow" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-#      content : ""
-
-#    - title : "Web Design"
-#      icon : "fa-desktop"
-#      iconColor : "purple" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-#      content : ""
-
-#    - title : "SEO Optimization"
-#      icon : "fa-search-plus"
-#      iconColor : "green" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-#      content : ""
-
+serviceItem2:
+  title : "Data Analysis"
+  icon : "fa-database"
+  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  
+serviceItem3:
+  title : "Data Visualization"
+  icon : "fa-bar-chart"
+  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
 #Features
-feature:
+#feature:
 #  subtitle : "features"
-  title : "Exclusive Features"
-  featureItem:
-    - title : "Free Demo"
-      icon : "fa-desktop"
-      iconColor : "green" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : "As our client you can try some of our products for free."
+# title : "Exclusive Features"
+#  featureItem:
+ #   - title : "Free Demo"
+ #     icon : "fa-desktop"
+ #     iconColor : "green" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+ #     content : "As our client you can try some of our products for free."
       
-    - title : "No Setup"
-      icon : "fa-gears"
-      iconColor : "cyan" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : "You don't need to setup anything, we have you covered."
+ #   - title : "No Setup"
+  #    icon : "fa-gears"
+   #   iconColor : "cyan" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+   #   content : "You don't need to setup anything, we have you covered."
       
-    - title : "Extreme Security"
-      icon : "fa-shield"
-      iconColor : "red" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-      content : "You are always in control, only you can access your data."
+ #   - title : "Extreme Security"
+ #     icon : "fa-shield"
+ #     iconColor : "red" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+ #     content : "You are always in control, only you can access your data."

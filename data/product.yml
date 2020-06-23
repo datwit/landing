@@ -1,0 +1,22 @@
+# Product
+pgtitle : 
+  title: "Check out our solutions"
+  description: "These are our creations, made through blood and tears. By all means, stroll along..."
+
+  productItem :
+    -  image : "images/product/feature-1.png"
+       title : "Pilar"
+       content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
+       linktext: "More"
+
+# product2:
+#   image : "images/product/feature-2.png"
+#   title : "App 2"
+#   content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
+#   linktext: "More" 
+
+# product3:
+#   image : "images/product/feature-3.png"
+#   title : "App 3"
+#   content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
+#   linktext: "More"
