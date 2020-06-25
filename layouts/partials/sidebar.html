@@ -1,6 +1,6 @@
 
 {{ "<!-- sidebar -->" | safeHTML }}
-<div class="col s6 m4">
+<div class="col s12 m4 l3">
   <div class="row">
     <div class="widget">
       <h3>Search</h3>
@@ -12,6 +12,7 @@
       </form>
     </div>
   </div><!----------------------------------------------------->
+  <div class="divider"></div>
   <div class="row">  
     <div class="widget">
         <h3>Category</h3>
@@ -19,13 +20,14 @@
         {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
         <ul class="list-unstyled col s16 m4">
           {{- range $name, $items := .Site.Taxonomies.categories }}
-          <li><a class="text-color" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+          <li><a class="text-color tags" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
           {{- end }}
         </ul>
         {{- end }}
         {{- end }}
     </div>
   </div> <!--------------------------------------------------->
+  <div class="divider"></div>
   <div class="row">
     <div class="widget">
       <h3>Latest Article</h3>
@@ -42,8 +44,8 @@
       </ul>
     </div>
   </div>
-  <div class="row"><!-------------------------------------------->
-    <div class="widget">
+  <!-- <div class="row"--><!---------------tags--------------------------->
+    <!-- <div class="widget">
       <h3>Tags</h3>
       {{- if isset .Site.Taxonomies "tags" }}
       {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
@@ -54,7 +56,7 @@
       </ul>
       {{- end }}
       {{- end }}
-    </div>
-  </div>
+    </div> ---------/tags------------------------------------------------>
+  </div> 
 </div>
 {{ "<!-- /sidebar -->" | safeHTML }}

@@ -9,6 +9,7 @@ team:
       image : "images/team/lordford.png"
       image2: "images/team/lordford2.png"
       designation : "Founder / CEO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et. Pariatur commodo tempor veniam adipisicing Lorem tempor et deserunt proident nulla. Deserunt sit eiusmod voluptate consectetur deserunt aliqua quis veniam qui est Lorem adipisicing.Commodo dolore excepteur magna duis. Velit amet non est velit mollit irure. Culpa laboris nostrud Lorem occaecat occaecat aute in ad sint eu amet mollit eiusmod."
       socialIcon:
         - icon : "fa-twitter"
           URL : "https://twitter.com/leonel_lordford"
@@ -24,6 +25,7 @@ team:
       image: "images/team/abelma.png"
       image2: "images/team/abelma2.png"
       designation: "Founder / COO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et. Pariatur commodo tempor veniam adipisicing Lorem tempor et deserunt proident nulla. Deserunt sit eiusmod voluptate consectetur deserunt aliqua quis veniam qui est Lorem adipisicing.Commodo dolore excepteur magna duis. Velit amet non est velit mollit irure. Culpa laboris nostrud Lorem occaecat occaecat aute in ad sint eu amet mollit eiusmod."
       socialIcon:
         - icon: "fa-twitter"
           URL: "https://twitter.com/abelma1980"

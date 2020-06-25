@@ -4,25 +4,24 @@
 
 {{"<!-- about -->" | safeHTML }}
 {{ with .Site.Data.about.about }}
-<section class="section">
-  <div class="container position-relative">
+<section class="section"><!--**********************header section abou the company********************-->
+  <div class="container">
     <div class="row">
-        <div class="col s12 m6 l6">
-          <img src="{{ .aboutImg | absURL }}" alt="{{ .aboutAlt }}">
-        </div>
- 
-        <div class="col s12 m6 l6">
-           <p class="subtitle">{{ .subtitle }}</p>
-          <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>
-          <p data-aos="fade-up" data-aos-delay="100">
-            {{ .content | markdownify }} <br><br>
-              Take a look to our open solutions <a href="{{.github }}" class="p-2 text-reset"><i class="fa fa-2x fa-github icon-gray"></i></a>
-          </p>
-        </div> 
+      <div class="col s12 m6 l6">
+        <img src="{{ .aboutImg | absURL }}" alt="about wittylytics" id="abouti">
+      </div>
+      <div class="col s12 m6 l6">
+        <p class="subtitle">{{ .subtitle }}</p>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          {{ .content | markdownify }} <br><br>
+            Take a look to our open solutions <a href="{{.github }}" class="p-2 text-reset"><i class="fa fa-2x fa-github icon-gray"></i></a>
+        </p>
+      </div> 
     </div>
     <div class="divider"></div>
   </div>
-</section>
+</section><!--**************************************************************************************** -->
 {{end}}
 <!------------------------------team members------------------------------------------------------------>
 <section class="section section-lg-bottom mb-0 pb-0">
@@ -33,31 +32,32 @@
         <h2 class="section-title">{{ .subtitle }}</h2>
         {{ end }}
       </div>
+    </div>
       {{ range $element:= .Site.Data.team.team.teamMember }}
       {{"<!-- team member -->" | safeHTML}}
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="team-member text-center">
-          <img src="{{ .image2 | absURL }}" class="img-fluid w-100 rounded-sm">
-          </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="team-member text-center">
+        <img src="{{ .image2 | absURL }}" class="teamimg">
         </div>
-        <div class="col s12 m6"> 
-          <div class="content">
-            <h5 class="team-member-name">{{.name }}</h5>
-            <p class="team-member-designation">{{ .designation }}</p>
-            <div class="row">
+      </div>
+      <div class="col s12 m6"> 
+        <div class="content">
+          <h5 class="team-member-name">{{.name }}</h5>
+          <p class="team-member-designation">{{ .designation }}</p>
+          <p class="team-member-designation">{{ .bio }}</p>
+          <div class="row">
             <div class="team-member-social">
               {{ range .socialIcon }}
-              <a href="{{.URL }}" class="p-2"><i class="fa {{ .icon }}"></i></a>
+              <a href="{{.URL }}"><i class="fa {{ .icon }}"></i></a>
               {{ end }}
             </div>
           </div>
-          </div>
-        </div>
         </div>
       </div>
-      {{ end }}
     </div>
+    
+      {{ end }}
   </div>
 </section>
 

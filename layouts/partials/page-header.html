@@ -1,13 +1,13 @@
 {{ "<!-- page-header -->" | safeHTML }}
 <section> 
-  <div class="page-title" data-background="{{ .Params.BgImage | absURL }}">
-  
+  <div class="page-title bg-cover" data-background="{{ .Params.BgImage | absURL }}"></div>
+  <nav class="nav-bread">
     <div class="row"><!--------------breadcrumb---------------------------->
       <div class="col s12" id="breadcrumb">
-        <span class="flow-text"><a href="{{ .Site.BaseURL }}" class="text-white">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>/
+        <span class="flow-text"><a href="{{ .Site.BaseURL }}" class="breadcrumb-item text-white">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>/
         <a class="breadcrumb-item text-white" aria-current="page">{{ .Title }}</a></span>
       </div>
     </div>
-  </div>
+  </nav> 
 </section>
 {{ "<!-- /page-header -->" | safeHTML }}

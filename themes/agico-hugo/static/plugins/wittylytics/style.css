@@ -112,11 +112,20 @@ i.right{
 h5.h5left {
     text-align: left;
     line-height: normal;
+    padding-top: 20px;
 }
 /*****************aligning breadcrumbs***************/
 #breadcrumb{
-    display: flex !important;
-    justify-content: flex-end !important;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    background-color: #2d4258;
+}
+a.breadcrumb-item.text-white{
+    font-size: 18px;
+}
+span.flow-text{
+    font-size: 18px;
 }
 /************what we do blocks(provisional)**********/
 .collage{
@@ -191,9 +200,63 @@ h3{
     text-align: center !important;
 }
 
+/********************about us**************************/
+
+#abouti{
+    display:block;
+    max-width:100%;
+    height:auto;
+    overflow:hidden !important;
+}
+
+/**********************blog***************************/
+form.search{
+    margin-right: auto;
+    margin-left: auto;
+}
+ul:not(.browser-default) > li{
+    display: inline-block;
+}
+.test1{
+    background-color: aqua;
+}
+.tags{
+    color: black;
+    border: 2px solid #c3c1be;
+    background-color: #ecebe9 ;
+    border-radius: 3rem;
+    overflow: hidden;
+    padding: 0.2rem 0.9rem;
+    line-height: 30px;
+}
+div.col.s12.m4.l8.search-box{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+/***********************blog pages********************/
+ul.list-inline.d-inline-block{
+    display: flex;
+    justify-content: center;
+}
+img.rounded-sm{
+    height: 90%;
+    width: 98%;
+}
+/*--------------------sidebar------------------------*/
+div.widget{
+    padding:0px 20px 20px 20px;
+}
+div.col.s12.m4.l3{
+    
+    /* border: 1px solid #c3c1be; */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
 
 
-/**********************************************************/
+/****************************************************/
+
 .section {
     padding-top: 1px !important;
     padding-bottom: 40px !important;
