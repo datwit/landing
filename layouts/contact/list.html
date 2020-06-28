@@ -12,8 +12,10 @@
       </div> 
     </div>  
     <div class="row">
+           {{ with .Site.Data.contact.contact }}
       <div class="col s12 m6 l5" id="img">
-        <div class="i2"></div>
+        <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg">
+            {{end}}
       </div>
       <div class="col s12 m6 l7">
         <div class="input-field">

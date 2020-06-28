@@ -6,8 +6,7 @@
       <h3>Search</h3>
       <form action="{{ .Site.BaseURL }}/search">
         <div class="position-relative">
-          <i class="material-icons prefix">search<input id="search-query" name="" type="search"></i>
-          
+          <input id="search-query" name="s" type="search" placeholder="Search here">
         </div>
       </form>
     </div>
@@ -17,21 +16,21 @@
     <div class="widget">
         <h3>Category</h3>
         {{- if isset .Site.Taxonomies "categories" }}
-        {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
-        <ul class="list-unstyled col s16 m4">
-          {{- range $name, $items := .Site.Taxonomies.categories }}
-          <li><a class="text-color tags" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
-          {{- end }}
-        </ul>
+      {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+      <ul class="list-unstyled">
+        {{- range $name, $items := .Site.Taxonomies.categories }}
+        <li><a class="text-color d-block py-3" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
         {{- end }}
-        {{- end }}
+      </ul>
+      {{- end }}
+      {{- end }}
     </div>
   </div> <!--------------------------------------------------->
   <div class="divider"></div>
   <div class="row">
     <div class="widget">
       <h3>Latest Article</h3>
-      <ul class="list-unstyled list-bordered">
+      <ul class="list-unstyled">
         {{ range first 3 ( where .Site.Pages "Type" "post" )}}
         <li class="media border-bottom">
           <img src="{{ .Params.Image | absURL }}" class="rounded-sm mr-3" alt="post-thumb">
@@ -44,19 +43,19 @@
       </ul>
     </div>
   </div>
-  <!-- <div class="row"--><!---------------tags--------------------------->
-    <!-- <div class="widget">
+  <div class="row"><!---------------tags--------------------------->
+    <div class="widget">
       <h3>Tags</h3>
       {{- if isset .Site.Taxonomies "tags" }}
       {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
       <ul>
         {{- range $name, $items := .Site.Taxonomies.tags }}
-      <li><a class=" tag col s6" href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
+      <li class="filter-tags"><a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
         {{- end }}
       </ul>
       {{- end }}
       {{- end }}
-    </div> ---------/tags------------------------------------------------>
+    </div> 
   </div> 
 </div>
 {{ "<!-- /sidebar -->" | safeHTML }}

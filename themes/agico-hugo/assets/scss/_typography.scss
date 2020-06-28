@@ -32,11 +32,20 @@ h1,
     font-size: 70px !important;
     color: white;
     line-height: 1.2;
-    margin: 0px;
+    margin-left: -45px;
 
     @include mobile-xs {
-      font-size: 40px;
+      font-size: 30px;
+      margin: 0;
     }
+    @include mobile {
+        font-size: 30px;
+        margin: 0;
+      }
+      @include tablet {
+        font-size: 30px;
+        margin: 0;
+      }
 }
 
 h2,

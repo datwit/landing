@@ -7,11 +7,12 @@
       {{ with .Site.Data.homepage.banner }}
       <div class="col s8 text-center text-lg-left">
         <h1 class="text-white position-relative" data-aos="fade-up" data-aos-delay="1000">{{ .title }}<!--span class="watermark">{{ .watermark }}</span--></h1>
-        <p class="text-white pt-2 pb-3" data-aos="fade-up" data-aos-delay="1200">{{ .content | markdownify }}</p>
       </div>
-      
       {{ end }}
     </div>
+    <div>
+      <a href="/contact"><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="call">Contact us</button></a>     
+    </div> 
   </div>
 </section>
 {{"<!-- /banner -->"| safeHTML}}
@@ -27,15 +28,12 @@
       </div><!-------------/first row title------------>
     </div>  
         
-    <div class="row frow"><!----------second row icon---> 
+    <div class="row"><!----------second row icon---> 
         {{ range $element:= .Site.Data.service.service.serviceItem }} 
-      <div class="col s4"><!--------------one column per icon-->
-        <div class="icon-block">
-          <div class="text-center">
-            <i class="fa {{ .icon }} icon-lg icon-{{ .iconColor }} icon-bg-{{ .iconColor }} icon-bg-circle mb-3 text-center"></i>
-            <h3>{{ .title }}</h3>
-          </div>
-        </div>
+      <div class="col s12 m6 l4"><!--------------one column per icon-->
+        <div class="service-card">
+        <a href="{{.url}}"><img class="" src="{{ .src | absURL }}" alt="{{ .title }}"></a>
+      </div>
       </div><!------------------------/second row icon--->
         {{ end }}
     </div>  
@@ -164,14 +162,14 @@
         {{ with .Site.Data.team.team }}
         <h2 class="section-title">{{ .title }}</h2>
         <h6 class="section-desc subtitle">{{.description}}</h6>
-        <h5 class="subtitle">{{.subtitle}}<a href="about#jump"><i class="small material-icons" id="link">chevron_right</i></a></h5>
+        <h5 class="subtitle">{{.subtitle}}<a href="about#team"><i class="small material-icons" id="link">chevron_right</i></a></h5>
         {{ end }}
       </div>
     </div><!---------------------------     --/first row title----------------->
     <div class="row"><!------second row members-------------------------------->
       {{ range $index, $element:= .Site.Data.team.team.teamMember }}
       {{ $delay := mul $index 200}}
-      <div class="col s6" data-aos="fade-up" data-aos-delay="{{$delay}}">
+      <div class="col s12 m6 l6" data-aos="fade-up" data-aos-delay="{{$delay}}">
         <div class="team-member text-center">
           <img src="{{ .image | absURL }}" class="img-fluid w-100 rounded-sm">
         </div>

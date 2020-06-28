@@ -4,6 +4,10 @@ contact:
   subject: "I'm interested in..."
   localization: "We are located in Belgrade"
   localization2: "Our doors are always open, so feel free to drop by to spot us in our natural habitat."
+
+#imagen
+  imgtitle: "Belgrade"
+  imgurl: "images/contact/belgrade.jpg"
   
   contactItem:
     - icon : "fa-map-o"

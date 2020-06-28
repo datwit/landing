@@ -4,20 +4,29 @@
 
 <section class="section section-lg-bottom">
   <div class="container">
-    <div class="row">
+    <div class="row no-m-bottom">
       <div class="col s12 m4 l8 search-box">
         <form action="search" class="search"><!--?-----busqueda---------------------------------->
           <div class="input-field">
             <i class="material-icons prefix">search</i>
-            <input id="icon_prefix" type="text">
+            <input id="search-query" name="s" type="search">
           </div>
         </form><!--?--------------------/busqueda------------------------------------------------>  
       </div>
     </div>
     <div class="row"><!--?---------------------category tags------------------------------------>
-      <div class="col s12">
-        
-      </div>
+      <span class="col s12 m4 l8 cat-search">
+        <h5 class="col s3 cat-cell">Categories:</h5>
+      {{- if isset .Site.Taxonomies "categories" }}
+      {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+      <ul class="no-margin col s9">
+        {{- range $name, $items := .Site.Taxonomies.categories }}
+      <li class="filter-tags"><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
+        {{- end }}
+      </ul>
+      {{- end }}
+      {{- end }}
+      </span>
     </div><!--?---------------------/category tags---------------------------------------------->
     <div class="row">
       {{ $paginator := .Paginate .Data.Pages }}
@@ -32,15 +41,11 @@
             <div class="card-content">
               <span class="card-date">{{ .Params.Author }}</span><i class=" tiny material-icons">linear_scale</i><span class="card-date">{{ .PublishDate.Format "Jan 02, 2006" }}</span>
               <h5 class="h5left"><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h5>
-                    {{- if isset .Site.Taxonomies "categories" }}
-              {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
-              <ul class="list-unstyled">
-                {{- range $name, $items := .Site.Taxonomies.categories }}
-                <li><a class="text-color tags" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
-                {{- end }}
-              </ul>
-              {{- end }}
-              {{- end }}
+                <ul>
+                  {{ range .Params.categories }}
+                    <li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+                  {{ end }}
+                </ul>
             </div>
           </div>
         </article>

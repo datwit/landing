@@ -20,30 +20,36 @@
     </div>
   </div>
 </section-->
-<section>
+<section><!--? products section--------------------------------------------------------------->
   <div class="container">
-    <div class="row">
-      <div class="col s12"><!--------first row title-->
+    <div class="row"><!--------first row title-->
+      <div class="col s12">
         {{ with .Site.Data.product.pgtitle }}
         <h2 class="section-title">{{ .title }}</h2>
         <h3 class="subtitle">{{ .description }}</h3>
         {{ end }}
-      </div><!-------------/first row title------------>
-    </div> 
+      </div>
+    </div> <!-------------/first row title------------>
     <div class="row">
       <!--listed images------------------------>
-      <div class="col s12 m4 waves-effect waves-blue waves-block" id="ceprod">
+      <div class="flip-container col s12 m6 l4" id="ceprod">
       {{ range .Site.Data.product.pgtitle.productItem}}
-            <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-            <h3 class="card-title">{{ .title}}</h3>
+        <div class=" card flipper">
+          <div class=" card-image front">
+            <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="{{.title}}">
+          </div>   
+          <div class="back">
+            <a href=""><h3 class="card-title">{{ .title}}</h3></a>
+          </div>
+      </div>
       {{ end }} 
       </div>
-    </div>
-  <div class="divider"></div> 
+    </div><!--/listed images------------------------>
   </div>
-</section> 
+</section><!--? /products section---------------------------------------------------------------> 
+<section class=" light-grey"><!--?------contact us section-------------------------------------->
   <div class="container">
-    <div class="row">
+    <div class="row adj">
       <div class="col s12 m6">
         {{ with .Site.Data.contact.contactForm }}
         <h2 class="section-title">{{ .title }}</h2>
@@ -56,5 +62,6 @@
       </div>
     </div>   
   </div>
-</section>  
+</section><!--?------/contact us section------------------------------------------------------->  
+
 {{ end }}

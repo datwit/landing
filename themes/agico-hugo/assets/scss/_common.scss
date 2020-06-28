@@ -72,6 +72,7 @@ a.text-light {
 
 .bg-secondary {
   background: $bg-secondary !important;
+  padding-bottom: 5px;
 }
 
 .badge-light {
@@ -164,9 +165,12 @@ a.text-light {
 // background img
 .bg-cover {
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
   background-size: cover;
   
+  @include mobile-xs {
+    background-position: left bottom;
+  }
 }
 // background img
 

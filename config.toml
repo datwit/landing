@@ -58,6 +58,8 @@ paginate = 6
   [[params.plugins.js]]
   URL = "plugins/aos/aos.js"
   [[params.plugins.js]]
+  URL = "plugins/mixitup/mixitup.min.js"
+  [[params.plugins.js]]
   URL = "plugins/materializecss/materialize.min.js"
   # last one for our own scripts
   [[params.plugins.js]]
@@ -199,3 +201,4 @@ URL = "https://twitter.com/wittylytics"
 [[params.sharePost]]
 icon = "fa-linkedin"
 URL = "https://linkedin.com/wittylytics"
+
