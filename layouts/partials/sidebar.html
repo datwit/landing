@@ -14,7 +14,7 @@
   <div class="divider"></div>
   <div class="row">  
     <div class="widget">
-        <h3>Category</h3>
+        <h3>Categories</h3>
         {{- if isset .Site.Taxonomies "categories" }}
       {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
       <ul class="list-unstyled">
@@ -29,7 +29,7 @@
   <div class="divider"></div>
   <div class="row">
     <div class="widget">
-      <h3>Latest Article</h3>
+      <h3>Latest Articles</h3>
       <ul class="list-unstyled">
         {{ range first 3 ( where .Site.Pages "Type" "post" )}}
         <li class="media border-bottom">

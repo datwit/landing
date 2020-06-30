@@ -1,18 +1,20 @@
 {{ define "main" }}
 
 {{"<!-- banner -->"| safeHTML}}
-<section class="hero-area bg-cover z-depth-2" data-background="{{ .Site.Data.homepage.banner.bgImage | absURL }}">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      {{ with .Site.Data.homepage.banner }}
-      <div class="col s8 text-center text-lg-left">
-        <h1 class="text-white position-relative" data-aos="fade-up" data-aos-delay="1000">{{ .title }}<!--span class="watermark">{{ .watermark }}</span--></h1>
+<section>
+  <div class="parallax-container">
+    <div class="parallax hero-area bg-cover z-depth-2" data-background="{{ .Site.Data.homepage.banner.bgImage | absURL }}">
+      <div class="container">
+        {{ with .Site.Data.homepage.banner }}
+        <div class="col s8 text-center text-lg-left">
+          <h1 class="text-white position-relative" >{{ .title }}<!--span class="watermark">{{ .watermark }}</span--></h1>
+        </div>
+        {{ end }}
+        <div>
+          <a href="/contact"><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="call">Contact us</button></a>     
+        </div> 
       </div>
-      {{ end }}
-    </div>
-    <div>
-      <a href="/contact"><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="call">Contact us</button></a>     
-    </div> 
+    </div>  
   </div>
 </section>
 {{"<!-- /banner -->"| safeHTML}}

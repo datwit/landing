@@ -27,7 +27,7 @@
 <section id="team">
   <div class="container">
     <div class="row">
-      <div class="col s12">
+      <div class="col s12 m6 l6">
         {{ with .Site.Data.team.team }}
         <h2 class="section-title">{{ .subtitle }}</h2>
         {{ end }}
@@ -36,7 +36,7 @@
       {{ range $element:= .Site.Data.team.team.teamMember }}
       {{"<!-- team member -->" | safeHTML}}
     <div class="row">
-      <div class="col s12 m6">
+      <div class="col s12 m6 l6">
         <div class="team-member text-center">
         <img src="{{ .image2 | absURL }}" class="teamimg">
         </div>

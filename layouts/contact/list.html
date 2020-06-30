@@ -19,28 +19,29 @@
       </div>
       <div class="col s12 m6 l7">
         <div class="input-field">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="">
+          <label class="active" for="icon_prefix">Your name</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate" placeholder="">
+          <label class="active" for="email">Email</label>
+          <span class="helper-text" data-error="Wrong email" data-success=""></span>
+        </div>
+        <div class="input-field">
           <i class="material-icons prefix">edit</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <input id="subject" type="text" placeholder="">
           {{ with .Site.Data.contact.contact }}
           <label class="active" for="first_name">{{.subject}}</label>
           {{ end }}
         </div>
         <div class="input-field">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label class="active" for="icon_prefix">Your name</label>
+          <i class="material-icons prefix">short_text</i>
+          <textarea id="textarea1" class="materialize-textarea" placeholder=""></textarea>
+          <label class="active" for="textarea1">Message</label>
         </div>
-        <div class="input-field">
-          <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
-          <label class="active" for="email">Email</label>
-        </div>
-        <div class="input-field">
-          <i class="material-icons prefix">send</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label class="active" for="textarea1">Get in touch</label>
-        </div>
-        <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Send message
+        <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Send 
         <i class="material-icons right">send</i>
         </button>
     </div>   

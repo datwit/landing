@@ -17,6 +17,11 @@
 } 
 }
 
+/*parallax customization*/
+  .parallax-container {
+    height: 900px !important;
+  }
+
 /*****navbar height adjustment****************/
 .navbar {
     height: 85px;
@@ -138,16 +143,20 @@ h5.h5left {
     justify-content: flex-end;
     padding-right: 50px;
     background-color: #1e4159;
+    
    
 }
+
 @media only screen and (max-width: 767px) {
     #breadcrumb{
         background-color: #1e4159;
+        line-height: 28px;
     
     }
 }
 nav.nav-bread{
     box-shadow: none;
+    background-color: #1e4159;
 }
 
 a.breadcrumb-item.text-white{
@@ -155,6 +164,7 @@ a.breadcrumb-item.text-white{
 }
 span.flow-text{
     font-size: 18px;
+    
 }
 /*****what we do blocks(arrange blocks correctly in responsive)*****/
 
@@ -262,13 +272,12 @@ h3{
 
 /********************about us**************************/
 
-#abouti{
+#abouti, img.teamimg{
     display:block;
     max-width:100%;
     height:auto;
     overflow:hidden !important;
 }
-
 /**********************blog***************************/
 form.search{
     margin-right: auto;
