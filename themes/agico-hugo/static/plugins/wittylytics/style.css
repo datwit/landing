@@ -29,18 +29,21 @@
     width: 100%;
     z-index: 2;
     box-shadow: none;
+    border-bottom: 2px solid #454c51;
 }
 /*******visibility setting on small devices******/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 990px) {
     .navbar-nav.hide-on-small{
-        visibility: hidden;
-    }
-}
-@media only screen and (min-width: 768px) {
-    #nav.nav.hide-on-desktop{
         display: none;
     }
 }
+@media only screen and (max-width: 991px) {
+    #tnav{
+    visibility: visible !important;
+    display: block;
+    }
+}
+
 /*******************toggle menu bar******************/
 
 /********** menu alignment***********************/
@@ -57,6 +60,7 @@ ul.navbar-nav{
 /*******************hero area***********************/
 #call{
     margin:0 0;
+    padding: 0 20px 0 20px;
 
 }
 /**********card title goals card reveal************/
@@ -160,7 +164,7 @@ span.flow-text{
         flex-direction: column-reverse;
     }
 }
-#sd, #dv, #da{
+#sde, #dv, #da{
     display:block;
     max-width:100%;
     height:auto;
@@ -232,6 +236,10 @@ section.light-grey{
 }
 div.row.adj{
     margin-bottom: 0px;
+}
+
+a.visit:visited{
+    color: white;
 }
 
 /*****************contact us page***************************/
@@ -352,4 +360,7 @@ div.col.s12.m4.l3{
 /*************************************************************************************************/
 .input-field .prefix.active {
     color:#58acdd !important;
+}
+button:focus {
+    background-color: #58acdd;
 }

@@ -115,23 +115,23 @@ paginate = 6
 # Footer
 
   [params.footer]
-#  content = "Follow us all over the web"
+  content = "Follow us all over the web"
 
     [[params.footer.socialIcon]]
     icon = "fa-facebook"
     URL = "https://facebook.com/wittylytics"
 
-#    [[params.footer.socialIcon]]
-#    icon = "fa-twitter"
-#    URL = "https://twitter.com/wittylytics"
+    [[params.footer.socialIcon]]
+    icon = "fa-twitter"
+    URL = "https://twitter.com/wittylytics"
 
-#    [[params.footer.socialIcon]]
-#    icon = "fa-linkedin"
-#    URL = "https://linkedin.com/wittylytics"
+    [[params.footer.socialIcon]]
+    icon = "fa-linkedin"
+    URL = "https://linkedin.com/wittylytics"
 
-#    [[params.footer.socialIcon]]
-#    icon = "fa-github"
-#    URL = "https://github.com/wittylytics"
+    [[params.footer.socialIcon]]
+    icon = "fa-github"
+    URL = "https://github.com/wittylytics"
 
 #    [[params.footer.socialIcon]]
 #    icon = "fa-instagram"

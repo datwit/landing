@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+{{"<!-- terms -->"| safeHTML}}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        {{ with .Site.Data.terms.terms }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p>{{ .content }}</p>
+        
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{"<!-- /terms -->"| safeHTML}}
+
+{{ partial "contact-access.html" . }}
+
+{{ end }}

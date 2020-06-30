@@ -2,41 +2,47 @@
 <div>
   <nav class="navbar">
     <div class="nav-wrapper">
+    
       <div class="row">
+        
         <div class="col s3">
         <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="wittylytics"></a>
         </div>
         <div class="col s8" id="navigation">
-          <ul class="navbar-nav hide-on-small">
-          <li class="nav-item">
-              <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
-            </li>
-            {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-            <li class="nav-item dropdown">
-              <a class="nav-link text-white text-capitalize dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                {{ .Name }}
-              </a>
-              <div class="dropdown-menu" >
-                {{ range .Children }}
-                <a class="dropdown-item text-color" href="{{ .URL | absURL }}">{{ .Name }}</a>
-                {{ end }}
-              </div>
-            </li>
-            {{ else }}
-            <li class="nav-item">
-              <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
-            {{ end }}
-          </ul>
-
-          <!----------------------------responsive navigation menu------------------------------->
-          <div id="nav" class="nav hide-on-desktop" role="navigation">
+            <ul class="navbar-nav hide-on-small"  id="navb"><!--?------------------navbar desktop devices-->
+              <li class="nav-item">
+                  <a class="nav-link text-white text-capitalize se" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+              </li>
+              {{ range .Site.Menus.main }}
+              {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white text-capitalize dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  {{ .Name }}
+                </a>
+                <div class="dropdown-menu" >
+                  {{ range .Children }}
+                  <a class="dropdown-item text-color" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                  {{ end }}
+                </div>
+              </li>
+              {{ else }}
+              <li class="nav-item">
+                <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+              {{ end }}
+            </ul><!--?------------------/navbar desktop devices-->
+         
+        </div>
+          
+      </div>
+       <!--   ?------------------------responsive navigation menu------------------------------->
+      <!-- <div class="row" id="tnav" hidden>
+          <div id="nav" class="nav col s12" role="navigation"-->
       
             <!-- ACTUAL NAVIGATION MENU -->
-            <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <!-- <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
               <li class="nav__item"><a class="nav__link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
               {{ range .Site.Menus.main }}
               {{ if .HasChildren }}
@@ -52,10 +58,10 @@
               <li class="nav__item"><a class="nav__link" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
                 {{ end }}
                 {{ end }}
-            </ul>
+            </ul> -->
             
             <!-- MENU TOGGLE BUTTON -->
-            <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <!-- <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
               <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                 <title>Toggle Menu</title>
                 <g>
@@ -66,41 +72,15 @@
                   <circle class="menuicon__circle" r="23" cx="25" cy="25" />
                 </g>
               </svg>
-            </a>
+            </a-->
             
             <!-- ANIMATED BACKGROUND ELEMENT -->
-            <div class="splash"></div>
+            <!--div class="splash"></div> -->
+          <!--/div--><!--?------------------------/responsive navigation menu--------------------------->
         </div>
-        
-        <!----------ejemplo------------------------------------>
-        <!-- <ul id="slide-out" class="side-nav fixed">
-          <li><a href="#!">First Sidebar Link</a></li>
-          <li><a href="#!">Second Sidebar Link</a></li>
-        </ul>
-         -->
-            <!--Import jQuery before materialize.js-->
-            <!--script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <script type="text/javascript" src="js/materialize.min.js"></script>
-            <script>
-              (function($){
-                $(function(){
-        
-                  $('.button-collapse').sideNav();
-        
-                }); // end of document ready
-              })(jQuery); // end of jQuery name space
-            </script-->
-        <!----------------------------------------------------->
-      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="medium material-icons right pulse show-on-small">menu</i></a>      -->
-        </div>
-        
       
-        
-      </div>
     </div>
-    
   </nav>
-  
 </div>
 
 

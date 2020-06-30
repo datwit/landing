@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+{{"<!-- privacy -->"| safeHTML}}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        {{ with .Site.Data.privacy.privacy }}
+        <h2 class="section-title">{{ .title }}</h2>
+        <p>{{ .content }}</p>
+        
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{"<!-- /privacy -->"| safeHTML}}
+
+{{ partial "contact-access.html" . }}
+
+{{ end }}

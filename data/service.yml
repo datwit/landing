@@ -13,11 +13,11 @@ service:
 
       - title: "Data Analysis"
         src: "images/services/data-analysis.png"
-        url: "service#da"
+        url: "service#sd"
 
       - title: "Data Visualization"
         src: "images/services/data-visualization.png"
-        url: "service#dv"
+        url: "service#sd"
 
 #describing services page
 serviceItem1:
