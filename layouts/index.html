@@ -2,25 +2,24 @@
 
 {{"<!-- banner -->"| safeHTML}}
 <section>
-  <div class="parallax-container">
-    <div class="parallax hero-area bg-cover z-depth-2" data-background="{{ .Site.Data.homepage.banner.bgImage | absURL }}">
-      <div class="container">
-        {{ with .Site.Data.homepage.banner }}
-        <div class="col s8 text-center text-lg-left">
-          <h1 class="text-white position-relative" >{{ .title }}<!--span class="watermark">{{ .watermark }}</span--></h1>
-        </div>
-        {{ end }}
-        <div>
-          <a href="/contact"><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="call">Contact us</button></a>     
-        </div> 
+  <div class="new-parallax" data-background="{{ .Site.Data.homepage.banner.bgImage | absURL }}">
+    
+    {{ with .Site.Data.homepage.banner }}
+    <div class="container" id="main-title-container">
+      <h1 class="text-white position-relative" >{{ .title }}<!--span class="watermark">{{ .watermark }}</span--></h1>
+    {{ end }}
+      <div class="row" id="center-button">
+        <a href="/contact"><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="call">Contact us</button></a>     
       </div>
-    </div>  
+    </div> 
   </div>
 </section>
+<!-------------------------------------------------->
+
 {{"<!-- /banner -->"| safeHTML}}
 
 {{"<!-- features -->"| safeHTML}}
-<section class="section">
+<section>
   <div class="container">
     <div class="row">
       <div class="col s12"><!--------first row title-->
@@ -169,9 +168,8 @@
       </div>
     </div><!---------------------------     --/first row title----------------->
     <div class="row"><!------second row members-------------------------------->
-      {{ range $index, $element:= .Site.Data.team.team.teamMember }}
-      {{ $delay := mul $index 200}}
-      <div class="col s12 m6 l6" data-aos="fade-up" data-aos-delay="{{$delay}}">
+      {{ with .Site.Data.team.team }}
+      <div class="col s12">
         <div class="team-member text-center">
           <img src="{{ .image | absURL }}" class="img-fluid w-100 rounded-sm">
         </div>

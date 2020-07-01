@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-size: 15px;
     color: $text-color;
+    height: 100%;
 }
 
 p,
@@ -35,17 +36,17 @@ h1,
     
 
     @include mobile-xs {
-      font-size: 30px;
+      font-size: 45px !important;
       margin: 0;
     }
     @include mobile {
-        font-size: 30px;
+        font-size: 50px !important;
         margin: 0;
       }
-      @include tablet {
-        font-size: 30px;
-        margin: 0;
-      }
+    //   @include tablet {
+    //     font-size: 60px !important;
+    //     margin: 0;
+    //   }
 }
 
 h2,

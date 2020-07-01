@@ -1,6 +1,6 @@
 # Banner
 banner:
-  bgImage : "images/background/banner.png"
+  bgImage : "images/background/banner.jpg"
   title : "Bring your idea, we'll make it real!"
   #watermark : "Dream"
   #content : "Multi purpose software solutions integrated with Machine Learning microservices."

@@ -1,88 +1,73 @@
 {{"<!-- navigation -->" | safeHTML }}
-<div>
-  <nav class="navbar">
-    <div class="nav-wrapper">
-    
-      <div class="row">
-        
-        <div class="col s3">
+
+
+<nav class="navbar">
+  <div class="nav-wrapper">
+    <div class="row">
+      <div class="col s3" id="logo">
         <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="wittylytics"></a>
-        </div>
-        <div class="col s8" id="navigation">
-            <ul class="navbar-nav hide-on-small"  id="navb"><!--?------------------navbar desktop devices-->
-              <li class="nav-item">
-                  <a class="nav-link text-white text-capitalize se" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
-              </li>
-              {{ range .Site.Menus.main }}
-              {{ if .HasChildren }}
-              <li class="nav-item dropdown">
-                <a class="nav-link text-white text-capitalize dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  {{ .Name }}
-                </a>
-                <div class="dropdown-menu" >
-                  {{ range .Children }}
-                  <a class="dropdown-item text-color" href="{{ .URL | absURL }}">{{ .Name }}</a>
-                  {{ end }}
-                </div>
-              </li>
-              {{ else }}
-              <li class="nav-item">
-                <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}">{{ .Name }}</a>
-              </li>
-              {{ end }}
-              {{ end }}
-            </ul><!--?------------------/navbar desktop devices-->
-         
-        </div>
-          
       </div>
-       <!--   ?------------------------responsive navigation menu------------------------------->
-      <!-- <div class="row" id="tnav" hidden>
-          <div id="nav" class="nav col s12" role="navigation"-->
-      
-            <!-- ACTUAL NAVIGATION MENU -->
-            <!-- <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
-              <li class="nav__item"><a class="nav__link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
-              {{ range .Site.Menus.main }}
-              {{ if .HasChildren }}
-              <li class="nav__item">
-                <a class="nav__link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">{{ .Name }}</a>
-              <div class="dropdown-menu" >
-                {{ range .Children }}
-                <a class="nav__link dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
-                {{ end }}
-              </div></li>
-                {{ else }}
-              <li class="nav__item"><a class="nav__link" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-                {{ end }}
-                {{ end }}
-            </ul> -->
+      <div class="col s8" id="navigation"><!--------------------------desktop menu--------------------------->
+        <ul class="navbar-nav hide-on-small"  id="navb">
+          <li class="nav-item">
+              <a class="nav-link text-white text-capitalize se" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+          </li>
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white text-capitalize dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu" >
+              {{ range .Children }}
+              <a class="dropdown-item text-color" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div><!------------------------------------------------------------------------------------------>
+     
+  <!--------------------------------------responsive sidenav---------------------------------------------->
+        <ul id="slide-out" class="sidenav">
+          <div class="user-view">
+            <div class="background"></div>
+            <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="wittylytics"></a>
             
-            <!-- MENU TOGGLE BUTTON -->
-            <!-- <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
-              <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                <title>Toggle Menu</title>
-                <g>
-                  <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
-                  <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-                  <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-                  <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
-                  <circle class="menuicon__circle" r="23" cx="25" cy="25" />
-                </g>
-              </svg>
-            </a-->
-            
-            <!-- ANIMATED BACKGROUND ELEMENT -->
-            <!--div class="splash"></div> -->
-          <!--/div--><!--?------------------------/responsive navigation menu--------------------------->
-        </div>
-      
-    </div>
-  </nav>
+          </div>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+          </li>
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="list nav-item dropdown">
+            <a class="nav-link text-white text-capitalize dropdown-toggle navside" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu" >
+              {{ range .Children }}
+              <a class="dropdown-item text-color navside" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li class="list">
+          {{ else }}
+          <li class="list">
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside" href="{{ .URL | absURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger navside"><i class="material-icons">menu</i></a>
+    </nav>      
+  </div> 
 </div>
-
-
 
 {{"<!-- nav part end -->" | safeHTML }}

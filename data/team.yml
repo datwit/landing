@@ -2,6 +2,7 @@ team:
   title : "The Team"
   subtitle: "Meet our team"
   description: "We are a self-driven and enthusiastic young people who enjoy creating exciting solutions"
+  image: "images/team/team section.png"
 #  title : "Expert Person"
   teamMember:
     # team member
