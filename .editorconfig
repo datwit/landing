@@ -1,0 +1,25 @@
+# Based on EditorConfig guidelines
+# https://editorconfig.org
+#
+# Go to https://editorconfig.org/#download to get your editor's plugin
+#
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+# https://editorconfig-specification.readthedocs.io/en/latest/#editorconfig-specification
+# 
+# set any variable to unset and the setting will be ignored, so
+# the default editor setting will be used
+
+
+# global settings supported by all plugins
+
+root = true
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# global settings supported by some plugins
+
+max_line_length = off
