@@ -1712,7 +1712,7 @@ textarea.form-control {
   opacity: 1;
   /*transition: .4s ease;
     transition-delay: .0s;*/
-  text-align: center;
+  text-align: justify;
 }
 
 .team-member-social {

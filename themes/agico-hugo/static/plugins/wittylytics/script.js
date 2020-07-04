@@ -10,3 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
   var list = [edge='left', draggable='true', preventScrolling='true'];
   var instances = M.Sidenav.init(elems, list );
 });
+
+/*****************************************************/ 
+$(document).ready(function() {
+  M.updateTextFields();
+});
+      
+$(document).ready(function() {
+  $('input#name,input#email,input#subject,textarea#textarea1').characterCounter();
+}); 

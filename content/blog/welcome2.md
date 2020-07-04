@@ -4,7 +4,7 @@ shortDescription: "Know a little more about WittyLytics"
 watermark: "Blog"
 date: 2020-01-10T09:51:57+06:00
 description : "wittylytics welcome post"
-bgImage: "images/background/about.png"
+bgImage: "images/background/about.jpg"
 image : "images/blog/blog-post-1.jpg"
 author : "Editor"
 type : "post"

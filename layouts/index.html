@@ -23,17 +23,17 @@
   <div class="container">
     <div class="row">
       <div class="col s12"><!--------first row title-->
-        {{ with .Site.Data.service.service }}
+        {{ with .Site.Data.services.service }}
         <h2 class="section-title">{{ .title }}</h2>
         {{ end }}
       </div><!-------------/first row title------------>
     </div>  
         
     <div class="row"><!----------second row icon---> 
-        {{ range $element:= .Site.Data.service.service.serviceItem }} 
-      <div class="col s12 m6 l4"><!--------------one column per icon-->
+        {{ range $element:= .Site.Data.services.service.serviceItem }} 
+      <div class="col s12 m4"><!--------------one column per icon-->
         <div class="service-card">
-        <a href="{{.url}}"><img class="" src="{{ .src | absURL }}" alt="{{ .title }}"></a>
+        <a href="{{.url}}"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>
       </div>
       </div><!------------------------/second row icon--->
         {{ end }}

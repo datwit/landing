@@ -12,8 +12,8 @@
       </div>
       <div class="col s12 m6 l6">
         <p class="subtitle">{{ .subtitle }}</p>
-        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>
-        <p data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title">{{ .title }}</h2>
+        <p>
           {{ .content | markdownify }} <br><br>
             Take a look to our open solutions <a href="{{.github }}" class="p-2 text-reset"><i class="fa fa-2x fa-github icon-gray"></i></a>
         </p>
@@ -27,7 +27,7 @@
 <section id="team">
   <div class="container">
     <div class="row">
-      <div class="col s12 m6 l6">
+      <div class="col s12">
         {{ with .Site.Data.team.team }}
         <h2 class="section-title">{{ .subtitle }}</h2>
         {{ end }}
@@ -45,7 +45,7 @@
         <div class="content">
           <h5 class="team-member-name">{{.name }}</h5>
           <p class="team-member-designation">{{ .designation }}</p>
-          <p class="team-member-designation">{{ .bio }}</p>
+          <p class="team-member-designation" id="bio">{{ .bio }}</p>
           <div class="row">
             <div class="team-member-social">
               {{ range .socialIcon }}

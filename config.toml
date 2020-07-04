@@ -47,8 +47,8 @@ paginate = 6
   URL = "plugins/slick/slick.min.js"
   [[params.plugins.js]]
   URL = "plugins/venobox/venobox.min.js"
-#  [[params.plugins.js]]
-#  URL = "plugins/google-map/gmap.js"
+  # [[params.plugins.js]]
+  # URL = "plugins/google-map/gmap.js"
   [[params.plugins.js]]
   URL = "plugins/search/fuse.min.js"
   [[params.plugins.js]]
@@ -73,7 +73,7 @@ paginate = 6
     
   [[menu.main]]
   name = "Services"
-  URL = "service"
+  URL = "services"
   weight = 2
   
    
@@ -119,19 +119,19 @@ paginate = 6
 
     [[params.footer.socialIcon]]
     icon = "fa-facebook"
-    URL = "https://facebook.com/wittylytics"
+    URL = "https://facebook.com/datwit"
 
     [[params.footer.socialIcon]]
     icon = "fa-twitter"
-    URL = "https://twitter.com/wittylytics"
+    URL = "https://twitter.com/datwit"
 
     [[params.footer.socialIcon]]
     icon = "fa-linkedin"
-    URL = "https://linkedin.com/wittylytics"
+    URL = "https://linkedin.com/datwit"
 
     [[params.footer.socialIcon]]
     icon = "fa-github"
-    URL = "https://github.com/wittylytics"
+    URL = "https://github.com/datwit"
 
 #    [[params.footer.socialIcon]]
 #    icon = "fa-instagram"
@@ -144,7 +144,7 @@ paginate = 6
   title = "Contact Info"
 #  address = "Serbian address"
 #  mobile = "+1234567890"
-  email = "contact@wittylytics.com"
+  email = "datwitrs@gmail.com"
 
   # copyright
   [params.copyright]
@@ -168,9 +168,12 @@ description = "Dynamic Witty Analytics Company"
 author = "DATWIT Team"
 # google map
 #gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-#mapLatitude = "51.5223477"
+# gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCFz41K58LkBFXXw_a4Oy_xQAtBqdFTFaA&libraries=places"
+# #mapLatitude = "51.5223477"
 #mapLongitude = "-0.1622023"
-#mapMarker = "images/marker.png"
+# mapLatitude = "20.882842"
+# mapLongitude = "-76.262690"
+# mapMarker = "images/marker.png"
 # Google Analitycs
 #googleAnalitycsID = "Your ID"
 
