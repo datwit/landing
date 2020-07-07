@@ -115,7 +115,7 @@ paginate = 6
 # Footer
 
   [params.footer]
-  content = "Follow us all over the web"
+  content = "Follow us"
 
     [[params.footer.socialIcon]]
     icon = "fa-facebook"

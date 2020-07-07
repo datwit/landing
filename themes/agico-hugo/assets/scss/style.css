@@ -503,9 +503,9 @@ a.text-light:hover {
   padding-bottom: 70px;
 }
 
-.section-title {
+/* .section-title {
   margin-bottom: 38px;
-}
+} */
 
 .subtitle {
   text-transform: capitalize;
@@ -1118,7 +1118,7 @@ textarea.form-control {
   }*/
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .hero-area {
     padding: 190px 0 100px;
   }
@@ -1193,7 +1193,7 @@ textarea.form-control {
   .hero-area-lg .row {
     margin-right: -15px;
   }
-}
+} */
 
 .watermark {
   position: absolute;

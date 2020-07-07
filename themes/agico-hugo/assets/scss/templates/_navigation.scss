@@ -1,56 +1,25 @@
-.naviagtion {
-  padding: 45px 0;
+/*
+ * _navigation.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
 
-  @include desktop {
-    background: $bg-gradient-secondary;
-    padding: 15px 0;
-  }
 
-  &.nav-bg {
-    /*background: $bg-gradient-secondary;*/
-    padding: 15px 0;
-    background-color: #2d4258;
-  }
-
-  &.naviagtion-white {
-    &.nav-bg {
-      background: $white;
-      box-shadow: 0px 10px 20px 0px rgba(0, 141, 236, 0.1);
-
-      .btn {
-        color: $primary-color !important;
-
-        &:hover {
-          color: $white !important;
-        }
-      }
-    }
-
-    @include desktop {
-      background: $white;
-
-      .btn {
-        color: $primary-color !important;
-
-        &:hover {
-          color: $white !important;
-        }
-      }
-    }
-
-    .dropdown{
-      &-menu{
-        background: $white;
-      }
-      &-item{
-        color: $text-dark;
-      }
-    }
-  }
-}
-
-/******************menu items adjustments ************************/
+//menu items adjustments 
 .navbar {
+  height: 85px;
+  padding-top: 0px;
+  padding-left: 15px;
+  background-color: #1e4159;
+  /*fixed navbar*/
+  position: fixed; 
+  top:0;          
+  width: 100%;
+  z-index: 2;
+  box-shadow: none;
+  border-bottom: 2px solid #454c51;
 
   .nav-item {
 
@@ -65,7 +34,6 @@
         font-size: 16px !important;
       }
       
-
       @include desktop-lg {
         padding: 20px 15px;
         font-size: 18px !important;
@@ -84,11 +52,25 @@
       }
     }
     
-    
   }
-  
-  /***************************************************************/
-  .dropdown {
+
+  /***********use in case of adding drop down menu*******/
+  /*.naviagtion {
+    padding: 45px 0;
+    
+    &.naviagtion-white {
+      
+      .dropdown{
+        &-menu{
+          background: $white;
+        }
+        &-item{
+          color: $text-dark;
+        }
+      }
+    }
+  }
+    .dropdown {
     &:hover {
       .dropdown-menu {
         visibility: visible;
@@ -108,8 +90,8 @@
       visibility: hidden;
       transition: .3s ease;
       opacity: 0;
-      transform: scale(.8);
-      background: $bg-gradient-secondary;
+      transform: scale(.8); 
+       background: $bg-gradient-secondary;
 
       @include desktop {
         display: none;
@@ -119,14 +101,14 @@
         transform-origin: unset;
       }
 
-      &.show {
+     &.show {
         visibility: hidden;
 
         @include desktop {
           visibility: visible;
           display: block;
         }
-      }
+      } 
     }
 
     &-item {
@@ -148,217 +130,82 @@
         background: transparent;
       }
     }
+  }*/
+}
+//adjusting visibility between both navigation bars
+.navbar-nav.hide-on-small{
+  @include desktop{
+  display: none;
+  }
+} 
+nav .sidenav-trigger{
+  @media only screen and (min-width: 992px) {
+  visibility: hidden;
   }
 }
-
-// -------------------------------------
-// Main Navigation Menu & Toggle menu
-// -------------------------------------
-:root {
-
-  --splash-bg-color:  #58acdd;
-}
-
-// calculate a circle's circumference based on radius
-@function circumference($r){
-  $pi: 3.141592653;
-  @return 2*$pi*$r;
-}
-
-
-// ---------------------------
-// Main Navigation Menu
-// ---------------------------
-
-.nav {
-  
-  // Toggle Button
-  &__toggle {
-    display:inline-block;
-    position:absolute;
-    z-index:10;
-    padding:0;
-    border:0;
-    background:transparent;
-    outline:0;
-    right:15px;
-    top:15px;
-    cursor:pointer;
-    border-radius:50%;
-    transition:background-color .15s linear;
-    
-    &:hover,
-    &:focus {
-      background-color:rgba(0,0,0,.5);
-    }
-  }
-  
-  &__menu {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:var(--screen-height);
-    position:relative;
-    z-index:5;
-    visibility:hidden;
-  }
-  
-  &__item {
-    opacity:0;
-    transition: all .3s cubic-bezier(0.000, 0.995, 0.990, 1.000) .3s;
-  }
-  @for $i from 1 through 5 {
-    &__item:nth-child(#{$i}){
-      transform:translateY(-40px * $i);
-    }
-  }
-  
-  &__link {
-    color:white;
-    display:block;
-    text-align:center;
-    text-transform:uppercase;
-    letter-spacing:5px;
-    font-size:1.25rem;
-    text-decoration:none;
-    padding:1rem;
-    
-    &:hover,
-    &:focus {
-      outline:0;
-      background-color:rgba(0,0,0,0.2);
-    }
-    
-  }
-  // @include mobile-xs {
-  //   display: none;
-  // }
-  // @include mobile {
-  //   display: none;
-  // }
+//toggle navigation bar 
+nav .sidenav-trigger{
+  float: right !important;
   
 }
-
-
-// ---------------------------
-// SVG Menu Icon
-// ---------------------------
-
-.menuicon {
-  display:block;
-  cursor:pointer;
-  color: white;
-  
-  transform:rotate(0deg);
-  transition: .3s cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-  
-  &__bar,
-  &__circle {
-    fill:none;
-    stroke: currentColor;
-    stroke-width:3;
-    stroke-linecap:round;
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+  font-size: 40px !important;
+}
+.sidenav{
+  &-overlay{
+    z-index: 0 !important;
   }
-  &__bar {
-    transform: rotate(0deg);
-    transform-origin:50% 50%;
-    transition: transform .25s ease-in-out;
-  }
-  &__circle {
-    transition: stroke-dashoffset .3s linear .1s;
-    stroke-dashoffset:circumference(23); // 23 is the <circle>'s radius
-    stroke-dasharray:circumference(23);
-  }
-  
-  // @include desktop{
-  //   display: none;
-  // }
-  // @include desktop-lg {
-  //   display: none;
-  // }
-  // @include desktop-xl {
-  //   display: none;
-  // }
+  .user-view .background{
+    background-color: #1e4159;
+  }  
 }
 
-
-// ---------------------------
-// Circular Splash Background
-// ---------------------------
-
-.splash {
-  position:absolute;
-  top:40px;
-  right:40px;
-  width: 1px;
-  height: 1px;
-  
-  &::after {
-    content:"";
-    display:block;
-    position:absolute;
-    border-radius:50%;
-    background-color:var(--splash-bg-color);
-    
-    // screen diameter can be 142vmax at most,
-    // circle needs to be twice that size to cover it
-    width:284vmax;
-    height:284vmax;
-    top:-142vmax;
-    left:-142vmax;
-    
-    transform: scale(0);
-    transform-origin:50% 50%;
-    transition: transform .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    
-    // will-change tells the browser we plan to 
-    // animate this property in the near future
-    will-change:transform;
-  }
+li.list{
+  display: list-item !important;
 }
 
+a.navside{
+  font-size: 20px !important;
+  &:hover{
+    color: #58acdd !important;
+  }
+}
+//menu alignment on desktop
+.navbar-nav{
+  margin-right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
 
-// ---------------------------
-// Active State
-// ---------------------------
-
-.nav:target,
-.nav--open {
-  
-  //scale the background circle to full size
-  > .splash::after {
-    transform:scale(1);
+// breadcrumb 
+.breadcrumb-item{
+  &:hover{
+    color: $primary-color;
   }
-  
-  //animate the menu icon
-  .menuicon {
-    color:white;
-    transform:rotate(180deg);
-    
-    &__circle {
-      stroke-dashoffset:0;
-    }
-    &__bar:nth-child(1),
-    &__bar:nth-child(4) {
-      opacity:0;
-    }
-    &__bar:nth-child(2) {
-      transform: rotate(45deg);
-    }
-    &__bar:nth-child(3) {
-      transform: rotate(-45deg);
-    }
+ 
+}
+//aligning breadcrumbs
+#breadcrumb{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  background-color: #1e4159;
+ 
+  @include tablet{
+  background-color: #1e4159;
+  line-height: 28px;
+  padding-right: 20px;
   }
-  
-  //show the nav items
-  .nav {
-    &__menu {
-      visibility:visible;
-    }
-  
-    &__item {
-      opacity:1;
-      transform:translateY(0);
-    }
-  }
+}
+nav.nav-bread{
+  box-shadow: none;
+  background-color: #1e4159;
+}
+// .breadcrumb-item.text-white{
+//   font-size: 18px;
+// }
+.flow-text{
+  font-size: 18px;
+ 
 }

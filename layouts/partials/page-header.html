@@ -1,11 +1,11 @@
 {{ "<!-- page-header -->" | safeHTML }}
-<section> 
+<section  id="sd"> 
   <div class="bg-cover" data-background="{{ .Params.BgImage | absURL }}"></div>
   <nav class="nav-bread">
     <div class="row"><!--------------breadcrumb---------------------------->
       <div class="col s12" id="breadcrumb">
-        <span class="flow-text"><a href="{{ .Site.BaseURL }}" class="breadcrumb-item text-white">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>/
-        <a class="breadcrumb-item text-white" aria-current="page">{{ .Title }}</a></span>
+        <span class="flow-text"><a href="{{ .Site.BaseURL }}" class="breadcrumb-item">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>/
+        <a class="breadcrumb-item" aria-current="page">{{ .Title }}</a></span>
       </div>
     </div>
   </nav> 

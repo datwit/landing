@@ -2,41 +2,23 @@
 
 {{ partial "page-header.html" . }}
 
-      <!--div class="col-lg-12">
-        <div class="row category-slider">
-          {{ range .Site.Data.career.categories.categoriesItem }}
-          <div class="col-lg-3 col-sm-6 mb-5">
-            <div class="card border-0 shadow rounded-xs pt-5">
-              <div class="card-body">
-                <i class="fa {{ .icon }} icon-lg icon-{{.iconColor}} icon-bg-{{.iconColor}} icon-bg-circle mb-3"></i>
-                <h4 class="mt-4 mb-3">{{ .title }}</h4>
-                <p>{{ .content | markdownify }}</p>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section-->
 <section><!--? products section--------------------------------------------------------------->
   <div class="container">
     <div class="row"><!--------first row title-->
       <div class="col s12">
         {{ with .Site.Data.product.pgtitle }}
-        <h2 class="section-title">{{ .title }}</h2>
-        <h3 class="subtitle">{{ .description }}</h3>
+        <h2>{{ .title }}</h2>
+        <h6>{{ .description }}</h6>
         {{ end }}
       </div>
     </div> <!-------------/first row title------------>
-    <div class="row">
+    <div class="row mr-1">
       <!--listed images------------------------>
       <div class="flip-container col s12 m6 l4" id="ceprod" ontouchstart="this.classList.toggle('hover');">
       {{ range .Site.Data.product.pgtitle.productItem}}
         <div class=" card flipper">
           <div class=" card-image front">
-            <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="{{.title}}">
+            <img src="{{ .image | absURL}}" class="ounded" alt="{{.title}}">
           </div>   
           <div class="back">
             <a href=""><h3 class="card-title">{{ .title}}</h3></a>

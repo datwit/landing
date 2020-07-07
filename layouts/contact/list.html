@@ -2,19 +2,19 @@
 
 {{ partial "page-header.html" . }}
 
-<section class="section"><!-----------form section------------------------>
+<section class="section mb-1"><!-----------form section------------------------>
   <div class="container">
     <div class="row">
       <div class="col s12">
           {{ with .Site.Data.contact.contact }}
-          <h3 class="subtitle">{{ .content }}</h3>
+          <h6>{{ .content }}</h6>
           {{ end }}
       </div> 
     </div>  
-    <div class="row">
+    <div class="row mr-1">
            {{ with .Site.Data.contact.contact }}
       <div class="col s12 m6 l5" id="img">
-        <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg">
+        <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg" class="rounded-sm">
             {{end}}
       </div>
       <div class="col s12 m6 l7">
@@ -41,8 +41,8 @@
           <textarea id="textarea1" class="materialize-textarea" placeholder="" data-length="1000"></textarea>
           <label class="active" for="textarea1">Message</label>
         </div>
-        <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Send 
-        <i class="material-icons right">send</i>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Send 
+        <i class="material-icons">send</i>
         </button>
     </div>   
   </div>
@@ -54,7 +54,7 @@
       <div class="col s12">
         {{with .Site.Data.contact.contact}}
           <h3>{{ .localization }}</h3>
-          <h3 class="subtitle">{{.localization2}}</h3>
+          <h6>{{.localization2}}</h6>
 
           {{ "<!-- Google Map API -->" | safeHTML }}
           <!-- <div id="map" style="width:400px;height:400px;background:transparent">
@@ -66,8 +66,8 @@
     </div>
     <div class="row">
       <h3>Visit us:</h3>
-      <h4 class="subtitle">Address</h4>
-      <h4 class="subtitle">Phone number</h4>
+      <h6>Address</h6>
+      <h6>Phone number</h6>
     </div>
   </div>
 </section><!-------------------------/map section--------------------------------->

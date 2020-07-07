@@ -9,7 +9,7 @@
       <h1 class="text-white position-relative" >{{ .title }}<!--span class="watermark">{{ .watermark }}</span--></h1>
     {{ end }}
       <div class="row" id="center-button">
-        <a href="/contact"><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="call">Contact us</button></a>     
+        <a href="/contact"><button class="btn waves-effect waves-light" type="submit" name="action" id="call">Contact us</button></a>     
       </div>
     </div> 
   </div>
@@ -24,7 +24,7 @@
     <div class="row">
       <div class="col s12"><!--------first row title-->
         {{ with .Site.Data.services.service }}
-        <h2 class="section-title">{{ .title }}</h2>
+        <h2>{{ .title }}</h2>
         {{ end }}
       </div><!-------------/first row title------------>
     </div>  
@@ -45,26 +45,13 @@
 {{"<!-- /features -->"| safeHTML}}
 
 {{"<!-- toolset -->"| safeHTML}}
-<!---section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="list-inline d-flex justify-content-between py-3 py-lg-5 border-bottom align-items-center">
-          {{ range .Site.Data.homepage.toolset }}
-          <li class="list-inline-item"><img class="img-fluid" src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section--->
-<section class="toolset">
+<section>
   <div class="container">
   <div class="row">
     <div class="col s12">
       <div class="row category-slider">
         {{ range .Site.Data.homepage.toolset }}
-        <li class="list-inline-item col s12 m4 l2"><img class="img-fluid" src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
+        <li class="list-inline-item col s12 m4 l2"><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
         {{ end }}
       </div>
     </div>
@@ -83,18 +70,18 @@
       <div class="col s12 m4">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
+            <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
           </div>
           <div class="card-content">
             <span class="card-title activator">
-              <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-              <i class="material-icons right grey-text text-darken-4">more_vert</i>
+              <h3 class="activator crev">{{ .title}}</h3>
+              <i class="material-icons grey-text text-darken-4">more_vert</i>
             </span>
           </div>
           <div class="card-reveal">
             <span class="card-title activator">
-              <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-              <i class="material-icons right grey-text text-darken-4">close</i>
+              <h3 class="activator crev">{{ .title}}</h3>
+              <i class="material-icons grey-text text-darken-4">close</i>
           </span>
             <p>{{ .content | markdownify }}</p>
           </div>
@@ -107,18 +94,18 @@
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
+          <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
         </div>
         <div class="card-content">
           <span class="card-title activator">
             <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">more_vert</i>
+            <i class="material-icons grey-text text-darken-4">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
             <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">close</i>
+            <i class="material-icons grey-text text-darken-4">close</i>
           </span>
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -131,18 +118,18 @@
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
+          <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
         </div>
         <div class="card-content">
           <span class="card-title activator">
             <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">more_vert</i>
+            <i class="material-icons grey-text text-darken-4">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
             <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">close</i>
+            <i class="material-icons grey-text text-darken-4">close</i>
           </span>
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -161,9 +148,9 @@
     <div class="row">
       <div class="col s12"><!-------------------------first row title------->
         {{ with .Site.Data.team.team }}
-        <h2 class="section-title">{{ .title }}</h2>
-        <h6 class="section-desc subtitle">{{.description}}</h6>
-        <h5 class="subtitle">{{.subtitle}}<a href="about#team"><i class="small material-icons" id="link">chevron_right</i></a></h5>
+        <h2>{{ .title }}</h2>
+        <h6>{{.description}}</h6>
+        <h6>{{.subtitle}}<a href="about#team"><i class="small material-icons" id="link">chevron_right</i></a></h6>
         {{ end }}
       </div>
     </div><!---------------------------     --/first row title----------------->
@@ -171,7 +158,7 @@
       {{ with .Site.Data.team.team }}
       <div class="col s12">
         <div class="team-member text-center">
-          <img src="{{ .image | absURL }}" class="img-fluid w-100 rounded-sm">
+          <img src="{{ .image | absURL }}">
         </div>
       </div>
       {{ end }}
@@ -179,55 +166,6 @@
   </div>
 </section>
 {{"<!-- /team -->" | safeHTML}}
-
-
-<!--{{"contact"| safeHTML}}
-<section class="section section-lg-bottom bg-light">
- <div class="row">
-  <form class="col s12 bg-light">
-    <div class="container">
-      <div class="col-lg-12 text-center">
-        {{ with .Site.Data.contact.contactForm }}
-        <h2 class="section-title">{{ .title }}</h2>
-        {{ end }}
-      </div>
-      <div class="row"--><!-----first column------------------------>
-        <!--div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label class="active" for="icon_prefix">Your name</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
-          <label class="active" for="email">Email</label>
-        </div>
-      </div--><!----------------/first column----------------------->
-      <!--div class="row"--><!------second column---------------------->
-        <!--div class="input-field col s6">
-          <i class="material-icons prefix">edit</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label class="active" for="first_name">Subject</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">send</i>
-          <textarea id="textarea2" class="materialize-textarea"></textarea>
-          <label class="active" for="textarea1">Message</label>
-        </div>
-      </div--><!-----------------/second column--------------------->
-      <!--div class="row"--><!------------button div-->
-        <!--div class="col s12"> 
-          <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Get in touch
-          <i class="material-icons right">send</i>
-          </button>
-        </div>
-      </div--><!----------------------------/button div--------------->
-    <!--/div--><!-----container---------------------------------------->
-  <!--/form>
- </div>
-</section>
-{{"--><!-- /contact --><!--"| safeHTML}}-->
-
 
 
 {{ end }}
