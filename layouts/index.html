@@ -28,24 +28,25 @@
         {{ end }}
       </div><!-------------/first row title------------>
     </div>  
-        
-    <div class="row"><!----------second row icon---> 
-        {{ range $element:= .Site.Data.services.service.serviceItem }} 
-      <div class="col s12 m4"><!--------------one column per icon-->
-        <div class="service-card">
-        <a href="{{.url}}"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>
-      </div>
-      </div><!------------------------/second row icon--->
-        {{ end }}
-    </div>  
+      
+    <div class="row">
+      {{ range $element:= .Site.Data.services.service.serviceItem }} 
+      <div class="col s12 m4" id="serv">
+     <div class="card" id="card1">
+      <div class="icon1"><img src="{{ .src | absURL }}" alt="{{ .title }}"></div>
+      <div class="card-content" id="cont"><h3>{{.title}}</h3></div>
+     </div>
+    </div>
+      {{end}}
+    </div>
     
-  <div class="divider"></div> 
+  
   </div> 
 </section>
 {{"<!-- /features -->"| safeHTML}}
 
 {{"<!-- toolset -->"| safeHTML}}
-<section>
+<!-- <section>
   <div class="container">
   <div class="row">
     <div class="col s12">
@@ -58,7 +59,28 @@
   </div>
 <div class="divider"></div>  
 </div>
+</section> -->
+
+<section>
+  <div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        {{ range .Site.Data.homepage.toolset }}
+        <div class="slide">
+          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
+        </div>
+        {{end}}
+        {{ range .Site.Data.homepage.toolset }}
+        <div class="slide">
+          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
+        </div>
+        {{end}}
+      </div>
+    </div>
+
+  </div>
 </section>
+
 {{"<!-- /toolset -->"| safeHTML}}
 
 {{"<!-- goals -->"| safeHTML}}

@@ -2,6 +2,7 @@
 
 {{ partial "page-header.html" . }}
 
+<!-----blog page---------------------------------------------->
 <section class="section mb-1">
   <div class="container">
     <div class="row">
@@ -22,12 +23,13 @@
                   <ul>
                     {{ range .Params.categories }}
                       <li class="filter-tags"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+                  </ul>    
                     {{ end }}
                 </div>
               </div>
             </article>
           </div>
-          {{ end }}
+          {{ end }}<!-----------/blog post------------------->
           {{"<!-- pagination -->" | safeHTML }}
           <div class="col s12 m6 l6">
             {{ $paginator := .Paginator }}
@@ -170,6 +172,6 @@
   </div>
 </section>
 
-<!--{{ partial "subscription-white.html" . }}-->
+
 
 {{ end }}

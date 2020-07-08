@@ -7,16 +7,15 @@ service:
   serviceItem:
       #listing
       - title: "Software Development"
-        src: "images/services/software-development.png"
+        src: "images/services/icons-sd.png"
         url: "services#sd"
 
-
       - title: "Data Analysis"
-        src: "images/services/data-analysis.png"
+        src: "images/services/icons-da.png"
         url: "services#sd"
 
       - title: "Data Visualization"
-        src: "images/services/data-visualization.png"
+        src: "images/services/icons-dv.png"
         url: "services#sd"
 
 #describing services page

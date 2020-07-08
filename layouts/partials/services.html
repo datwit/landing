@@ -12,10 +12,10 @@
     <!--?--------------services section------------------------------>
     {{ with .Site.Data.services.serviceItem1 }}
     <div class="row esp"><!-------------first row---------------------------->
-      <div class="col s12 m6 l6">
+      <div class="col s12 m12 l6">
         <img src="{{ .url | absURL }}" alt="{{.title}}">
       </div>
-      <div class="col s12 m6 l6">
+      <div class="col s12 m12 l6">
         <h2>{{ .title }}</h2>
         <p>{{ .content | markdownify }}</p>
       </div> 
@@ -23,21 +23,21 @@
     {{end}}
     {{ with .Site.Data.services.serviceItem2 }}
     <div class="row"><!-------------second row---------------------------->
-      <div class="col s12 m6 l6">
+      <div class="col s12 m12 l6">
         <h2>{{ .title }}</h2>
         <p>{{ .content | markdownify }}</p>
       </div> 
-      <div class="col s12 m6 l6">
+      <div class="col s12 m12 l6">
         <img src="{{ .url | absURL }}" alt="{{.title}}">
       </div>
     </div><!------------------------/second row---------------------------->
     {{end}}
     {{ with .Site.Data.services.serviceItem3 }}
     <div class="row esp"><!-------------third row----------------------------->
-      <div class="col s12 m6 l6">
+      <div class="col s12 m12 l6">
         <img src="{{ .url | absURL }}" alt="{{.title}}">
       </div>
-      <div class="col s12 m6 l6">
+      <div class="col s12 m12 l6">
         
         <h2>{{ .title }}</h2>
         <p>{{ .content | markdownify }} 

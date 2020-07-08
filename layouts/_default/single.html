@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+<!----------------------blog page single pages----------------------------------->
 {{ partial "page-blog-header.html" . }}
 
 <section class="section mb-1">
@@ -7,7 +8,7 @@
     <div class="row">
       <div class="col s12 m8 l9">
         <img src="{{ .Params.Image | absURL }}" class="rounded-sm" alt="post-thumb">
-        <p class="text-color card-date position-relative d-inline-block">BY <span class="text-dark font-weight-bold">{{ .Params.Author }}</span> / ON <span class="text-dark font-weight-bold">{{ .PublishDate.Format "Jan 02, 2006" }}</span></p>
+        <p class="text-color card-date position-relative d-inline-block">BY <span class="text-dark">{{ .Params.Author }}</span> / ON <span class="text-dark">{{ .PublishDate.Format "Jan 02, 2006" }}</span></p>
         <div class="content">
           {{ .Content }}
         </div>
@@ -25,6 +26,6 @@
   </div>
 </section>
 
-{{ partial "subscription-white.html" . }}
+
 
 {{ end }}

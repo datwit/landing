@@ -4,17 +4,17 @@
 
 <section><!--? products section--------------------------------------------------------------->
   <div class="container">
-    <div class="row"><!--------first row title-->
+    <div class="row"><!--------first row title------------------------------------------------>
       <div class="col s12">
         {{ with .Site.Data.product.pgtitle }}
         <h2>{{ .title }}</h2>
         <h6>{{ .description }}</h6>
         {{ end }}
       </div>
-    </div> <!-------------/first row title------------>
+    </div> <!-------------/first row title----------------------------------------------------->
     <div class="row mr-1">
-      <!--listed images------------------------>
-      <div class="flip-container col s12 m6 l4" id="ceprod" ontouchstart="this.classList.toggle('hover');">
+      <!--listed images------------------------------------------------------------------------->
+      <div class="flip-container col s12 m6 l4" ontouchstart="this.classList.toggle('hover');">
       {{ range .Site.Data.product.pgtitle.productItem}}
         <div class=" card flipper">
           <div class=" card-image front">

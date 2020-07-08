@@ -15,7 +15,7 @@
         <div class="footer-blocks col s12 m4 l4">
           <h4>{{ .Site.Params.footer.service.title }}</h4>
           {{ range .Site.Menus.footer }}
-          <ul class="list-styled"></ul>
+          <ul class="list-styled">
             <li><a href="{{ .URL | absURL }}" class="text-light">{{ .Name }}</a></li>
           {{ end }}
           </ul>
@@ -27,7 +27,7 @@
           </ul>
         </div>
       </div>
-    <!-- </div> -->
+    <!-- </div> --->
   </section>
 
 {{"  <!-- footer part end -->" | safeHTML }}

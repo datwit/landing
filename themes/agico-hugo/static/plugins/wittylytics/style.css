@@ -5,7 +5,17 @@
  *
  * Copyright (c) 2020 Dynamic Witty Analytics
  */
-
-
-/**************preloader*********************************************/ 
+ @keyframes ticker-kf {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-108rem, 0, 0);
+    }
+  }
+  
+  .img-ticker {
+    animation: ticker-kf 18s linear infinite;
+  }
     
