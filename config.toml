@@ -162,6 +162,7 @@ paginate = 6
 
 [params]
 logo = "images/logo.png"
+logomin = "images/logo-min.png"
 home = "Home"
 # Meta data
 description = "Dynamic Witty Analytics Company"

@@ -9,7 +9,7 @@
         {{ end }}
       </div>
     </div><!-------------/first row title------------> 
-    <!--?--------------services section------------------------------>
+   <!--?--------------services section------------------------------>
     {{ with .Site.Data.services.serviceItem1 }}
     <div class="row esp"><!-------------first row---------------------------->
       <div class="col s12 m12 l6">
@@ -33,7 +33,7 @@
     </div><!------------------------/second row---------------------------->
     {{end}}
     {{ with .Site.Data.services.serviceItem3 }}
-    <div class="row esp"><!-------------third row----------------------------->
+    <div class="row esp mr-2"><!-------------third row----------------------------->
       <div class="col s12 m12 l6">
         <img src="{{ .url | absURL }}" alt="{{.title}}">
       </div>
@@ -45,8 +45,18 @@
       </div> 
     </div><!-------------/third row--------------------------------------->
     {{end}}
+    <div class="divider"></div>
+    {{with .Site.Data.services.diagram}}
+    <div class="mb-1">
+      <h6 class="mr-2">{{.subtitle}}</h6>
+    </div>
+    <div><!---------------------------diagram--------------------------------->
+      <img src="{{.img | absURL }}" alt="{{.title}}">
+    </div>
+    {{end}}
   </div> 
 </section>
+{{ partial "contact-access.html" . }}
 {{"<!-- services -->" | safeHTML }}
 
 

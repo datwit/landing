@@ -6,12 +6,12 @@
 <section class="section mb-1">
   <div class="container">
     <div class="row">
-      <div class="col s12 m6 l8">
+      <div class="col s12 m8 l8">
         <div class="row">
           {{ $paginator := .Paginate .Data.Pages }}
           {{ range $paginator.Pages }}
           {{ "<!-- blog post -->" | safeHTML }}
-          <div class="col s12 m7 l6">
+          <div class="col s12 m6 l6">
             <article>
               <div class="card">
                 <div class="card-image">
@@ -123,7 +123,7 @@
         </div>
       </div>
       <!-------------------------side bar modified---------------------------------------->
-      <div class="sidebar-border col s12 m4 l3">
+      <div class="sidebar-border col s12 m4 l4">
         <div class="row">
           <div class="widget">
             <h3>Search</h3>

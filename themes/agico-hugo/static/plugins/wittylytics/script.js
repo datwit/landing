@@ -5,13 +5,15 @@
  *
  * Copyright (c) 2020 WittyLytics
  */
+
+//sidenav responsive 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var list = [edge='left', draggable='true', preventScrolling='true'];
   var instances = M.Sidenav.init(elems, list );
 });
 
-/*****************************************************/ 
+//initializing character counter input texts 
 $(document).ready(function() {
   M.updateTextFields();
 });

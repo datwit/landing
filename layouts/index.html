@@ -28,39 +28,22 @@
         {{ end }}
       </div><!-------------/first row title------------>
     </div>  
-      
+    <!--------------------cards----------------------------->  
     <div class="row">
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m4" id="serv">
-     <div class="card" id="card1">
-      <div class="icon1"><img src="{{ .src | absURL }}" alt="{{ .title }}"></div>
-      <div class="card-content" id="cont"><h3>{{.title}}</h3></div>
-     </div>
-    </div>
+        <div class="card" id="card1">
+          <div class="icon1"><img src="{{ .src | absURL }}" alt="{{ .title }}"></div>
+          <div class="card-content" id="cont"><h3>{{.title}}</h3></div>
+        </div>
+      </div>
       {{end}}
     </div>
-    
-  
   </div> 
 </section>
 {{"<!-- /features -->"| safeHTML}}
 
 {{"<!-- toolset -->"| safeHTML}}
-<!-- <section>
-  <div class="container">
-  <div class="row">
-    <div class="col s12">
-      <div class="row category-slider">
-        {{ range .Site.Data.homepage.toolset }}
-        <li class="list-inline-item col s12 m4 l2"><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-<div class="divider"></div>  
-</div>
-</section> -->
-
 <section>
   <div class="container">
     <div class="slider">
@@ -175,16 +158,16 @@
         <h6>{{.subtitle}}<a href="about#team"><i class="small material-icons" id="link">chevron_right</i></a></h6>
         {{ end }}
       </div>
-    </div><!---------------------------     --/first row title----------------->
-    <div class="row"><!------second row members-------------------------------->
-      {{ with .Site.Data.team.team }}
+    </div>
+    <!-----------------------------/first row title----------------->
+  
+    <!------second row members-------------------------------->
+    <div class="row">
       <div class="col s12">
-        <div class="team-member text-center">
-          <img src="{{ .image | absURL }}">
-        </div>
-      </div>
-      {{ end }}
-    </div><!--------------------------------------/second row members-------->
+        <img src="{{ .Site.Data.homepage.banner.ilimage | absURL }}" alt="Belgrade illustration">
+      </div>  
+    </div>  
+    <!--------------------------------------/second row members-------->
   </div>
 </section>
 {{"<!-- /team -->" | safeHTML}}

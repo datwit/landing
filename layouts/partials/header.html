@@ -38,8 +38,13 @@
         <ul id="slide-out" class="sidenav">
           <div class="user-view">
             <div class="background"></div>
-            <div>
-              <a class="nav-link text-white text-capitalize navside sidenav-close" href="#!"><i class="material-icons">chevron_left</i></a>
+            <div class="row">
+              <div class="col s6">
+              <img src="{{ .Site.Params.logomin | absURL }}" alt="sidenav-logo" class="logo-img">
+              </div>
+              <div class="col s6">
+              <a class="nav-link text-white text-capitalize navside sidenav-close" href="#!" id="close-icon"><i class="material-icons">chevron_left</i></a>
+              </div>  
             </div>
           </div>
           <li class="list">

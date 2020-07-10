@@ -10,11 +10,13 @@
 //flip card case studies page
  .flip-container {
   position: relative;
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
   perspective: 1000px;
   overflow: hidden;
-  
+  max-width: 240px;
+   
+
   &:hover .flipper {
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
@@ -82,7 +84,7 @@
 .h5left {
   text-align: left;
   line-height: normal;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 //feature cards homepage
@@ -107,7 +109,7 @@
   width: 170px;
   height: 180px;
   
-  //force sice for responsiveness
+  //force size for responsiveness
   @media only screen and (max-width: 640px) {
     width: 150px;
     height: 170px;

@@ -1,13 +1,16 @@
 # Banner
 banner:
-  bgImage : "images/background/banner.jpg"
+  bgImage : "images/background/banner.png"
   title : "Bring your idea, we will make it real!"
+  #belgrade illustration team section
+  ilimage : "images/belgrade-illustration.png"
   #watermark : "Dream"
   #content : "Multi purpose software solutions integrated with Machine Learning microservices."
   #image : "images/banner/banner-1.svg"
 #  button:
 #    btnText : "See more"
 #    URL : "#"
+
 
 
 # Toolset
@@ -27,13 +30,13 @@ toolset:
       toolName: "Google Cloud"
       toolsetLogo: "images/toolset/gcloud.png"
 
-    - tool: "tensorflow"
-      toolName: "TensorFlow Library"
-      toolsetLogo: "images/toolset/tensorflow.png"
-
     - tool: "sklearn"
       toolName: "Sklearn Toolkit"
       toolsetLogo: "images/toolset/sklearn.png"
+
+    - tool: "tensorflow"
+      toolName: "TensorFlow Library"
+      toolsetLogo: "images/toolset/tensorflow.png"
 
     - tool: "panel"
       toolName: "Panel Dashboards for Python"
@@ -42,6 +45,14 @@ toolset:
     - tool: "bokeh"
       toolName: "Bokeh Visualization Library"
       toolsetLogo: "images/toolset/bokeh.png"
+    
+    - tool: "altair"
+      toolName: "Bokeh Visualization Library"
+      toolsetLogo: "images/toolset/altair.png"
+
+    - tool: "keras"
+      toolName: "Bokeh Visualization Library"
+      toolsetLogo: "images/toolset/keras.png"
 
 # About
 about:

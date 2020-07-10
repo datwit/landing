@@ -14,11 +14,11 @@
     </div> <!-------------/first row title----------------------------------------------------->
     <div class="row mr-1">
       <!--listed images------------------------------------------------------------------------->
-      <div class="flip-container col s12 m6 l4" ontouchstart="this.classList.toggle('hover');">
+      <div class="flip-container col s12 m6 l12" ontouchstart="this.classList.toggle('hover');">
       {{ range .Site.Data.product.pgtitle.productItem}}
         <div class=" card flipper">
           <div class=" card-image front">
-            <img src="{{ .image | absURL}}" class="ounded" alt="{{.title}}">
+            <img src="{{ .image | absURL}}" alt="{{.title}}">
           </div>   
           <div class="back">
             <a href=""><h3 class="card-title">{{ .title}}</h3></a>

@@ -155,9 +155,14 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
   &-overlay{
     z-index: 0 !important;
   }
-  .user-view .background{
-    background-color: #1e4159;
-  }  
+  .user-view {
+    padding: 0px 16px 9px;
+
+    .background{
+      background-color: #1e4159;
+    }
+  }
+    
 }
 
 li.list{
@@ -177,7 +182,15 @@ a.navside{
   justify-content: flex-end;
   padding-top: 10px;
 }
-
+//close icon sidenav
+#close-icon{
+  padding: 0 60px;
+  margin-top: 10px;
+}
+//adjusting logo 
+.logo-img{
+margin-top: 5px;
+}
 // breadcrumb 
 .breadcrumb-item{
   &:hover{

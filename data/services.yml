@@ -44,22 +44,8 @@ serviceItem3:
   url: "images/services/data-visual.png"
 
 
-#Features
-#feature:
-#  subtitle : "features"
-# title : "Exclusive Features"
-#  featureItem:
- #   - title : "Free Demo"
- #     icon : "fa-desktop"
- #     iconColor : "green" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
- #     content : "As our client you can try some of our products for free."
-      
- #   - title : "No Setup"
-  #    icon : "fa-gears"
-   #   iconColor : "cyan" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-   #   content : "You don't need to setup anything, we have you covered."
-      
- #   - title : "Extreme Security"
- #     icon : "fa-shield"
- #     iconColor : "red" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
- #     content : "You are always in control, only you can access your data."
+#diagram
+diagram:
+  title : "Processes diagram"
+  subtitle : "We like to build our products focused on the entire process"
+  img : "images/diagram.png"

@@ -7,8 +7,7 @@
  */
 
 .team-member {
-  position: relative;
-   
+     
   &-name {
     opacity: 1;
     margin-top: 40px;
@@ -23,9 +22,26 @@
     text-align: center;
     font: normal normal normal 20px/1 FontAwesome !important;
   }
+  @include mobile-xs{
+    display: flex;
+    justify-content: center;
+  }
+  @include mobile{
+    display: flex;
+    justify-content: center;
+  }
+  @include tablet{
+    display: flex;
+    justify-content: center;
+  }
+  @include desktop{
+    display: flex;
+    justify-content: center;
+  }
 
 }
 
 #bio {
   text-align: justify;
 }
+

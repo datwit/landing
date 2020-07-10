@@ -77,6 +77,8 @@ img{
     max-width:100%;
     height:auto;
     overflow:hidden !important;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -129,6 +131,9 @@ img{
 //   border-radius: 20px;
 // }
 
+ 
+
+//rounded borders
 .rounded-sm {
   border-radius: 15px;
   height: 90%;
@@ -142,7 +147,7 @@ img{
   margin-right: auto;
 }
 
-// note: section is using MD prperties and values
+// note: section is using MD properties and values
 
 // section-gap added in case is needed
 .mb-1 {
@@ -155,6 +160,9 @@ img{
 //gap to use between rows
 .mr-1{
   padding-top: 1.5em;
+}
+.mr-2{
+  padding-bottom: 1.5em;
 }
 .container{
   margin: {
@@ -358,18 +366,12 @@ img{
 //section arrange
 .esp{
 
-  @include tablet {
+  @media only screen and (max-width: 992px) {
     display: flex;
     flex-direction: column-reverse;
-  }
-  @include mobile-xs {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  @include mobile {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+    
+    }
+  
 } 
  
 //get in touch section partial
