@@ -361,6 +361,11 @@ img{
     transition: all .05s linear;
 }
 }
+.feat{
+  @media only screen and (min-width: 751px) {
+    display:none;
+  }
+}
 
 //what we do page 
 //section arrange

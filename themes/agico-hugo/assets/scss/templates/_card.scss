@@ -142,3 +142,26 @@
   }
 } 
 
+//toolset cards
+#card2{
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
+  // position: relative;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  // border: 2px solid #58acdd;
+  //force size
+  width: 180px;
+  height: 250px;
+
+  .tool-ic{
+    max-width: 75px !important;
+    height: 75px !important;
+  }
+} 
+#tool-bg{
+  background-color: #fafafa;
+}

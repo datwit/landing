@@ -21,3 +21,4 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('input#name,input#email,input#subject,textarea#textarea1').characterCounter();
 }); 
+

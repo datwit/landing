@@ -17,7 +17,7 @@ banner:
 toolset:
 #    - tool: "vuejs"
 #      toolsetLogo: "images/toolset/vuejs.png"
-
+  
     - tool: "python"
       toolName: "Python"
       toolsetLogo: "images/toolset/python.png"
@@ -30,9 +30,9 @@ toolset:
       toolName: "Google Cloud"
       toolsetLogo: "images/toolset/gcloud.png"
 
-    - tool: "sklearn"
-      toolName: "Sklearn Toolkit"
-      toolsetLogo: "images/toolset/sklearn.png"
+    # - tool: "sklearn"
+    #   toolName: "Sklearn Toolkit"
+    #   toolsetLogo: "images/toolset/sklearn.png"
 
     - tool: "tensorflow"
       toolName: "TensorFlow Library"
@@ -54,6 +54,9 @@ toolset:
       toolName: "Bokeh Visualization Library"
       toolsetLogo: "images/toolset/keras.png"
 
+   
+
+
 # About
 about:
   image : "images/about/about-1.png"
@@ -62,6 +65,7 @@ about:
   content : "Creating multi purpose software thinking in what you need.
           Delivering on time and only well tested software, always ready for production."
   linktext: "More"
+  tooltitle: "Our resources"
 #  button:
 #    btnText : "read more"
 #    URL : "#"
