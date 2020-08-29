@@ -6,50 +6,15 @@
  * Copyright (c) 2020 Dynamic Witty Analytics
  */
 
-//parallax config
-//   .new-parallax {
-     
-// //   /* Set a specific height */
-//    height: 600px;
-//    margin-top: 60px;
 
-//   /* Create the parallax scrolling effect */
-//   background-attachment: fixed;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//  }
-// #main-text{
-// //   padding: 260px 0 0 0;
-// //   background-size: cover;
-// //   background-position: left bottom;
-// 	position: absolute;
-	
-// 	// z-index: 1;
-// 	top: -100px;
-// 	left: auto;
-// }
-/* 
-.hero-image{
-	height: 100vh;
-	
-	background-size: cover;
-	background-position: center;
-	padding:2em;
-	color:white;
-  
-	display: flex;
-	align-items: flex-end;
-	padding-bottom: 5%;
-	
-} */
-// hero image config for bigger displays
+/*hero image config for bigger displays*/
 .hero-image-full{
 
 	background-repeat: no-repeat; 
 	background-color: white;
 	padding-top: 70px;
 	min-height: 500px;
+	border-bottom: 1.8px solid #f5f5f5;
 
 	@media only screen and (max-width: 750px) {
 		display: none;	
@@ -88,38 +53,7 @@
 		}
 	}
 }
-// .im{
-// position: relative;	
-// display: flex;
-// justify-content: flex-end;
-// display: block;
-// float: right;
-// width: 300px;
-// height: 300px;
-// }
-// .imge1,.imge2,.imge3{
 
-// background-color: rgb(0, 132, 255);
-// width: 100px;
-// height: 120px;
-// border-radius: 10px;
-// border: solid 1px black;
-// }
-// .imge1{
-// 	position: absolute;
-// 	right: 20px;
-// 	bottom: 20px;
-// }
-// .imge2{
-// 	position: absolute;
-// 	bottom: 40px;
-// 	right: 100px;
-// }
-// .imge3{
-// position: absolute;
-// right: 40px;
-// bottom: 100px;
-// }
 .im{
 	position: relative;	
 	display: flex;
