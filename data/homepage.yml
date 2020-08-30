@@ -19,39 +19,44 @@ toolset:
     - tool: "python"
       toolName: "Python"
       toolsetLogo: "images/toolset/python.png"
-      description: "Incididunt irure reprehenderit velit excepteur. Labore elit in velit pariatur et consectetur." 
 
     - tool: "aws"
       toolName: "Amazon Web Services"
       toolsetLogo: "images/toolset/aws.png"
+      
+    - tool: "panel"
+      toolName: "Panel Dashboards for Python"
+      toolsetLogo: "images/toolset/panel.png"
+
+      
+    - tool: "altair"
+      toolName: "Bokeh Visualization Library"
+      toolsetLogo: "images/toolset/altair.png"
+
+  
+    - tool: "tensorflow"
+      toolName: "TensorFlow Library"
+      toolsetLogo: "images/toolset/tensorflow.png"
 
     - tool: "gcloud"
       toolName: "Google Cloud"
       toolsetLogo: "images/toolset/gcloud.png"
 
+    # - tool: "bokeh"
+    #   toolName: "Bokeh Visualization Library"
+    #   toolsetLogo: "images/toolset/bokeh.png"
+
     - tool: "sklearn"
       toolName: "Sklearn Toolkit"
       toolsetLogo: "images/toolset/sklearn.png"
-
-    - tool: "tensorflow"
-      toolName: "TensorFlow Library"
-      toolsetLogo: "images/toolset/tensorflow.png"
-
-    - tool: "panel"
-      toolName: "Panel Dashboards for Python"
-      toolsetLogo: "images/toolset/panel.png"
-
-    - tool: "bokeh"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/bokeh.png"
     
-    - tool: "altair"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/altair.png"
 
     - tool: "keras"
       toolName: "Bokeh Visualization Library"
       toolsetLogo: "images/toolset/keras.png"
+
+   
+     
 
   
    

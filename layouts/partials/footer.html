@@ -1,29 +1,38 @@
 {{"<!-- footer part start -->" | safeHTML }}
-<footer class="bg-secondary pt-5 z-depth-2">
+<footer class="bg-secondary">
   <section class="section border-color">
-    <!-- <div class="container"> -->
+    <div class="container">
       <div class="row">
-        <div class="footer-blocks col s12 m4 l4">
-          <!-- <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="wittylytics"></a> -->
+        <!-- <div class="footer-blocks col s12 m4 l4">
           <h4>{{ .Site.Params.footer.content | markdownify }}</h4>
           <ul class="list-inline social-icons">
             {{ range .Site.Params.footer.socialIcon }}
-            <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+            <li class="list-inline-item "><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
             {{ end }}
           </ul>
+        </div> -->
+        <div class="logo-footer">
+          <div><img alt="Datwit logo color" src="{{ .Site.BaseURL }}images/logo2.png"></div>
         </div>
-        <div class="footer-blocks col s12 m4 l4">
+        <div class="container-social">
+        <ul class="list-inline social-icons">
+          {{ range .Site.Params.footer.socialIcon }}
+          <li class="list-inline-item "><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
+      </div>
+        <div class="footer-blocks col s12 m6 l4 push-l2">
           <h4>{{ .Site.Params.footer.service.title }}</h4>
           {{ range .Site.Menus.footer }}
           <ul class="list-unstyled">
-            <li><a href="{{ .URL | absURL }}" class="text-light">{{ .Name }}</a></li>
+            <li><a href="{{ .URL | absURL }}" class="text-dark">{{ .Name }}</a></li>
           {{ end }}
           </ul>
         </div>
-        <div class="footer-blocks col s12 m4 l4">
+        <div class="footer-blocks col s12 m6 l4 push-l2">
           <h4>{{ .Site.Params.footer.contact.title }}</h4>
           <ul class=" list-hover-underline">
-            <li><i class="material-icons prefix">email</i><a href="mailto:{{.Site.Params.footer.contact.email}}" class="text-light">{{.Site.Params.footer.contact.email}}</a></li>
+            <li><i class="material-icons prefix">email</i><a href="mailto:{{.Site.Params.footer.contact.email}}" class="text-dark">{{.Site.Params.footer.contact.email}}</a></li>
           </ul>
         </div>
       </div>
@@ -37,7 +46,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12" id="copy">
-          <p class="text-light">Copyright &copy;
+          <p class="text-dark">Copyright &copy;
             <script>
               var CurrentYear = new Date().getFullYear();
               document.write(CurrentYear);

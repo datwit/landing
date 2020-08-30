@@ -164,9 +164,11 @@
     <div class="row">
       <h2>Our resources</h2>
       {{ range .Site.Data.homepage.toolset }}
-      <ul class="ribbon">
-          <li><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
-      </ul>
+      <div class="col s3">
+        <ul class="ribbon">
+            <li><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
+        </ul>
+      </div>
       {{end}}
     </div>
 </div>
