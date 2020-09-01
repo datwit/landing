@@ -10,10 +10,10 @@
       <div class="col s8" id="navigation"><!--------------------------desktop menu--------------------------->
         <ul class="navbar-nav hide-on-small">
           <li class="nav-item">
-              <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+              <a class="nav-link text-white text-capitalize se" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
           </li>
-         {{ range .Site.Menus.main }}
-          <!-- {{ if .HasChildren }}
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
           <li class="nav-item dropdown">
             <a class="nav-link text-white text-capitalize dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
@@ -25,15 +25,15 @@
               {{ end }}
             </div>
           </li>
-          {{ else }} -->
+          {{ else }}
           <li class="nav-item">
             <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}">{{ .Name }}</a>
           </li>
-          <!-- {{ end }} -->
+          {{ end }}
           {{ end }}
         </ul>
       </div><!------------------------------------------------------------------------------------------>
-      
+     
   <!--------------------------------------responsive sidenav---------------------------------------------->
         <ul id="slide-out" class="sidenav">
           <div class="user-view">

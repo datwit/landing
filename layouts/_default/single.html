@@ -1,12 +1,83 @@
 {{ define "main" }}
 
 <!----------------------blog page single pages----------------------------------->
-{{ partial "page-blog-header.html" . }}
+<!-- {{ partial "page-blog-header.html" . }} -->
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{"<!-- navigation -->" | safeHTML }}
 
-<section class="section mb-1">
+<nav class="navbar">
+  <div class="nav-wrapper">
+    <div class="row">
+      <div class="col s3" id="logo">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="wittylytics"></a>
+      </div>
+      <div class="col s8" id="navigation"><!--------------------------desktop menu--------------------------->
+        <ul class="navbar-nav hide-on-small" id="nav-list">
+          <li class="nav-item">
+              <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="/services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="/casestudies">Cases Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize fixed" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div><!------------------------------------------------------------------------------------------>
+     
+  <!--------------------------------------responsive sidenav---------------------------------------------->
+        <ul id="slide-out" class="sidenav">
+          <div class="user-view">
+            <div class="background"></div>
+            <div class="row">
+              <div class="col s6">
+              <img src="{{ .Site.Params.logomin | absURL }}" alt="sidenav-logo" class="logo-img">
+              </div>
+              <div class="col s6">
+              <a class="nav-link text-white text-capitalize navside sidenav-close" href="#!" id="close-icon"><i class="material-icons">chevron_left</i></a>
+              </div>  
+            </div>
+          </div>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside" href="/services">Services</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside" href="/casestudies">Cases Studies</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside fixed" href="/blog">Blog</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside" href="/about">About Us</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize navside" href="/contact">Contact Us</a>
+          </li>
+          
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger navside"><i class="material-icons">menu</i></a>
+    </nav>      
+  </div> 
+</div>
+
+{{"<!-- nav part end -->" | safeHTML }}
+<!------------------------------------------------------------------------------------------------------------------>
+<section class="section mb-2">
   <div class="container">
     <div class="row">
-      <div class="col s12 m8 l9">
+      <div class="col s12 m8 l8">
         <img src="{{ .Params.Image | absURL }}" class="rounded-sm" alt="post-thumb">
         <p class="text-color card-date position-relative d-inline-block">BY <span class="text-dark">{{ .Params.Author }}</span> / ON <span class="text-dark">{{ .PublishDate.Format "Jan 02, 2006" }}</span></p>
         <div class="content">
@@ -16,7 +87,7 @@
           <h5 class="d-inline-block">Share:</h5>
           <ul class="list-inline d-inline-block">
             {{ range .Site.Params.sharePost }}
-            <li class="list-inline-item"><a href="{{ .URL }}" class="text-color"><i class="fa {{ .icon }}"></i></a></li>
+            <li class="social-share"><a href="{{ .URL }}" class="text-color"><i class="fa {{ .icon }}"></i></a></li>
             {{ end }}
           </ul>
         </div>

@@ -30,7 +30,7 @@ a.text-dark
 // a.text-light 
 {
   &:hover {
-    color: $primary-color !important;
+    color: $secondary-color !important;
   }
 }
 
@@ -50,7 +50,7 @@ a.text-dark
 
 //Footer brackground
 .bg-secondary {
-  background: $bg-secondary !important;
+  background: $primary-color !important;
   padding-bottom: 5px;
   border-top: solid 2px white;
   
@@ -152,9 +152,11 @@ img{
 
 // section-gap added in case is needed
 .mb-1 {
-  padding-top: 3em !important;
+  padding-top: 4em !important;
 }
-
+.mb-2{
+margin-top: 110px;
+}
 .row{
   margin-bottom: 0 !important;
 }
@@ -165,13 +167,19 @@ img{
 .mr-2{
   padding-bottom: 1.5em;
 }
+.mr-3{
+  padding-bottom: 4em;
+}
+
 .container{
   margin: {
     top: 10px;
     bottom: 10px;
   }
 }
-
+.orange-divider{
+  border-top: 3px dashed $secondary-color2;
+}
 
 
 // slick slider 
@@ -299,15 +307,13 @@ img{
         border-radius: 50%;
         font-size: 20px;
         padding: 0 0 15px 0;
-        background-color: $primary-color;
+        background-color: $secondary-color2;
         
 
         // @extend .transition;
 
         &:hover {
-          /* background-color: $primary-color; */
-          border: 4px solid $secondary-color2;
-          transition-duration: none;
+          color: $secondary-color;
         }
       }
       
@@ -335,7 +341,7 @@ img{
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      color: $primary-color;
+      color: $secondary-color;
       transition: .3s ease;
     }
     
@@ -399,6 +405,10 @@ img{
 .visit{
   color: white;
 }
+#contact-section{
+  border: 3px dashed $secondary-color2;
+  
+}
 
 //contact us page
 #belg{
@@ -417,9 +427,9 @@ img{
 //github icon 
 .text-reset {
   text-decoration: none;
-  color: black;
+  color: $secondary-color;
   &:hover{
-    color: $primary-color;
+    color: $secondary-color2;
   }
 }
 
@@ -437,6 +447,7 @@ img{
   display: inline-block;
   display: flex;
   justify-content: center;
+  margin: 20px 0px 20px 0px ;
   // @media only screen and (max-width: 1680px) {
   //   img{
   //    object-fit: cover;
@@ -447,5 +458,10 @@ img{
 }
  
 #tool-bg{
-  background-color:$bg-secondary;
+  // background-color:$bg-secondary;
+  border: 3px dashed $secondary-color2;
+ 
+  h2{
+    margin-top: 10px !important;
+  }
 }

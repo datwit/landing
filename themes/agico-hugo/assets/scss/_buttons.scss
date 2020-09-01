@@ -75,7 +75,15 @@
   z-index: 3;
   top: 186px;
   i{
-    color: $secondary-color;
+    color: $primary-color;
     font-weight: bolder;
+    &:hover{
+      color: $secondary-color;
+    }
   }
+  &:active{
+    transform: translateY(3px);
+    transition: all .05s linear;
+  }
+ 
 }

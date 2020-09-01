@@ -12,7 +12,7 @@
   height: 85px;
   padding-top: 0px;
   padding-left: 15px;
-  background-color: white;
+  background-color: $primary-color;
   /*fixed navbar*/
   position: fixed; 
   top:0;          
@@ -21,7 +21,7 @@
   box-shadow: none;
   border-bottom: 1.8px solid #f5f5f5;
 
-  .nav-item {
+  .nav-item{
 
     .nav-link {
       font-size: 20px;
@@ -29,7 +29,10 @@
       /*padding: 20px 22px;*/
       font-family: $primary-font;
       transition: all ease 0.3s;
-      color: $secondary-color !important;
+      color: white;
+      position: relative;
+      display: block;
+      transition: 0.5s;
       
       @include desktop{
         font-size: 16px !important;
@@ -39,21 +42,43 @@
         padding: 20px 15px;
         font-size: 18px !important;
       }
-
-      &.active {
-        color: $primary-color;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: $secondary-color2;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
       }
-
       &:hover {
-        color: $primary-color !important;
-        background-color: #fafafa;
+        color: $secondary-color;
+        background-color: #08476b;
         border-radius: 6px;
+      
       }
+  
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }    
+          
       @include desktop {
         padding: 20px 10px;
         font-size: 18px;
       }
     }
+    
+    
+  }
+  //Fixed active menu item
+  .fixed{
+    color: $secondary-color2 !important;
+    // border-bottom: 5px solid $secondary-color2;
+    
     
   }
 
@@ -141,19 +166,28 @@
   display: none;
   }
 } 
-nav .sidenav-trigger{
-  @media only screen and (min-width: 992px) {
-  visibility: hidden;
-  }
-}
+ 
 //toggle navigation bar 
-nav .sidenav-trigger{
-  float: right !important;
-  
+nav {
+  .sidenav-trigger{
+    float: right !important;
+    color: $secondary-color;
+    
+    i{
+      &:hover{
+        color: $secondary-color2;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      visibility: hidden;
+    }
+  }
 }
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
   font-size: 40px !important;
+   
 }
+
 .sidenav{
   &-overlay{
     z-index: 0 !important;
@@ -168,11 +202,12 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
     
 }
 
-li.list{
+.list{
   display: list-item !important;
+
 }
 
-a.navside{
+.navside{
   font-size: 20px !important;
   &:hover{
     color: #58acdd !important;
@@ -197,7 +232,7 @@ margin-top: 5px;
 // breadcrumb 
 .breadcrumb-item{
   &:hover{
-    color: $primary-color;
+    color: $secondary-color;
   }
 }
 //aligning breadcrumbs
@@ -221,9 +256,7 @@ nav.nav-bread{
   background-color: white;
   margin-top: 80px;
 }
-// .breadcrumb-item.text-white{
-//   font-size: 18px;
-// }
+
 .flow-text{
   font-size: 18px;
  

@@ -20,7 +20,15 @@
  
   &-social {
     text-align: center;
-    font: normal normal normal 20px/1 FontAwesome !important;
+    // font: normal normal normal 20px/1 FontAwesome !important;
+    i{
+      color: $secondary-color;
+      font-size: 32px;
+      &:hover{
+        color: $secondary-color2;
+      }
+    }
+    
   }
   @include mobile-xs{
     display: flex;
