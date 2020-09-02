@@ -58,7 +58,8 @@ a.text-dark
 
 .border-color {
   margin-top: 0px !important;
-  padding-bottom: 100px;
+  //changing height of the footer
+  // padding-bottom: 100px;
 }
 
 
@@ -178,7 +179,7 @@ margin-top: 110px;
   }
 }
 .orange-divider{
-  border-top: 3px dashed $secondary-color2;
+  border-top: 3px dotted $secondary-color2;
 }
 
 
@@ -313,7 +314,7 @@ margin-top: 110px;
         // @extend .transition;
 
         &:hover {
-          color: $secondary-color;
+          color: $primary-color;
         }
       }
       
@@ -405,10 +406,14 @@ margin-top: 110px;
 .visit{
   color: white;
 }
-#contact-section{
-  border: 3px dashed $secondary-color2;
-  
+
+.adj{
+  display: flex;
+  align-items: center;
 }
+  
+  
+
 
 //contact us page
 #belg{
@@ -444,24 +449,28 @@ margin-top: 110px;
 }
 
 .ribbon{
-  display: inline-block;
+  
   display: flex;
   justify-content: center;
-  margin: 20px 0px 20px 0px ;
-  // @media only screen and (max-width: 1680px) {
-  //   img{
-  //    object-fit: cover;
-  //    height: 100%;
-  //    width: 80%;
-  //   }
-  // }
+  margin-bottom: 0px;
 }
- 
-#tool-bg{
-  // background-color:$bg-secondary;
-  border: 3px dashed $secondary-color2;
+
+//tools section ribbon
+.bg-gray{
+  background-color:$bg-secondary;
+  // border: 3px dashed $secondary-color2;
  
   h2{
     margin-top: 10px !important;
+  }
+}
+
+#test{
+  img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px; 
   }
 }

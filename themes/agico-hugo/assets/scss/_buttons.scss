@@ -11,7 +11,6 @@
   font-size: 20px;
   font-family: $primary-font;
   text-transform: capitalize;
-  padding-left: 30px;
   border-radius: 45px;
   font-weight: 500;
   border: 1px solid;
@@ -20,13 +19,15 @@
   transition: .3s ease-in;
   overflow: hidden;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: #00baff;
+  background-color: $secondary-color2;
   transition-duration: 70ms;
-  padding: 0 16px !important;
+  padding: 20px 20px !important;
   margin-left: auto;
   margin-right: auto;
-  
+  width: 205px;
+    
   
   &:focus {
     outline: 0;
@@ -38,7 +39,7 @@
   }
 
   &:hover{
-    background-color: #e69c24 !important;
+    background-color: $primary-color !important;
     transition-duration: 70ms !important;
     
   }
@@ -47,19 +48,23 @@
     margin-top: 0 !important; 
     margin-left: 15px;
   }
+  
+}
+#contact-bt{
+  padding: 18px 18px !important;
+}
+
+// call to action button banner area
+#call{
+  margin-left: 0px !important; 
 }
 
 //button without margin-top
 .btn-lg{
   /*padding: 20px 30px;*/
-  margin-top: 60px;
+  margin-top: 50px;
 
   
-}
-
-//call to action button banner area
-#call{
-  margin: 0 0 !important;
 }
 
 //arrow link team members section homepage
