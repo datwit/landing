@@ -125,9 +125,6 @@
         <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Send 
         <i class="material-icons">send</i>
         </button>
-        <!----------------got you------------------------------------------------->
-        {{ partial "honeypot.html" . }}
-        <!------------------------------------------------------------------------>
       </div>
     </form>       
     </div>
@@ -160,4 +157,9 @@
 
 
 
+{{ end }}
+
+{{ define "jsaddons" }}
+{{ $honjs := resources.Get "js/honeypoter.js" | minify}}
+<script src="{{ $honjs.Permalink }}"></script>
 {{ end }}
