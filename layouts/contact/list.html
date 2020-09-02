@@ -89,7 +89,7 @@
         <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg" class="rounded-sm">
             {{end}}
       </div>
-    <form id="form_id" method="post" action="">
+    <form id="contact_form_id" method="post" action='{{ getenv "CONTACT_FORM_API" }}'>
       <div class="col s12 m6 l7">
         <div class="input-field">
           <i class="material-icons prefix">account_circle</i>
