@@ -1,26 +1,26 @@
 {{"<!-- contact -->" | safeHTML }}
 
-<section class="mr-3 bg-gray"><!--?------contact us section-------------------------------------->
-    <div class="container">
-      <div class="row adj">
-        <div class="col s12 m6">
-          {{ with .Site.Data.contact.contactForm }}
-          <h2>{{ .title }}</h2>
-          {{ end }}
-        </div>
-        <div class="col s12 m6">
-          <a href="/contact" class="visit" ><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="contact-bt">Get in touch
-            <i class="material-icons">send</i></button></a>
-          <div class="container-social">
-            <ul class="list-inline social-icons">
-              {{ range .Site.Params.footer.socialIcon }}
-              <li class="list-inline-item "><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
-              {{ end }}
-            </ul>
-          </div>
-        </div>
-      </div>   
-    </div>
-  </section><!--?------/contact us section------------------------------------------------------->  
+<section class=" light-grey"><!--?------contact us section-------------------------------------->
+  <div class="container">
+    <div class="row adj">
+      <div class="col s12 m6">
+        {{ with .Site.Data.contact.contactForm }}
+        <h2>{{ .title }}</h2>
+        {{ end }}
+      </div>
+      <div class="col s12 m6">
+        <a href="/contact" class="visit" ><button class="btn waves-effect waves-light btn-lg" type="submit" name="action" id="call1">Contact us
+          <i class="material-icons">send</i></button></a>
+        <div class="container-social">
+          <ul class="list-inline social-icons">
+            {{ range .Site.Params.footer.socialIcon }}
+            <li class="list-inline-item "><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>  
+      </div>
+    </div>   
+  </div>
+</section><!--?------/contact us section------------------------------------------------------->  
 
   {{"<!-- contact -->" | safeHTML }}

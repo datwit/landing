@@ -17,11 +17,24 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function() {
   M.updateTextFields();
 });
-      
+
 $(document).ready(function() {
   $('input#name,input#email,input#subject,textarea#textarea1').characterCounter();
-}); 
+ }); 
 
-
-
-
+/* function changedValue() {
+  let text = document.getElementById("textarea1");
+  let textValue = text.value;
+  let row = text.getAttribute('rows');
+  let lines = textValue.split(/\r|\r\n|\n/);
+  let count = lines.length;
+  console.log(lines)
+  
+  if (count >= row) {
+      text.style.overflowY = "scroll";
+  }
+  else if (count < row) {
+      text.style.overflowY = "hidden";
+  }
+}
+ */

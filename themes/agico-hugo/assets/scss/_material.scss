@@ -55,3 +55,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .input-field > label{
   font-size: 1.2em !important;
 }
+
+textarea {
+    height: 8rem !important;
+}

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         
-        <div class="footer-blocks col s12 m6 l4 push-l2">
+        <div class="footer-blocks col s12 m6 l6">
           <h4>{{ .Site.Params.footer.service.title }}</h4>
           {{ range .Site.Menus.footer }}
           <ul class="list-unstyled">
@@ -12,7 +12,7 @@
           {{ end }}
           </ul>
         </div>
-        <div class="footer-blocks col s12 m6 l4 push-l3">
+        <div class="footer-blocks col s12 m6 l6">
           <h4>{{ .Site.Params.footer.contact.title }}</h4>
           <ul class=" list-hover-underline">
             <li><i class="material-icons prefix">email</i><a href="mailto:{{.Site.Params.footer.contact.email}}" class="text-light">{{.Site.Params.footer.contact.email}}</a></li>

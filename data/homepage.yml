@@ -28,50 +28,53 @@ toolset:
     #   toolName: "Panel Dashboards for Python"
     #   toolsetLogo: "images/toolset/panel.png"
 
-         
-    - tool: "altair"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/altair.png"
-
-  
+     
     # - tool: "gcloud"
     #   toolName: "Google Cloud"
     #   toolsetLogo: "images/toolset/gcloud.png"
-
-    - tool: "bokeh"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/bokeh.png"
-
-    
-    - tool: "keras"
-      toolName: "Deep learning API"
-      toolsetLogo: "images/toolset/keras.png"
-
-    - tool: "sagemaker"
-      toolName: "Amazon Sagemaker"
-      toolsetLogo: "images/toolset/sagemaker.png"
-
-    - tool: "chalice"
-      toolName: "Python Serverless Microframework for AWS"
-      toolsetLogo: "images/toolset/chalice.png"
-
-    - tool: "nuxtjs"
-      toolName: "VUE Framework"
-      toolsetLogo: "images/toolset/nuxtjs.png"
-
-    - tool: "vega"
-      toolName: "Vega Vizualization Grammar"
-      toolsetLogo: "images/toolset/vega.png"
-
-    - tool: "tensorflow"
-      toolName: "TensorFlow Library"
-      toolsetLogo: "images/toolset/tensorflow.png"
 
     - tool: "sklearn"
       toolName: "Sklearn Toolkit"
       toolsetLogo: "images/toolset/sklearn.png"
 
+        
+    - tool: "keras"
+      toolName: "Deep learning API"
+      toolsetLogo: "images/toolset/keras.png"
+
+    - tool: "chalice"
+      toolName: "Python Serverless Microframework for AWS"
+      toolsetLogo: "images/toolset/chalice.png"
+
+    - tool: "sagemaker"
+      toolName: "Amazon Sagemaker"
+      toolsetLogo: "images/toolset/sagemaker.png"
+
+toolset2:
+   
+    - tool: "vega"
+      toolName: "Vega Vizualization Grammar"
+      toolsetLogo: "images/toolset/vega.png"
+
+    - tool: "nuxtjs"
+      toolName: "VUE Framework"
+      toolsetLogo: "images/toolset/nuxtjs.png"
     
+    - tool: "tensorflow"
+      toolName: "TensorFlow Library"
+      toolsetLogo: "images/toolset/tensorflow.png"
+
+    - tool: "bokeh"
+      toolName: "Bokeh Visualization Library"
+      toolsetLogo: "images/toolset/bokeh.png"
+          
+    - tool: "altair"
+      toolName: "Bokeh Visualization Library"
+      toolsetLogo: "images/toolset/altair.png"
+
+   
+     
+
   
    
 
