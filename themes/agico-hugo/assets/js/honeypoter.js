@@ -1,3 +1,4 @@
-$( document ).ready(function() {
-    $(' #fields ').addClass('hide');
-});
+(function() {
+    var el = document.getElementById('fields');
+    el.style.display = 'none';
+})();
