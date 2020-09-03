@@ -58,7 +58,6 @@ a.text-dark
 
 .border-color {
   margin-top: 0px !important;
-  //changing height of the footer
   // padding-bottom: 100px;
 }
 
@@ -163,7 +162,7 @@ margin-top: 110px;
 }
 //gap to use between rows
 .mr-1{
-  padding-top: 1.5em;
+  padding-top: 2em;
 }
 .mr-2{
   padding-bottom: 1.5em;
@@ -180,6 +179,9 @@ margin-top: 110px;
 }
 .orange-divider{
   border-top: 3px dotted $secondary-color2;
+}
+.orange-divider2{
+  border-bottom: 3px dotted $secondary-color2;
 }
 
 
@@ -406,14 +408,10 @@ margin-top: 110px;
 .visit{
   color: white;
 }
-
-.adj{
-  display: flex;
-  align-items: center;
+#contact-section{
+  border: 3px dashed $secondary-color2;
+  
 }
-  
-  
-
 
 //contact us page
 #belg{
@@ -432,9 +430,9 @@ margin-top: 110px;
 //github icon 
 .text-reset {
   text-decoration: none;
-  color: $secondary-color;
+  color: $secondary-color2;
   &:hover{
-    color: $secondary-color2;
+    color: $primary-color;
   }
 }
 
@@ -449,28 +447,29 @@ margin-top: 110px;
 }
 
 .ribbon{
-  
+  display: inline-block;
   display: flex;
   justify-content: center;
-  margin-bottom: 0px;
+  margin: 20px 0px 20px 0px ;
+  // @media only screen and (max-width: 1680px) {
+  //   img{
+  //    object-fit: cover;
+  //    height: 100%;
+  //    width: 80%;
+  //   }
+  // }
 }
-
-//tools section ribbon
-.bg-gray{
-  background-color:$bg-secondary;
-  // border: 3px dashed $secondary-color2;
  
+#tool-bg{
+ padding-top: 10px;
+ padding-bottom: 10px;
   h2{
-    margin-top: 10px !important;
+    margin-top: 0px !important;
   }
+ 
 }
 
-#test{
-  img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-top: 10px; 
-  }
+#textarea1{
+  // height: 8rem !important;
+  overflow-y: scroll;
 }
