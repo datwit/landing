@@ -426,6 +426,12 @@ margin-top: 110px;
 //   text-align: center !important;
 // }
 
+// text area adjustments contact us form 
+#textarea1{
+  // height: 8rem !important;
+  overflow-y: scroll;
+}
+
 //about us page 
 //github icon 
 .text-reset {
@@ -446,6 +452,7 @@ margin-top: 110px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 3px 1px -2px rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.8);
 }
 
+//**************** tools section******************************************
 .ribbon{
   display: inline-block;
   display: flex;
@@ -468,8 +475,17 @@ margin-top: 110px;
   }
  
 }
+//*************************************************************************
+//**********************the team section homepage*************************
+.bg-illustration{
+  position: relative;
+  display: flex;
+  justify-content: center;
 
-#textarea1{
-  // height: 8rem !important;
-  overflow-y: scroll;
+  .team-cont{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    
+  }
 }

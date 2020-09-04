@@ -7,17 +7,26 @@
  */
 
 
- #copy{
-  display: flex;
-  justify-content: center;
-}
 .footer-blocks{
   padding-left: 30px !important;
   text-align: left;
   i{
     color: white;
+   
   }
   a{
     font-size: 19px;
   }
+}
+
+// email & icon aligntment
+#i-email{
+  li{
+    display: flex;
+    align-items: center;
+
+    i{
+      margin-right: 6px;
+    }
+  }  
 }

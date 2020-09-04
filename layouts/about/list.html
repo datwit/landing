@@ -1,82 +1,12 @@
 {{ define "main" }}
 
-<!-- {{ partial "page-header.html" . }} -->
 <!-----------------------------navbar ------------------------------------------------------------------>
-{{"<!-- navigation -->" | safeHTML }}
-
-<nav class="navbar">
-  <div class="nav-wrapper">
-    <div class="row">
-      <div class="col s3" id="logo">
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="wittylytics"></a>
-      </div>
-      <div class="col s8" id="navigation"><!--------------------------desktop menu--------------------------->
-        <ul class="navbar-nav hide-on-small" id="nav-list">
-          <li class="nav-item">
-              <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white text-capitalize" href="/services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white text-capitalize" href="/casestudies">Cases Studies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white text-capitalize" href="/blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white text-capitalize fixed" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white text-capitalize" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div><!------------------------------------------------------------------------------------------>
-     
-  <!--------------------------------------responsive sidenav---------------------------------------------->
-        <ul id="slide-out" class="sidenav">
-          <div class="user-view">
-            <div class="background"></div>
-            <div class="row">
-              <div class="col s6">
-              <img src="{{ .Site.Params.logomin | absURL }}" alt="sidenav-logo" class="logo-img">
-              </div>
-              <div class="col s6">
-              <a class="nav-link text-white text-capitalize navside sidenav-close" href="#!" id="close-icon"><i class="material-icons">chevron_left</i></a>
-              </div>  
-            </div>
-          </div>
-          <li class="list">
-            <a class="nav-link text-white text-capitalize navside" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
-          </li>
-          <li class="list">
-            <a class="nav-link text-white text-capitalize navside" href="/services">Services</a>
-          </li>
-          <li class="list">
-            <a class="nav-link text-white text-capitalize navside" href="/casestudies">Cases Studies</a>
-          </li>
-          <li class="list">
-            <a class="nav-link text-white text-capitalize navside" href="/blog">Blog</a>
-          </li>
-          <li class="list">
-            <a class="nav-link text-white text-capitalize navside fixed" href="/about">About Us</a>
-          </li>
-          <li class="list">
-            <a class="nav-link text-white text-capitalize navside" href="/contact">Contact Us</a>
-          </li>
-          
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger navside"><i class="material-icons">menu</i></a>
-    </nav>      
-  </div> 
-</div>
-
-{{"<!-- nav part end -->" | safeHTML }}
+{{ partial "pheader-about.html" . }}
 <!------------------------------------------------------------------------------------------------------------------>
 
 {{"<!-- about -->" | safeHTML }}
 {{ with .Site.Data.about.about }}
-<section class="mb-2"><!--**********************header section about the company********************-->
+<section class="mb-2 mr-2"><!--**********************header section about the company********************-->
   <div class="container">
     <div class="row">
       <div class="col s12 m6 l6">
@@ -95,38 +25,38 @@
 </section><!--**************************************************************************************** -->
 {{end}}
 <!------------------------------team members------------------------------------------------------------>
-<section id="team">
-  <div class="container orange-divider">
-    <div class="row">
+<section id="team" class="light-grey">
+  <div class="container">
+    <div class="row"><!-------------------------------------------->
       <div class="col s12">
         {{ with .Site.Data.team.team }}
         <h2>{{ .subtitle }}</h2>
         {{ end }}
       </div>
-    </div>
+    </div><!------------------------------------------------------->  
+    <div class="row"><!-------------------------------------------->
       {{ range $element:= .Site.Data.team.team.teamMember }}
-      {{"<!-- team member -->" | safeHTML}}
-    <div class="row mr-2">
       <div class="col s12 m12 l6">
-        <div class="team-member">
-        <img src="{{ .image2 | absURL }}">
-        </div>
-      </div>
-      <div class="col s12 m12 l6"> 
+        <div class="team-member"><!----------------------picture-->
+          <img src="{{ .image | absURL }}">
+        </div><!-------------------------------------------------->
         <h5 class="team-member-name">{{.name }}</h5>
         <p class="team-member-designation">{{ .designation }}</p>
-        <p class="team-member-designation" id="bio">{{ .bio }}</p>
         <div class="row">
-          <div class="team-member-social">
-            {{ range .socialIcon }}
-            <a href="{{.URL }}"><i class="fa {{ .icon }}"></i></a>
-            {{ end }}
+          <div class="col l8 push-l2">
+            <p class="team-member-bio" id="bio">{{ .bio }}</p>
+            <div class="container-social">
+              <ul class="list-inline social-icons">
+                {{ range .socialIcon }}
+                <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+            </div> 
           </div>
-        </div>  
+        </div>
       </div>
-    </div>
-    
-      {{ end }}
+      {{end}}
+    </div><!------------------------------------------------------->
   </div>
 </section>
 
