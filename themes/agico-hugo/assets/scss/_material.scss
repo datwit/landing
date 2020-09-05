@@ -9,10 +9,10 @@
 
 //these are the MD overriden styles 
 .input-field .prefix.active {
-    color:#58acdd !important;
+    color:$secondary-color !important;
 }
 button:focus {
-    background-color: #58acdd;
+    background-color: $secondary-color;
 }
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
@@ -27,14 +27,14 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #58acdd !important;
-    -webkit-box-shadow: 0 1px 0 0 #58acdd !important;
-    box-shadow: 0 1px 0 0 #58acdd !important;
+    border-bottom: 1px solid $secondary-color !important;
+    -webkit-box-shadow: 0 1px 0 0 $secondary-color !important;
+    box-shadow: 0 1px 0 0 $secondary-color !important;
 }
 
 button:focus {
     outline: none;
-    background-color: #58acdd !important;
+    background-color: $secondary-color !important;
 }
 input:not([type]):focus:not([readonly])+label,
 input[type=text]:not(.browser-default):focus:not([readonly])+label,
@@ -49,7 +49,7 @@ input[type=tel]:not(.browser-default):focus:not([readonly])+label,
 input[type=number]:not(.browser-default):focus:not([readonly])+label,
 input[type=search]:not(.browser-default):focus:not([readonly])+label,
 textarea.materialize-textarea:focus:not([readonly])+label {
-    color: #58acdd !important;
+    color: $secondary-color !important;
   
 }
 .input-field > label{
@@ -58,4 +58,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 textarea {
     height: 8rem !important;
+}
+.slider .indicators .indicator-item.active{
+    background-color: $secondary-color;
+}
+.slider .slides li .caption{
+    top: 60% !important;
 }

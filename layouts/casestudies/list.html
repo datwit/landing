@@ -14,7 +14,7 @@
         {{ end }}
       </div>
     </div> <!-------------/first row title----------------------------------------------------->
-    <div class="row mr-1">
+    <div class="row mr-1 mr-2">
       <!--listed images------------------------------------------------------------------------->
       <div class="flip-container col s12 m6 l12" ontouchstart="this.classList.toggle('hover');">
       {{ range .Site.Data.product.pgtitle.productItem}}
@@ -35,6 +35,6 @@
   </div>
 </section><!--? /products section---------------------------------------------------------------> 
 
-{{ partial "contact-access.html" . }}
+{{ partial "contact-access-gray.html" . }}
 
 {{ end }}

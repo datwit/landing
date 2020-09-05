@@ -2,18 +2,65 @@
 
 <!-----------------------------navbar ------------------------------------------------------------------>
 {{ partial "pheader-blog.html" . }}
-<!------------------------------------------------------------------------------------------------------------------>
-
-<!-----blog page---------------------------------------------->
-<section class="section mb-2">
+<!-------------------------------------search--------------------------------------------------------------->
+<section class="mr-2" id="search">
   <div class="container">
     <div class="row">
-      <div class="col s12 m8 l8">
+      <div class="col s12 m12 l4 push-l8">
+          <form action="{{ .Site.BaseURL }}/search">
+          <div class="search-field">
+            <i class="material-icons">search</i><input id="search-query" name="s" type="search" placeholder="Search here">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section><!--------------------------------/search--------------------------------------------------------->
+<!-------------------------------------latest post section--------------------------------------------------->
+<section class="light-gray">
+  <div class="container">
+    <div class="row esp">
+      <div class=" col s12 m12 l7">
+        <h3 id="slid-head">Don't miss these latest articles</h3>
+        <div class="slider">
+          <ul class="slides">
+            {{ range first 3 ( where .Site.Pages "Type" "post" )}}
+            <li>
+              <img src="{{ .Params.Image | absURL }}" class="responsive-img"  alt="post-thumb">
+              <div class="caption left-align" id="slider-cap">
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              </div>
+            </li>
+            {{end}}
+          </ul>
+        </div>
+      </div>
+      <div class=" col s12 m12 l5">
+        <h2 id="blog-h">Welcome</h2>
+        <img src="{{ .Site.BaseURL }}images/icono-vert.png" alt="sas"> 
+        <div id="blog-p">
+          <p class="center-align">Welcome to the Datwit family. Discover interesting ideas and unique perspectives from our amazing crew. </p>
+          <ul class="list-inline social-icons center-align">
+            {{ range .Site.Params.footer.socialIcon }}
+            <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-----blog page--------------------------------------------------------------------------------------------->
+<section class="mr-1">
+  <div class="container">
+    
+      
         <div class="row">
           {{ $paginator := .Paginate .Data.Pages }}
           {{ range $paginator.Pages }}
           {{ "<!-- blog post -->" | safeHTML }}
-          <div class="col s12 m6 l6">
+          <div class="col s12 m6 l4">
             <article>
               <div class="card hoverable">
                 <div class="card-image">
@@ -123,54 +170,10 @@
           </div>
           {{"<!-- /pagination -->" | safeHTML }}
         </div>
-      </div>
-      <!-------------------------side bar modified---------------------------------------->
-      <div class="sidebar-border col s12 m4 l4">
-        <div class="row">
-          <div class="widget">
-            <h3>Search</h3>
-            <form action="{{ .Site.BaseURL }}/search">
-              <div class="position-relative">
-                <input id="search-query" name="s" type="search" placeholder="Search here">
-              </div>
-            </form>
-          </div>
-        </div><!----------------------------------------------------->
-        <div class="divider"></div>
-        <div class="row">  
-          <div class="widget">
-              <h3>Categories</h3>
-              {{- if isset .Site.Taxonomies "categories" }}
-            {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
-            <ul class="list-unstyled">
-              {{- range $name, $items := .Site.Taxonomies.categories }}
-              <li><a class="text-color" href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
-              {{- end }}
-            </ul>
-            {{- end }}
-            {{- end }}
-          </div>
-        </div> <!--------------------------------------------------->
-        <div class="divider"></div>
-        
-        <div class="row"><!---------------tags--------------------------->
-          <div class="widget">
-            <h3>Tags</h3>
-            {{- if isset .Site.Taxonomies "tags" }}
-            {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
-            <ul>
-              {{- range $name, $items := .Site.Taxonomies.tags }}
-            <li class="filter-tags"><a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
-              {{- end }}
-            </ul>
-            {{- end }}
-            {{- end }}
-          </div> 
-        </div> 
-      </div>
-      <!-------------------------/side bar modified---------------------------------------->
       
-    </div>
+      
+      
+   
   </div>
 </section>
 

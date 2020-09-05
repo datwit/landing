@@ -47,6 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Tooltip.init(elems, options);
 });
 
+//slider
+document.addEventListener('DOMContentLoaded', function() {
+  var options = [indicators = 'true', height = 440, interval = 6000];
+  var elems = document.querySelectorAll('.slider');
+  var instances = M.Slider.init(elems, options);
+});
+
+
 /* function changedValue() {
   let text = document.getElementById("textarea1");
   let textValue = text.value;

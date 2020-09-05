@@ -20,19 +20,22 @@
   font-size:16px;
   padding: 0.1rem 0.8rem 0.1rem 0.8rem;
   line-height:20px;
-  border: 3px solid $secondary-color;
-  background-color: #ecebe9 ;
+  border: 3px solid white;
+  background-color: $secondary-color ;
   border-radius: 3rem;
   text-align:center;
   transition-duration: 60ms;
   
   &:hover{
-    border: 3px solid $secondary-color2;
+    // border: 3px solid $secondary-color2;
     transition-duration: 60ms;
   }
 
   a:hover{
-    color:$secondary-color2;
+    color:white;
+  }
+  a{
+    color: $primary-color;
   }
 }
 /* 
@@ -79,3 +82,29 @@ ul:not(.browser-default) > li{
   display: flex;
   justify-content: center;
 }
+
+#search{
+  padding-top: 100px;
+  
+  .search-field{
+  display: flex;
+  align-items: center;
+  }
+}
+#blog-h{
+   margin-top: 0px !important;
+}
+#blog-p{
+  p{
+    margin: 0px !important;
+  }
+}
+#slider-cap{
+  a{
+    color: $secondary-color2 !important;
+  }
+}
+#slid-head{
+  margin-top: 0px !important;
+}
+

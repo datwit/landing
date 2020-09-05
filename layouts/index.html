@@ -10,7 +10,7 @@
     <div class="im">
       <div class="imge1"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image1.png"></div>
       <div class="imge2"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image2.png">
-        <a class="btn-floating btn-large white pulse tooltipped" data-position="bottom" data-tooltip="Get in touch" id="floatb" href="/services"><i class=" small material-icons">arrow_forward</i></a>
+        <a class="btn-floating btn-large white pulse tooltipped" data-position="bottom" data-tooltip="What we do" id="floatb" href="/services"><i class=" small material-icons">arrow_forward</i></a>
       </div>
       <div class="imge3"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image3.png"></div>
       
@@ -67,13 +67,13 @@
 
 
 {{"<!-- goals -->"| safeHTML}}
-<section class="mr-1">
+<section class="mr-1 mr-2">
   <div class="container">
     <div class="row">
       <!--first card------------------------>
       {{ with .Site.Data.homepage.about }}
       <div class="col s12 m4">
-        <div class="card">
+        <div class="card hoverable">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
           </div>
@@ -97,7 +97,7 @@
       <!--second card------------------------>
     {{ with .Site.Data.homepage.about2 }}
     <div class="col s12 m4">
-      <div class="card">
+      <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
         </div>
@@ -121,7 +121,7 @@
   <!--third card------------------------>
     {{ with .Site.Data.homepage.about3 }}
     <div class="col s12 m4">
-      <div class="card">
+      <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
         </div>
@@ -166,7 +166,7 @@
     </div>
   </div>
 </section> -->
-<section class="mr-2 light-grey" id="tool-bg">
+<section class="mr-2 light-gray" id="tool-bg">
   <div class="container">
     <div class="row">
       <h2>Our resources</h2>
@@ -175,7 +175,7 @@
       {{ range .Site.Data.homepage.toolset }}
       <div class="col s2 m2 l2">
         <ul class="ribbon">
-            <li><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
+            <li><img class="responsive-img" src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
         </ul>
       </div>
       {{end}}
@@ -195,8 +195,8 @@
 {{"<!-- /toolset -->"| safeHTML}}
 
 {{"<!-- team -->" | safeHTML}}
-<section>
-  <div class="container mr-2">
+<section class="mb-1 mr-3">
+  <div class="container" id="team-cont">
     <div class="row">
       <div class="col s12"><!-------------------------first row title------->
         {{ with .Site.Data.team.team }}
@@ -205,24 +205,8 @@
         <h6>{{.subtitle}}<a href="about#team"><i class="small material-icons" id="link">chevron_right</i></a></h6>
         {{ end }}
       </div>
-    </div>
-    <!-----------------------------/first row title----------------->
-   
-  </div>
-  <!------second row members-------------------------------->
-    <div class="mr-1 bg-illustration">
-      <img class="responsive-img" src="{{ .Site.Data.homepage.banner.ilimage | absURL }}" alt="Belgrade illustration">
-      <div class="container team-cont">
-        <div class="row">
-          {{ range .Site.Data.team.team.teamMember }}
-          <div class="col s6 m6 l6">
-            <img src="{{ .image2 | absURL}}" alt="{{.name}}">
-          </div>
-          {{end}}
-        </div>
-      </div>  
-    </div>
-    <!--------------------------------------/second row members-------->
+    </div>  
+  </div>  
  </section>
 {{"<!-- /team -->" | safeHTML}}
 

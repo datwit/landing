@@ -63,6 +63,12 @@
 #call{
   margin: 0 0 !important;
 }
+//call to action button contact us section
+#call1{
+  @media only screen and (max-width: 600px) {
+    margin-top: 20px;
+  }
+}
 
 //arrow link team members section homepage
 #link{
@@ -93,6 +99,7 @@
   margin-top: 20px;
 }
 
+//go to top button
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
