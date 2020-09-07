@@ -19,10 +19,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('input#name,input#email,input#subject,textarea#textarea1').characterCounter();
+  $('input#namejehdn,input#emaildjjd,input#subjectjdhf,textarea#messagejdjkdkd').characterCounter();
  }); 
 
-// Got t top button 
+// Go to top button 
 mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};

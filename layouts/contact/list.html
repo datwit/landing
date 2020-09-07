@@ -16,7 +16,7 @@
     <div class="row mr-1">
            {{ with .Site.Data.contact.contact }}
       <div class="col s12 m6 l5" id="img">
-        <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg" class="rounded-sm">
+        <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg" class="rounded-sm mb-3">
             {{end}}
       </div>
     <form id="contact_form_id" method="post" action='{{ getenv "CONTACT_FORM_API" }}'>

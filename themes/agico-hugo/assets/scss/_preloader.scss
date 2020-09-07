@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #1e4159 !important;
+    background-color: $primary-color !important;
   }
   
   .flexbox > div {
@@ -44,7 +44,7 @@
     width: calc(100% - 9.9px);
     height: calc(100% - 9.9px);
     border: 5px solid transparent;
-    border-top-color: #58acdd;
+    border-top-color: $secondary-color;
     border-radius: 50%;
     -webkit-animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
     animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;

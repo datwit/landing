@@ -90,7 +90,7 @@ img{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #01161f;
+  background-color: $primary-color;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -155,8 +155,11 @@ img{
   padding-top: 4em !important;
 }
 .mb-2{
-margin-top: 110px;
-}
+  margin-top: 110px;
+  }
+.mb-3{
+  margin-top: 3em;
+  }
 .row{
   margin-bottom: 0 !important;
 }
@@ -462,7 +465,7 @@ margin-top: 110px;
 // }
 
 // text area adjustments contact us form 
-#textarea1{
+#messagejdjkdkd{
   // height: 8rem !important;
   overflow-y: scroll;
 }
