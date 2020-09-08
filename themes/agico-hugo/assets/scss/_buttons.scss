@@ -70,12 +70,19 @@
   }
 }
 
-//arrow link team members section homepage
+//arrow link  team members section homepage
+//floating button
 #link{
   margin-left: 30px;
-  
+  color: white !important;
+
+}
+#floatc{
+  background-color: $primary-color;
+  margin-left: 30px;
 }
 
+//banner area 
 #floatb{
   position: absolute;
   // right: 40px;

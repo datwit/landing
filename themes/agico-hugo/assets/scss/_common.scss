@@ -414,6 +414,7 @@ img{
   @media only screen and (min-width: 751px) {
     display:none;
   }
+ 
 }
 
 //what we do page 
@@ -425,8 +426,18 @@ img{
     flex-direction: column-reverse;
     
     }
-  
 } 
+#serv-sect{
+  @include tablet {
+    padding-top: 100px !important;
+  }
+  @include mobile {
+    padding-top: 100px !important;
+  }
+  @include mobile-xs {
+    padding-top: 100px !important;
+  }
+}
  
 //get in touch section partial
 //background
@@ -514,6 +525,38 @@ img{
  
 }
 //*************************************************************************
+#terms-background{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  // width: 320px;
+  // height:430px;
+  opacity: 0.5;
+}
+#privacy-background{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  // width: auto;
+  // height:30vh;
+  opacity: 0.5;
+}
+
+#t-content, #p-content{
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    padding-top: 100px !important;
+  }
+  @include mobile {
+    padding-top: 100px !important;
+  }
+  @include mobile-xs {
+    padding-top: 100px !important;
+  }
+}
+
 //**********************contact us section homepage*************************
 .bg-illustration{
   position: relative;
@@ -532,4 +575,16 @@ img{
   // img{
   //   opacity: 0.5;
   // }
+}
+//----------------------case studies-------------------------------
+#case-sect{
+  @include tablet {
+    padding-top: 100px !important;
+  }
+  @include mobile {
+    padding-top: 100px !important;
+  }
+  @include mobile-xs {
+    padding-top: 100px !important;
+  }
 }

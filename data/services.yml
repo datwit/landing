@@ -8,15 +8,15 @@ service:
       #listing
       - title: "Software Development"
         src: "images/services/icons-sd.png"
-        url: "services#sd"
+        # url: "services#sd"
 
       - title: "Data Analysis"
         src: "images/services/icons-da.png"
-        url: "services#sd"
+        # url: "services#da"
 
       - title: "Data Visualization"
         src: "images/services/icons-dv.png"
-        url: "services#sd"
+        # url: "services#sd"
 
 #describing services page
 serviceItem1:

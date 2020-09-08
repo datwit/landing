@@ -65,3 +65,45 @@ textarea {
 .slider .slides li .caption{
     top: 60% !important;
 }
+
+.pagination li.active{
+    background-color: $primary-color;
+    height: 40px !important;
+    width: 40px;
+    border-radius: 50%;
+    
+    a{
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+        
+        
+    }
+    &:hover{
+        color: $secondary-color2; 
+        
+        border-radius: 50% !important;
+    }
+    
+}
+.pagination li{
+
+    height: 40px !important;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+
+    a{
+        display: flex;
+        justify-content: center;
+        color: $primary-color;
+        padding-top: 4px;
+        font-weight: bolder;
+        
+    }
+    &:hover{
+        a{
+        color: $secondary-color2; 
+        }
+    }
+}

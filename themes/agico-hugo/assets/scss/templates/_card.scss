@@ -21,6 +21,7 @@
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
     
+    
   }
   
 }
@@ -38,19 +39,21 @@
     width: inherit;
     backface-visibility: hidden;
     
+    
 }
 .back {
-  background: $bg-light-blue;
-  color: white;
+  background: white;
   transform: rotateY( 180deg );
   top: 0;
-  left: 0;
+  left: -1px;
   bottom: 0;
   right: 0;
   display: flex;
   justify-content: center;
   display: block;
   align-items: center;
+  
+  
 
   h3{
     /* margin-top: 60px; */
@@ -74,7 +77,7 @@
     font-size: 14px;
     margin: 0 15px 10px 15px;
 }
-s
+
 //card reveal goals section homepage
 .card .card-content .card-title{
   line-height: 25px !important;

@@ -3,21 +3,21 @@
 {{ partial "pheader-privacy.html" . }}
 <!------------------------------------------------------------------------------------------------------------------>
 {{"<!-- privacy -->"| safeHTML}}
-<section class="mb-1">
+<section class="mb-1" id="p-content">
   <div class="container">
     <div class="row">
+      {{ with .Site.Data.privacy.privacy }}
+      <img class="responsive-img"  src="{{ .background | absURL }}" alt="{{.title}}" id="privacy-background">
       <div class="col s12">
-        {{ with .Site.Data.privacy.privacy }}
         <h2>{{ .title }}</h2>
         <p>{{ .content }}</p>
-        
-        {{ end }}
+      {{ end }}
       </div>
     </div>
   </div>
 </section>
 {{"<!-- /privacy -->"| safeHTML}}
 
-{{ partial "contact-access.html" . }}
+{{ partial "contact-access-gray.html" . }}
 
 {{ end }}

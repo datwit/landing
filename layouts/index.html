@@ -55,8 +55,8 @@
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m4" id="serv">
         <div class="card" id="card1">
-          <div class="icon1"><img src="{{ .src | absURL }}" alt="{{ .title }}"></div>
-          <div class="card-content" id="cont"><h3>{{.title}}</h3></div>
+          <div class="icon1"><a href="/services"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a></div>
+          <a href="/services"><div class="card-content" id="cont"><h3>{{.title}}</h3></div></a>
         </div>
       </div>
       {{end}}
@@ -202,7 +202,7 @@
         {{ with .Site.Data.team.team }}
         <h2>{{ .title }}</h2>
         <h6>{{.description}}</h6>
-        <h6>{{.subtitle}}<a href="/about"><i class="small material-icons" id="link">chevron_right</i></a></h6>
+        <h6>{{.subtitle}}<a class="btn-floating pulse" data-position="bottom" id="floatc" href="/about"><i class=" small material-icons">navigate_next</i></a></h6>
         {{ end }}
       </div>
     </div>  

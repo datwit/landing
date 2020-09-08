@@ -4,7 +4,7 @@ pgtitle :
   description: "These are our creations, made through blood and tears. By all means, stroll along..."
 
   productItem :
-    -  image : "images/product/pilar.jpg"
+    -  image : "images/product/pilar.png"
        title : "Pilar"
        content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
        linktext: "More"

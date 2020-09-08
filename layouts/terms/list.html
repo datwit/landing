@@ -4,21 +4,21 @@
 {{ partial "pheader-terms.html" . }}
 <!------------------------------------------------------------------------------------------------------>
 {{"<!-- terms -->"| safeHTML}}
-<section class="mb-1">
+<section class="mb-1" id="t-content">
   <div class="container">
-    <div class="row">
+   <div class="row" >
+    {{with .Site.Data.terms.terms}}
+    <img class="responsive-img"  src="{{ .background | absURL }}" alt="{{.title}}" id="terms-background">
       <div class="col s12">
-        {{ with .Site.Data.terms.terms }}
         <h2>{{ .title }}</h2>
         <p>{{ .content }}</p>
-        
-        {{ end }}
+     {{ end }}
       </div>
     </div>
   </div>
 </section>
 {{"<!-- /terms -->"| safeHTML}}
 
-{{ partial "contact-access.html" . }}
+{{ partial "contact-access-gray.html" . }}
 
 {{ end }}
