@@ -173,23 +173,14 @@
     </div>
     <div class="row">  
       {{ range .Site.Data.homepage.toolset }}
-      <div class="col s2 m2 l2">
-        <ul class="ribbon">
-            <li><img class="responsive-img" src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
-        </ul>
-      </div>
+        <div id="col1">
+          <ul class="rib">
+              <li id="lis" ><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
+          </ul>
+        </div>
       {{end}}
     </div>
-    <div class="row">  
-      {{ range .Site.Data.homepage.toolset2 }}
-      <div class="col s2 m2 l2">
-        <ul class="ribbon">
-            <li><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
-        </ul>
-      </div>
-      {{end}}
-    </div>
-</div>
+  </div>
  <!-------------------------------------------------------------------------------------> 
 </section>
 {{"<!-- /toolset -->"| safeHTML}}

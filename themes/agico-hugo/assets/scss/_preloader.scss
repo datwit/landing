@@ -1,3 +1,26 @@
+/*
+ * _common.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
+
+/* preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $primary-color;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 .flexbox {
     display: -webkit-box;
     display: -ms-flexbox;

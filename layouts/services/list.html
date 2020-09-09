@@ -1,7 +1,70 @@
 {{ define "main" }}
 
-<!-- {{ partial "page-header.html" . }} -->
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "pheader-services.html" . }}
+<!-------------------------------------------------------------------------------------------------------->
 
-{{ partial "services.html" . }}
+{{"<!-- services -->" | safeHTML }}
+<section class="mb-1 mr-2" id="serv-sect">
+  <div class="container">
+    <div class="row">
+      <div class="col s12"><!--------first row title-->
+        {{ with .Site.Data.services.service }}
+        <h2>{{ .title }}</h2>
+        <h6 class="mr-2">{{.description}}</h6>
+        {{ end }}
+      </div>
+    </div><!-------------/first row title------------> 
+   <!--?--------------services section------------------------------>
+    {{ with .Site.Data.services.serviceItem1 }}
+    <div class="row esp mr-1 mr-2 orange-divider2"><!-------------first row---------------------------->
+      <div class="col s12 m12 l6">
+        <img src="{{ .url | absURL }}" alt="{{.title}}">
+      </div>
+      <div class="col s12 m12 l6">
+        <h2>{{ .title }}</h2>
+        <p>{{ .content | markdownify }}</p>
+      </div> 
+    </div><!-------------/first row---------------------------->
+    {{end}}
+    {{ with .Site.Data.services.serviceItem2 }}
+    <div class="row mr-1 mr-2 orange-divider2" id="sd"><!-------------second row------------------------->
+      <div class="col s12 m12 l6">
+        <h2>{{ .title }}</h2>
+        <p>{{ .content | markdownify }}</p>
+      </div> 
+      <div class="col s12 m12 l6">
+        <img src="{{ .url | absURL }}" alt="{{.title}}">
+      </div>
+    </div><!------------------------/second row---------------------------->
+    {{end}}
+    {{ with .Site.Data.services.serviceItem3 }}
+    <div class="row esp mr-2 mr-1"><!-------------third row----------------------------->
+      <div class="col s12 m12 l6">
+        <img src="{{ .url | absURL }}" alt="{{.title}}">
+      </div>
+      <div class="col s12 m12 l6">
+        
+        <h2>{{ .title }}</h2>
+        <p>{{ .content | markdownify }} 
+        </p>
+      </div> 
+    </div><!-------------/third row--------------------------------------->
+    {{end}}
+    {{with .Site.Data.services.diagram}}
+    <div class="mb-1 orange-divider ">
+      <h6 class="mr-2">{{.subtitle}}</h6>
+    </div>
+    <div><!---------------------------diagram--------------------------------->
+      <img src="{{.img | absURL }}" alt="{{.title}}">
+    </div>
+    {{end}}
+  </div> 
+</section>
+{{ partial "contact-access-gray.html" . }}
+
+{{"<!-- services -->" | safeHTML }}
+
+
 
 {{ end }}

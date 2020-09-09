@@ -1,0 +1,93 @@
+/*
+ * _common.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
+
+
+/********************features section homepage mobile****************/
+.service-card{
+  display: flex;
+  justify-content: center;
+
+  &:active{
+    transform: translateY(3px);
+    transition: all .05s linear;
+}
+}
+.feat{
+  @media only screen and (min-width: 751px) {
+    display:none;
+  }
+ 
+} 
+/******************toolset section styling*******************************/
+//-------------custom grid and columns ----------------------------------
+.rib{
+    #lis{
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  }
+  #col1{
+    width: 19.5%;
+    display: inline-block !important;
+  
+    img{
+      width: 160px !important;
+      height: auto;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    
+    @include tablet{
+      width: 49% !important;
+    }
+    @media only screen and (max-width: 300px) {
+      width: 100% !important;
+    }
+  }
+
+#tool-bg{
+padding-top: 10px;
+padding-bottom: 10px;
+    h2{
+    margin-top: 0px !important;
+    }
+
+}
+/**********************contact us section homepage*************************/
+.bg-illustration{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media only screen and (max-width: 600px) {
+      padding: 50px 0 50px 0;
+    }
+  
+    .content-cont{
+      position: absolute;
+      z-index: 1;  
+    }
+}
+// gray background
+.light-gray{
+  background-color: #eaebec;
+   padding: 50px 0 50px 0; 
+   
+}
+.adj{
+  margin-bottom: 0px;
+
+  @media only screen and (min-width: 601px) {
+    display: flex;
+    align-items: center;
+  }
+}
