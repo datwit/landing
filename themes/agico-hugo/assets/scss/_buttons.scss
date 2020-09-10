@@ -51,18 +51,6 @@
   
 }
 
-//button without margin-top
-.btn-lg{
-  /*padding: 20px 30px;*/
-  margin-top: 60px;
-
-  
-}
-
-//call to action button banner area
-#call{
-  margin: 0 0 !important;
-}
 //call to action button contact us section
 #call1{
   @media only screen and (max-width: 600px) {
@@ -70,12 +58,14 @@
   }
 }
 
-//arrow link team members section homepage
-#link{
+//floating button the team sectio homepage
+#floatc{
+  background-color: $primary-color;
   margin-left: 30px;
-  
 }
 
+/*********************************banner area ********************************************/
+//floating button
 #floatb{
   position: absolute;
   // right: 40px;
@@ -95,10 +85,16 @@
   }
  
 }
+//call to action button banner area
+#call{
+  margin: 0 0 !important;
+}
+
+//call to action button conntact us page
 #contact-bt{
   margin-top: 20px;
 }
-
+/*****************************************************************************************/
 //go to top button
 #myBtn {
   display: none; /* Hidden by default */

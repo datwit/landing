@@ -46,7 +46,6 @@
             {{ end }}
           </ul>
         </div>
-        
       </div>
     </div>
   </div>
@@ -54,9 +53,7 @@
 <!-----blog page--------------------------------------------------------------------------------------------->
 <section class="mr-1">
   <div class="container">
-    
-      
-        <div class="row">
+    <div class="row">
           {{ $paginator := .Paginate .Data.Pages }}
           {{ range $paginator.Pages }}
           {{ "<!-- blog post -->" | safeHTML }}
@@ -79,8 +76,9 @@
             </article>
           </div>
           {{ end }}<!-----------/blog post------------------->
+
           {{"<!-- pagination -->" | safeHTML }}
-          <div class="col s12 m6 l6">
+          <div class="col s12 m12 l12" >
             {{ $paginator := .Paginator }}
             <!-- Number of links either side of the current page. -->
             {{ $adjacent_links := 2 }}
@@ -92,8 +90,8 @@
             {{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
             <!-- If there's more than one page. -->
             {{ if gt $paginator.TotalPages 1 }}
-            <nav aria-label="Page navigation">
-              <ul class="pagination justify-content-center">
+            <nav aria-label="Page navigation" id="pagi">
+              <ul class="pagination">
                 <!-- First page. -->
                 {{ if ne $paginator.PageNumber 1 }}
                 <li class="page-item">
@@ -170,13 +168,7 @@
           </div>
           {{"<!-- /pagination -->" | safeHTML }}
         </div>
-      
-      
-      
-   
-  </div>
+    </div>
 </section>
-
-
 
 {{ end }}

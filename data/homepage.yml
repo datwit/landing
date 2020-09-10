@@ -50,7 +50,7 @@ toolset:
       toolName: "Amazon Sagemaker"
       toolsetLogo: "images/toolset/sagemaker.png"
 
-toolset2:
+# toolset2:
    
     - tool: "vega"
       toolName: "Vega Vizualization Grammar"
@@ -68,9 +68,9 @@ toolset2:
       toolName: "Bokeh Visualization Library"
       toolsetLogo: "images/toolset/bokeh.png"
           
-    - tool: "altair"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/altair.png"
+    # - tool: "altair"
+    #   toolName: "Bokeh Visualization Library"
+    #   toolsetLogo: "images/toolset/altair.png"
 
    
      
