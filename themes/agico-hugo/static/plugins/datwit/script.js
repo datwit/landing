@@ -1,9 +1,9 @@
 /*!
- * script.js - https://wittylytics.com/
+ * script.js - https://datwit.com/
  * Version - 1.0.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2020 WittyLytics
+ * Copyright (c) 2020 datwit
  */
 
 //sidenav responsive 
