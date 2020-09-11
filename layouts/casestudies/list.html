@@ -16,22 +16,26 @@
     </div> <!-------------/first row title----------------------------------------------------->
     <div class="row mr-1 mr-2">
       <!--listed images------------------------------------------------------------------------->
-      <div class="flip-container col s12 m3 l3" ontouchstart="this.classList.toggle('hover');">
       {{ range .Site.Data.product.pgtitle.productItem}}
-        <div class=" card flipper">
-          <div class=" card-image front">
-            <img src="{{ .image | absURL}}" alt="{{.title}}">
-          </div>   
-          <div class="back">
-            <a href=""><h3 class="card-title">{{ .title}}</h3></a>
-            <p class="case-studies-descrip">{{.content}}</p>
-            <div class="product-social">
-              <a href=""><i class="fa fa-2x fa-github"></i></a>
+      <div class=" col s12 m4 l4" id="card-container">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        
+          <div class=" card flipper">
+            <div class=" card-image front">
+              <img src="{{ .image | absURL}}" alt="{{.title}}">
+            </div>   
+            <div class="back">
+              <a href=""><h3 class="card-title">{{ .title}}</h3></a>
+              <p class="case-studies-descrip">{{.content}}</p>
+              <div class="product-social">
+                <a href=""><i class="fa fa-2x fa-github"></i></a>
+              </div>
             </div>
           </div>
+       
         </div>
-      {{ end }} 
-      </div>
+    </div>
+    {{ end }} 
     </div><!--/listed images------------------------>
   </div>
 </section><!--? /products section---------------------------------------------------------------> 

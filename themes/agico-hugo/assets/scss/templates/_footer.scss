@@ -29,6 +29,13 @@
     font-size: 19px;
   }
 }
+.list-unstyled{
+  a{
+    &:hover{
+    text-decoration: underline ;
+    }
+  }
+}
 
 // email & icon aligntment
 #i-email{

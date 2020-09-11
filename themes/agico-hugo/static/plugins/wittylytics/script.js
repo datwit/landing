@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Slider.init(elems, options);
 });
 
+//material box effect 
+document.addEventListener('DOMContentLoaded', function() {
+  var options = [inDuration = '275'];
+  var elems = document.querySelectorAll('.materialboxed');
+  var instances = M.Materialbox.init(elems, options);
+});
+
 
 /* function changedValue() {
   let text = document.getElementById("textarea1");
