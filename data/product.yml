@@ -1,7 +1,7 @@
 # Product
 pgtitle : 
   title: "Check out our solutions"
-  description: "These are our creations, made through blood and tears. By all means, stroll along..."
+  description: "These are our creations, all made with spirit and perseverance. By all means, stroll along..."
 
   productItem :
     -  image : "images/product/pilar.png"

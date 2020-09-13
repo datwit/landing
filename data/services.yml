@@ -2,8 +2,8 @@
 service:
 #  subtitle : "Services"
   title : "What we do"
-  description: "This is what make us enjoy working on new projects whatever the size. We love to provide not only
-  a intuitive design but also a great development to back it up. We're here for making the product of your dreams..."
+  description: "This is what makes us enjoy working on new projects whatever the size. We love to provide not only
+  an intuitive design but also a great development to back it up. We're here to make the product of your dreams..."
   serviceItem:
       #listing
       - title: "Software Development"
