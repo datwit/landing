@@ -16,8 +16,8 @@ jobs:
       - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
         env:
           # define the access point to the contact form handler
-          CONTACT-MANAGER-CLIENT: "to-define.js"
-          CONTACT-MANAGER-ENDPOINT: "to-define"
+          CONTACT-MANAGER-CLIENT: "https://w1mlphe6e0.execute-api.eu-west-1.amazonaws.com/production/static/js/app.js"
+          CONTACT-MANAGER-ENDPOINT: "https://w1mlphe6e0.execute-api.eu-west-1.amazonaws.com/production/process-contact-form"
         with:
           args: --minify
       
