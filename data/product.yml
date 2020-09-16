@@ -9,6 +9,18 @@ pgtitle :
        content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
        linktext: "More"
        url: ""
+    -  image : "images/product/pilar.png"
+       title : "Pilar"
+       content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
+       linktext: "More"
+       url: ""
+    -  image : "images/product/pilar.png"
+       title : "Pilar"
+       content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
+       linktext: "More"
+       url: ""
+   
+       
 
 # product2:
 #   image : "images/product/feature-2.png"

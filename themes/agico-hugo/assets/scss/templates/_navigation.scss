@@ -231,14 +231,20 @@ margin-top: 5px;
   align-items: center;
   background-color: white;
   box-shadow: none;
-
+ 
   .hover-ripple{
     &:hover{
     background-color:transparent ;
     border-radius: 50% !important;
     }
+  }  
+}
+
+#pagi-navi{
+  @include desktop {
+    display: flex !important;
+    justify-content: center !important;   
   }
-  
 }
 
 

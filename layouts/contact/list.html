@@ -19,66 +19,51 @@
         <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg" class="rounded-sm mb-3">
             {{end}}
       </div>
-    <form id="contact_form_id" method="post" action='{{ getenv "CONTACT_FORM_API" }}'>
-      <div class="col s12 m6 l7">
-        <div class="input-field">
-          <i class="material-icons prefix">account_circle</i>
-          <input name="namejehdn" id="namejehdn" type="text" placeholder="" data-length="50" maxlength="50">
-          <label class="active" for="namejehdn">Your name</label>
-        </div>
-        <div class="input-field">
-          <i class="material-icons prefix">email</i>
-          <input name="emaildjjd" id="emaildjjd" type="email" class="validate" placeholder="" data-length="50" maxlength="50">
-          <label class="active" for="emaildjjd">Email</label>
-          <span class="helper-text" data-error="Wrong email" data-success=""></span>
-        </div>
-        <div class="input-field">
-          <i class="material-icons prefix">edit</i>
-          <input name="subjectjdhf" id="subjectjdhf" type="text" placeholder="" data-length="100" maxlength="100">
-          {{ with .Site.Data.contact.contact }}
-          <label class="active" for="subjectjdhf">{{.subject}}</label>
-          {{ end }}
-        </div>
-        <div class="input-field">
-          <i class="material-icons prefix">short_text</i>
-          <textarea name="messagejdjkdkd" id="messagejdjkdkd" class="materialize-textarea" placeholder="" data-length="1000" maxlength="1000" rows="5"></textarea>
-          <label class="active" for="messagejdjkdkd">Message</label>
-        </div>
-        <div id='fields' class="input-field">
-          <input type="text" name="name_field" id="name" value="">
-          <input type="email" name="email_field" id="email" value="">
-          <input type="text" name="subject_field" id="subject" value="">
-          <textarea name="message" id="message_field" cols="30" rows="10"></textarea>
-        </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action" id="contact-bt">Send 
-        <i class="material-icons">send</i>
-        </button>
+
+      <div id='contact-form-loader' 
+        data-controller="component" 
+        data-component-remote='{{ getenv "CONTACT-MANAGER-ENDPOINT" }}'
+        data-component-ajax="true">
       </div>
-    </form>       
+
     </div>
   </div>
 </section><!------------------------/form section---------------------------->
 
-<section><!-------------------map section------------------------------------->
+<section id="map-section"><!-------------------map section------------------------------------->
   <div class="container">
-    <div class="row">
+    {{with .Site.Data.contact.contact}}
+    <div class="row">    
       <div class="col s12">
-        {{with .Site.Data.contact.contact}}
-          <h3>{{ .localization }}</h3>
-          <h6>{{.localization2}}</h6>
-
-          {{ "<!-- Google Map API -->" | safeHTML }}
-          <!-- <div id="map" style="width:400px;height:400px;background:transparent">
-          <script src="{{ .Site.Params.gmapAPI | absURL }}"></script>
-          </div> -->
-        {{end}}
+        <h6 class="section-header">{{ .localization2 }}</h6>
       </div>
     </div>
     <div class="row">
-      <h3>Visit us:</h3>
-      <h6>Address</h6>
-      <h6>Phone number</h6>
+      <div class="col s12">
+          <h3>{{ .localization }}</h3>
+          <div class="center">
+              <div class="section-header"><b>Visit us at: </b> {{ .address }}</div>
+              <iframe
+                id="map"
+                height="300"
+                width="90%"
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=20.456151366233826%2C44.816253388708006%2C20.46213805675507%2C44.81845284577699&amp;layer=mapnik&amp;marker=44.817353127729476%2C20.459144711494446" 
+                style="border: 1px solid black">
+              </iframe>
+              <br/>
+              <small>
+                  <a target="_blank" href="https://www.openstreetmap.org/?mlat=44.81735&amp;mlon=20.45914#map=18/44.81735/20.45914">
+                      See full map
+                  </a>
+              </small>
+          </div>        
+      </div>
     </div>
+    {{end}}
   </div>
 </section><!-------------------------/map section--------------------------------->
 
@@ -86,6 +71,5 @@
 {{ end }}
 
 {{ define "jsaddons" }}
-{{ $honjs := resources.Get "js/honeypoter.js" | minify}}
-<script src="{{ $honjs.Permalink }}"></script>
+<script src='{{ getenv "CONTACT-MANAGER-CLIENT" }}'></script>
 {{ end }}
