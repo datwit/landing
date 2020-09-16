@@ -17,7 +17,7 @@
         <h2>{{ .title }}</h2>
         <p>
           {{ .content | markdownify }} <br><br>
-            Take a look to our open solutions <a href="{{.github }}" class="text-reset"><i class="fa fa-2x fa-github"></i></a>
+            {{ .linkDescription }} <a href="{{.github }}" class="text-reset"><i class="fa fa-2x fa-github"></i></a>
         </p>
       </div> 
     </div>
