@@ -10,7 +10,7 @@
 baseURL = "https://www.datwit.com/"
 
 languageCode = "en-us"
-title = "DATWIT | Dynamic Witty Analytics"
+title = "DATWIT"
 theme = "agico-hugo"
 summaryLength = "10"
 paginate = 6
@@ -148,7 +148,7 @@ paginate = 6
 
   # copyright
   [params.copyright]
-  copyright = "Dynamic Witty Analytics"
+  copyright = "Datwit"
 
 #Footer menu
 
@@ -157,7 +157,7 @@ paginate = 6
   URL = "privacy"
 
   [[menu.footer]]
-  name = "Terms and conditions"
+  name = "Terms and Conditions"
   URL = "terms"
 
 [params]
