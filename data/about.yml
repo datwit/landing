@@ -4,10 +4,10 @@ about:
 #  videoThumb : "images/about/about-4.jpg"
 #  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
   aboutImg: "images/about/about-us1.png"
-  aboutAlt: "about DatWit"
-#  subtitle: "About DatWit"
-  title: "DatWit"
-  content: "We are a Serbian company dedicated to creating multipurpose software solutions integrating modern techniques
+  aboutAlt: "about datwit"
+#  subtitle: "About datwit"
+  title: "Dynamic Witty Analytics"
+  content: "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern techniques
           like Cloud Computing, Machine Learning, Data Analysis and microservices.
           DatWit was founded to develop small web apps with full artificial intelligence capabilities."
   github: "https://github.com/datwit"

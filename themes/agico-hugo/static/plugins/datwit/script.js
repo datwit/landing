@@ -1,9 +1,9 @@
 /*!
- * script.js - https://wittylytics.com/
+ * script.js - https://datwit.com/
  * Version - 1.0.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2020 WittyLytics
+ * Copyright (c) 2020 datwit
  */
 
 //sidenav responsive 
@@ -52,6 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
   var options = [indicators = 'true', height = 440, interval = 6000];
   var elems = document.querySelectorAll('.slider');
   var instances = M.Slider.init(elems, options);
+});
+
+//material box effect 
+document.addEventListener('DOMContentLoaded', function() {
+  var options = [inDuration = '275'];
+  var elems = document.querySelectorAll('.materialboxed');
+  var instances = M.Materialbox.init(elems, options);
 });
 
 

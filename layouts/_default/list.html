@@ -78,7 +78,7 @@
           {{ end }}<!-----------/blog post------------------->
 
           {{"<!-- pagination -->" | safeHTML }}
-          <div class="col s12 m12 l12" >
+          <div class="col s12 m12 l12">
             {{ $paginator := .Paginator }}
             <!-- Number of links either side of the current page. -->
             {{ $adjacent_links := 2 }}
@@ -91,6 +91,7 @@
             <!-- If there's more than one page. -->
             {{ if gt $paginator.TotalPages 1 }}
             <nav aria-label="Page navigation" id="pagi">
+              <div id="pagi-navi">
               <ul class="pagination">
                 <!-- First page. -->
                 {{ if ne $paginator.PageNumber 1 }}
@@ -163,6 +164,7 @@
                 </li>
                 {{ end }}
               </ul>
+            </div> 
             </nav>
             {{ end }}
           </div>

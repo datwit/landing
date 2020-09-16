@@ -8,27 +8,11 @@ contact:
 #imagen
   imgtitle: "Belgrade"
   imgurl: "images/contact/belgrade.jpg"
-  
-  contactItem:
-    - icon : "fa-map-o"
-      title : "Address"
-      contactList:
-        - contactListItem : "Studio 76d, Riley Ford, North Michaelchester, CF99 6QQ"
-        
-    - icon : "fa-envelope-o"
-      title : "Email"
-      contactList:
-        - contactListItem : "hello@agico.com"
-        - contactListItem : "info@example.com"
-        
-    - icon : "fa-phone"
-      title : "Mobile"
-      contactList:
-        - contactListItem : "(+091) 413 554 8598"
-        - contactListItem : "(+091) 413 554 8599"
+  address : "5, Vase Carapica, Dorcol, Београд (Стари град), Stari Grad Urban Municipality, Belgrado, Serbia Central, 11102, Serbia"
+  phone: +1234567890
 
 
 contactForm:
 #  subtitle : "Message"
-  title : "We want to be part of your adventure"
+  title : "We are ready to be part of your adventure"
   formAction : "#"

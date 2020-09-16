@@ -29,6 +29,13 @@
     font-size: 19px;
   }
 }
+.list-unstyled{
+  a{
+    &:hover{
+        text-decoration: none;
+    }
+  }
+}
 
 // email & icon aligntment
 #i-email{
@@ -38,6 +45,12 @@
 
     i{
       margin-right: 6px;
+    }
+    
+    a{
+        &:hover{
+            text-decoration: none;
+        }
     }
   }  
 }

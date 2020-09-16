@@ -37,7 +37,7 @@ paginate = 6
   URL = "plugins/materializecss/materialize.css"
   # last one for our own styles
   [[params.plugins.css]]
-  URL = "plugins/wittylytics/style.css"
+  URL = "plugins/datwit/style.css"
   
 
   # JS Plugins
@@ -63,7 +63,7 @@ paginate = 6
   URL = "plugins/materializecss/materialize.min.js"
   # last one for our own scripts
   [[params.plugins.js]]
-  URL = "plugins/wittylytics/script.js"
+  URL = "plugins/datwit/script.js"
   
 
 
@@ -135,7 +135,7 @@ paginate = 6
 
 #    [[params.footer.socialIcon]]
 #    icon = "fa-instagram"
-#    URL = "https://instagram.com/wittylytics"
+#    URL = "https://instagram.com/datwit"
 
   [params.footer.service]
   title = "Data Protection"
@@ -196,13 +196,13 @@ enable = true
 # share blog post
 [[params.sharePost]]
 icon = "fa-facebook"
-URL = "https://facebook.com/wittylytics"
+URL = "https://facebook.com/datwit"
 
 [[params.sharePost]]
 icon = "fa-twitter"
-URL = "https://twitter.com/wittylytics"
+URL = "https://twitter.com/datwit"
 
 [[params.sharePost]]
 icon = "fa-linkedin"
-URL = "https://linkedin.com/wittylytics"
+URL = "https://linkedin.com/datwit"
 

@@ -118,7 +118,7 @@ about3:
 #  videoThumb : "images/check-video.png"
 #  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
 #  subtitle : "Check Video"
-#  title : "Best Way to Chat with Your Customers."
+#  title : "Best Way to Chat Your Customers."
 #  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat. duis aute.
 #  <br><br>
 #  Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
@@ -126,7 +126,7 @@ about3:
 # testimonial
 #testimonial:
 #  subtitle : "testimonial"
-#  title : "What Do Our Clients Say?"
+#  title : "What Our Clients Says?"
 #  testimonialItem:
 #    - name : "Alice kelly"
 #      designation : "Happy client"
@@ -160,8 +160,8 @@ about3:
 
 # Know more
 know_more:
-  title : "About DatWit"
-  content : "We are a Serbian company dedicated to creating multipurpose software solutions integrating modern
+  title : "About WittyLytics"
+  content : "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern
           techniques like Cloud Computing, Machine Learning, Data Analysis and microservices."
   morebtn:
     btnText : "Know more"

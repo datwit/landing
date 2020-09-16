@@ -2,3 +2,4 @@
 _gen/
 public/
 .directory
+*.code-workspace
