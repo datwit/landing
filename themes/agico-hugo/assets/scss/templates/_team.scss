@@ -10,8 +10,9 @@
      
   &-name {
     opacity: 1;
-    margin-top: 40px;
+    margin-top: 20px;
     color: $primary-color;
+    height: 40px;
   }
 
   &-designation {
@@ -19,6 +20,7 @@
     text-align: center; 
     font-weight: bolder;
     color: #727374;
+    margin: 10px 0 10px 0 !important;
   }
 
   @include mobile-xs{
