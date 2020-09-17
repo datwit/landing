@@ -36,28 +36,25 @@
     </div><!------------------------------------------------------->  
     <div class="row"><!-------------------------------------------->
       {{ range $element:= .Site.Data.team.team.teamMember }}
-      <div class="col s12 m12 l6">
+      <div class="col s12 m6 l3">
         <div class="team-member"><!----------------------picture-->
           <img src="{{ .image | absURL }}">
         </div><!-------------------------------------------------->
         <h5 class="team-member-name">{{.name }}</h5>
         <p class="team-member-designation">{{ .designation }}</p>
         <div class="row">
-          <div class="col l8 push-l2">
-            <p class="team-member-bio" id="bio">{{ .bio }}</p>
-            <div class="container-social">
-              <ul class="list-inline social-icons">
-                {{ range .socialIcon }}
-                <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
-                {{ end }}
-              </ul>
-            </div> 
-          </div>
-        </div>
-      </div>
+          <div class="container-social">
+            <ul class="list-inline social-icons">
+              {{ range .socialIcon }}
+              <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </div>          
+        </div> 
+      </div> 
       {{end}}
-    </div><!------------------------------------------------------->
-  </div>
+    </div>     
+  </div><!------------------------------------------------------->  
 </section>
 
 {{ end }}
