@@ -22,7 +22,7 @@
 
       <div id='contact-form-loader' 
         data-controller="component" 
-        data-component-remote='{{ getenv "CONTACT-MANAGER-ENDPOINT" }}'
+        data-component-remote='{{ getenv "CONTACT_MANAGER_ENDPOINT" }}'
         data-component-ajax="true">
       </div>
 
@@ -71,5 +71,5 @@
 {{ end }}
 
 {{ define "jsaddons" }}
-<script src='{{ getenv "CONTACT-MANAGER-CLIENT" }}'></script>
+<script src='{{ getenv "CONTACT_MANAGER_CLIENT" }}'></script>
 {{ end }}
