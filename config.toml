@@ -10,7 +10,7 @@
 baseURL = "https://www.datwit.com/"
 
 languageCode = "en-us"
-title = "DATWIT"
+title = "DatWit"
 theme = "agico-hugo"
 summaryLength = "10"
 paginate = 6
@@ -148,7 +148,7 @@ paginate = 6
 
   # copyright
   [params.copyright]
-  copyright = "Datwit"
+  copyright = "DatWit"
 
 #Footer menu
 
