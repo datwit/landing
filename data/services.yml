@@ -3,7 +3,7 @@ service:
 #  subtitle : "Services"
   title : "What we do"
   description: "This is what makes us enjoy working on new projects whatever the size. We love to provide not only
-  an intuitive design but also a great development to back it up. We're here to make the product of your dreams..."
+  an intuitive design but also a great development to back it up. Our goal is to get close to the product you have in mind..."
   serviceItem:
       #listing
       - title: "Software Development"
@@ -23,29 +23,26 @@ serviceItem1:
   title : "Software Development"
   icon : "fa-connectdevelop"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e."
+  content : "Datwit provides software development services to other software companies. The company also design and develop customized software for small clientes. Primary products are web apps based on javascript and django, backend design and development on Flask/Chalice, and python scripts for automation. Our services include the deployment on-cloud or local servers with all the needed configuration. All our solutions can include machine learning funtionalities."
   url: "images/services/soft-develop.png"
 
 serviceItem2:
   title : "Data Analysis"
   icon : "fa-database"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
   url: "images/services/data-analy.png"
   
 serviceItem3:
   title : "Data Visualization"
   icon : "fa-bar-chart"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on."
   url: "images/services/data-visual.png"
 
 
 #diagram
 diagram:
   title : "Processes diagram"
-  subtitle : "We like to build our products focused on the entire process"
+  subtitle : "We build our products focused on the entire process"
   img : "images/diagram.png"
