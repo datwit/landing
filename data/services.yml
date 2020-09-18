@@ -21,26 +21,27 @@ service:
 #describing services page
 serviceItem1:
   title : "Software Development"
-  icon : "fa-connectdevelop"
+  icon : "/images/services/i-soft-dev.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
   content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e."
   url: "images/services/soft-develop.png"
 
+
 serviceItem2:
   title : "Data Analysis"
-  icon : "fa-database"
+  icon : "/images/services/i-dat-analy.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e."
   url: "images/services/data-analy.png"
   
 serviceItem3:
   title : "Data Visualization"
-  icon : "fa-bar-chart"
+  icon : "/images/services/i-dat-visual.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e."
   url: "images/services/data-visual.png"
 
 
