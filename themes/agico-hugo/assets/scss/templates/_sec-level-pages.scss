@@ -8,11 +8,8 @@
 
 /**************************privacy policy & terms and conditions pages**********************************/
 #terms-background{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    // width: 320px;
-    // height:430px;
+    width: 30%;
+    height: 30%;
     opacity: 0.5;
   }
   #privacy-background{
@@ -114,20 +111,62 @@
 //section arrange
 .esp{
 
+  display: flex;
+  align-items: center;
+
     @media only screen and (max-width: 992px) {
       display: flex;
       flex-direction: column-reverse;
-      
-      }
-  } 
-  #serv-sect{
-    @include tablet {
-      padding-top: 100px !important;
+            
     }
-    @include mobile {
-      padding-top: 100px !important;
-    }
-    @include mobile-xs {
-      padding-top: 100px !important;
-    }
-  }  
+}
+.esp1{
+ 
+  display: flex;
+  align-items: center;
+  
+  @media only screen and (max-width: 992px){
+    display: block;
+  }
+  
+} 
+
+#serv-sect{
+  @include tablet {
+    padding-top: 100px !important;
+  }
+  @include mobile {
+    padding-top: 100px !important;
+  }
+  @include mobile-xs {
+    padding-top: 100px !important;
+  }
+}  
+#serv-img{
+  display: block;
+
+  @include mobile-xs{
+    display: none;
+  }
+  @include mobile{
+    display: none;
+  }
+
+}
+
+// .capital-icon{
+//   float: left;
+//   margin-right: 15px;
+
+// }
+
+.icon-line{
+  display: flex;
+  align-items: center;
+  font-size: 33px !important;
+  margin-bottom: 0px !important;
+
+  img{
+    margin: 0 10px 0 10px;
+  }
+}
