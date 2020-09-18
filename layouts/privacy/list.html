@@ -10,8 +10,7 @@
       {{ with .Site.Data.privacy.privacy }}      
       <div class="col s12">
         <h2>{{ .title }}</h2>
-        <p>{{ .content }}</p>
-        <img class="responsive-img"  src="{{ .background | absURL }}" alt="" id="terms-background">
+        <p>{{ .content | markdownify }}</p>
       {{ end }}
       </div>
     </div>
