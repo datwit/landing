@@ -37,6 +37,37 @@ team:
         - icon: "fa-github"
           URL: "https://github.com/sorice"
 
+    # team member
+    - name: "Periquito Perez"
+      image: "images/team/plantilla.png"
+      image2: "images/team/abelma2.png"
+      designation: "Founder / COO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: ""
+
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/meneses-abad"
+
+        - icon: "fa-github"
+          URL: ""
+
+    # team member
+    - name: "Periquito Perez"
+      image: "images/team/plantilla.png"
+      image2: "images/team/abelma2.png"
+      designation: "Founder / COO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: ""
+
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/meneses-abad"
+
+        - icon: "fa-github"
+          URL: ""
     
 
 # partners
