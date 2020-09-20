@@ -11,7 +11,12 @@
     {{with .Site.Data.terms.terms}}
       <div class="col s12">
         <h2>{{ .title }}</h2>
+<<<<<<< HEAD
         <p>{{ .content }}</p>   
+=======
+        <p>{{ .content | markdownify }}</p>
+     {{ end }}
+>>>>>>> 69d64a23a00ca04b1a9c1e1099e268af9d3e2b73
       </div>
     </div>
   </div>
