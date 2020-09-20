@@ -92,12 +92,12 @@
 
 //logo adjustments
 .navbar-brand img{
-  padding-top: 5px;
+  /* padding-top: 5px; */
 
   //adjusting size in small devices
   @media only screen and (max-width: 800px) {
     min-width: 160px ;
-    padding-top: 15px;
+    padding-top: 5px;
   }
 }
 

@@ -38,26 +38,26 @@ team:
           URL: "https://github.com/sorice"
 
     # team member
-    - name: "Periquito Perez"
-      image: "images/team/plantilla.png"
-      image2: "images/team/abelma2.png"
-      designation: "Founder / COO"
+    - name: "Enma Lidia Muñoz García"
+      image: "images/team/enma.png"
+      # image2: "images/team/abelma2.png"
+      designation: "000000000000"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
-          URL: ""
+          URL: "https://twitter.com/enma_lidia"
 
         - icon: "fa-linkedin"
-          URL: "https://www.linkedin.com/in/meneses-abad"
+          URL: "https://www.linkedin.com/in/enma-lidia-muñoz-garcía"
 
         - icon: "fa-github"
-          URL: ""
+          URL: "https://github.com/enmalidia"
 
     # team member
     - name: "Periquito Perez"
-      image: "images/team/plantilla.png"
-      image2: "images/team/abelma2.png"
-      designation: "Founder / COO"
+      image: "images/team/yoel.png"
+      # image2: "images/team/abelma2.png"
+      designation: "000000000000"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"

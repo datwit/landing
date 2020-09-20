@@ -19,33 +19,32 @@
     {{ with .Site.Data.services.serviceItem1 }}
     <div class="row esp mr-1 mr-2 orange-divider2"><!-------------first row---------------------------->
       <div class="col s12 m12 l6">
-        <img src="{{ .url | absURL }}" alt="{{.title}}">
+        <img src="{{ .url | absURL }}" alt="{{.title}}" id="serv-img">
       </div>
       <div class="col s12 m12 l6">
-        <h2>{{ .title }}</h2>
+        <h2 class="icon-line"><img src="{{.icon}}">{{ .title }}</h2>
         <p>{{ .content | markdownify }}</p>
       </div> 
     </div><!-------------/first row---------------------------->
     {{end}}
     {{ with .Site.Data.services.serviceItem2 }}
-    <div class="row mr-1 mr-2 orange-divider2" id="sd"><!-------------second row------------------------->
+    <div class="row esp1 mr-1 mr-2 orange-divider2" id="sd"><!-------------second row------------------------->
       <div class="col s12 m12 l6">
-        <h2>{{ .title }}</h2>
+        <h2 class="icon-line"><img src="{{.icon}}">{{ .title }}</h2>
         <p>{{ .content | markdownify }}</p>
       </div> 
       <div class="col s12 m12 l6">
-        <img src="{{ .url | absURL }}" alt="{{.title}}">
+        <img src="{{ .url | absURL }}" alt="{{.title}}" id="serv-img">
       </div>
     </div><!------------------------/second row---------------------------->
     {{end}}
     {{ with .Site.Data.services.serviceItem3 }}
     <div class="row esp mr-2 mr-1"><!-------------third row----------------------------->
       <div class="col s12 m12 l6">
-        <img src="{{ .url | absURL }}" alt="{{.title}}">
+        <img src="{{ .url | absURL }}" alt="{{.title}}" id="serv-img">
       </div>
       <div class="col s12 m12 l6">
-        
-        <h2>{{ .title }}</h2>
+        <h2 class="icon-line"><img src="{{.icon}}" >{{ .title }}</h2>
         <p>{{ .content | markdownify }} 
         </p>
       </div> 
