@@ -1,15 +1,9 @@
 # terms and conditions
 terms:
 
-  title: "Terms and conditions"
-<<<<<<< HEAD
-  content: "Lorem ipsum dolor sit amet consectetur adipiscing elit duis purus, penatibus fringilla cubilia diam morbi habitasse inceptos gravida fermentum, habitant ultricies posuere semper nullam venenatis tempor pulvinar. Enim sagittis sociis condimentum fermentum blandit conubia nam fames phasellus ridiculus dignissim, sapien lacus habitasse scelerisque nibh odio tortor imperdiet tellus aliquam faucibus venenatis, bibendum habitant nisi eget eleifend cras fusce suspendisse tempor penatibus. A nisl purus laoreet ridiculus habitasse vel lectus molestie ultrices, fames etiam auctor non ultricies nullam rutrum tellus luctus suspendisse, accumsan neque felis iaculis vestibulum nec ad et.Lorem ipsum dolor sit amet consectetur adipiscing elit duis purus, penatibus fringilla cubilia diam morbi habitasse inceptos gravida fermentum, habitant ultricies posuere semper nullam venenatis tempor pulvinar. Enim sagittis sociis condimentum fermentum blandit conubia nam fames phasellus ridiculus dignissim, sapien lacus habitasse scelerisque nibh odio tortor imperdiet tellus aliquam faucibus venenatis, bibendum habitant nisi eget eleifend cras fusce suspendisse tempor penatibus. A nisl purus laoreet ridiculus habitasse vel lectus molestie ultrices, fames etiam auctor non ultricies nullam rutrum tellus luctus suspendisse, accumsan neque felis iaculis vestibulum nec ad et.Lorem ipsum dolor sit amet consectetur adipiscing elit duis purus, penatibus fringilla cubilia diam morbi habitasse inceptos gravida fermentum, habitant ultricies posuere semper nullam venenatis tempor pulvinar. Enim sagittis sociis condimentum fermentum blandit conubia nam fames phasellus ridiculus dignissim, sapien lacus habitasse scelerisque nibh odio tortor imperdiet tellus aliquam faucibus venenatis, bibendum habitant nisi eget eleifend cras fusce suspendisse tempor penatibus. A nisl purus laoreet ridiculus habitasse vel lectus molestie ultrices, fames etiam auctor non ultricies nullam rutrum tellus luctus suspendisse, accumsan neque felis iaculis vestibulum nec ad et.Lorem ipsum dolor sit amet consectetur adipiscing elit duis purus, penatibus fringilla cubilia diam morbi habitasse inceptos gravida fermentum, habitant ultricies posuere semper nullam venenatis tempor pulvinar. Enim sagittis sociis condimentum fermentum blandit conubia nam fames phasellus ridiculus dignissim, sapien lacus habitasse scelerisque nibh odio tortor imperdiet tellus aliquam faucibus venenatis, bibendum habitant nisi eget eleifend cras fusce suspendisse tempor penatibus. A nisl purus laoreet ridiculus habitasse vel lectus molestie ultrices, fames etiam auctor non ultricies nullam rutrum tellus luctus suspendisse, accumsan neque felis iaculis vestibulum nec ad et."
-  background: "images/background/terms.png"
-  
-=======
+  title: "Terms and Conditions"
   content: |
     > Last Update: August 25, 2020
->>>>>>> 69d64a23a00ca04b1a9c1e1099e268af9d3e2b73
 
     ### Introduction
 
@@ -179,4 +173,4 @@ terms:
     [contact us](https://datwit.com/contact) with a thorough description, 
     and we will try to resolve it.
 
-  # background: "images/background/terms.png"
+  background: "images/background/terms.png"
