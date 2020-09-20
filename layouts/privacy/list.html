@@ -1,6 +1,6 @@
 {{ define "main" }}
 <!-------------------------------------------navbar----------------------------------------------------------------->
-{{ partial "pheader-privacy.html" . }}
+{{ partial "page-header.html" . }}
 <!------------------------------------------------------------------------------------------------------------------>
 {{"<!-- privacy -->"| safeHTML}}
 
@@ -10,12 +10,12 @@
       {{ with .Site.Data.privacy.privacy }}      
       <div class="col s12">
         <h2>{{ .title }}</h2>
-        <p>{{ .content }}</p>
-        <img class="responsive-img"  src="{{ .background | absURL }}" alt="" id="terms-background">
-      {{ end }}
+        <p>{{ .content }}</p>        
       </div>
     </div>
   </div>
+  <img class="responsive-img"  src="{{ .background | absURL }}" alt="" id="privacy-background">
+  {{ end }}
 </section>
 
 {{"<!-- /privacy -->"| safeHTML}}

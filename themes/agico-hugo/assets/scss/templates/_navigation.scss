@@ -168,6 +168,8 @@ nav {
   .sidenav-trigger{
     float: right !important;
     color: $secondary-color;
+    //aligning responsive navbar toggle icon
+    margin: 11px 18px 10px 0px;
     
     i{
       &:hover{
@@ -246,5 +248,6 @@ margin-top: 5px;
     justify-content: center !important;   
   }
 }
+
 
 
