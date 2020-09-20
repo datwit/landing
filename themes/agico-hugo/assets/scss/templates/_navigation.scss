@@ -175,6 +175,9 @@ nav {
       &:hover{
         color: $secondary-color2;
       }
+      &:active{
+        color: $secondary-color2;
+      }
     }
     @media only screen and (min-width: 992px) {
       visibility: hidden;
@@ -196,6 +199,13 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
       background-color: #1e4159;
     }
   }
+  a{
+    font-size: 20px !important;
+
+    &:hover{
+     color: $secondary-color;
+    }
+  }
     
 }
 
@@ -203,12 +213,6 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
   display: list-item !important;
 }
 
-.navside{
-  font-size: 20px !important;
-  &:hover{
-    color: $secondary-color !important;
-  }
-}
 //menu alignment on desktop
 .navbar-nav{
   margin-right: 0px;
@@ -220,6 +224,12 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
 #close-icon{
   padding: 0 60px;
   margin-top: 10px;
+  &:hover{
+    color: $secondary-color2;
+  }
+  &:active{
+    color: $secondary-color2;
+  }
 }
 //adjusting logo 
 .logo-img{
