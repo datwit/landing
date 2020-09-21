@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: setup hugo config
+        run: |
+          mv config.development.toml config.toml
       
       - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
         env:
@@ -45,7 +49,7 @@ jobs:
 
       - name: Push files to bucket
         run: |
-          aws s3 sync . s3://datwit.com --delete
+          aws s3 sync . s3://development.datwit.com --delete
 
       # invalidated the entery distribution
       - name: Invalidate entry point
