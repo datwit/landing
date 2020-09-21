@@ -43,34 +43,34 @@
               <img src="{{ .Site.Params.logomin | absURL }}" alt="sidenav-logo" class="logo-img">
               </div>
               <div class="col s6">
-              <a class="nav-link text-white text-capitalize navside sidenav-close" href="#!" id="close-icon"><i class="material-icons">chevron_left</i></a>
+              <a class="nav-link text-white text-capitalize  sidenav-close" href="#!" id="close-icon"><i class="material-icons">chevron_left</i></a>
               </div>  
             </div>
           </div>
           <li class="list">
-            <a class="nav-link text-white text-capitalize navside" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
           </li>
           {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
           <li class="list nav-item dropdown">
-            <a class="nav-link text-white text-capitalize dropdown-toggle navside" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            <a class="nav-link text-white text-capitalize dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               {{ .Name }}
             </a>
             <div class="dropdown-menu" >
               {{ range .Children }}
-              <a class="dropdown-item text-color navside" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              <a class="dropdown-item text-color " href="{{ .URL | absURL }}">{{ .Name }}</a>
               {{ end }}
             </div>
           </li>
           {{ else }}
           <li class="list">
-            <a class="nav-link text-white text-capitalize navside" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a class="nav-link text-white text-capitalize " href="{{ .URL | absURL }}">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
         </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger navside"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
       </div>
     </div>
 </nav>      

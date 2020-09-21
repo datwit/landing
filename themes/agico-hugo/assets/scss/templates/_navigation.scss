@@ -167,10 +167,15 @@
 nav {
   .sidenav-trigger{
     float: right !important;
-    color: $secondary-color;
+    color: $white;
+    //aligning responsive navbar toggle icon
+    margin: 11px 18px 10px 0px;
     
     i{
       &:hover{
+        color: $secondary-color2;
+      }
+      &:active{
         color: $secondary-color2;
       }
     }
@@ -194,6 +199,13 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
       background-color: #1e4159;
     }
   }
+  a{
+    font-size: 20px !important;
+
+    &:hover{
+     color: $secondary-color;
+    }
+  }
     
 }
 
@@ -201,12 +213,6 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
   display: list-item !important;
 }
 
-.navside{
-  font-size: 20px !important;
-  &:hover{
-    color: $secondary-color !important;
-  }
-}
 //menu alignment on desktop
 .navbar-nav{
   margin-right: 0px;
@@ -218,6 +224,12 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
 #close-icon{
   padding: 0 60px;
   margin-top: 10px;
+  &:hover{
+    color: $secondary-color2;
+  }
+  &:active{
+    color: $secondary-color2;
+  }
 }
 //adjusting logo 
 .logo-img{
@@ -246,5 +258,6 @@ margin-top: 5px;
     justify-content: center !important;   
   }
 }
+
 
 

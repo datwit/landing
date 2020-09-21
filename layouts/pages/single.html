@@ -1,18 +1,20 @@
 {{ define "main" }}
-
-<!--{{ partial "page-header.html" . }}-->
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "page-header.html" . }}
+<!------------------------------------------------------------------------------------------------------>
 
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col s12">
         <div class="content">
-          {{.Content }}
+          {{.Content | markdownify  }}
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
 {{ end }}
+
+

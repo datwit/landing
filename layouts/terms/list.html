@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-----------------------------navbar ------------------------------------------------------------------>
-{{ partial "pheader-terms.html" . }}
+{{ partial "page-header.html" . }}
 <!------------------------------------------------------------------------------------------------------>
 {{"<!-- terms -->"| safeHTML}}
 
@@ -11,11 +11,12 @@
     {{with .Site.Data.terms.terms}}
       <div class="col s12">
         <h2>{{ .title }}</h2>
-        <p>{{ .content | markdownify }}</p>
-     {{ end }}
+        <p>{{ .content | markdownify }}</p>     
       </div>
     </div>
   </div>
+  <img class="responsive-img"  src="{{ .background | absURL }}" alt="" id="terms-background">
+  {{ end }}
 </section>
 
 {{"<!-- /terms -->"| safeHTML}}

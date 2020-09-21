@@ -23,7 +23,7 @@
       </div>
       <div class="col s12 m12 l6">
         <h2 class="icon-line"><img src="{{.icon}}">{{ .title }}</h2>
-        <p>{{ .content | markdownify }}</p>
+        <p id="adj2">{{ .content | markdownify }}</p>
       </div> 
     </div><!-------------/first row---------------------------->
     {{end}}
@@ -31,7 +31,7 @@
     <div class="row esp1 mr-1 mr-2 orange-divider2" id="sd"><!-------------second row------------------------->
       <div class="col s12 m12 l6">
         <h2 class="icon-line"><img src="{{.icon}}">{{ .title }}</h2>
-        <p>{{ .content | markdownify }}</p>
+        <p id="adj2">{{ .content | markdownify }}</p>
       </div> 
       <div class="col s12 m12 l6">
         <img src="{{ .url | absURL }}" alt="{{.title}}" id="serv-img">
@@ -45,7 +45,7 @@
       </div>
       <div class="col s12 m12 l6">
         <h2 class="icon-line"><img src="{{.icon}}" >{{ .title }}</h2>
-        <p>{{ .content | markdownify }} 
+        <p id="adj2">{{ .content | markdownify }} 
         </p>
       </div> 
     </div><!-------------/third row--------------------------------------->

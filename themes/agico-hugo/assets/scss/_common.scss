@@ -127,10 +127,10 @@ img{
       i {
         width: 40px;
         height: 40px;
-        line-height: 42px;
+        line-height: 32px;
         color: $white;
         text-align: center;
-        /* border: 2px solid $border-color; */
+        border: 2px solid $secondary-color2;
         display: block;
         border-radius: 50%;
         font-size: 20px;
@@ -139,6 +139,7 @@ img{
         
         &:hover {
           color: $primary-color;
+          border-color: $primary-color;
         }
 
       }

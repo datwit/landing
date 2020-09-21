@@ -1,7 +1,7 @@
 # privacy policy
 privacy:
 
-  title: "Privacy policy"
+  title: "Privacy Policy"
   content: |
     > Last Update: September 2nd, 2020
   
@@ -140,4 +140,4 @@ privacy:
     [contact us](https://datwit.com/contact) with a thorough description, 
     and we will try to resolve it.
 
-  # background: "images/background/privacy.png"
+  background: "images/background/privacy.png"

@@ -6,8 +6,8 @@ about:
   aboutImg: "images/about/about-us1.png"
   aboutAlt: "about datwit"
 #  subtitle: "About datwit"
-  title: "Dynamic Witty Analytics"
-  content: "We are a Serbian company dedicated to creating multipurpose software solutions integrating modern techniques
+  title: "DatWit"
+  content: "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern techniques
           like Cloud Computing, Machine Learning, Data Analysis and microservices.
           DatWit was founded to develop small web apps with full artificial intelligence capabilities."
   linkDescription: "Take a look at our open solutions"
@@ -16,16 +16,3 @@ about:
 #  button:
 #    btnText : "Contact Us"
 #    URL : "/contact"
-
-# counter
-#counter:
-#  - count : "8000"
-#    description : "Downloads per day"
-#  - count : "20"
-#    description : "Design awards"
-    
-#  - count : "25000"
-#    description : "Totally satisfied users"
-    
-#  - count : "30000"
-#    description : "People behind this app"
