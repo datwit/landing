@@ -423,6 +423,8 @@ a.text-light:hover {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  
+  
 }
 
 .rounded-xl {
@@ -501,9 +503,9 @@ a.text-light:hover {
   padding-bottom: 70px;
 }
 
-.section-title {
+/* .section-title {
   margin-bottom: 38px;
-}
+} */
 
 .subtitle {
   text-transform: capitalize;
@@ -1116,7 +1118,7 @@ textarea.form-control {
   }*/
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .hero-area {
     padding: 190px 0 100px;
   }
@@ -1191,7 +1193,7 @@ textarea.form-control {
   .hero-area-lg .row {
     margin-right: -15px;
   }
-}
+} */
 
 .watermark {
   position: absolute;
@@ -1710,7 +1712,7 @@ textarea.form-control {
   opacity: 1;
   /*transition: .4s ease;
     transition-delay: .0s;*/
-  text-align: center;
+  text-align: justify;
 }
 
 .team-member-social {

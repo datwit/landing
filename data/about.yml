@@ -4,27 +4,15 @@ about:
 #  videoThumb : "images/about/about-4.jpg"
 #  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
   aboutImg: "images/about/about-us1.png"
-  aboutAlt: "about wittylytics"
-#  subtitle: "About WittyLytics"
-  title: "Dynamic Witty Analytics"
+  aboutAlt: "about datwit"
+#  subtitle: "About datwit"
+  title: "DatWit"
   content: "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern techniques
           like Cloud Computing, Machine Learning, Data Analysis and microservices.
-          Also, Wittylytics was founded to develop in the future Artificial Intelligence Solutions and Witty Data Analytics."
-  github: "https://github.com/wittylytics"
+          DatWit was founded to develop small web apps with full artificial intelligence capabilities."
+  linkDescription: "Take a look at our open solutions"
+  github: "https://github.com/datwit"
 
 #  button:
 #    btnText : "Contact Us"
 #    URL : "/contact"
-
-# counter
-#counter:
-#  - count : "8000"
-#    description : "Downloads per day"
-#  - count : "20"
-#    description : "Design awards"
-    
-#  - count : "25000"
-#    description : "Totally satisfied users"
-    
-#  - count : "30000"
-#    description : "People behind this app"

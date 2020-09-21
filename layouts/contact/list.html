@@ -1,69 +1,75 @@
 {{ define "main" }}
 
-{{ partial "page-header.html" . }}
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "pheader-contact.html" . }}
+<!------------------------------------------------------------------------------------------------------------------>
 
-<section class="section"><!-----------form section------------------------>
+<section class="section mb-2"><!-----------form section------------------------>
   <div class="container">
     <div class="row">
       <div class="col s12">
           {{ with .Site.Data.contact.contact }}
-          <h3 class="subtitle">{{ .content }}</h3>
+          <h6>{{ .content }}</h6>
           {{ end }}
       </div> 
     </div>  
-    <div class="row">
+    <div class="row mr-1">
+           {{ with .Site.Data.contact.contact }}
       <div class="col s12 m6 l5" id="img">
-        <div class="i2"></div>
+        <img src="{{ .imgurl | absURL}}" alt="{{.imgtitle}}" id="belg" class="rounded-sm mb-3">
+            {{end}}
       </div>
-      <div class="col s12 m6 l7">
-        <div class="input-field">
-          <i class="material-icons prefix">edit</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          {{ with .Site.Data.contact.contact }}
-          <label class="active" for="first_name">{{.subject}}</label>
-          {{ end }}
-        </div>
-        <div class="input-field">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label class="active" for="icon_prefix">Your name</label>
-        </div>
-        <div class="input-field">
-          <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
-          <label class="active" for="email">Email</label>
-        </div>
-        <div class="input-field">
-          <i class="material-icons prefix">send</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label class="active" for="textarea1">Get in touch</label>
-        </div>
-        <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Send message
-        <i class="material-icons right">send</i>
-        </button>
-    </div>   
+
+      <div id='contact-form-loader' 
+        data-controller="component" 
+        data-component-remote='{{ getenv "CONTACT_MANAGER_ENDPOINT" }}'
+        data-component-ajax="true">
+      </div>
+
+    </div>
   </div>
 </section><!------------------------/form section---------------------------->
 
-<section><!-------------------map section------------------------------------->
+<section id="map-section"><!-------------------map section------------------------------------->
   <div class="container">
-    <div class="row">
+    {{with .Site.Data.contact.contact}}
+    <div class="row">    
       <div class="col s12">
-        {{with .Site.Data.contact.contact}}
-          <h3>{{ .localization }}</h3>
-          <h3 class="subtitle">{{.localization2}}</h3>
-          <div class="i"></div>
-        {{end}}
+        <h6 class="section-header">{{ .localization2 }}</h6>
       </div>
     </div>
     <div class="row">
-      <h3>Visit us:</h3>
-      <h4 class="subtitle">Address</h4>
-      <h4 class="subtitle">Phone number</h4>
+      <div class="col s12">
+          <h3>{{ .localization }}</h3>
+          <div class="center">
+              <div class="section-header"><b>Visit us at: </b> {{ .address }}</div>
+              <iframe
+                id="map"
+                height="300"
+                width="90%"
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=20.456151366233826%2C44.816253388708006%2C20.46213805675507%2C44.81845284577699&amp;layer=mapnik&amp;marker=44.817353127729476%2C20.459144711494446" 
+                style="border: 1px solid black">
+              </iframe>
+              <br/>
+              <small>
+                  <a target="_blank" href="https://www.openstreetmap.org/?mlat=44.81735&amp;mlon=20.45914#map=18/44.81735/20.45914" id="larg-map">
+                      See full map
+                  </a>
+              </small>
+          </div>        
+      </div>
     </div>
+    {{end}}
   </div>
 </section><!-------------------------/map section--------------------------------->
 
 
+{{ end }}
 
+{{ define "jsaddons" }}
+<script src='{{ getenv "CONTACT_MANAGER_CLIENT" }}'></script>
 {{ end }}

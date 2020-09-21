@@ -10,7 +10,7 @@
 baseURL = "https://www.datwit.com/"
 
 languageCode = "en-us"
-title = "DATWIT | Dynamic Witty Analytics"
+title = "DatWit"
 theme = "agico-hugo"
 summaryLength = "10"
 paginate = 6
@@ -37,7 +37,7 @@ paginate = 6
   URL = "plugins/materializecss/materialize.css"
   # last one for our own styles
   [[params.plugins.css]]
-  URL = "plugins/wittylytics/style.css"
+  URL = "plugins/datwit/style.css"
   
 
   # JS Plugins
@@ -47,8 +47,8 @@ paginate = 6
   URL = "plugins/slick/slick.min.js"
   [[params.plugins.js]]
   URL = "plugins/venobox/venobox.min.js"
-#  [[params.plugins.js]]
-#  URL = "plugins/google-map/gmap.js"
+  # [[params.plugins.js]]
+  # URL = "plugins/google-map/gmap.js"
   [[params.plugins.js]]
   URL = "plugins/search/fuse.min.js"
   [[params.plugins.js]]
@@ -58,10 +58,12 @@ paginate = 6
   [[params.plugins.js]]
   URL = "plugins/aos/aos.js"
   [[params.plugins.js]]
+  URL = "plugins/mixitup/mixitup.min.js"
+  [[params.plugins.js]]
   URL = "plugins/materializecss/materialize.min.js"
   # last one for our own scripts
   [[params.plugins.js]]
-  URL = "plugins/wittylytics/script.js"
+  URL = "plugins/datwit/script.js"
   
 
 
@@ -71,7 +73,7 @@ paginate = 6
     
   [[menu.main]]
   name = "Services"
-  URL = "service"
+  URL = "services"
   weight = 2
   
    
@@ -113,27 +115,27 @@ paginate = 6
 # Footer
 
   [params.footer]
-#  content = "Follow us all over the web"
+  content = "Follow us"
 
     [[params.footer.socialIcon]]
     icon = "fa-facebook"
-    URL = "https://facebook.com/wittylytics"
+    URL = "https://facebook.com/datwit"
 
-#    [[params.footer.socialIcon]]
-#    icon = "fa-twitter"
-#    URL = "https://twitter.com/wittylytics"
+    [[params.footer.socialIcon]]
+    icon = "fa-twitter"
+    URL = "https://twitter.com/datwit"
 
-#    [[params.footer.socialIcon]]
-#    icon = "fa-linkedin"
-#    URL = "https://linkedin.com/wittylytics"
+    [[params.footer.socialIcon]]
+    icon = "fa-linkedin"
+    URL = "https://linkedin.com/datwit"
 
-#    [[params.footer.socialIcon]]
-#    icon = "fa-github"
-#    URL = "https://github.com/wittylytics"
+    [[params.footer.socialIcon]]
+    icon = "fa-github"
+    URL = "https://github.com/datwit"
 
 #    [[params.footer.socialIcon]]
 #    icon = "fa-instagram"
-#    URL = "https://instagram.com/wittylytics"
+#    URL = "https://instagram.com/datwit"
 
   [params.footer.service]
   title = "Data Protection"
@@ -142,11 +144,11 @@ paginate = 6
   title = "Contact Info"
 #  address = "Serbian address"
 #  mobile = "+1234567890"
-  email = "contact@wittylytics.com"
+  email = "datwitrs@gmail.com"
 
   # copyright
   [params.copyright]
-  copyright = "Dynamic Witty Analytics"
+  copyright = "DatWit"
 
 #Footer menu
 
@@ -155,20 +157,24 @@ paginate = 6
   URL = "privacy"
 
   [[menu.footer]]
-  name = "Terms and conditions"
+  name = "Terms and Conditions"
   URL = "terms"
 
 [params]
 logo = "images/logo.png"
+logomin = "images/logo-min.png"
 home = "Home"
 # Meta data
 description = "Dynamic Witty Analytics Company"
 author = "DATWIT Team"
 # google map
 #gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-#mapLatitude = "51.5223477"
+# gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCFz41K58LkBFXXw_a4Oy_xQAtBqdFTFaA&libraries=places"
+# #mapLatitude = "51.5223477"
 #mapLongitude = "-0.1622023"
-#mapMarker = "images/marker.png"
+# mapLatitude = "20.882842"
+# mapLongitude = "-76.262690"
+# mapMarker = "images/marker.png"
 # Google Analitycs
 #googleAnalitycsID = "Your ID"
 
@@ -190,12 +196,13 @@ enable = true
 # share blog post
 [[params.sharePost]]
 icon = "fa-facebook"
-URL = "https://facebook.com/wittylytics"
+URL = "https://facebook.com/datwit"
 
 [[params.sharePost]]
 icon = "fa-twitter"
-URL = "https://twitter.com/wittylytics"
+URL = "https://twitter.com/datwit"
 
 [[params.sharePost]]
 icon = "fa-linkedin"
-URL = "https://linkedin.com/wittylytics"
+URL = "https://linkedin.com/datwit"
+

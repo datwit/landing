@@ -1,69 +1,60 @@
 {{ define "main" }}
 
-{{ partial "page-header.html" . }}
+<!-----------------------------navbar -------s----------------------------------------------------------->
+{{ partial "pheader-about.html" . }}
+<!------------------------------------------------------------------------------------------------------------------>
 
 {{"<!-- about -->" | safeHTML }}
 {{ with .Site.Data.about.about }}
-<section class="section">
-  <div class="container position-relative">
-    <div class="row">
-        <div class="col s12 m6 l6">
-          <img src="{{ .aboutImg | absURL }}" alt="{{ .aboutAlt }}">
-        </div>
- 
-        <div class="col s12 m6 l6">
-           <p class="subtitle">{{ .subtitle }}</p>
-          <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>
-          <p data-aos="fade-up" data-aos-delay="100">
-            {{ .content | markdownify }} <br><br>
-              Take a look to our open solutions <a href="{{.github }}" class="p-2 text-reset"><i class="fa fa-2x fa-github icon-gray"></i></a>
-          </p>
-        </div> 
+<section class="mb-2 mr-2" id="team"><!--**********************header section about the company********************-->
+  <div class="container">
+    <div class="row" id="comp-cont">
+      <div class="col s12 m6 l6">
+        <img src="{{ .aboutImg | absURL }}" alt="about datwit">
+      </div>
+      <div class="col s12 m6 l6">
+        <p class="subtitle">{{ .subtitle }}</p>
+        <h2>{{ .title }}</h2>
+        <p>
+          {{ .content | markdownify }} <br><br>
+            {{ .linkDescription }} <a href="{{.github }}" class="text-reset"><i class="fa fa-2x fa-github"></i></a>
+        </p>
+      </div> 
     </div>
-    <div class="divider"></div>
   </div>
-</section>
+</section><!--**************************************************************************************** -->
 {{end}}
 <!------------------------------team members------------------------------------------------------------>
-<section class="section section-lg-bottom mb-0 pb-0">
-  <div class="container" id="jump">
-    <div class="row">
+<section class="light-gray2">
+  <div class="container">
+    <div class="row"><!-------------------------------------------->
       <div class="col s12">
         {{ with .Site.Data.team.team }}
-        <h2 class="section-title">{{ .subtitle }}</h2>
+        <h2>{{ .subtitle }}</h2>
         {{ end }}
       </div>
+    </div><!------------------------------------------------------->  
+    <div class="row"><!-------------------------------------------->
       {{ range $element:= .Site.Data.team.team.teamMember }}
-      {{"<!-- team member -->" | safeHTML}}
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="team-member text-center">
-          <img src="{{ .image2 | absURL }}" class="img-fluid w-100 rounded-sm">
-          </div>
-        </div>
-        <div class="col s12 m6"> 
-          <div class="content">
-            <h5 class="team-member-name">{{.name }}</h5>
-            <p class="team-member-designation">{{ .designation }}</p>
-            <div class="row">
-            <div class="team-member-social">
+      <div class="col s12 m6 l3">
+        <div class="team-member"><!----------------------picture-->
+          <img src="{{ .image | absURL }}">
+        </div><!-------------------------------------------------->
+        <h5 class="team-member-name">{{.name }}</h5>
+        <p class="team-member-designation">{{ .designation }}</p>
+        <div class="row">
+          <div class="container-social">
+            <ul class="list-inline social-icons">
               {{ range .socialIcon }}
-              <a href="{{.URL }}" class="p-2"><i class="fa {{ .icon }}"></i></a>
+              <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
               {{ end }}
-            </div>
-          </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
+            </ul>
+          </div>          
+        </div> 
+      </div> 
+      {{end}}
+    </div>     
+  </div><!------------------------------------------------------->  
 </section>
-
-
-<!--{{ partial "services.html" . }}-->
-
-<!-- {{ partial "subscription-white.html" . }} -->
 
 {{ end }}

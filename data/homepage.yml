@@ -1,20 +1,21 @@
 # Banner
 banner:
   bgImage : "images/background/banner.png"
-  title : "Bring your idea, we'll make it real!"
+  title : "Bring your idea, we will make it real!"
+  #belgrade illustration team section
+  ilimage : "images/belgrade-illustration.png"
   #watermark : "Dream"
-  #content : "Multi purpose software solutions integrated with Machine Learning microservices."
+  #content : "Multipurpose software solutions integrated with Machine Learning microservices."
   #image : "images/banner/banner-1.svg"
 #  button:
 #    btnText : "See more"
 #    URL : "#"
 
 
+
 # Toolset
 toolset:
-#    - tool: "vuejs"
-#      toolsetLogo: "images/toolset/vuejs.png"
-
+  
     - tool: "python"
       toolName: "Python"
       toolsetLogo: "images/toolset/python.png"
@@ -22,55 +23,92 @@ toolset:
     - tool: "aws"
       toolName: "Amazon Web Services"
       toolsetLogo: "images/toolset/aws.png"
+      
+    # - tool: "panel"
+    #   toolName: "Panel Dashboards for Python"
+    #   toolsetLogo: "images/toolset/panel.png"
 
-    - tool: "gcloud"
-      toolName: "Google Cloud"
-      toolsetLogo: "images/toolset/gcloud.png"
-
-    - tool: "tensorflow"
-      toolName: "TensorFlow Library"
-      toolsetLogo: "images/toolset/tensorflow.png"
+     
+    # - tool: "gcloud"
+    #   toolName: "Google Cloud"
+    #   toolsetLogo: "images/toolset/gcloud.png"
 
     - tool: "sklearn"
       toolName: "Sklearn Toolkit"
       toolsetLogo: "images/toolset/sklearn.png"
 
-    - tool: "panel"
-      toolName: "Panel Dashboards for Python"
-      toolsetLogo: "images/toolset/panel.png"
+        
+    - tool: "keras"
+      toolName: "Deep learning API"
+      toolsetLogo: "images/toolset/keras.png"
+
+    - tool: "chalice"
+      toolName: "Python Serverless Microframework for AWS"
+      toolsetLogo: "images/toolset/chalice.png"
+
+    - tool: "sagemaker"
+      toolName: "Amazon Sagemaker"
+      toolsetLogo: "images/toolset/sagemaker.png"
+
+# toolset2:
+   
+    - tool: "vega"
+      toolName: "Vega Vizualization Grammar"
+      toolsetLogo: "images/toolset/vega.png"
+
+    - tool: "nuxtjs"
+      toolName: "VUE Framework"
+      toolsetLogo: "images/toolset/nuxtjs.png"
+    
+    - tool: "tensorflow"
+      toolName: "TensorFlow Library"
+      toolsetLogo: "images/toolset/tensorflow.png"
 
     - tool: "bokeh"
       toolName: "Bokeh Visualization Library"
       toolsetLogo: "images/toolset/bokeh.png"
+          
+    # - tool: "altair"
+    #   toolName: "Bokeh Visualization Library"
+    #   toolsetLogo: "images/toolset/altair.png"
+
+   
+     
+
+  
+   
+
 
 # About
 about:
   image : "images/about/about-1.png"
-  subtitle : "Multi purpose software"
+  subtitle : "Multipurpose software"
   title : "Ready to use"
-  content : "Creating multi purpose software thinking in what you need.
+  content : "Creating multipurpose software thinking in what you need.
           Delivering on time and only well tested software, always ready for production."
   linktext: "More"
-#  button:
-#    btnText : "read more"
-#    URL : "#"
-    
-about2:
-  image : "images/about/about-2.png"
-  subtitle : "For today and tomorrow"
-  title : "More complex processes and more simpler tools"
-  content : "Integrating high standards, Machine Learning and Artificial Intelligence.
-          Take advantage of our complete software solutions and get the most of your software and your data."
+  
 #  button:
 #    btnText : "read more"
 #    URL : "#"
 
-about3:
+about2:
   image : "images/about/about-3.png"
   subtitle : "Data Analysis"
-  title : "Make it simpler"
-  content : "Providing data analysis, dashboards and much more for you. Know your data better and
-          decide what to do with it right now."
+  title : "Easier tools"
+  content : "Providing data analysis, dashboards and much more for you. Get to know your data better and
+          decide what to do with it right now."    
+about3:
+  image : "images/about/about-2.png"
+  subtitle : "For today and tomorrow"
+  title : "Great results"
+  content : "Integrating high standards, Machine Learning and Artificial Intelligence.
+          Take advantage of our complete software solutions and get the most of your data."
+#  button:
+#    btnText : "read more"
+#    URL : "#"
+
+
 #  button:
 #    btnText : "read more"
 #    URL : "#"
@@ -80,7 +118,7 @@ about3:
 #  videoThumb : "images/check-video.png"
 #  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
 #  subtitle : "Check Video"
-#  title : "Best Way to Chat Your Customers."
+#  title : "Best Way to Chat with Your Customers."
 #  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat. duis aute.
 #  <br><br>
 #  Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
@@ -88,7 +126,7 @@ about3:
 # testimonial
 #testimonial:
 #  subtitle : "testimonial"
-#  title : "What Our Clients Says?"
+#  title : "What Do Our Clients Say?"
 #  testimonialItem:
 #    - name : "Alice kelly"
 #      designation : "Happy client"
@@ -122,8 +160,8 @@ about3:
 
 # Know more
 know_more:
-  title : "About WittyLytics"
-  content : "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern
+  title : "About DatWit"
+  content : "We are a Serbian company dedicated to creating multipurpose software solutions integrating modern
           techniques like Cloud Computing, Machine Learning, Data Analysis and microservices."
   morebtn:
     btnText : "Know more"

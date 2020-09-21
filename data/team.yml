@@ -1,14 +1,16 @@
 team:
   title : "The Team"
   subtitle: "Meet our team"
-  description: "We are a self-driven and enthusiastic young people who want to experiment and have fun."
+  description: "We are self-driven and enthusiastic young people who enjoy creating exciting solutions"
+  image: "images/team/team section.png"
 #  title : "Expert Person"
   teamMember:
     # team member
     - name : "Leonel Salazar Videaux"
       image : "images/team/lordford.png"
-      image2: "images/team/lordford2.png"
+      # image2: "images/team/lordford2.png"
       designation : "Founder / CEO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon : "fa-twitter"
           URL : "https://twitter.com/leonel_lordford"
@@ -22,8 +24,9 @@ team:
     # team member
     - name: "Abel Meneses Abad"
       image: "images/team/abelma.png"
-      image2: "images/team/abelma2.png"
+      # image2: "images/team/abelma2.png"
       designation: "Founder / COO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
           URL: "https://twitter.com/abelma1980"
@@ -35,46 +38,37 @@ team:
           URL: "https://github.com/sorice"
 
     # team member
-    #- name: "Alejandro N&uacute;&ntilde;ez Madrazo"
-    #  image: "images/team/alejandrojnm.jpg"
-    #  designation: "Founder / CTO"
-    #  socialIcon:
-    #    - icon: "fa-twitter"
-    #      URL: "https://twitter.com/alejandrojnm"
+    - name: "Enma Lidia Muñoz García"
+      image: "images/team/enma.png"
+      # image2: "images/team/abelma2.png"
+      designation: "CXO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/enma_lidia"
 
-    #    - icon: "fa-linkedin"
-    #      URL: "https://www.linkedin.com/in/alejandrojnm"
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/enma-lidia-muñoz-garcía"
 
-    #    - icon: "fa-github"
-    #      URL: "https://github.com/alejandrojnm"
-
-    # team member
-#    - name: "Karel Rodr&iacute;z Varona"
-#      image: "images/team/team-member-1.jpg"
-#      designation: "Founder / Data Analyst"
-#      socialIcon:
-#        - icon: "fa-twitter"
-#          URL: "#"
-
-#        - icon: "fa-linkedin"
-#          URL: "#"
-
-#        - icon: "fa-github"
-#          URL: "#"
+        - icon: "fa-github"
+          URL: "https://github.com/enmalidia"
 
     # team member
-#    - name: "Jorge Palacio"
-#      image: "images/team/team-member-1.jpg"
-#      designation: "Software Developer"
-#      socialIcon:
-#        - icon: "fa-twitter"
-#          URL: "#"
+    - name: "Yoel Benítez Fonseca"
+      image: "images/team/yoel.png"
+      # image2: "images/team/abelma2.png"
+      designation: "CTO"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        # - icon: "fa-twitter"
+        #   URL: ""
 
-#        - icon: "fa-linkedin"
-#          URL: "#"
+        # - icon: "fa-linkedin"
+        #   URL: "https://www.linkedin.com/in/"
 
-#        - icon: "fa-github"
-#          URL: "#"
+        - icon: "fa-github"
+          URL: "https://github.com/ybenitezf"
+    
 
 # partners
 #partners:

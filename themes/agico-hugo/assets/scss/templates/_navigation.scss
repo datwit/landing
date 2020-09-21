@@ -1,59 +1,25 @@
-.naviagtion {
-  padding: 45px 0;
+/*
+ * _navigation.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
 
-  @include desktop {
-    background: $bg-gradient-secondary;
-    padding: 15px 0;
-  }
-
-  &.nav-bg {
-    /*background: $bg-gradient-secondary;*/
-    padding: 15px 0;
-    background-color: #2d4258;
-  }
-
-  &.naviagtion-white {
-    &.nav-bg {
-      background: $white;
-      box-shadow: 0px 10px 20px 0px rgba(0, 141, 236, 0.1);
-
-      .btn {
-        color: $primary-color !important;
-
-        &:hover {
-          color: $white !important;
-        }
-      }
-    }
-
-    @include desktop {
-      background: $white;
-
-      .btn {
-        color: $primary-color !important;
-
-        &:hover {
-          color: $white !important;
-        }
-      }
-    }
-
-    .dropdown{
-      &-menu{
-        background: $white;
-      }
-      &-item{
-        color: $text-dark;
-      }
-    }
-  }
-}
-
-
-/******************menu items adjustments ************************/
+/***********************main navigation bar*************************************/
+//menu items adjustments 
 .navbar {
-
-  .nav-item {
+  height: 85px;
+  padding-top: 0px;
+  padding-left: 15px;
+  background-color: $primary-color;
+  position: fixed; 
+  top:0;          
+  width: 100%;
+  z-index: 3;
+  box-shadow: none;
+  
+  .nav-item{
 
     .nav-link {
       font-size: 20px;
@@ -61,22 +27,74 @@
       /*padding: 20px 22px;*/
       font-family: $primary-font;
       transition: all ease 0.3s;
-
+      color: white;
+      position: relative;
+      display: block;
+      transition: 0.5s;
+      
+      @include desktop{
+        font-size: 16px !important;
+      }
+      
       @include desktop-lg {
-        padding: 20px 15px;
+        // padding: 20px 15px;
+        font-size: 18px !important;
       }
-
-      &.active {
-        color: $primary-color;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: $secondary-color2;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
       }
-
       &:hover {
-        color: $primary-color !important;
+        color: $secondary-color;
+        background-color: #08476b;
+        border-radius: 6px;
+      
+      }
+  
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }    
+          
+      @include desktop {
+        padding: 20px 10px;
+        font-size: 18px;
+      }
+    }
+    
+    
+  }
+  //Fixed active menu item
+  .fixed{
+    color: $secondary-color2 !important;
+    
+  }
+
+  /***********use in case of adding drop down menu*******/
+  /*.naviagtion {
+    padding: 45px 0;
+    
+    &.naviagtion-white {
+      
+      .dropdown{
+        &-menu{
+          background: $white;
+        }
+        &-item{
+          color: $text-dark;
+        }
       }
     }
   }
-  /***************************************************************/
-  .dropdown {
+    .dropdown {
     &:hover {
       .dropdown-menu {
         visibility: visible;
@@ -96,8 +114,8 @@
       visibility: hidden;
       transition: .3s ease;
       opacity: 0;
-      transform: scale(.8);
-      background: $bg-gradient-secondary;
+      transform: scale(.8); 
+       background: $bg-gradient-secondary;
 
       @include desktop {
         display: none;
@@ -107,14 +125,14 @@
         transform-origin: unset;
       }
 
-      &.show {
+     &.show {
         visibility: hidden;
 
         @include desktop {
           visibility: visible;
           display: block;
         }
-      }
+      } 
     }
 
     &-item {
@@ -136,7 +154,110 @@
         background: transparent;
       }
     }
+  }*/
+}
+//adjusting visibility between both navigation bars(desktop & mobile)
+.navbar-nav.hide-on-small{
+  @include desktop{
+  display: none;
+  }
+} 
+ 
+//toggle navigation bar mobile
+nav {
+  .sidenav-trigger{
+    float: right !important;
+    color: $white;
+    //aligning responsive navbar toggle icon
+    margin: 11px 18px 10px 0px;
+    
+    i{
+      &:hover{
+        color: $secondary-color2;
+      }
+      &:active{
+        color: $secondary-color2;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      visibility: hidden;
+    }
+  }
+}
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+  font-size: 40px !important;
+   
+}
+.sidenav{
+  &-overlay{
+    z-index: 0 !important;
+  }
+  .user-view {
+    padding: 0px 16px 9px;
+
+    .background{
+      background-color: #1e4159;
+    }
+  }
+  a{
+    font-size: 20px !important;
+
+    &:hover{
+     color: $secondary-color;
+    }
+  }
+    
+}
+
+.list{
+  display: list-item !important;
+}
+
+//menu alignment on desktop
+.navbar-nav{
+  margin-right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+//close icon sidenav
+#close-icon{
+  padding: 0 60px;
+  margin-top: 10px;
+  &:hover{
+    color: $secondary-color2;
+  }
+  &:active{
+    color: $secondary-color2;
+  }
+}
+//adjusting logo 
+.logo-img{
+margin-top: 5px;
+}
+
+/************************** blog pagination***********************************/ 
+#pagi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: none;
+ 
+  .hover-ripple{
+    &:hover{
+    background-color:transparent ;
+    border-radius: 50% !important;
+    }
+  }  
+}
+
+#pagi-navi{
+  @include desktop {
+    display: flex !important;
+    justify-content: center !important;   
   }
 }
 
-// nav css end
+
+

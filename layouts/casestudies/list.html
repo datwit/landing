@@ -1,60 +1,45 @@
 {{ define "main" }}
 
-{{ partial "page-header.html" . }}
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "pheader-casestd.html" . }}
+<!------------------------------------------------------------------------------------------------------------------>
 
-      <!--div class="col-lg-12">
-        <div class="row category-slider">
-          {{ range .Site.Data.career.categories.categoriesItem }}
-          <div class="col-lg-3 col-sm-6 mb-5">
-            <div class="card border-0 shadow rounded-xs pt-5">
-              <div class="card-body">
-                <i class="fa {{ .icon }} icon-lg icon-{{.iconColor}} icon-bg-{{.iconColor}} icon-bg-circle mb-3"></i>
-                <h4 class="mt-4 mb-3">{{ .title }}</h4>
-                <p>{{ .content | markdownify }}</p>
+<section class="mb-1" id="case-sect"><!--? products section--------------------------------------------------------------->
+  <div class="container">
+    <div class="row"><!--------first row title------------------------------------------------>
+      <div class="col s12">
+        {{ with .Site.Data.product.pgtitle }}
+        <h2>{{ .title }}</h2>
+        <h6 class="mr-2">{{ .description }}</h6>
+        {{ end }}
+      </div>
+    </div> <!-------------/first row title----------------------------------------------------->
+    <div class="row mr-1 mr-2">
+      <!--listed images------------------------------------------------------------------------->
+      {{ range .Site.Data.product.pgtitle.productItem}}
+      <div class=" col s12 m6 l4" id="card-container">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        
+          <div class=" card flipper">
+            <div class=" card-image front">
+              <img src="{{ .image | absURL}}" alt="{{.title}}">
+            </div>   
+            <div class="back">
+              <a href=""><h3 class="card-title">{{ .title}}</h3></a>
+              <p class="case-studies-descrip">{{.content}}</p>
+              <div class="product-social">
+                <a href=""><i class="fa fa-2x fa-github"></i></a>
               </div>
             </div>
           </div>
-          {{ end }}
+       
         </div>
-      </div>
     </div>
+    {{ end }} 
+    </div><!--/listed images------------------------>
   </div>
-</section-->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col s12"><!--------first row title-->
-        {{ with .Site.Data.product.pgtitle }}
-        <h2 class="section-title">{{ .title }}</h2>
-        <h3 class="subtitle">{{ .description }}</h3>
-        {{ end }}
-      </div><!-------------/first row title------------>
-    </div> 
-    <div class="row">
-      <!--listed images------------------------>
-      <div class="col s12 m4 waves-effect waves-blue waves-block" id="ceprod">
-      {{ range .Site.Data.product.pgtitle.productItem}}
-            <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
-            <h3 class="card-title">{{ .title}}</h3>
-      {{ end }} 
-      </div>
-    </div>
-  <div class="divider"></div> 
-  </div>
-</section> 
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m6">
-        {{ with .Site.Data.contact.contactForm }}
-        <h2 class="section-title">{{ .title }}</h2>
-        {{ end }}
-      </div>
-      <div class="col s12 m6">
-        <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Get in touch
-          <i class="material-icons right">send</i>
-        </button>
-      </div>
-    </div>   
-  </div>
-</section>  
+</section><!--? /products section---------------------------------------------------------------> 
+
+{{ partial "contact-access-gray.html" . }}
+
 {{ end }}

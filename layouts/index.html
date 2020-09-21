@@ -1,101 +1,92 @@
 {{ define "main" }}
 
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "pheader-home.html" . }}
+<!------------------------------------------------------------------------------------------------------>
+
 {{"<!-- banner -->"| safeHTML}}
-<section class="hero-area bg-cover z-depth-2" data-background="{{ .Site.Data.homepage.banner.bgImage | absURL }}">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      {{ with .Site.Data.homepage.banner }}
-      <div class="col s8 text-center text-lg-left">
-        <h1 class="text-white position-relative" data-aos="fade-up" data-aos-delay="1000">{{ .title }}<!--span class="watermark">{{ .watermark }}</span--></h1>
-        <p class="text-white pt-2 pb-3" data-aos="fade-up" data-aos-delay="1200">{{ .content | markdownify }}</p>
+<section>
+  <div class="hero-image-full">
+    <div class="im">
+      <div class="imge1"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image1.png"></div>
+      <div class="imge2"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image2.png">
+        <a class="btn-floating btn-large white pulse tooltipped" data-position="bottom" data-tooltip="What we do" id="floatb" href="/services"><i class=" small material-icons">arrow_forward</i></a>
       </div>
+      <div class="imge3"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image3.png"></div>
       
-      {{ end }}
     </div>
+    {{ with .Site.Data.homepage.banner }}
+    <div class="container">
+      <h1 id="main-text" >{{ .title }}</h1>
+      <a href="/contact"><button class="btn waves-effect waves-light" type="submit" name="action" id="call">Contact us<i class="material-icons">send</i></button></a>  
+    </div>
+    {{end}}
   </div>
+  <div class="hero-image-mobile">
+    <img alt="Hero-image-mobile" src="{{ .Site.BaseURL }}images/background/banner-mobile.png">
+    {{ with .Site.Data.homepage.banner }}
+      <div class="container">
+      <h1>{{ .title }}</h1>
+      <a href="/contact"><button class="btn waves-effect waves-light" type="submit" name="action" id="call2">Contact us<i class="material-icons">send</i></button></a>
+    </div>
+    {{end}}
+    
+  </div>  
 </section>
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>  -->
+<a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
+        
+<!-------------------------------------------------->
+
 {{"<!-- /banner -->"| safeHTML}}
 
 {{"<!-- features -->"| safeHTML}}
-<section class="section">
+<section class="mb-1 mr-1 feat">
   <div class="container">
     <div class="row">
       <div class="col s12"><!--------first row title-->
-        {{ with .Site.Data.service.service }}
-        <h2 class="section-title">{{ .title }}</h2>
+        {{ with .Site.Data.services.service }}
+        <h2>{{ .title }}</h2>
         {{ end }}
       </div><!-------------/first row title------------>
     </div>  
-        
-    <div class="row frow"><!----------second row icon---> 
-        {{ range $element:= .Site.Data.service.service.serviceItem }} 
-      <div class="col s4"><!--------------one column per icon-->
-        <div class="icon-block">
-          <div class="text-center">
-            <i class="fa {{ .icon }} icon-lg icon-{{ .iconColor }} icon-bg-{{ .iconColor }} icon-bg-circle mb-3 text-center"></i>
-            <h3>{{ .title }}</h3>
-          </div>
+    <!--------------------cards----------------------------->  
+    <div class="row">
+      {{ range $element:= .Site.Data.services.service.serviceItem }} 
+      <div class="col s12 m4" id="serv">
+        <div class="card" id="card1">
+          <div class="icon1"><a href="/services"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a></div>
+          <a href="/services"><div class="card-content" id="cont"><h3>{{.title}}</h3></div></a>
         </div>
-      </div><!------------------------/second row icon--->
-        {{ end }}
-    </div>  
-    
-  <div class="divider"></div> 
-  </div> 
+      </div>
+      {{end}}
+    </div>
+  </div>
 </section>
 {{"<!-- /features -->"| safeHTML}}
 
-{{"<!-- toolset -->"| safeHTML}}
-<!---section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="list-inline d-flex justify-content-between py-3 py-lg-5 border-bottom align-items-center">
-          {{ range .Site.Data.homepage.toolset }}
-          <li class="list-inline-item"><img class="img-fluid" src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section--->
-<section class="toolset">
-  <div class="container">
-  <div class="row">
-    <div class="col s12">
-      <div class="row category-slider">
-        {{ range .Site.Data.homepage.toolset }}
-        <li class="list-inline-item col s12 m4 l2"><img class="img-fluid" src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-<div class="divider"></div>  
-</div>
-</section>
-{{"<!-- /toolset -->"| safeHTML}}
 
 {{"<!-- goals -->"| safeHTML}}
-<section class="section mt-5 py-1">
+<section class="mr-1 mr-2">
   <div class="container">
     <div class="row">
       <!--first card------------------------>
       {{ with .Site.Data.homepage.about }}
       <div class="col s12 m4">
-        <div class="card">
+        <div class="card hoverable">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
+            <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
           </div>
           <div class="card-content">
             <span class="card-title activator">
-              <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-              <i class="material-icons right grey-text text-darken-4">more_vert</i>
+              <h3 class="activator crev">{{ .title}}</h3>
+              <i class="material-icons grey-text text-darken-4">more_vert</i>
             </span>
           </div>
           <div class="card-reveal">
             <span class="card-title activator">
-              <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-              <i class="material-icons right grey-text text-darken-4">close</i>
+              <h3 class="activator crev">{{ .title}}</h3>
+              <i class="material-icons grey-text text-darken-4">close</i>
           </span>
             <p>{{ .content | markdownify }}</p>
           </div>
@@ -106,20 +97,20 @@
       <!--second card------------------------>
     {{ with .Site.Data.homepage.about2 }}
     <div class="col s12 m4">
-      <div class="card">
+      <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
+          <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
         </div>
         <div class="card-content">
           <span class="card-title activator">
-            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">more_vert</i>
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
-            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">close</i>
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4">close</i>
           </span>
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -130,20 +121,20 @@
   <!--third card------------------------>
     {{ with .Site.Data.homepage.about3 }}
     <div class="col s12 m4">
-      <div class="card">
+      <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image">
+          <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
         </div>
         <div class="card-content">
           <span class="card-title activator">
-            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">more_vert</i>
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
-            <h3 class="activator grey-text text-darken-4 crev">{{ .title}}</h3>
-            <i class="material-icons right grey-text text-darken-4">close</i>
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4">close</i>
           </span>
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -156,80 +147,60 @@
 </section>    
 {{"<!-- /goals -->"| safeHTML}}
 
-{{"<!-- team -->" | safeHTML}}
-<section>
+{{"<!-- toolset -->"| safeHTML}}
+<!-- <section>
   <div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        {{ range .Site.Data.homepage.toolset }}
+        <div class="slide">
+          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
+        </div>
+        {{end}}
+        {{ range .Site.Data.homepage.toolset }}
+        <div class="slide">
+          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="mr-2 light-gray" id="tool-bg">
+  <div class="container">
+    <div class="row">
+      <h2>Our resources</h2>
+    </div>
+    <div class="row">  
+      {{ range .Site.Data.homepage.toolset }}
+        <div id="col1">
+          <ul class="rib">
+              <li id="lis" ><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
+          </ul>
+        </div>
+      {{end}}
+    </div>
+  </div>
+ <!-------------------------------------------------------------------------------------> 
+</section>
+{{"<!-- /toolset -->"| safeHTML}}
+
+{{"<!-- team -->" | safeHTML}}
+<section class="mb-1 mr-3">
+  <div class="container" id="team-cont">
     <div class="row">
       <div class="col s12"><!-------------------------first row title------->
         {{ with .Site.Data.team.team }}
-        <h2 class="section-title">{{ .title }}</h2>
-        <h6 class="section-desc subtitle">{{.description}}</h6>
-        <h5 class="subtitle">{{.subtitle}}<a href="about#jump"><i class="small material-icons" id="link">chevron_right</i></a></h5>
+        <h2>{{ .title }}</h2>
+        <h6>{{.description}}</h6>
+        <h6>{{.subtitle}}<a class="btn-floating pulse" data-position="bottom" id="floatc" href="/about"><i class=" small material-icons">navigate_next</i></a></h6>
         {{ end }}
       </div>
-    </div><!---------------------------     --/first row title----------------->
-    <div class="row"><!------second row members-------------------------------->
-      {{ range $index, $element:= .Site.Data.team.team.teamMember }}
-      {{ $delay := mul $index 200}}
-      <div class="col s6" data-aos="fade-up" data-aos-delay="{{$delay}}">
-        <div class="team-member text-center">
-          <img src="{{ .image | absURL }}" class="img-fluid w-100 rounded-sm">
-        </div>
-      </div>
-      {{ end }}
-    </div><!--------------------------------------/second row members-------->
-  </div>
-</section>
+    </div>  
+  </div>  
+ </section>
 {{"<!-- /team -->" | safeHTML}}
 
-
-<!--{{"contact"| safeHTML}}
-<section class="section section-lg-bottom bg-light">
- <div class="row">
-  <form class="col s12 bg-light">
-    <div class="container">
-      <div class="col-lg-12 text-center">
-        {{ with .Site.Data.contact.contactForm }}
-        <h2 class="section-title">{{ .title }}</h2>
-        {{ end }}
-      </div>
-      <div class="row"--><!-----first column------------------------>
-        <!--div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label class="active" for="icon_prefix">Your name</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
-          <label class="active" for="email">Email</label>
-        </div>
-      </div--><!----------------/first column----------------------->
-      <!--div class="row"--><!------second column---------------------->
-        <!--div class="input-field col s6">
-          <i class="material-icons prefix">edit</i>
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label class="active" for="first_name">Subject</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">send</i>
-          <textarea id="textarea2" class="materialize-textarea"></textarea>
-          <label class="active" for="textarea1">Message</label>
-        </div>
-      </div--><!-----------------/second column--------------------->
-      <!--div class="row"--><!------------button div-->
-        <!--div class="col s12"> 
-          <button class="btn waves-effect waves-light btn-lg" type="submit" name="action">Get in touch
-          <i class="material-icons right">send</i>
-          </button>
-        </div>
-      </div--><!----------------------------/button div--------------->
-    <!--/div--><!-----container---------------------------------------->
-  <!--/form>
- </div>
-</section>
-{{"--><!-- /contact --><!--"| safeHTML}}-->
-
-
+{{ partial "contact-access.html" . }}
 
 {{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<!-------------------------------------------navbar----------------------------------------------------------------->
+{{ partial "page-header.html" . }}
+<!------------------------------------------------------------------------------------------------------------------>
+{{"<!-- privacy -->"| safeHTML}}
+
+<section class="mb-1" id="p-content">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.Data.privacy.privacy }}      
+      <div class="col s12">
+        <h2>{{ .title }}</h2>
+        <p>{{ .content | markdownify }}</p>      
+      </div>
+    </div>
+  </div>
+  <img class="responsive-img"  src="{{ .background | absURL }}" alt="" id="privacy-background">
+  {{ end }}
+</section>
+
+{{"<!-- /privacy -->"| safeHTML}}
+
+{{ partial "contact-access-gray.html" . }}
+
+{{ end }}

@@ -1,11 +1,13 @@
 {{ define "main" }}
 
-{{ partial "page-header.html" . }}
-
-<section class="section section-lg-bottom">
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "pheader-search.html" . }}
+<!------------------------------------------------------------------------------------------------------->
+<!------------------search results--------------------------------->
+<section class="mb-2">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col s12">
           <div id="search-results"></div>
           <script id="search-result-template" type="text/x-js-template">
             <div class="search-result" id="summary-${key}">
@@ -19,7 +21,5 @@
     </div>
   </div>
 </section>
-
-{{ partial "subscription-white.html" . }}
 
 {{ end }}
