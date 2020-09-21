@@ -7,7 +7,7 @@
 ###        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ###
 
-baseURL = "http://localhost/datwit"
+baseURL = "https://development.datwit.com/"
 
 languageCode = "en-us"
 title = "DatWit"
