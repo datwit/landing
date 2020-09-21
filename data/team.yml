@@ -8,7 +8,7 @@ team:
     # team member
     - name : "Leonel Salazar Videaux"
       image : "images/team/lordford.png"
-      image2: "images/team/lordford2.png"
+      # image2: "images/team/lordford2.png"
       designation : "Founder / CEO"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
@@ -24,7 +24,7 @@ team:
     # team member
     - name: "Abel Meneses Abad"
       image: "images/team/abelma.png"
-      image2: "images/team/abelma2.png"
+      # image2: "images/team/abelma2.png"
       designation: "Founder / COO"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
@@ -41,7 +41,7 @@ team:
     - name: "Enma Lidia Muñoz García"
       image: "images/team/enma.png"
       # image2: "images/team/abelma2.png"
-      designation: "000000000000"
+      designation: "CXO"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
@@ -54,20 +54,20 @@ team:
           URL: "https://github.com/enmalidia"
 
     # team member
-    - name: "Periquito Perez"
+    - name: "Yoel Benítez Fonseca"
       image: "images/team/yoel.png"
       # image2: "images/team/abelma2.png"
-      designation: "000000000000"
+      designation: "CTO"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
-        - icon: "fa-twitter"
-          URL: ""
+        # - icon: "fa-twitter"
+        #   URL: ""
 
-        - icon: "fa-linkedin"
-          URL: "https://www.linkedin.com/in/meneses-abad"
+        # - icon: "fa-linkedin"
+        #   URL: "https://www.linkedin.com/in/"
 
         - icon: "fa-github"
-          URL: ""
+          URL: "https://github.com/ybenitezf"
     
 
 # partners
