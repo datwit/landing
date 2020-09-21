@@ -45,7 +45,7 @@ jobs:
 
       - name: Push files to bucket
         run: |
-          aws s3 sync . s3://datwit.com --delete
+          aws s3 sync . s3://development.datwit.com --delete
 
       # invalidated the entery distribution
       - name: Invalidate entry point
