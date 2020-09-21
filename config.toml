@@ -7,7 +7,7 @@
 ###        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ###
 
-baseURL = "https://www.datwit.com/"
+baseURL = "https://development.datwit.com/"
 
 languageCode = "en-us"
 title = "DatWit"
@@ -144,7 +144,7 @@ paginate = 6
   title = "Contact Info"
 #  address = "Serbian address"
 #  mobile = "+1234567890"
-  email = "datwitrs@gmail.com"
+  email = "contact@datwit.com"
 
   # copyright
   [params.copyright]
@@ -205,4 +205,3 @@ URL = "https://twitter.com/datwit"
 [[params.sharePost]]
 icon = "fa-linkedin"
 URL = "https://linkedin.com/datwit"
-
