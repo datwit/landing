@@ -155,11 +155,11 @@ uglyURLs = true
 
   [[menu.footer]]
   name = "Privacy Policy"
-  URL = "privacy"
+  URL = "privacy.html"
 
   [[menu.footer]]
   name = "Terms and Conditions"
-  URL = "terms"
+  URL = "terms.html"
 
 [params]
 logo = "images/logo.png"
@@ -167,7 +167,7 @@ logomin = "images/logo-min.png"
 home = "Home"
 # Meta data
 description = "Dynamic Witty Analytics Company"
-author = "DATWIT Team"
+author = "DatWit Team"
 # google map
 #gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 # gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCFz41K58LkBFXXw_a4Oy_xQAtBqdFTFaA&libraries=places"

@@ -21,13 +21,13 @@
             </a>
             <div class="dropdown-menu" >
               {{ range .Children }}
-              <a class="dropdown-item text-color" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              <a class="dropdown-item text-color" href="{{ .URL | absURL }}.html">{{ .Name }}</a>
               {{ end }}
             </div>
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}.html">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
@@ -59,13 +59,13 @@
             </a>
             <div class="dropdown-menu" >
               {{ range .Children }}
-              <a class="dropdown-item text-color " href="{{ .URL | absURL }}">{{ .Name }}</a>
+              <a class="dropdown-item text-color " href="{{ .URL | absURL }}.html">{{ .Name }}</a>
               {{ end }}
             </div>
           </li>
           {{ else }}
           <li class="list">
-            <a class="nav-link text-white text-capitalize " href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a class="nav-link text-white text-capitalize " href="{{ .URL | absURL }}.html">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}

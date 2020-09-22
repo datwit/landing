@@ -10,6 +10,7 @@ team:
       image : "images/team/lordford.png"
       # image2: "images/team/lordford2.png"
       designation : "Founder / CEO"
+      role : "Software Engineer"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon : "fa-twitter"
@@ -26,6 +27,7 @@ team:
       image: "images/team/abelma.png"
       # image2: "images/team/abelma2.png"
       designation: "Founder / COO"
+      role : "Data Scientist"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
@@ -42,6 +44,7 @@ team:
       image: "images/team/enma.png"
       # image2: "images/team/abelma2.png"
       designation: "CXO"
+      role : "Frontend Developer"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
@@ -58,6 +61,7 @@ team:
       image: "images/team/yoel.png"
       # image2: "images/team/abelma2.png"
       designation: "CTO"
+      role : "DevOps"
       bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         # - icon: "fa-twitter"
