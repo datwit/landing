@@ -10,7 +10,7 @@
     <div class="im">
       <div class="imge1"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image1.png"></div>
       <div class="imge2"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image2.png">
-        <a class="btn-floating btn-large white pulse tooltipped" data-position="bottom" data-tooltip="What we do" id="floatb" href="/services"><i class=" small material-icons">arrow_forward</i></a>
+        <a class="btn-floating btn-large white pulse tooltipped" data-position="bottom" data-tooltip="What we do" id="floatb" href="{{ .Site.BaseURL }}services.html"><i class=" small material-icons">arrow_forward</i></a>
       </div>
       <div class="imge3"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image3.png"></div>
       
@@ -18,7 +18,7 @@
     {{ with .Site.Data.homepage.banner }}
     <div class="container">
       <h1 id="main-text" >{{ .title }}</h1>
-      <a href="/contact"><button class="btn waves-effect waves-light" type="submit" name="action" id="call">Contact us<i class="material-icons">send</i></button></a>  
+      <a href="{{ .Site.BaseURL }}contact.html"><button class="btn waves-effect waves-light" type="submit" name="action" id="call">Contact us<i class="material-icons">send</i></button></a>  
     </div>
     {{end}}
   </div>
@@ -27,7 +27,7 @@
     {{ with .Site.Data.homepage.banner }}
       <div class="container">
       <h1>{{ .title }}</h1>
-      <a href="/contact"><button class="btn waves-effect waves-light" type="submit" name="action" id="call2">Contact us<i class="material-icons">send</i></button></a>
+      <a href="{{ .Site.BaseURL }}contact.html"><button class="btn waves-effect waves-light" type="submit" name="action" id="call2">Contact us<i class="material-icons">send</i></button></a>
     </div>
     {{end}}
     
@@ -55,8 +55,8 @@
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m4" id="serv">
         <div class="card" id="card1">
-          <div class="icon1"><a href="/services"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a></div>
-          <a href="/services"><div class="card-content" id="cont"><h3>{{.title}}</h3></div></a>
+          <div class="icon1"><a href="{{ .Site.BaseURL }}services.html"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a></div>
+          <a href="{{ .Site.BaseURL }}services.html"><div class="card-content" id="cont"><h3>{{.title}}</h3></div></a>
         </div>
       </div>
       {{end}}
@@ -193,7 +193,7 @@
         {{ with .Site.Data.team.team }}
         <h2>{{ .title }}</h2>
         <h6>{{.description}}</h6>
-        <h6>{{.subtitle}}<a class="btn-floating pulse" data-position="bottom" id="floatc" href="/about"><i class=" small material-icons">navigate_next</i></a></h6>
+        <h6>{{.subtitle}}<a class="btn-floating pulse" data-position="bottom" id="floatc" href="{{ .Site.BaseURL }}about.html"><i class=" small material-icons">navigate_next</i></a></h6>
         {{ end }}
       </div>
     </div>  

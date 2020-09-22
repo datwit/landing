@@ -36,12 +36,13 @@
     </div><!------------------------------------------------------->  
     <div class="row"><!-------------------------------------------->
       {{ range $element:= .Site.Data.team.team.teamMember }}
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 l4">
         <div class="team-member"><!----------------------picture-->
           <img src="{{ .image | absURL }}">
         </div><!-------------------------------------------------->
         <h5 class="team-member-name">{{.name }}</h5>
-        <p class="team-member-designation">{{ .designation }}</p>
+        <div class="team-member-designation">{{ .designation }}</div>
+        <div class="team-member-role">{{ .role }}</div>
         <div class="row">
           <div class="container-social">
             <ul class="list-inline social-icons">

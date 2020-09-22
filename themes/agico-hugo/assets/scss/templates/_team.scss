@@ -7,6 +7,9 @@
  */
 
 .team-member {
+
+  display: flex;
+  justify-content: center;
      
   &-name {
     opacity: 1;
@@ -20,7 +23,12 @@
     text-align: center; 
     font-weight: bolder;
     color: #727374;
-    margin: 10px 0 10px 0 !important;
+    margin: 1px 0 !important;
+  }
+  &-role {
+    opacity: 1;
+    text-align: center;
+    color: #727374;
   }
 
   @include mobile-xs{

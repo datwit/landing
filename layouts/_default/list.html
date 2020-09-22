@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12 m6 push-m3 l6 push-l3">
-          <form action="{{ .Site.BaseURL }}/search">
+          <form action="{{ .Site.BaseURL }}search.html">
           <div class="search-field">
             <i class="material-icons">search</i><input id="search-query" name="s" type="search" placeholder="Search here">
           </div>
@@ -21,7 +21,7 @@
   <div class="container">
     <div class="row esp">
       <div class=" col s12 m12 l7">
-        <h3 id="slid-head">Don't miss these latest articles</h3>
+        <h3 id="slid-head">Don't miss our latest articles</h3>
         <div class="slider">
           <ul class="slides">
             {{ range first 3 ( where .Site.Pages "Type" "post" )}}
@@ -68,7 +68,7 @@
                   <h5 class="h5left"><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h5>
                   <ul>
                     {{ range .Params.categories }}
-                      <li class="filter-tags"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</li></a>
+                      <li class="filter-tags"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}.html">{{ . }}</li></a>
                   </ul>    
                     {{ end }}
                 </div>

@@ -11,7 +11,7 @@
         <p class="text-color card-date position-relative d-inline-block">BY <span class="text-dark">{{ .Params.Author }}</span> / ON <span class="text-dark">{{ .PublishDate.Format "Jan 02, 2006" }}</span></p>
         <ul>
           {{ range .Params.categories }}
-            <li class="filter-tags"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</li></a>
+            <li class="filter-tags"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}.html">{{ . }}</li></a>
         </ul> 
           {{end}}
         <div class="content">
