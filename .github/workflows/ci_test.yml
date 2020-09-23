@@ -10,10 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: setup hugo config
-        run: |
-          mv config.development.toml config.toml
-      
       - uses: srt32/hugo-action@master
         env:
           # define the access point to the contact form handler
@@ -24,5 +20,4 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-            name: webtest
             path: './public'
