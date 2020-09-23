@@ -1,4 +1,4 @@
-name: CI-CD Development
+name: Test workflow
 
 on: push
 
@@ -14,10 +14,15 @@ jobs:
         run: |
           mv config.development.toml config.toml
       
-      - uses: jakejarvis/hugo-build-action@v0.75.0
+      - uses: srt32/hugo-action@master
         env:
           # define the access point to the contact form handler
           CONTACT_MANAGER_CLIENT: "https://icv8e1h418.execute-api.eu-west-1.amazonaws.com/dev/static/js/app.js"
           CONTACT_MANAGER_ENDPOINT: "https://icv8e1h418.execute-api.eu-west-1.amazonaws.com/dev/process-contact-form"
         with:
           args: --minify
+
+      - uses: actions/upload-artifact@v2
+        with:
+            name: webtest
+            path: './public'
