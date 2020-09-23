@@ -1,6 +1,10 @@
 name: Test workflow
 
-on: push
+on: 
+  push:
+    branches:
+      - '!master'
+      - '!development'
 
 jobs:
   test-build:
