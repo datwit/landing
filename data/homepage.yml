@@ -81,16 +81,13 @@ toolset:
 
 # About
 about:
+  sectiontitle: "Our goals"
   image : "images/about/about-1.png"
   subtitle : "Multipurpose software"
   title : "Ready to use"
   content : "Creating multipurpose software thinking in what you need.
           Delivering on time and only well tested software, always ready for production."
   linktext: "More"
-  
-#  button:
-#    btnText : "read more"
-#    URL : "#"
 
 about2:
   image : "images/about/about-3.png"
@@ -104,14 +101,7 @@ about3:
   title : "Great results"
   content : "Integrating high standards, Machine Learning and Artificial Intelligence.
           Take advantage of our complete software solutions and get the most of your data."
-#  button:
-#    btnText : "read more"
-#    URL : "#"
 
-
-#  button:
-#    btnText : "read more"
-#    URL : "#"
 
 # video
 #video:
