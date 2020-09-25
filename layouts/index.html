@@ -156,9 +156,11 @@
       {{end}}
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m6 l3">
-        <img src="{{ .src | absURL }}" alt="{{ .title }}">
-        <h3 class="services-title">{{ .title }}</h3>
-        <p>{{.shortcontent}}</p>
+        <img src="{{ .src | absURL }}" alt="{{ .title }}">  
+        <div id="text-continous">
+          <a  class="subt" href="/services">{{ .title }}:</a>
+          {{.shortcontent}}
+        </div>             
       </div>
       {{end}}
     </div>
@@ -168,24 +170,6 @@
 
 
 {{"<!-- toolset -->"| safeHTML}}
-<!-- <section>
-  <div class="container">
-    <div class="slider">
-      <div class="slide-track">
-        {{ range .Site.Data.homepage.toolset }}
-        <div class="slide">
-          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
-        </div>
-        {{end}}
-        {{ range .Site.Data.homepage.toolset }}
-        <div class="slide">
-          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
-        </div>
-        {{end}}
-      </div>
-    </div>
-  </div>
-</section> -->
 <section class="mr-2 light-gray" id="tool-bg">
   <div class="container">
     <div class="row">

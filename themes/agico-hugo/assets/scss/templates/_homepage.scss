@@ -24,9 +24,32 @@
  
 }
 /************************services section*********************************/ 
-.services-title{
-  height: 55px;
-  margin:5px 0 5px 0 !important;
+#text-continous{
+  // word-wrap: break-word;
+  font-size: 17px;    
+  color: $primary-color;
+  text-align: justify;
+  margin: 15px 10px 0 10px;
+
+  .body{
+    color: $primary-color !important;    
+  }
+
+.subt{
+  
+  font-weight: bolder;
+  text-align: left !important;
+  color: $primary-color;
+  margin: 0 !important;
+ 
+
+  &:hover{
+    color: $secondary-color2;
+  }
+  &:active{
+    color: $secondary-color2;
+  }
+}  
 }
 
 /******************toolset section styling*******************************/
