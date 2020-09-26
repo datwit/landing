@@ -19,40 +19,47 @@ service:
 
   serviceItem:
       #listing
+
       - title: "Software Development"
-        src: "images/services/icons-sd.png"
+        src: "images/services/soft-developm.png"
+        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
         # url: "services#sd"
 
       - title: "Data Analysis"
-        src: "images/services/icons-da.png"
+        src: "images/services/data-anal.png"
+        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
         # url: "services#da"
 
       - title: "Data Visualization"
-        src: "images/services/icons-dv.png"
+        src: "images/services/data-visualiz.png"
+        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
         # url: "services#sd"
 
+      - title: "Internet of Things"
+        src: "images/services/domotic.png"
+        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        
 
 
-      
 #describing services page
 serviceItem1:
   title : "Software Development"
   icon : "/images/services/i-soft-dev.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
   content : "Datwit provides software development services to other software companies. The company also design and develop customized software for small clientes. Primary products are web apps based on javascript and django, backend design and development on Flask/Chalice, and python scripts for automation. Our services include the deployment on-cloud or local servers with all the needed configuration. All our solutions can include machine learning funtionalities."
   url: "images/services/soft-develop.png"
 
 serviceItem2:
   title : "Data Analysis"
   icon : "/images/services/i-dat-analy.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
   content : "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
   url: "images/services/data-analy.png"
   
 serviceItem3:
   title : "Data Visualization"
   icon : "/images/services/i-dat-visual.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
   content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on."
   url: "images/services/data-visual.png"
 

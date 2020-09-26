@@ -41,16 +41,15 @@
 {{"<!-- /banner -->"| safeHTML}}
 
 {{"<!-- features -->"| safeHTML}}
-<section class="mb-1 mr-1 feat">
+<!-- <section class="mb-1 mr-1 feat">
   <div class="container">
     <div class="row">
-      <div class="col s12"><!--------first row title-->
+      <div class="col s12">
         {{ with .Site.Data.services.service }}
         <h2>{{ .title }}</h2>
         {{ end }}
-      </div><!-------------/first row title------------>
+      </div>
     </div>  
-    <!--------------------cards----------------------------->  
     <div class="row">
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m4" id="serv">
@@ -62,7 +61,7 @@
       {{end}}
     </div>
   </div>
-</section>
+</section> -->
 {{"<!-- /features -->"| safeHTML}}
 
 
@@ -72,6 +71,7 @@
     <div class="row">
       <!--first card------------------------>
       {{ with .Site.Data.homepage.about }}
+      <h2>{{.sectiontitle}}</h2>
       <div class="col s12 m4">
         <div class="card hoverable">
           <div class="card-image waves-effect waves-block waves-light">
@@ -147,25 +147,29 @@
 </section>    
 {{"<!-- /goals -->"| safeHTML}}
 
-{{"<!-- toolset -->"| safeHTML}}
-<!-- <section>
+{{"<!-- services -->"| safeHTML}}
+<section class="mr-3">
   <div class="container">
-    <div class="slider">
-      <div class="slide-track">
-        {{ range .Site.Data.homepage.toolset }}
-        <div class="slide">
-          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
-        </div>
-        {{end}}
-        {{ range .Site.Data.homepage.toolset }}
-        <div class="slide">
-          <img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}">
-        </div>
-        {{end}}
+    <div class="row">
+      {{with .Site.Data.services.service}}
+      <h2>{{.sectiontitle}}</h2>
+      {{end}}
+      {{ range $element:= .Site.Data.services.service.serviceItem }} 
+      <div class="col s12 m6 l3">
+        <img src="{{ .src | absURL }}" alt="{{ .title }}">  
+        <div id="text-continous">
+          <a  class="subt" href="/services">{{ .title }}:</a>
+          {{.shortcontent}}
+        </div>             
       </div>
+      {{end}}
     </div>
   </div>
-</section> -->
+</section>
+{{"<!-- /services -->"| safeHTML}}
+
+
+{{"<!-- toolset -->"| safeHTML}}
 <section class="mr-2 light-gray" id="tool-bg">
   <div class="container">
     <div class="row">

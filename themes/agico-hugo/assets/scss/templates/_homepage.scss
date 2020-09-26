@@ -22,7 +22,36 @@
     display:none;
   }
  
-} 
+}
+/************************services section*********************************/ 
+#text-continous{
+  // word-wrap: break-word;
+  font-size: 17px;    
+  color: $primary-color;
+  text-align: justify;
+  margin: 15px 10px 0 10px;
+
+  .body{
+    color: $primary-color !important;    
+  }
+
+.subt{
+  
+  font-weight: bolder;
+  text-align: left !important;
+  color: $primary-color;
+  margin: 0 !important;
+ 
+
+  &:hover{
+    color: $secondary-color2;
+  }
+  &:active{
+    color: $secondary-color2;
+  }
+}  
+}
+
 /******************toolset section styling*******************************/
 //-------------custom grid and columns ----------------------------------
 .rib{
@@ -86,6 +115,12 @@ padding-bottom: 10px;
   background-color: #eaebec;
    padding: 0 0 50px 0;    
 }
+//gray brackground no paddings for the homepage illustration
+#light-gray3{
+  background-color: #eaebec;
+   padding: 0px !important;    
+}
+
 .adj{
   margin-bottom: 0px;
 
