@@ -48,6 +48,15 @@
     margin-top: 0 !important; 
     margin-left: 15px;
   }
+  @include mobile-xs{
+    padding: 0px !important;
+  }
+  @include mobile{
+    padding: 0px !important;
+  }
+  @include tablet{
+    padding: 0px !important;
+  }
   
 }
 
