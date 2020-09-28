@@ -82,11 +82,43 @@
 <section>
   <div class="container">
     <div class="row">
-      <h2>How we work</h2>
-      <div id="shsskkasas"></div>
+      {{with .Site.Data.services.diagram}}
+      <h2>{{.title}}</h2>
+      <h6 class="mr-2">{{.subtitle}}</h6>
+      {{end}}
     </div>
-
-  </div>
+    <div class="row"><!--------------------------graphic------------------------------------>  
+      <div class="graphic mb-1 mr-3">
+        <div class="line">
+          <div class="col s3 m3 l3 list-dots4">
+            <div class="dot1" id="dot"></div>
+            {{with .Site.Data.services.developprocess1}}
+            <div class="tit1" data-aos="fade-up"data-aos-offset="0"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div> 
+          <div class="col s3 m3 l3 list-dots2">
+            <div class="dot2" id="dot"></div>
+            {{with .Site.Data.services.developprocess2}}
+            <div class="tit2" data-aos="fade-up" data-aos-offset="100"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div>
+          <div class="col s3 m3 l3 list-dots3">
+            <div class="dot3" id="dot"></div>
+            {{with .Site.Data.services.developprocess3}}
+            <div class="tit3" data-aos="fade-up" data-aos-offset="200"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div>
+          <div class="col s3 m3 l3 list-dots1">
+            <div class="dot4" id="dot"></div>
+            {{with .Site.Data.services.developprocess4}}
+            <div class="tit4"data-aos="fade-up" data-aos-offset="300"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div>
+        </div>      
+      </div>
+    </div><!--------------------------/graphic------------------------------------------------>  
+    
+  </div>  
 </section>
   
   

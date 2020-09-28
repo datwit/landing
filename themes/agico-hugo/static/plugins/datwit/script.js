@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Slider.init(elems, options);
 });
 
+//********************************* */
+
 //material box effect 
 document.addEventListener('DOMContentLoaded', function() {
   var options = [inDuration = '275'];
@@ -76,6 +78,7 @@ var accItem = document.getElementsByClassName('accordionItem');
             this.parentNode.className = 'accordionItem open';
         }
     }
+
 
 
 /* function changedValue() {
