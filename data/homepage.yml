@@ -72,48 +72,32 @@ toolset:
     #   toolName: "Bokeh Visualization Library"
     #   toolsetLogo: "images/toolset/altair.png"
 
-   
-     
-
-  
-   
-
-
 # About
 about:
   image : "images/about/about-2.png"
   subtitle : "Excellence & Quality"
   title : "Good prices & Quality"
-  content : "Save money with cheaper products and best open source quality"
+  content : "Save money with cheaper products and best open source quality.
+            Improve your products and services with cost saving & accurate models."
 
 about2:
   image : "images/about/about-1.png"
   subtitle : "Multipurpose software"
-  title : "Ready to Use"
-  content : "Fast install/update save time while you are improving. Simple interfaces which complete your desired experience, just what you need. Simple, optimized, teste apps ready for production."
+  title : "Easier & Ready to Use"
+  content : "Fast installing and updating. Time-saving apps while you are improving your business.
+            Simple interfaces that complete your desired user experience. 
+            Simple, optimized, tested apps ready for production.
+            High information architecture standards.
+            Full package in one service: deployment, monitoring and maintenance "
   linktext: "More"
-  
-#  button:
-#    btnText : "read more"
-#    URL : "#"
 
 about3:
   image : "images/about/about-3.png"
   subtitle : "Third Benefit"
-  title : "Easier Tools"
-  content : "Clean and Anonymize your data without sharing information
-- Improve your process with with cheaper & accurate models"    
-
-about4:
-  image : "images/about/about-2.png"
-  subtitle : "For today and tomorrow"
-  title : "Great results"
-  content : "Integrating high standards, Machine Learning and Artificial Intelligence.
-          Take advantage of our complete software solutions and get the most of your data."
-#  button:
-#    btnText : "read more"
-#    URL : "#"
-
+  title : "Security & Privacy"
+  content : "Clean and anonymize your data without sharing information.
+            On-premises solutions guarantee your ownership and data security.
+            "
 
 #  button:
 #    btnText : "read more"
