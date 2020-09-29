@@ -49,7 +49,7 @@
       {{end}}
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m6 l3">
-        <img src="{{ .src | absURL }}" alt="{{ .title }}">  
+        <a href="/services"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>  
         <div id="text-continous">
           <a href="/services"><h6 class="subt">{{ .title }}</h6></a>
           <p id="p-descrip">{{.shortcontent}}</p>
@@ -144,13 +144,6 @@
 </section>    
 {{"<!-- /goals -->"| safeHTML}}
 
-
-{{"<!-- toolset -->"| safeHTML}}
-<section class="mr-2 light-gray" id="tool-bg">
-  <div class="container">
-    <div class="row">
-      <h2>Our resources</h2>
-    </div>
     <div class="row">  
       {{ range .Site.Data.homepage.toolset }}
         <div id="col1">
