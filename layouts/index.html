@@ -49,9 +49,9 @@
       {{end}}
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m6 l3">
-        <a href="/services"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>  
+        <a href="/services.html"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>  
         <div id="text-continous">
-          <a href="/services"><h6 class="subt">{{ .title }}</h6></a>
+          <a href="/services.html"><h6 class="subt">{{ .title }}</h6></a>
           <p id="p-descrip">{{.shortcontent}}</p>
         </div>             
       </div>
