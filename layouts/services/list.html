@@ -15,68 +15,120 @@
         {{ end }}
       </div>
     </div><!-------------/first row title------------> 
-    
+    <!---------------------software development section------------------------------------------------->
       <div class="accordionItem close">
-           {{ with .Site.Data.services.serviceItem1 }}
+              {{ with .Site.Data.services.serviceItem1 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
+              <h6 class="ph6">{{ .content}}</h6>               
+              <h6 class="ph6 mr-2">{{.firstsectiontitle}}</h6>               
+              <div class="row">                           
+                <div class="col s12 m6 l6 col-services">                                              
+                  <div class="tet"><i class=" small material-icons">chevron_right</i><h3>Full custom software</h3></div>   
+                  <h6>Helping other small companies to lunch their businesses is our best way to persue interesting projects</h6>          
+                </div>               
+                <div class="col s12 m6 l6 col-services"> 
+                  <div class="tet"><i class=" small material-icons">chevron_right</i><h3>Enterprise software integrations.</h3></div>                  
+                  <h6>We provide the support that other companies need to preserve their long lasting solutions.</h6>     
+                </div>
+              </div> 
+              <div class="row mr-1">                
+                <h6 class="ph6 mr-2">{{.firstsectiontitle2}}</h6>
+                {{end}}
+                <div class="col s12 m4 l4">
+                  {{ with .Site.Data.services.serviceItem1.col1 }}
+                  <img src="{{.img | absURL}}" alt="{{.title}}">                   
+                  <h3>{{.title}}</h3>
+                  <h6 class="ph6">{{.description}}</h6>
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var1}}</h6></div>
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var2}}</h6></div>
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var3}}</h6></div>
+                  {{end}}
+                </div>
+                <div class="col s12 m4 l4">
+                  {{ with .Site.Data.services.serviceItem1.col2 }}
+                  <img src="{{.img | absURL}}" alt="{{.title}}">                   
+                  <h3>{{.title}}</h3>
+                  <h6 class="ph6">{{.description}}</h6>
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var1}}</h6></div>
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var2}}</h6></div>                  
+                  {{end}}
+                </div>
+                <div class="col s12 m4 l4">
+                  {{ with .Site.Data.services.serviceItem1.col3 }}
+                  <img src="{{.img | absURL}}" alt="{{.title}}">                   
+                  <h3>{{.title}}</h3>
+                  <h6 class="ph6">{{.description}}</h6>
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var1}}</h6></div>
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var2}}</h6></div>                  
+                  {{end}}
+                </div>
+              </div>                                 
             </div>
       </div>
-          {{end}}
+      <!---------------------/software development section------------------------------------------------->
+      <!---------------------data analysis section--------------------------------------------------------->    
       <div class="accordionItem close">
         {{ with .Site.Data.services.serviceItem2 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
+              <div class="row">
+                <h6 class="ph6">{{.content}}</h6>
+                <h3>{{.content2}}</h3>
+                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var1}}</h6></div>
+                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var2}}</h6></div> 
+                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var3}}</h6></div>  
+              </div>                         
             </div>
-      </div>
-          {{end}}
+      </div>     
+        {{end}}
+      <!----------------------------/data analysis section------------------------------------------------->    
       <div class="accordionItem close">
         {{ with .Site.Data.services.serviceItem3 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
+              <h6 class="ph6">{{ .content | markdownify }}</h6>              
             </div>
       </div>
           {{end}}
+      <!----------------------------data visualization section------------------------------------------------->     
       <div class="accordionItem close">
         {{ with .Site.Data.services.serviceItem4 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
+              <h6 class="ph6">{{ .content | markdownify }}</h6>              
             </div>
       </div>
-          {{end}}    
+          {{end}}  
+      <!----------------------------/data visualization section------------------------------------------------->       
   </div>
 </section> 
 <!----------------------------------------------------------------------------------------------->
-<section class="light-gray">
+<section class="light-gray" id="bullet-section">
   <div class="container">
-    <div class="row">       
-      <div class="col s12 m6 l6">        
+    <div class="row">            
+      <div class="col s12 m12 l12">        
         <div id="list-keys">
-          <h3>Design</h3> 
-          <div class="col s12 push-s4 m4 push-m4 l4 push-l4">                  
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Research</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Wireframing</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>UI/UX</h6></div>
+          {{with .Site.Data.services.servicekey}}
+          <h3>{{.title}}</h3> 
+          {{end}}
+          <div class="col s12 m12 l12">  
+            {{with .Site.Data.services.servicekey}}                
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot1}}</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot2}}</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot3}}</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot4}}</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot5}}</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot6}}</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot7}}</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.dot8}}</h6></div>            
+            {{end}}            
           </div>            
         </div>
       </div>
-      <div class="col s12 m6 l6">
-        <div id="list-keys">
-          <h3>Programming</h3> 
-          <div class="col s12 push-s4 m4 push-m3 l4 push-l3">            
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Frontend</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Backend</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Testing</h6></div>  
-          </div>         
-        </div>
-      </div>
-      
+                 
     </div>
-  </div>  
+  </div>     
 </section>
 <!-------------------------------------------------------------------------------------------------->
 <section>
@@ -87,37 +139,63 @@
       <h6 class="mr-2">{{.subtitle}}</h6>
       {{end}}
     </div>
-    <div class="row"><!--------------------------graphic------------------------------------>  
-      <div class="graphic mb-1 mr-3">
+    <!--------------------------------------------graphic------------------------------------------------->
+    <div class="row mb-1 mr-3">
+      <div class="wrapper">
         <div class="line">
-          <div class="col s3 m3 l3 list-dots4">
-            <div class="dot1" id="dot"></div>
+          <div class="inner"></div>          
+          <div class="col s3 m3 l3">
+            <a onclick="toggleText(1)"><div class="dot1"></div></a>
             {{with .Site.Data.services.developprocess1}}
-            <div class="tit1" data-aos="fade-up"data-aos-offset="0"><h6>{{.title}}</h6></div>
+            <div class="tit1" data-aos="fade-up"><h6>{{.title}}</h6></div>
             {{end}}
-          </div> 
-          <div class="col s3 m3 l3 list-dots2">
-            <div class="dot2" id="dot"></div>
+          </div>
+          <div class="col s3 m3 l3">
+            <a onclick="toggleText(2)"><div class="dot2"></div></a>
             {{with .Site.Data.services.developprocess2}}
-            <div class="tit2" data-aos="fade-up" data-aos-offset="100"><h6>{{.title}}</h6></div>
+            <div class="tit2" data-aos="fade-up"><h6>{{.title}}</h6></div>
             {{end}}
-          </div>
-          <div class="col s3 m3 l3 list-dots3">
-            <div class="dot3" id="dot"></div>
+          </div>  
+          <div class="col s3 m3 l3">
+            <a onclick="toggleText(3)"><div class="dot3"></div></a>
             {{with .Site.Data.services.developprocess3}}
-            <div class="tit3" data-aos="fade-up" data-aos-offset="200"><h6>{{.title}}</h6></div>
+            <div class="tit3" data-aos="fade-up"><h6>{{.title}}</h6></div>
             {{end}}
           </div>
-          <div class="col s3 m3 l3 list-dots1">
-            <div class="dot4" id="dot"></div>
+          <div class="col s3 m3 l3" id="coll4">
+            <a onclick="toggleText(4)"><div class="dot4"></div></a>
             {{with .Site.Data.services.developprocess4}}
-            <div class="tit4"data-aos="fade-up" data-aos-offset="300"><h6>{{.title}}</h6></div>
+            <div class="tit4"data-aos="fade-up"><h6>{{.title}}</h6></div>
             {{end}}
           </div>
-        </div>      
+        </div>
       </div>
-    </div><!--------------------------/graphic------------------------------------------------>  
-    
+    </div>
+    <!---------------------------------------------------------------------------------------->
+    <div class="row">
+      <div class="col s12 box-text">
+        {{with .Site.Data.services.developprocess1}}
+           <p id="demo" class="text hide">{{.descrip}}</p>
+        {{end}}
+      </div>
+      <div class="col s12 box-text">
+        {{with .Site.Data.services.developprocess2}}
+           <p id="demo2" class="text hide">{{.descrip}}</p>
+        {{end}}
+      </div>
+      <div class="col s12 box-text">
+        {{with .Site.Data.services.developprocess3}}
+           <p id="demo3" class="text hide">{{.descrip}}</p>
+        {{end}}
+      </div>
+      <div class="col s12 box-text">
+        {{with .Site.Data.services.developprocess4}}
+           <p id="demo4" class="text hide">{{.descrip}}</p>
+        {{end}}
+      </div>
+    </div>   <!---------------------------------------------------------------------------------------->
+       
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
   </div>  
 </section>
   

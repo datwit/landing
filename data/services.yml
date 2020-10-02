@@ -4,18 +4,19 @@ service:
   title : "What we do"
   description: "This is what makes us enjoy working on new projects whatever the size. We love to provide not only
   an intuitive design but also a great development to back it up. Our goal is to get close to the product you have in mind..."
+  img: "images/services/background-board.png"
   #keywords
-  servicekey:   
-     - title1: "Design"
-     - title2: "Programming"
-  # servicelist1:
-  #    - title: "Research"
-  #    - title: "Wireframing"
-  #    - title: "Wireframing"
-  # servicelist2:
-  #   - title: "Frontend"
-  #   - title: "Backend"
-  #   - title: "Testing" 
+servicekey:   
+  title: "Datwit has amazing people that create solutions because believe in:"  
+  dot1: "Quality as our priority."
+  dot2: "Challenges as our day to day motivation."
+  dot3: "Keeping learning every day, as professionals and also as human beings."
+  dot4: "Settling with no less than perfect."
+  dot5: "Doing the best and get things done."
+  dot6: "Straightforwardness and transparency."
+  dot7: "Transforming our client's needs into an opportunnity for success."
+  dot8: "Together, as a team we are a force to be reckoned with."
+
 
   serviceItem:
       #listing
@@ -42,36 +43,65 @@ service:
   
  #slides
 developprocess1: 
-  img: "images/diagram.png"
+  img: "images/services/1-design.jpg"
+  img2: "images/services/1-design2.jpg"
   title: "Design"
-  descrip: "lorem ipsum"
+  descrip: "Voluptate excepteur ullamco non eu cillum elit adipisicing adipisicing ad nisi non non dolore duis. Duis magna ad do enim id occaecat minim minim laborum mollit magna. Laboris ex eu id do. Laborum dolore aliqua aliqua aliqua."
 developprocess2:
-  img: "images/diagram.png"
+  img: "images/services/2-develop.jpg"
+  img2: "images/services/2-develop2.jpg"
   title: "Development"
-  descrip: "lorem ipsum"
+  descrip: "Dolor nulla aute ex laborum aliqua ex Lorem elit ipsum ipsum excepteur et eiusmod. Aliqua aliquip amet ad culpa Lorem anim aliqua. Voluptate incididunt est anim dolore aute quis ea veniam. Fugiat incididunt minim labore officia est ut. Ex aute qui enim officia est irure nisi irure occaecat mollit."
 developprocess3:
-  img: "images/diagram.png"
+  img: "images/services/3-test.jpg"
+  img2: "images/services/3-test2.jpg"
   title: "Testing"
-  descrip: "lorem ipsum"
+  descrip: "Fugiat enim sit sit velit amet dolor id non. Dolor id pariatur eu labore consequat. Exercitation commodo incididunt enim fugiat occaecat dolore velit nostrud deserunt officia consequat do. Ullamco veniam in dolore aute labore qui laboris nulla sint irure exercitation velit dolore voluptate."
 developprocess4:
-  img: "images/diagram.png"
+  img: "images/services/4-deploy.jpg"
+  img2: "images/services/4-deploy2.jpg"
   title: "Deployment"
-  descrip: "lorem ipsum"
+  descrip: "Eiusmod nostrud excepteur deserunt laboris sit. Non exercitation occaecat esse officia quis do. Consectetur velit nulla amet velit aliquip culpa laborum ad sint cupidatat ad et. Aliqua dolor excepteur anim esse aliquip."
 
 #describing services page
+# software development
 serviceItem1:
-  title : "Software Development"
-  icon : "/images/services/i-soft-dev.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit provides software development services to other software companies. The company also design and develop customized software for small clientes. Primary products are web apps based on javascript and django, backend design and development on Flask/Chalice, and python scripts for automation. Our services include the deployment on-cloud or local servers with all the needed configuration. All our solutions can include machine learning funtionalities."
-  url: "images/services/soft-develop.png"
-
+  title : "Software Development"  
+  url: "images/services/soft-develop.png" 
+  content: "Datwit is a company run by a bunch of people passionate about technology and who have experience designing and developing IT solutions. In addition to that we incorporate machine learning funcionalities which improve the way of using data on a daily basis."
+   
+  firstsectiontitle: " We focus on build full-cycle development  services such as: "         
+  firstsectiontitle2: "Even though we can make a variety of softwares we believe our biggest strength resides on website development... "
+  col1:  
+    title: "Frontend"
+    description: "We offer visual appealing and accessible apps, built using:"
+    img: "images/services/frontend.png"
+    var1: "HTML5"
+    var2: "CSS3"
+    var3: "JavaScript/Vue.js/Nuxt.js"
+  col2:  
+    title: "Backend"
+    description: "Our services focused on create functional applications, tailored to your specifications, therefor we use:"
+    img: "images/services/backend.png"
+    var1: "Flask/Chalice"
+    var2: "Python scripts"
+  col3:  
+    title: "Deployment"
+    description: "We have everyting covered! And because we like to get involved all the way, we support our clients even when the final product goes live implementing:"
+    img: "images/services/deployment.png"
+    var1: "On-cloud services"
+    var2: "Local servers"
+    
+#data analysis    
 serviceItem2:
-  title : "Data Analysis"
-  icon : "/images/services/i-dat-analy.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
-  url: "images/services/data-analy.png"
+  title : "Data Analysis"   
+  content : "Nowadays Machine Learnign offer endless oppotunities for business owners, from decision making to efficient business processes."
+  # "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
+  content2: "What you can get by working with us?"
+  var1: "Scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards"
+  var2: "Cleanning data services throug our on-cloud solutions"
+  var3: "Services for the Creation and Evaluation of AI models"
+
   
 serviceItem3:
   title : "Data Visualization"
@@ -89,6 +119,6 @@ serviceItem4:
 
 #diagram
 diagram:
-  title : "How we work"
-  subtitle : "We are Agile. So we like to take every step at a time, just to make make sure your initial idea becomes a working product..."
+  title : "How we get it done"
+  subtitle : "We are Agile. So, in order to make sure your initial idea becomes a working product we take advantaje of the great beneffits of Scrum and some of the best practices of XP."
   img : "images/diagram.png"
