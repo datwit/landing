@@ -24,15 +24,7 @@
     transition: transform 0.5s;    
     -webkit-transition:transform 0.5s ;
     -moz-transition: transform 0.5s;      
-  }
-  &:active{
-    transform: rotateY( 180deg );
-    -webkit-transform:rotateY( 180deg );
-    -moz-transform:rotateY( 180deg );
-    transition: transform 0.5s;    
-    -webkit-transition:transform 0.5s ;
-    -moz-transition: transform 0.5s;      
-  }
+  } 
   
 }
 .flipper {
