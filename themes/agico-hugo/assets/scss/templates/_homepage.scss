@@ -28,30 +28,44 @@
   // word-wrap: break-word;
   font-size: 17px;    
   color: $primary-color;
-  text-align: justify;
+  /* text-align: justify; */
   margin: 15px 10px 0 10px;
 
-  .body{
-    color: $primary-color !important;    
-  }
+   .subt{
+    
+    font-weight: bolder;    
+    color: $primary-color;
+    margin: 0 !important;
+    width: 100px;
+    margin-right: auto !important;
+    margin-left: auto !important;
 
-.subt{
-  
-  font-weight: bolder;
-  text-align: left !important;
-  color: $primary-color;
-  margin: 0 !important;
- 
-
-  &:hover{
-    color: $secondary-color2;
-  }
-  &:active{
-    color: $secondary-color2;
-  }
-}  
+    &:hover{
+      color: $secondary-color2;
+    }
+    &:active{
+      color: $secondary-color2;
+    }
+  }  
+}
+#p-descrip{
+  color: black !important; 
+  margin-top:0px !important;
+     
 }
 
+.serv-tit{  
+    margin-top: 0px !important;
+    padding-top:20px ;  
+}
+#b-serv{
+  border-top: 1.5px solid #dbdbdb;
+}
+/*******************goals section***************************************/
+#g-title{
+  margin-top: 0px !important;
+  padding-top: 20px;
+}
 /******************toolset section styling*******************************/
 //-------------custom grid and columns ----------------------------------
 .rib{
@@ -108,16 +122,16 @@ padding-bottom: 10px;
 }
 // gray background
 .light-gray{
-  background-color: #eaebec;
+  background-color: $bg-secondary;
    padding: 50px 0 50px 0;    
 }
 .light-gray2{
-  background-color: #eaebec;
+  background-color: $bg-secondary;
    padding: 0 0 50px 0;    
 }
 //gray brackground no paddings for the homepage illustration
-#light-gray3{
-  background-color: #eaebec;
+.light-gray3{
+  background-color: $bg-secondary;
    padding: 0px !important;    
 }
 
