@@ -65,23 +65,105 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //collapsible
 var accItem = document.getElementsByClassName('accordionItem');
-    var accHD = document.getElementsByClassName('accordionItemHeading');
-    for (i = 0; i < accHD.length; i++) {
-        accHD[i].addEventListener('click', toggleItem, false);
-    }
-    function toggleItem() {
-        var itemClass = this.parentNode.className;
-        for (i = 0; i < accItem.length; i++) {
-            accItem[i].className = 'accordionItem close';
+var accHD = document.getElementsByClassName('accordionItemHeading');
+  for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+  }
+  function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (i = 0; i < accItem.length; i++) {
+          accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+          this.parentNode.className = 'accordionItem open';
+      }
+  }
+// animated diagram 
+  var t = document.getElementById("demo");
+  var r = document.getElementById("demo2");
+  var s = document.getElementById("demo3");
+  var m = document.getElementById("demo4");
+  function toggleText(res) {    
+    switch(res){
+      /***************onclick button 1**************************** */
+      case 1:
+        if ((t.className == 'text hide') & (r.className == 'text hide') & (s.className=='text hide') & (m.className=='text hide')) {
+          t.className = 'text show';      
+        } 
+        else{
+          t.className = 'text hide';
         }
-        if (itemClass == 'accordionItem close') {
-            this.parentNode.className = 'accordionItem open';
+        if ((t.className == 'text show') | (r.className == 'text show') | (s.className=='text show') | (m.className=='text show')){
+          t.className = 'text show';
+          r.className = 'text hide';
+          s.className = 'text hide';
+          m.className = 'text hide';      
         }
-    }
+        else{
+          t.className = 'text hide';
+        }   
+        break;
+        /***********************onclick button 2****************** */
+      case 2:
+        if ((r.className == 'text hide') & (t.className == 'text hide') & (s.className=='text hide') & (m.className=='text hide')) {
+          r.className = 'text show';      
+        } 
+        else{
+          r.className = 'text hide';
+        }
+        if ((r.className == 'text show') | (t.className == 'text show') | (s.className=='text show') | (m.className=='text show')){
+          r.className = 'text show';
+          t.className = 'text hide';
+          s.className = 'text hide';
+          m.className = 'text hide';      
+        }
+        else{
+          r.className = 'text hide';
+        }
+        break;
+      /*********************onclick button 3*********************** */  
+      case 3:
+        if ((s.className == 'text hide') & (t.className == 'text hide') & (r.className=='text hide') & (m.className=='text hide')) {
+          s.className = 'text show';      
+        } 
+        else{
+          s.className = 'text hide';
+        }
+        if ((s.className == 'text show') | (t.className == 'text show') | (r.className=='text show') | (m.className=='text show')){
+          s.className = 'text show';
+          t.className = 'text hide';
+          r.className = 'text hide';
+          m.className = 'text hide';      
+        }
+        else{
+          s.className = 'text hide';
+        }
+        break;
+       /*********************onclick button 4************************* */ 
+      case 4:
+        if ((m.className == 'text hide') & (t.className == 'text hide') & (r.className=='text hide') & (s.className=='text hide')) {
+          m.className = 'text show';      
+        } 
+        else{
+          m.className = 'text hide';
+        }
+        if ((m.className == 'text show') | (t.className == 'text show') | (r.className=='text show') | (s.className=='text show')){
+          m.className = 'text show';
+          t.className = 'text hide';
+          r.className = 'text hide';
+          s.className = 'text hide';      
+        }
+        else{
+          m.className = 'text hide';
+        }
+        break;
+      default:
+        break;
+    }    
+  }
 
 
-
-/* function changedValue() {
+  /* function changedValue() {
   let text = document.getElementById("textarea1");
   let textValue = text.value;
   let row = text.getAttribute('rows');
