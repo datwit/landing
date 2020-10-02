@@ -4,7 +4,19 @@ service:
   title : "What we do"
   description: "This is what makes us enjoy working on new projects whatever the size. We love to provide not only
   an intuitive design but also a great development to back it up. Our goal is to get close to the product you have in mind..."
-  sectiontitle: "Our services"
+  #keywords
+  servicekey:   
+     - title1: "Design"
+     - title2: "Programming"
+  # servicelist1:
+  #    - title: "Research"
+  #    - title: "Wireframing"
+  #    - title: "Wireframing"
+  # servicelist2:
+  #   - title: "Frontend"
+  #   - title: "Backend"
+  #   - title: "Testing" 
+
   serviceItem:
       #listing
 
@@ -27,7 +39,24 @@ service:
         src: "images/services/domotic.png"
         shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
         
-
+  
+ #slides
+developprocess1: 
+  img: "images/diagram.png"
+  title: "Design"
+  descrip: "lorem ipsum"
+developprocess2:
+  img: "images/diagram.png"
+  title: "Development"
+  descrip: "lorem ipsum"
+developprocess3:
+  img: "images/diagram.png"
+  title: "Testing"
+  descrip: "lorem ipsum"
+developprocess4:
+  img: "images/diagram.png"
+  title: "Deployment"
+  descrip: "lorem ipsum"
 
 #describing services page
 serviceItem1:
@@ -36,7 +65,6 @@ serviceItem1:
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
   content : "Datwit provides software development services to other software companies. The company also design and develop customized software for small clientes. Primary products are web apps based on javascript and django, backend design and development on Flask/Chalice, and python scripts for automation. Our services include the deployment on-cloud or local servers with all the needed configuration. All our solutions can include machine learning funtionalities."
   url: "images/services/soft-develop.png"
-
 
 serviceItem2:
   title : "Data Analysis"
@@ -52,9 +80,15 @@ serviceItem3:
   content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on."
   url: "images/services/data-visual.png"
 
+serviceItem4:
+  title : "Internet on Things"
+  icon : "/images/services/i-dat-visual.png"
+  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
+  content : "Consequat consectetur magna eu velit aute duis ex duis ut excepteur et exercitation nostrud est. Non labore sint sunt incididunt mollit consequat id cupidatat consequat quis Lorem. Culpa et non consectetur sunt mollit duis officia reprehenderit amet amet. Commodo ad cillum cupidatat ut labore exercitation quis ad id esse."
+  url: "images/services/data-visual.png"
 
 #diagram
 diagram:
-  title : "Processes diagram"
-  subtitle : "We build our products focused on the entire process"
+  title : "How we work"
+  subtitle : "We are Agile. So we like to take every step at a time, just to make make sure your initial idea becomes a working product..."
   img : "images/diagram.png"

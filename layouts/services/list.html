@@ -15,51 +15,115 @@
         {{ end }}
       </div>
     </div><!-------------/first row title------------> 
-   <!--?--------------services section------------------------------>
-    {{ with .Site.Data.services.serviceItem1 }}
-    <div class="row esp mr-1 mr-2 orange-divider2"><!-------------first row---------------------------->
-      <div class="col s12 m12 l6">
-        <img src="{{ .url | absURL }}" alt="{{.title}}" id="serv-img">
+    
+      <div class="accordionItem close">
+           {{ with .Site.Data.services.serviceItem1 }}
+            <h3 class="accordionItemHeading">{{.title}}</h3>
+            <div class="accordionItemContent">
+              <p>{{ .content | markdownify }}</p>              
+            </div>
       </div>
-      <div class="col s12 m12 l6">
-        <h2 class="icon-line"><img src="{{.icon}}">{{ .title }}</h2>
-        <p id="adj2">{{ .content | markdownify }}</p>
-      </div> 
-    </div><!-------------/first row---------------------------->
-    {{end}}
-    {{ with .Site.Data.services.serviceItem2 }}
-    <div class="row esp1 mr-1 mr-2 orange-divider2" id="sd"><!-------------second row------------------------->
-      <div class="col s12 m12 l6">
-        <h2 class="icon-line"><img src="{{.icon}}">{{ .title }}</h2>
-        <p id="adj2">{{ .content | markdownify }}</p>
-      </div> 
-      <div class="col s12 m12 l6">
-        <img src="{{ .url | absURL }}" alt="{{.title}}" id="serv-img">
+          {{end}}
+      <div class="accordionItem close">
+        {{ with .Site.Data.services.serviceItem2 }}
+            <h3 class="accordionItemHeading">{{.title}}</h3>
+            <div class="accordionItemContent">
+              <p>{{ .content | markdownify }}</p>              
+            </div>
       </div>
-    </div><!------------------------/second row---------------------------->
-    {{end}}
-    {{ with .Site.Data.services.serviceItem3 }}
-    <div class="row esp mr-2 mr-1"><!-------------third row----------------------------->
-      <div class="col s12 m12 l6">
-        <img src="{{ .url | absURL }}" alt="{{.title}}" id="serv-img">
+          {{end}}
+      <div class="accordionItem close">
+        {{ with .Site.Data.services.serviceItem3 }}
+            <h3 class="accordionItemHeading">{{.title}}</h3>
+            <div class="accordionItemContent">
+              <p>{{ .content | markdownify }}</p>              
+            </div>
       </div>
-      <div class="col s12 m12 l6">
-        <h2 class="icon-line"><img src="{{.icon}}" >{{ .title }}</h2>
-        <p id="adj2">{{ .content | markdownify }} 
-        </p>
-      </div> 
-    </div><!-------------/third row--------------------------------------->
-    {{end}}
-    {{with .Site.Data.services.diagram}}
-    <div class="mb-1 orange-divider ">
-      <h6 class="mr-2">{{.subtitle}}</h6>
+          {{end}}
+      <div class="accordionItem close">
+        {{ with .Site.Data.services.serviceItem4 }}
+            <h3 class="accordionItemHeading">{{.title}}</h3>
+            <div class="accordionItemContent">
+              <p>{{ .content | markdownify }}</p>              
+            </div>
+      </div>
+          {{end}}    
+  </div>
+</section> 
+<!----------------------------------------------------------------------------------------------->
+<section class="light-gray">
+  <div class="container">
+    <div class="row">       
+      <div class="col s12 m6 l6">        
+        <div id="list-keys">
+          <h3>Design</h3> 
+          <div class="col s12 push-s4 m4 push-m4 l4 push-l4">                  
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Research</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Wireframing</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>UI/UX</h6></div>
+          </div>            
+        </div>
+      </div>
+      <div class="col s12 m6 l6">
+        <div id="list-keys">
+          <h3>Programming</h3> 
+          <div class="col s12 push-s4 m4 push-m3 l4 push-l3">            
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Frontend</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Backend</h6></div>
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Testing</h6></div>  
+          </div>         
+        </div>
+      </div>
+      
     </div>
-    <div><!---------------------------diagram--------------------------------->
-      <img class="materialboxed" src="{{.img | absURL }}" alt="{{.title}}">
-    </div>
-    {{end}}
-  </div> 
+  </div>  
 </section>
+<!-------------------------------------------------------------------------------------------------->
+<section>
+  <div class="container">
+    <div class="row">
+      {{with .Site.Data.services.diagram}}
+      <h2>{{.title}}</h2>
+      <h6 class="mr-2">{{.subtitle}}</h6>
+      {{end}}
+    </div>
+    <div class="row"><!--------------------------graphic------------------------------------>  
+      <div class="graphic mb-1 mr-3">
+        <div class="line">
+          <div class="col s3 m3 l3 list-dots4">
+            <div class="dot1" id="dot"></div>
+            {{with .Site.Data.services.developprocess1}}
+            <div class="tit1" data-aos="fade-up"data-aos-offset="0"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div> 
+          <div class="col s3 m3 l3 list-dots2">
+            <div class="dot2" id="dot"></div>
+            {{with .Site.Data.services.developprocess2}}
+            <div class="tit2" data-aos="fade-up" data-aos-offset="100"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div>
+          <div class="col s3 m3 l3 list-dots3">
+            <div class="dot3" id="dot"></div>
+            {{with .Site.Data.services.developprocess3}}
+            <div class="tit3" data-aos="fade-up" data-aos-offset="200"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div>
+          <div class="col s3 m3 l3 list-dots1">
+            <div class="dot4" id="dot"></div>
+            {{with .Site.Data.services.developprocess4}}
+            <div class="tit4"data-aos="fade-up" data-aos-offset="300"><h6>{{.title}}</h6></div>
+            {{end}}
+          </div>
+        </div>      
+      </div>
+    </div><!--------------------------/graphic------------------------------------------------>  
+    
+  </div>  
+</section>
+  
+  
+
+
 {{ partial "contact-access-gray.html" . }}
 
 {{"<!-- services -->" | safeHTML }}
