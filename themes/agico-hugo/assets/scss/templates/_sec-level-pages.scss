@@ -252,7 +252,7 @@
     
 }
 .open .accordionItemContent{
-        padding: 20px;
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
     width: 100%;
@@ -310,8 +310,131 @@
   }
        
 }
-#shsskkasas{
-  background-color: $bg-secondary !important;
-  height: 300px;
-  margin-bottom: 50px !important;
+
+//drawing diagram
+.graphic{
+  
 }
+.line{
+  height: 10px;
+  background-color: $bg-secondary; 
+  position: relative;  
+  border-radius: 15px;  
+}
+.dot1,.dot2,.dot3,.dot4{
+  background-color: $bg-secondary;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px; 
+  position: absolute;
+  top: -5px;
+
+  &:hover{
+    cursor: pointer;
+    border: 3px solid $secondary-color2;
+  }
+}
+.tit1,.tit2,.tit3,.tit4{
+  position: absolute;
+  top: 25px;
+}
+.tit2{  
+  top: -40px;
+}
+.tit4{
+  top: -40px;
+  // right:-30px;
+}
+.list-dots1{  
+  display: flex;     
+  justify-content: end;
+  
+}
+.list-dots2, .list-dots3{
+  display: flex;
+  justify-content: center;
+}
+// .tit1{
+//   transition-timing-function: ease; 
+//   animation-name: dot1;
+//   animation-duration: 8s;
+// }
+.dot1{
+ left: -10px;
+    background-color: $primary-color;
+    -webkit-animation-name: dot1; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+    animation-name: dot1;
+    animation-duration: 8s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;  
+    // animation-delay: 2s;
+}
+.dot2{  
+  background-color: $primary-color;
+  -webkit-animation-name: dot2; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+  animation-name: dot2;
+  animation-duration: 10s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  // animation-delay: 2s;
+}
+
+.dot3{  
+  background-color: $primary-color;
+  -webkit-animation-name: dot3; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 12s; /* Chrome, Safari, Opera */
+  animation-name: dot3;
+  animation-duration: 12s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  // animation-delay: 3s;
+}
+.dot4{
+  right:-10px;
+  background-color: $primary-color;
+  -webkit-animation-name: dot4; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 14s; /* Chrome, Safari, Opera */
+  animation-name: dot4;
+  animation-duration: 14s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  // animation-delay: 4s;
+ }
+
+@keyframes dot1 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes dot2 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes dot3 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes dot4 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+

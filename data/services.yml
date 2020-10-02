@@ -15,7 +15,7 @@ service:
   # servicelist2:
   #   - title: "Frontend"
   #   - title: "Backend"
-  #   - title: "Testing"   
+  #   - title: "Testing" 
 
   serviceItem:
       #listing
@@ -39,7 +39,24 @@ service:
         src: "images/services/domotic.png"
         shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
         
-
+  
+ #slides
+developprocess1: 
+  img: "images/diagram.png"
+  title: "Design"
+  descrip: "lorem ipsum"
+developprocess2:
+  img: "images/diagram.png"
+  title: "Development"
+  descrip: "lorem ipsum"
+developprocess3:
+  img: "images/diagram.png"
+  title: "Testing"
+  descrip: "lorem ipsum"
+developprocess4:
+  img: "images/diagram.png"
+  title: "Deployment"
+  descrip: "lorem ipsum"
 
 #describing services page
 serviceItem1:
@@ -72,6 +89,6 @@ serviceItem4:
 
 #diagram
 diagram:
-  title : "Processes diagram"
-  subtitle : "We build our products focused on the entire process"
+  title : "How we work"
+  subtitle : "We are Agile. So we like to take every step at a time, just to make make sure your initial idea becomes a working product..."
   img : "images/diagram.png"
