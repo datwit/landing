@@ -78,7 +78,10 @@ about:
   subtitle : "Excellence & Quality"
   title : "Good prices & Quality"
   content : "Save money with cheaper products and best open source quality.
-            Improve your products and services with cost saving & accurate models."
+            Improve your products and services with cost saving & accurate models.
+            Reduce your risks, get to your must important data, monitore your service quality.
+            Grow faster with less cost.
+            "
 
 about2:
   image : "images/about/about-1.png"
@@ -97,7 +100,8 @@ about3:
   title : "Security & Privacy"
   content : "Clean and anonymize your data without sharing information.
             On-premises solutions guarantee your ownership and data security.
-            "
+            Scale your data services and spread your data sources with smart protections.
+            Full role separated access to all of our solutions."
 
 #  button:
 #    btnText : "read more"
