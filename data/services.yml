@@ -17,27 +17,27 @@ service:
   #   - title: "Backend"
   #   - title: "Testing" 
 
-  serviceItem:
-      #listing
+#services icons homepage
+  serviceItem:      
 
       - title: "Software Development"
         src: "images/services/soft-developm.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: "We will never forget where we came from, so we are eager to share our experiences building products that people will enjoy using."
         # url: "services#sd"
 
       - title: "Data Analysis"
         src: "images/services/data-anal.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: "We are perfecionists by nature, that's the reason we know we can improve your data by all means necessary."
         # url: "services#da"
 
       - title: "Data Visualization"
         src: "images/services/data-visualiz.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: "Because we love UX/UI and amazing data visualization designs we want to take it to every possible solution."
         # url: "services#sd"
 
       - title: "Internet of Things"
         src: "images/services/domotic.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: "We believe there's a whole new world still to discover when it comes to technology and the way we include it within our every day lives."
         
   
  #slides
