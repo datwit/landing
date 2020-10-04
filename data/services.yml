@@ -70,14 +70,14 @@ serviceItem2:
   title : "Data Analysis"
   icon : "/images/services/i-dat-analy.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
+  content : "Datwit Data Analysis services provide data exploration, variable correlations studies, and general sumarization of your data. Customized queries to simplify your data requests. We also offer cleanning data services throug our on-cloud solution or on-premise workflow. Datwit provide services for the creation and evaluation of machine learning models. In general full data analysis development life cycle"
   url: "images/services/data-analy.png"
   
 serviceItem3:
   title : "Data Visualization"
   icon : "/images/services/i-dat-visual.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on."
+  content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on. Customized scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. Also add complements to your web for monitoring models or your business data of interest. Smart interfaces to improve feedback integration made by humans into new models."
   url: "images/services/data-visual.png"
 
 serviceItem4:
