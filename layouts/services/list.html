@@ -145,27 +145,27 @@
         <div class="line">
           <div class="inner"></div>          
           <div class="col s3 m3 l3">
-            <a onclick="toggleText(1)"><div class="dot1"></div></a>
+            <a onclick="toggleText(1)"><div class="dot1" id="dot1"></div></a>
             {{with .Site.Data.services.developprocess1}}
-            <div class="tit1" data-aos="fade-up"><h6>{{.title}}</h6></div>
+            <div class="tit1" id="tit1"><h6>{{.title}}</h6></div>
             {{end}}
           </div>
-          <div class="col s3 m3 l3">
-            <a onclick="toggleText(2)"><div class="dot2"></div></a>
+          <div class="col s3 m3 l3" id="col2">
+            <a onclick="toggleText(2)"><div class="dot2" id="dot2"></div></a>
             {{with .Site.Data.services.developprocess2}}
-            <div class="tit2" data-aos="fade-up"><h6>{{.title}}</h6></div>
+            <div class="tit2" id="tit2"><h6>{{.title}}</h6></div>
             {{end}}
           </div>  
-          <div class="col s3 m3 l3">
-            <a onclick="toggleText(3)"><div class="dot3"></div></a>
+          <div class="col s3 m3 l3" id="col3">
+            <a onclick="toggleText(3)"><div class="dot3" id="dot3"></div></a>
             {{with .Site.Data.services.developprocess3}}
-            <div class="tit3" data-aos="fade-up"><h6>{{.title}}</h6></div>
+            <div class="tit3" id="tit3"><h6>{{.title}}</h6></div>
             {{end}}
           </div>
           <div class="col s3 m3 l3" id="coll4">
-            <a onclick="toggleText(4)"><div class="dot4"></div></a>
+            <a onclick="toggleText(4)"><div class="dot4" id="dot4"></div></a>
             {{with .Site.Data.services.developprocess4}}
-            <div class="tit4"data-aos="fade-up"><h6>{{.title}}</h6></div>
+            <div class="tit4" id="tit4"><h6>{{.title}}</h6></div>
             {{end}}
           </div>
         </div>

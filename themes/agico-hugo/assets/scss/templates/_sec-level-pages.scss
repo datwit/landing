@@ -416,6 +416,17 @@
  }
 
 }
+.draw-orange{
+  background: $secondary-color2;
+}
+.bold-title{
+  h6{    
+    font-weight: bolder !important;
+    color: $secondary-color;
+  }
+    
+}
+
 .dot1{
   left: -10px;
 }
@@ -454,6 +465,10 @@
   display: flex;
   justify-content: end;
 
+}
+#col2, #col3{
+  display: flex;
+  justify-content: center;
 }
 // collapsible text
 .hide{
