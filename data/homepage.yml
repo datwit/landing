@@ -1,7 +1,7 @@
 # Banner
 banner:
   bgImage : "images/background/banner.png"
-  title : "Integrating machine learning to your web apps!"
+  title : "Integrating machine learning into your web apps!"
   #belgrade illustration team section
   ilimage : "images/belgrade-illustration.png"
   #watermark : "Dream"
