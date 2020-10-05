@@ -65,7 +65,28 @@
 /*******************goals section***************************************/
 #g-title{
   margin-top: 0px !important;
-  padding-top: 20px;
+  // padding-top: 20px;
+}
+.be{
+  display: flex;
+  align-items: baseline;
+    i{
+      border-radius: 50%;
+      border: solid 1px $secondary-color2; 
+      background-color: $secondary-color2;
+      margin-right: 10px;     
+    }
+    p{
+      margin: 0 !important;
+      line-height: 25px;
+    }
+  
+}
+.psub{
+  line-height: 25px;
+  color: $primary-color;  
+  text-align: justify !important;
+  margin: 10px 0 10px 0;
 }
 /******************toolset section styling*******************************/
 //-------------custom grid and columns ----------------------------------
@@ -105,6 +126,7 @@ padding-bottom: 10px;
     }
 
 }
+
 /**********************contact us section homepage*************************/
 .bg-illustration{
     position: relative;

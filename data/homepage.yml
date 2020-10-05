@@ -1,20 +1,14 @@
 # Banner
 banner:
   bgImage : "images/background/banner.png"
-  title : "Integrating machine learning to your web apps!"
+  title : "Integrating machine learning into your web apps!"
   #belgrade illustration team section
   ilimage : "images/belgrade-illustration.png"
-  #watermark : "Dream"
-  #content : "Multipurpose software solutions integrated with Machine Learning microservices."
-  #image : "images/banner/banner-1.svg"
-#  button:
-#    btnText : "See more"
-#    URL : "#"
-
 
 
 # Toolset
-toolset:
+toolsettitle: "How we do it"
+toolset: 
   
     - tool: "python"
       toolName: "Python"
@@ -74,83 +68,51 @@ toolset:
 
 # About
 about:
-  image : "images/about/about-2.png"
-  subtitle : "Excellence & Quality"
-  title : "Good prices & Quality"
-  content : "Save money with cheaper products and best open source quality.
-            Improve your products and services with cost saving & accurate models.
-            Reduce your risks, get to your must important data, monitore your service quality.
-            Grow faster with less cost.
-            "
+  sectiontitle: "What you get"
+  image: "images/about/about-2.png"
+  subtitle: "Datwit can help you to grow faster with less cost by:"
+  title: "Quality and good prices"
+
+  content: 
+      - title: "Saving money with cheaper products and best open source quality."
+
+      - title: "Improving your products and services with cost saving & accurate models."
+
+      - title: "Reducing your risks, get to your must important data, monitore your service quality."                          
+            
 
 about2:
-  image : "images/about/about-1.png"
-  subtitle : "Multipurpose software"
-  title : "Easier & Ready to Use"
-  content : "Fast installing and updating. Time-saving apps while you are improving your business.
-            Simple interfaces that complete your desired user experience. 
-            Simple, optimized, tested apps ready for production.
-            High information architecture standards.
-            Full package in one service: deployment, monitoring and maintenance "
-  linktext: "More"
+  image : "images/about/about-3.png"
+  subtitle : "We help you to improve your business with time-saving apps and:"
+  title : "Easier and ready to use"
+  content :
+    - title: "Fast installing and updating solutions."
+      
+    - title: " User friendly interfaces that complete your desired user experience. "
+      
+    - title: "Simple, optimized, tested apps ready for production."
+      
+    - title: " High information architecture standards."
+      
+    - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
 
 about3:
-  image : "images/about/about-3.png"
-  subtitle : "Third Benefit"
-  title : "Security & Privacy"
-  content : "Clean and anonymize your data without sharing information.
-            On-premises solutions guarantee your ownership and data security.
-            Scale your data services and spread your data sources with smart protections.
-            Full role separated access to all of our solutions."
+  image : "images/about/about-1.png"
+  subtitle : "Take control of all of your data with: "
+  title : "Security and privacy first"
+  content :  
+    
+  - title: " On-premises solutions that can guarantee your ownership and data security."
+
+  - title: "Clean and anonymous data without sharing information."
+
+  - title: "Scaling your data services and spreading your data sources with smart protections."
+    
+  - title: " Full role separated access to all of our solutions." 
 
 #  button:
 #    btnText : "read more"
 #    URL : "#"
-
-# video
-#video:
-#  videoThumb : "images/check-video.png"
-#  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
-#  subtitle : "Check Video"
-#  title : "Best Way to Chat with Your Customers."
-#  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat. duis aute.
-#  <br><br>
-#  Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
-
-# testimonial
-#testimonial:
-#  subtitle : "testimonial"
-#  title : "What Do Our Clients Say?"
-#  testimonialItem:
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
 
 # Know more
 know_more:

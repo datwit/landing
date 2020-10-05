@@ -27,17 +27,17 @@ service:
 
       - title: "Data Analysis"
         src: "images/services/data-anal.png"
-        shortcontent: "We are perfecionists by nature, that's the reason we know we can improve your data by all means necessary."
+        shortcontent: " Less cholesterol in your data makes your business' heart lead you to the goal faster."
         # url: "services#da"
 
       - title: "Data Visualization"
         src: "images/services/data-visualiz.png"
-        shortcontent: "Because we love UX/UI and amazing data visualization designs we want to take it to every possible solution."
+        shortcontent: "From your side of the view you can only see beautifull diagrams like mountains and clouds."
         # url: "services#sd"
 
-      - title: "Internet of Things"
+      - title: "Research on IoT"
         src: "images/services/domotic.png"
-        shortcontent: "We believe there's a whole new world still to discover when it comes to technology and the way we include it within our every day lives."
+        shortcontent: "No matter the device success starts by expanding your data sources."
         
   
  #slides
