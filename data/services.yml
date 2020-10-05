@@ -95,27 +95,43 @@ serviceItem1:
 #data analysis    
 serviceItem2:
   title : "Data Analysis"   
-  content : "Nowadays Machine Learnign offer endless oppotunities for business owners, from decision making to efficient business processes."
+  content1 : "Nowadays Machine Learnign offer endless oppotunities for business owners, from decision making to efficient business processes."
   # "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
-  content2: "What you can get by working with us?"
-  var1: "Scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards"
-  var2: "Cleanning data services throug our on-cloud solutions"
-  var3: "Services for the Creation and Evaluation of AI models"
-
   
+  subtitle: "What you can get by working with us?"
+  content:
+    - var: "Data exploration"
+    - var: "Data collection from streaming data sources"
+    - var: "Data cleaning and anonymization"
+    - var: "Studying relationship between variables"
+    - var: "Development of APIs that serve your data"
+    - var: "Data management tech consulting"
+
+#data visualization  
 serviceItem3:
   title : "Data Visualization"
   icon : "/images/services/i-dat-visual.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on. Customized scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. Also add complements to your web for monitoring models or your business data of interest. Smart interfaces to improve feedback integration made by humans into new models."
-  url: "images/services/data-visual.png"
+  content : 
+    - var: "Descriptive reports"
+    - var: "Graphic reports about your data"
+    - var: "Strategic and Operational Dashboards"
+    - var: "Small addons with business variables of interest"
+    - var: "Models monitoring"
+    - var: "Feedback interface to improve human-in-the-loop"          
+        
 
 serviceItem4:
   title : "Internet on Things"
   icon : "/images/services/i-dat-visual.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-  content : "Consequat consectetur magna eu velit aute duis ex duis ut excepteur et exercitation nostrud est. Non labore sint sunt incididunt mollit consequat id cupidatat consequat quis Lorem. Culpa et non consectetur sunt mollit duis officia reprehenderit amet amet. Commodo ad cillum cupidatat ut labore exercitation quis ad id esse."
-  url: "images/services/data-visual.png"
+  content : 
+    
+    - var: "Firmware Engineering"
+    - var: "Network communication and security"
+    - var: "Data Analysis"
+    - var: "API design" 
+    - var: "Mobile/PC Application Interface" 
 
 #diagram
 diagram:

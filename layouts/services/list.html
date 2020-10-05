@@ -73,34 +73,40 @@
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
               <div class="row">
-                <h6 class="ph6">{{.content}}</h6>
-                <h3>{{.content2}}</h3>
-                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var1}}</h6></div>
-                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var2}}</h6></div> 
-                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var3}}</h6></div>  
+                <h6 class="ph6">{{.content1}}</h6>
+                <h3>{{.subtitle}}</h3>
+                {{end}}
+                {{range .Site.Data.services.serviceItem2.content}}
+                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                {{end}}
               </div>                         
             </div>
-      </div>     
-        {{end}}
-      <!----------------------------/data analysis section------------------------------------------------->    
+      </div>        
+      <!----------------------------/data analysis section-------------------------------------------------> 
+      <!----------------------------data visualization section------------------------------------------------->  
       <div class="accordionItem close">
         {{ with .Site.Data.services.serviceItem3 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
-              <h6 class="ph6">{{ .content | markdownify }}</h6>              
+              {{end}}
+              {{range .Site.Data.services.serviceItem3.content}}
+                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+              {{end}}             
             </div>
-      </div>
-          {{end}}
-      <!----------------------------data visualization section------------------------------------------------->     
+      </div>          
+    <!----------------------------/data visualization section------------------------------------------------->  
+    <!----------------------------internet of things section------------------------------------------------>      
       <div class="accordionItem close">
         {{ with .Site.Data.services.serviceItem4 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
-              <h6 class="ph6">{{ .content | markdownify }}</h6>              
+              {{end}} 
+              {{range .Site.Data.services.serviceItem4.content}}
+              <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+              {{end}}           
             </div>
-      </div>
-          {{end}}  
-      <!----------------------------/data visualization section------------------------------------------------->       
+      </div>           
+    <!----------------------------/internet of things section------------------------------------------------>        
   </div>
 </section> 
 <!----------------------------------------------------------------------------------------------->
