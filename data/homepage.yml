@@ -66,7 +66,6 @@ toolset:
     #   toolName: "Bokeh Visualization Library"
     #   toolsetLogo: "images/toolset/altair.png"
 
-   
 # About
 about:
   sectiontitle: "What you get"
@@ -110,14 +109,10 @@ about3:
   - title: "Scaling your data services and spreading your data sources with smart protections."
     
   - title: " Full role separated access to all of our solutions." 
-    
-      
-           
 
 #  button:
 #    btnText : "read more"
 #    URL : "#"
-
 
 # Know more
 know_more:
