@@ -107,7 +107,7 @@ serviceItem3:
   title : "Data Visualization"
   icon : "/images/services/i-dat-visual.png"
   iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on."
+  content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on. Customized scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. Also add complements to your web for monitoring models or your business data of interest. Smart interfaces to improve feedback integration made by humans into new models."
   url: "images/services/data-visual.png"
 
 serviceItem4:
