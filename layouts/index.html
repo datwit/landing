@@ -45,7 +45,7 @@
   <div class="container">
     <div class="row">
       {{with .Site.Data.services.service}}
-      <h2 class="serv-tit">{{.sectiontitle}}</h2>
+      <h2 class="serv-tit">{{.title}}</h2>
       {{end}}
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
       <div class="col s12 m6 l3">
@@ -143,10 +143,15 @@
  </div>
 </section>    
 {{"<!-- /goals -->"| safeHTML}}
+
+{{"<!-- toolset -->"| safeHTML}}
 <section class="mr-2 light-gray" id="tool-bg">
   <div class="container">
     <div class="row">  
-      {{ range .Site.Data.homepage.toolset }}
+      {{with .Site.Data.homepage}}
+      <h2>{{ .toolsettitle }}</h2>
+      {{end}}
+      {{ range .Site.Data.homepage.toolset }}        
         <div id="col1">
           <ul class="rib">
               <li id="lis" ><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
@@ -154,8 +159,7 @@
         </div>
       {{end}}
     </div>
-  </div>
- <!-------------------------------------------------------------------------------------> 
+  </div> 
 </section>
 {{"<!-- /toolset -->"| safeHTML}}
 

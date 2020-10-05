@@ -4,17 +4,11 @@ banner:
   title : "Bring your idea, we will make it real!"
   #belgrade illustration team section
   ilimage : "images/belgrade-illustration.png"
-  #watermark : "Dream"
-  #content : "Multipurpose software solutions integrated with Machine Learning microservices."
-  #image : "images/banner/banner-1.svg"
-#  button:
-#    btnText : "See more"
-#    URL : "#"
-
 
 
 # Toolset
-toolset:
+toolsettitle: "How we do it"
+toolset: 
   
     - tool: "python"
       toolName: "Python"
@@ -73,15 +67,9 @@ toolset:
     #   toolsetLogo: "images/toolset/altair.png"
 
    
-     
-
-  
-   
-
-
 # About
 about:
-  sectiontitle: "Our goals"
+  sectiontitle: "What you get"
   image : "images/about/about-1.png"
   subtitle : "Multipurpose software"
   title : "Ready to use"
@@ -103,50 +91,6 @@ about3:
           Take advantage of our complete software solutions and get the most of your data."
 
 
-# video
-#video:
-#  videoThumb : "images/check-video.png"
-#  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
-#  subtitle : "Check Video"
-#  title : "Best Way to Chat with Your Customers."
-#  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat. duis aute.
-#  <br><br>
-#  Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
-
-# testimonial
-#testimonial:
-#  subtitle : "testimonial"
-#  title : "What Do Our Clients Say?"
-#  testimonialItem:
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
 
 # Know more
 know_more:
