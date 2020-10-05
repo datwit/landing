@@ -77,18 +77,18 @@
           <div class="card-content">
             <span class="card-title activator">
               <h3 class="activator crev">{{ .title}}</h3>
-              <i class="material-icons grey-text text-darken-4">more_vert</i>
+              <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
             </span>
           </div>
           <div class="card-reveal">
             <span class="card-title activator">
               <h3 class="activator crev">{{ .title}}</h3>
-              <i class="material-icons grey-text text-darken-4">close</i>
+              <i class="material-icons grey-text text-darken-4 beb">close</i>
             </span>
-            <p>{{.subtitle}}</p>
+            <h6 class="psub">{{.subtitle}}</h6>
             {{ end }}
             {{ range .Site.Data.homepage.about.content }}
-            <p>{{ .title }}</p>
+            <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
             {{end}}
           </div>
         </div>
@@ -105,18 +105,18 @@
         <div class="card-content">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">more_vert</i>
+            <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">close</i>
+            <i class="material-icons grey-text text-darken-4 beb">close</i>
           </span>
-          <p>{{.subtitle}}</p>
+          <h6 class="psub">{{.subtitle}}</h6>
           {{ end }}
           {{ range .Site.Data.homepage.about2.content }}
-          <p>{{ .title }}</p>
+          <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
           {{end}}
         </div>
       </div>
@@ -132,18 +132,18 @@
         <div class="card-content">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">more_vert</i>
+            <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">close</i>
+            <i class="material-icons grey-text text-darken-4 beb">close</i>
           </span>  
-          <p>{{.subtitle}}</p>        
+          <h6 class="psub">{{.subtitle}}</h6>        
           {{ end }}
           {{ range .Site.Data.homepage.about3.content }}
-          <p>{{ .title }}</p>
+          <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
           {{end}}
         </div>
       </div>

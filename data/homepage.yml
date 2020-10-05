@@ -83,7 +83,7 @@ about:
             
 
 about2:
-  image : "images/about/about-1.png"
+  image : "images/about/about-3.png"
   subtitle : "We help you to improve your business with time-saving apps and:"
   title : "Easier and ready to use"
   content :
@@ -98,14 +98,14 @@ about2:
     - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
 
 about3:
-  image : "images/about/about-3.png"
+  image : "images/about/about-1.png"
   subtitle : "Take control of all of your data with: "
   title : "Security and privacy first"
-  content : 
-    
-  - title: "Clean and anonymous data without sharing information."
+  content :  
     
   - title: " On-premises solutions that can guarantee your ownership and data security."
+
+  - title: "Clean and anonymous data without sharing information."
 
   - title: "Scaling your data services and spreading your data sources with smart protections."
     
