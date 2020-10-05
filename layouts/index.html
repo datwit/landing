@@ -84,12 +84,16 @@
             <span class="card-title activator">
               <h3 class="activator crev">{{ .title}}</h3>
               <i class="material-icons grey-text text-darken-4">close</i>
-          </span>
-            <p>{{ .content | markdownify }}</p>
+            </span>
+            <p>{{.subtitle}}</p>
+            {{ end }}
+            {{ range .Site.Data.homepage.about.content }}
+            <p>{{ .title }}</p>
+            {{end}}
           </div>
         </div>
       </div>  
-      {{ end }}
+      
       <!--/first card------------------------> 
       <!--second card------------------------>
     {{ with .Site.Data.homepage.about2 }}
@@ -109,11 +113,14 @@
             <h3 class="activator crev">{{ .title}}</h3>
             <i class="material-icons grey-text text-darken-4">close</i>
           </span>
-          <p>{{ .content | markdownify }}</p>
+          <p>{{.subtitle}}</p>
+          {{ end }}
+          {{ range .Site.Data.homepage.about2.content }}
+          <p>{{ .title }}</p>
+          {{end}}
         </div>
       </div>
-    </div>  
-    {{ end }}
+    </div>    
   <!--/second card------------------------> 
   <!--third card------------------------>
     {{ with .Site.Data.homepage.about3 }}
@@ -132,12 +139,15 @@
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
             <i class="material-icons grey-text text-darken-4">close</i>
-          </span>
-          <p>{{ .content | markdownify }}</p>
+          </span>  
+          <p>{{.subtitle}}</p>        
+          {{ end }}
+          {{ range .Site.Data.homepage.about3.content }}
+          <p>{{ .title }}</p>
+          {{end}}
         </div>
       </div>
-    </div>  
-    {{ end }}
+    </div>     
   <!--/third card------------------------>   
    </div>      
  </div>

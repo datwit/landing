@@ -1,7 +1,7 @@
 # Banner
 banner:
   bgImage : "images/background/banner.png"
-  title : "Bring your idea, we will make it real!"
+  title : "Integrating machine learning to your web apps!"
   #belgrade illustration team section
   ilimage : "images/belgrade-illustration.png"
 
@@ -70,26 +70,53 @@ toolset:
 # About
 about:
   sectiontitle: "What you get"
-  image : "images/about/about-1.png"
-  subtitle : "Multipurpose software"
-  title : "Ready to use"
-  content : "Creating multipurpose software thinking in what you need.
-          Delivering on time and only well tested software, always ready for production."
-  linktext: "More"
+  image: "images/about/about-2.png"
+  subtitle: "Datwit can help you to grow faster with less cost by:"
+  title: "Quality and good prices"
+
+  content: 
+      - title: "Saving money with cheaper products and best open source quality."
+
+      - title: "Improving your products and services with cost saving & accurate models."
+
+      - title: "Reducing your risks, get to your must important data, monitore your service quality."                          
+            
 
 about2:
-  image : "images/about/about-3.png"
-  subtitle : "Data Analysis"
-  title : "Easier tools"
-  content : "Providing data analysis, dashboards and much more for you. Get to know your data better and
-          decide what to do with it right now."    
-about3:
-  image : "images/about/about-2.png"
-  subtitle : "For today and tomorrow"
-  title : "Great results"
-  content : "Integrating high standards, Machine Learning and Artificial Intelligence.
-          Take advantage of our complete software solutions and get the most of your data."
+  image : "images/about/about-1.png"
+  subtitle : "We help you to improve your business with time-saving apps and:"
+  title : "Easier and ready to use"
+  content :
+    - title: "Fast installing and updating solutions."
+      
+    - title: " User friendly interfaces that complete your desired user experience. "
+      
+    - title: "Simple, optimized, tested apps ready for production."
+      
+    - title: " High information architecture standards."
+      
+    - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
 
+about3:
+  image : "images/about/about-3.png"
+  subtitle : "Take control of all of your data with: "
+  title : "Security and privacy first"
+  content : 
+    
+  - title: "Clean and anonymous data without sharing information."
+    
+  - title: " On-premises solutions that can guarantee your ownership and data security."
+
+  - title: "Scaling your data services and spreading your data sources with smart protections."
+    
+  - title: " Full role separated access to all of our solutions." 
+    
+      
+           
+
+#  button:
+#    btnText : "read more"
+#    URL : "#"
 
 
 # Know more
