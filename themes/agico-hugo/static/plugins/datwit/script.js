@@ -79,10 +79,10 @@ var accHD = document.getElementsByClassName('accordionItemHeading');
       }
   }
 // animated diagram 
-  var t = document.getElementById("demo");
-  var r = document.getElementById("demo2");
-  var s = document.getElementById("demo3");
-  var m = document.getElementById("demo4");
+  var box1 = document.getElementById("demo");
+  var box2 = document.getElementById("demo2");
+  var box3 = document.getElementById("demo3");
+  var box4 = document.getElementById("demo4");
 
   var tit1 = document.getElementById("tit1");
   var tit2 = document.getElementById("tit2");
@@ -95,164 +95,192 @@ var accHD = document.getElementsByClassName('accordionItemHeading');
   var dot4 = document.getElementById("dot4");
 
 
-  function toggleText(res) {    
+  function toggleText(res) { 
     switch(res){
-      /***************onclick button 1**************************** */
-      case 1:
-        if ((t.className == 'text hide') & (r.className == 'text hide') & (s.className=='text hide') & (m.className=='text hide')) {
-          t.className = 'text show';  
-          dot1.className = 'dot1 draw-orange'; 
-          tit1.className = 'tit1 bold-title';
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2';
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3'; 
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';           
-        } 
-        else{
-          t.className = 'text hide';
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1';
-        }
-        if ((t.className == 'text show') | (r.className == 'text show') | (s.className=='text show') | (m.className=='text show')){
-          t.className = 'text show';
-          dot1.className = 'dot1 draw-orange';
-          tit1.className = 'tit1 bold-title'; 
-          r.className = 'text hide';
-          s.className = 'text hide';
-          m.className = 'text hide'; 
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2';
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3'; 
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';       
-        }
-        else{
-          t.className = 'text hide';
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1';
-        }   
-        break;
-        /***********************onclick button 2****************** */
-      case 2:
-        if ((r.className == 'text hide') & (t.className == 'text hide') & (s.className=='text hide') & (m.className=='text hide')) {
-          r.className = 'text show';  
-          dot2.className = 'dot2 draw-orange'; 
-          tit2.className = 'tit2 bold-title'; 
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1';
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3'; 
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';           
-        } 
-        else{
-          r.className = 'text hide';
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2'; 
+      case 1: 
+      box2.className = 'box-text hide';
+      box3.className = 'box-text hide';
+      box4.className = 'box-text hide';
+      dot2.className = 'dot2';
+      dot3.className = 'dot3';
+      dot4.className = 'dot4';
+      tit2.className = 'tit2';
+      tit3.className = 'tit3';
+      tit4.className = 'tit4';
+      box1.className == 'box-text hide'? box1.className= 'box-text show' : box1.className= 'box-text hide';  
+      dot1.className == 'dot1' ? dot1.className='dot1 draw-orange' : dot1.className = 'dot1';  
+      tit1.className == 'tit1' ? tit1.className= 'tit1 bold-title' : tit1.className = 'tit1' ;   
+      break;
+      case 2: 
+      box1.className = 'box-text hide';
+      box3.className = 'box-text hide';
+      box4.className = 'box-text hide';
+      dot1.className = 'dot1';
+      dot3.className = 'dot3';
+      dot4.className = 'dot4';
+      tit1.className = 'tit1';
+      tit3.className = 'tit3';
+      tit4.className = 'tit4';
+      box2.className == 'box-text hide'? box2.className= 'box-text show' : box2.className= 'box-text hide';
+      dot2.className == 'dot2' ? dot2.className='dot2 draw-orange' : dot2.className = 'dot2';  
+      tit2.className == 'tit2' ? tit2.className= 'tit2 bold-title' : tit2.className = 'tit2' ; 
 
-        }
-        if ((r.className == 'text show') | (t.className == 'text show') | (s.className=='text show') | (m.className=='text show')){
-          r.className = 'text show';
-          dot2.className = 'dot2 draw-orange'; 
-          tit2.className = 'tit2 bold-title';
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1'; 
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3'; 
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';       
-          t.className = 'text hide';
-          s.className = 'text hide';
-          m.className = 'text hide';      
-        }
-        else{
-          r.className = 'text hide';
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2'; 
-        }
-        break;
-      /*********************onclick button 3*********************** */  
-      case 3:
-        if ((s.className == 'text hide') & (t.className == 'text hide') & (r.className=='text hide') & (m.className=='text hide')) {
-          s.className = 'text show';  
-          dot3.className = 'dot3 draw-orange'; 
-          tit3.className = 'tit3 bold-title'; 
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2';
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1'; 
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';     
-        } 
-        else{
-          s.className = 'text hide';
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3'; 
-        }
-        if ((s.className == 'text show') | (t.className == 'text show') | (r.className=='text show') | (m.className=='text show')){
-          s.className = 'text show';
-          t.className = 'text hide';
-          r.className = 'text hide';
-          m.className = 'text hide';  
-          dot3.className = 'dot3 draw-orange'; 
-          tit3.className = 'tit3 bold-title'; 
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2';
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1'; 
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';      
-        }
-        else{
-          s.className = 'text hide';
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3'; 
-        }
-        break;
-       /*********************onclick button 4************************* */ 
-      case 4:
-        if ((m.className == 'text hide') & (t.className == 'text hide') & (r.className=='text hide') & (s.className=='text hide')) {
-          m.className = 'text show'; 
-          dot4.className = 'dot4 draw-orange'; 
-          tit4.className = 'tit4 bold-title';  
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2';
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1'; 
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3';     
-        } 
-        else{
-          m.className = 'text hide';
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';    
-        }
-        if ((m.className == 'text show') | (t.className == 'text show') | (r.className=='text show') | (s.className=='text show')){
-          m.className = 'text show';
-          t.className = 'text hide';
-          r.className = 'text hide';
-          s.className = 'text hide'; 
-          dot4.className = 'dot4 draw-orange'; 
-          tit4.className = 'tit4 bold-title';  
-          dot2.className = 'dot2'; 
-          tit2.className = 'tit2';
-          dot1.className = 'dot1'; 
-          tit1.className = 'tit1'; 
-          dot3.className = 'dot3'; 
-          tit3.className = 'tit3';        
-        }
-        else{
-          m.className = 'text hide';
-          dot4.className = 'dot4'; 
-          tit4.className = 'tit4';   
-        }
-        break;
+      break;
+      case 3: 
+      box2.className = 'box-text hide';
+      box1.className = 'box-text hide';
+      box4.className = 'box-text hide';
+      dot1.className = 'dot1';
+      dot2.className = 'dot2';
+      dot4.className = 'dot4';
+      tit1.className = 'tit1';
+      tit2.className = 'tit2';
+      tit4.className = 'tit4';
+      box3.className == 'box-text hide'? box3.className= 'box-text show' : box3.className= 'box-text hide'; 
+      dot3.className == 'dot3' ? dot3.className='dot3 draw-orange' : dot3.className = 'dot3';  
+      tit3.className == 'tit3' ? tit3.className= 'tit3 bold-title' : tit3.className = 'tit3' ;         
+      break;
+      case 4: 
+      box2.className = 'box-text hide';
+      box3.className = 'box-text hide';
+      box1.className = 'box-text hide';
+      dot1.className = 'dot1';
+      dot2.className = 'dot2';
+      dot3.className = 'dot3';
+      tit1.className = 'tit1';
+      tit2.className = 'tit2';
+      tit3.className = 'tit3';
+      box4.className == 'box-text hide'? box4.className= 'box-text show' : box4.className= 'box-text hide';
+      dot4.className == 'dot4' ? dot4.className='dot4 draw-orange' : dot4.className = 'dot4';  
+      tit4.className == 'tit4' ? tit4.className= 'tit4 bold-title' : tit4.className = 'tit4' ;          
+      break;
       default:
         break;
-    }    
+    }   
+    // switch(res){
+    //   /***************onclick button 1**************************** */
+    //   case 1:
+    //     if ((box1.className == 'box-text hide') & (box2.className == 'box-text hide') & (box3.className=='box-text hide') & (box4.className=='box-text hide')) {
+    //       box1.className = 'box-text show';  
+    //       dot1.className = 'dot1 draw-orange';
+    //       tit1.className = 'tit1 bold-title';
+    //       dot2.className = 'dot2'; 
+    //       tit2.className = 'tit2';
+    //       dot3.className = 'dot3'; 
+    //       tit3.className = 'tit3'; 
+    //       dot4.className = 'dot4'; 
+    //       tit4.className = 'tit4';           
+    //     } 
+    //     else{
+    //       box1.className = 'box-text hide';
+    //       dot1.className = 'dot1'; 
+    //       tit1.className = 'tit1';
+    //     }
+    //     if ((box1.className == 'box-text show') | (box2.className == 'box-text show') | (box3.className=='box-text show') | (box4.className=='box-text show')){
+    //       box1.className = 'box-text show';
+    //       dot1.className = 'dot1 draw-orange';
+    //       tit1.className = 'tit1 bold-title'; 
+    //       box2.className = 'box-text hide';
+    //       box3.className = 'box-text hide';
+    //       box4.className = 'box-text hide'; 
+    //       dot2.className = 'dot2'; 
+    //       tit2.className = 'tit2';
+    //       dot3.className = 'dot3'; 
+    //       tit3.className = 'tit3'; 
+    //       dot4.className = 'dot4'; 
+    //       tit4.className = 'tit4';       
+    //     }
+    //     else{
+    //       box1.className = 'box-text hide';
+    //       dot1.className = 'dot1'; 
+    //       tit1.className = 'tit1';
+    //     }   
+    //     break;
+    //     /***********************onclick button 2****************** */
+    //   case 2:
+    //     if ((box1.className == 'box-text hide') & (box2.className == 'box-text hide') & (box3.className=='box-text hide') & (box4.className=='box-text hide')) {
+    //       dot2.className = 'dot2 draw-orange';
+    //       tit2.className = 'tit2 bold-title';
+    //       box2.className = 'box-text show';          
+    //       dot1.className = 'dot1'; 
+    //       tit1.className = 'tit1';
+    //       dot3.className = 'dot3'; 
+    //       tit3.className = 'tit3'; 
+    //       dot4.className = 'dot4'; 
+    //       tit4.className = 'tit4';           
+    //     } 
+    //     else{
+    //       box2.className = 'box-text hide';
+    //       dot2.className = 'dot2'; 
+    //       tit2.className = 'tit2';
+    //     }
+    //     if ((box1.className == 'box-text show') | (box2.className == 'box-text show') | (box3.className=='box-text show') | (box4.className=='box-text show')){
+    //       box2.className = 'box-text show';
+    //       dot2.className = 'dot2 draw-orange';
+    //       tit2.className = 'tit2 bold-title'; 
+    //       box1.className = 'box-text hide';
+    //       box3.className = 'box-text hide';
+    //       box4.className = 'box-text hide'; 
+    //       dot2.className = 'dot2'; 
+    //       tit2.className = 'tit2';
+    //       dot3.className = 'dot3'; 
+    //       tit3.className = 'tit3'; 
+    //       dot4.className = 'dot4'; 
+    //       tit4.className = 'tit4';       
+    //     }
+    //     else{
+    //       box2.className = 'box-text hide';
+    //       dot2.className = 'dot2'; 
+    //       tit2.className = 'tit2';
+    //     }   
+       
+    //     break;
+    //   /*********************onclick button 3*********************** */  
+    //   case 3:
+    //     if ((box1.className == 'box-text hide') & (box2.className == 'box-text hide') & (box3.className=='box-text hide') & (box4.className=='box-text hide')) {
+    //       box3.className = 'box-text show';  
+    //       dot3.className = 'dot3 draw-orange';
+    //       tit3.className = 'tit3 bold-title';
+    //       dot2.className = 'dot2'; 
+    //       tit2.className = 'tit2';
+    //       dot1.className = 'dot1'; 
+    //       tit1.className = 'tit1'; 
+    //       dot4.className = 'dot4'; 
+    //       tit4.className = 'tit4';           
+    //     } 
+    //     else{
+    //       box3.className = 'box-text hide';
+    //       dot3.className = 'dot3'; 
+    //       tit3.className = 'tit3';
+    //     }
+    //     if ((box1.className == 'box-text show') | (box2.className == 'box-text show') | (box3.className=='box-text show') | (box4.className=='box-text show')){
+    //       box3.className = 'box-text show';
+    //       dot3.className = 'dot3 draw-orange';
+    //       tit3.className = 'tit3 bold-title'; 
+    //       box2.className = 'box-text hide';
+    //       box3.className = 'box-text hide';
+    //       box4.className = 'box-text hide'; 
+    //       dot2.className = 'dot2'; 
+    //       tit2.className = 'tit2';
+    //       dot1.className = 'dot1'; 
+    //       tit1.className = 'tit1'; 
+    //       dot4.className = 'dot4'; 
+    //       tit4.className = 'tit4';       
+    //     }
+    //     else{
+    //       box3.className = 'box-text hide';
+    //       dot3.className = 'dot3'; 
+    //       tit3.className = 'tit3';
+    //     }   
+        
+    //     break;
+    //    /*********************onclick button 4************************* */ 
+    //   case 4:
+       
+    //     break;
+    //   default:
+    //     break;
+    // }    
   }
 
 

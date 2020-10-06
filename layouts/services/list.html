@@ -179,24 +179,51 @@
     </div>
     <!---------------------------------------------------------------------------------------->
     <div class="row">
-      <div class="col s12 box-text">
-        {{with .Site.Data.services.developprocess1}}
-           <p id="demo" class="text hide">{{.descrip}}</p>
+      <div class="box-text hide"  id="demo">
+        {{with .Site.Data.services.developprocess1}}            
+           <h3 id="des-head">{{.descrip}}</h3>
+           <div class="row mr-2">
+             <div class="col s2">
+              <img src="{{.img | absURL}}" alt="UX research">
+             </div>
+             <div class="col s10">
+              <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>UX Research:</h6></div>
+              <h6 class="pip">{{.content1}}</h6>
+             </div>            
+           </div><!---------------------------------------->
+           <div class="row mr-2">
+            <div class="col s2">
+             <img src="{{.img2 | absURL}}" alt="Analysis">
+            </div>
+            <div class="col s10">
+              <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>Analysis:</h6></div>
+              <h6 class="pip">{{.content2}}</h6>
+            </div>            
+          </div><!----------------------------------------->
+          <div class="row mr-2">
+            <div class="col s2">
+             <img src="{{.img3 | absURL}}" alt="Prototyping">
+            </div>
+            <div class="col s10">
+              <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>Wireframing:</h6></div>
+              <h6 class="pip">{{.content3}}</h6>
+            </div>            
+          </div>
         {{end}}
       </div>
-      <div class="col s12 box-text">
+      <div class="box-text hide" id="demo2">
         {{with .Site.Data.services.developprocess2}}
-           <p id="demo2" class="text hide">{{.descrip}}</p>
+           <p>{{.descrip}}</p>
         {{end}}
       </div>
-      <div class="col s12 box-text">
+      <div class="box-text hide" id="demo3">
         {{with .Site.Data.services.developprocess3}}
-           <p id="demo3" class="text hide">{{.descrip}}</p>
+           <p>{{.descrip}}</p>
         {{end}}
       </div>
-      <div class="col s12 box-text">
+      <div class="box-text hide" id="demo4">
         {{with .Site.Data.services.developprocess4}}
-           <p id="demo4" class="text hide">{{.descrip}}</p>
+           <p>{{.descrip}}</p>
         {{end}}
       </div>
     </div>   <!---------------------------------------------------------------------------------------->

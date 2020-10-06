@@ -43,10 +43,14 @@ servicekey:
   
  #slides
 developprocess1: 
-  img: "images/services/1-design.jpg"
-  img2: "images/services/1-design2.jpg"
-  title: "Design"
-  descrip: "Voluptate excepteur ullamco non eu cillum elit adipisicing adipisicing ad nisi non non dolore duis. Duis magna ad do enim id occaecat minim minim laborum mollit magna. Laboris ex eu id do. Laborum dolore aliqua aliqua aliqua."
+  img: "images/services/ux-research.png"
+  img2: "images/services/analysis.png"
+  img3: "images/services/prototyping.png"
+  title: "Design"  
+  descrip: "Because we are passioante about UX/UI design we like to create beautifull and usable apps. We believe that an user friendly design is key to achieve all the business goals you can have. Therefor we focus on:"
+  content1: "Agreat design requires a complete understanding about every user need. That´s why we keep UX research along the whole development process."
+  content2: "We build on the certainty that a strong communication is essential to collect product requirements and to lead the path to success."
+  content3: "Every product is born from an idea. The fun part begins with the creation of the concept and the continous search of the right features that fulfill your objetives."
 developprocess2:
   img: "images/services/2-develop.jpg"
   img2: "images/services/2-develop2.jpg"

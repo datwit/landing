@@ -471,14 +471,32 @@
   justify-content: center;
 }
 // collapsible text
-.hide{
- display: none; 
- 
+
+.box-text{  
+  .hide{
+  display: none;   
+  }
 }
-.show{
-  display: block;    
-}
-.box-text .show{
-  border: 1px solid #ddd;
+.box-text{
+  border: 1px solid #ddd !important;
   padding: 10px;
+  .show{
+    
+    display: block;
+  } 
 }
+.ttt{
+  display: flex;
+  align-items: flex-start; 
+  h6{
+    font-weight: bold;
+  }
+}
+.pip{
+  text-align: justify !important;
+}
+#des-head{
+  line-height: 30px !important;
+  margin-bottom: 2rem;
+}
+
