@@ -5,17 +5,19 @@ service:
   description: "This is what makes us enjoy working on new projects whatever the size. We love to provide not only
   an intuitive design but also a great development to back it up. Our goal is to get close to the product you have in mind..."
   img: "images/services/background-board.png"
-  #keywords
+
+  #keywords bullets
 servicekey:   
   title: "Datwit has amazing people that create solutions because believe in:"  
-  dot1: "Quality as our priority."
-  dot2: "Challenges as our day to day motivation."
-  dot3: "Keeping learning every day, as professionals and also as human beings."
-  dot4: "Settling with no less than perfect."
-  dot5: "Doing the best and get things done."
-  dot6: "Straightforwardness and transparency."
-  dot7: "Transforming our client's needs into an opportunnity for success."
-  dot8: "Together, as a team we are a force to be reckoned with."
+  content: 
+    - var: "Quality as our priority."
+    - var: "Challenges as our day to day motivation."
+    - var: "Keeping learning every day, as professionals and also as human beings."
+    - var: "Settling with no less than perfect."
+    - var: "Doing the best and get things done."
+    - var: "Straightforwardness and transparency."
+    - var: "Transforming our client's needs into an opportunnity for success."
+    - var: "Together, as a team we are a force to be reckoned with."
 
 
   serviceItem:
@@ -41,21 +43,28 @@ servicekey:
         shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
         
   
- #slides
+#toggle panel diagram
+#design 
 developprocess1: 
   img: "images/services/ux-research.png"
   img2: "images/services/analysis.png"
   img3: "images/services/prototyping.png"
   title: "Design"  
-  descrip: "Because we are passioante about UX/UI design we like to create beautifull and usable apps. We believe that an user friendly design is key to achieve all the business goals you can have. Therefor we focus on:"
+  descrip: "Because we are all about UX/UI design we like to create beautifull and usable apps. We believe that an user friendly design is key to achieve all the business goals you can have. Therefor we focus on:"
   content1: "Agreat design requires a complete understanding about every user need. That´s why we keep UX research along the whole development process."
   content2: "We build on the certainty that a strong communication is essential to collect product requirements and to lead the path to success."
   content3: "Every product is born from an idea. The fun part begins with the creation of the concept and the continous search of the right features that fulfill your objetives."
+#development
 developprocess2:
-  img: "images/services/2-develop.jpg"
-  img2: "images/services/2-develop2.jpg"
+  img: "images/services/development.png"  
   title: "Development"
-  descrip: "Dolor nulla aute ex laborum aliqua ex Lorem elit ipsum ipsum excepteur et eiusmod. Aliqua aliquip amet ad culpa Lorem anim aliqua. Voluptate incididunt est anim dolore aute quis ea veniam. Fugiat incididunt minim labore officia est ut. Ex aute qui enim officia est irure nisi irure occaecat mollit."
+  descrip: "In Datwit we biuld ready to use software using reliable technologies and following innivative trends. We are proud to help you to:"
+  content: 
+    - var: "Efficiently solve real-world problems."
+    - var: "Enhace youur business productivity"
+    - var: "Smoothly run your every day processes "
+  descrip2: "In order to do that we take our time to carefully plan every sprint because it is our goal to deliver working products as soon as possible."  
+
 developprocess3:
   img: "images/services/3-test.jpg"
   img2: "images/services/3-test2.jpg"
@@ -73,28 +82,37 @@ serviceItem1:
   title : "Software Development"  
   url: "images/services/soft-develop.png" 
   content: "Datwit is a company run by a bunch of people passionate about technology and who have experience designing and developing IT solutions. In addition to that we incorporate machine learning funcionalities which improve the way of using data on a daily basis."
-   
+  columns:
+    - title: "Full custom software"
+      descrip: "Helping other small companies to lunch their businesses is our best way to persue interesting projects"
+
+    - title: "Enterprise software integrations"
+      descrip: "We provide the support that other companies need to preserve their long lasting solutions."
+  
   firstsectiontitle: " We focus on build full-cycle development  services such as: "         
   firstsectiontitle2: "Even though we can make a variety of softwares we believe our biggest strength resides on website development... "
   col1:  
     title: "Frontend"
     description: "We offer visual appealing and accessible apps, built using:"
     img: "images/services/frontend.png"
-    var1: "HTML5"
-    var2: "CSS3"
-    var3: "JavaScript/Vue.js/Nuxt.js"
+    content: 
+    - var: "HTML5"
+    - var: "CSS3"
+    - var: "JavaScript/Vue.js/Nuxt.js"
   col2:  
     title: "Backend"
     description: "Our services focused on create functional applications, tailored to your specifications, therefor we use:"
     img: "images/services/backend.png"
-    var1: "Flask/Chalice"
-    var2: "Python scripts"
+    content: 
+    - var: "Flask/Chalice"
+    - var: "Python scripts"
   col3:  
     title: "Deployment"
     description: "We have everyting covered! And because we like to get involved all the way, we support our clients even when the final product goes live implementing:"
     img: "images/services/deployment.png"
-    var1: "On-cloud services"
-    var2: "Local servers"
+    content: 
+    - var: "On-cloud services"
+    - var: "Local servers"
     
 #data analysis    
 serviceItem2:
@@ -141,4 +159,4 @@ serviceItem4:
 diagram:
   title : "How we get it done"
   subtitle : "We are Agile. So, in order to make sure your initial idea becomes a working product we take advantaje of the great beneffits of Scrum and some of the best practices of XP."
-  img : "images/diagram.png"
+  
