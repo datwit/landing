@@ -76,12 +76,16 @@ developprocess3:
     - var: "User-centered design"
     - var: "On point functionality"
 
+#deployment
 developprocess4:
-  img: "images/services/4-deploy.jpg"
-  img2: "images/services/4-deploy2.jpg"
+  img: "images/services/deploy.png"  
   title: "Deployment"
-  descrip: "Eiusmod nostrud excepteur deserunt laboris sit. Non exercitation occaecat esse officia quis do. Consectetur velit nulla amet velit aliquip culpa laborum ad sint cupidatat ad et. Aliqua dolor excepteur anim esse aliquip."
-
+  descrip: "Once development is finished, deployment can be exhausting; that's why you can rely on us for:"
+  content:
+    - var: "Domain registration"
+    - var: "Securely deploy your project to on-cloud servers"
+    - var: "Long-term technical support"
+    - var: "Maintenance"
 #describing services page
 # software development
 serviceItem1:
