@@ -65,11 +65,17 @@ developprocess2:
     - var: "Smoothly run your every day processes "
   descrip2: "In order to do that we take our time to carefully plan every sprint because it is our goal to deliver working products as soon as possible."  
 
+#testing
 developprocess3:
-  img: "images/services/3-test.jpg"
-  img2: "images/services/3-test2.jpg"
+  img: "images/services/testing.png"  
   title: "Testing"
-  descrip: "Fugiat enim sit sit velit amet dolor id non. Dolor id pariatur eu labore consequat. Exercitation commodo incididunt enim fugiat occaecat dolore velit nostrud deserunt officia consequat do. Ullamco veniam in dolore aute labore qui laboris nulla sint irure exercitation velit dolore voluptate."
+  descrip: "Together let's get as far as we can and aim to perfection. Our Quality Assurance team is capable of performing continous agile testing and keep improving to achieve:"
+  content:
+    - var: "Flawless code"
+    - var: "Responsive design"
+    - var: "User-centered design"
+    - var: "On point functionality"
+
 developprocess4:
   img: "images/services/4-deploy.jpg"
   img2: "images/services/4-deploy2.jpg"
@@ -84,7 +90,7 @@ serviceItem1:
   content: "Datwit is a company run by a bunch of people passionate about technology and who have experience designing and developing IT solutions. In addition to that we incorporate machine learning funcionalities which improve the way of using data on a daily basis."
   columns:
     - title: "Full custom software"
-      descrip: "Helping other small companies to lunch their businesses is our best way to persue interesting projects"
+      descrip: "Helping other small companies to lunch their businesses is our best way to persue interesting projects."
 
     - title: "Enterprise software integrations"
       descrip: "We provide the support that other companies need to preserve their long lasting solutions."

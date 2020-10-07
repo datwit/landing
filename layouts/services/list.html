@@ -63,7 +63,8 @@
                   {{end}}
                   {{range .Site.Data.services.serviceItem1.col3.content}}
                   <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
-                  {{end}}                    
+                  {{end}}   
+                  
                 </div>
               </div>                                 
             </div>
@@ -176,7 +177,7 @@
       <div class="box-text hide"  id="demo">
         {{with .Site.Data.services.developprocess1}}            
            <h3 class="des-head">{{.descrip}}</h3>
-           <div class="row mr-2">
+           <div class="row mr-2 rr">
              <div class="col s4 m3 l2">
               <img src="{{.img | absURL}}" alt="UX research">
              </div>
@@ -185,7 +186,7 @@
               <h6 class="pip">{{.content1}}</h6>
              </div>            
            </div><!---------------------------------------->
-           <div class="row mr-2">
+           <div class="row mr-2 rr">
             <div class="col s4 m3 l2">
              <img src="{{.img2 | absURL}}" alt="Analysis">
             </div>
@@ -194,7 +195,7 @@
               <h6 class="pip">{{.content2}}</h6>
             </div>            
           </div><!----------------------------------------->
-          <div class="row mr-2">
+          <div class="row mr-2 rr">
             <div class="col s4 m3 l2">
              <img src="{{.img3 | absURL}}" alt="Prototyping">
             </div>
@@ -210,13 +211,13 @@
         {{with .Site.Data.services.developprocess2}}
         <h3 class="des-head">{{.descrip}}</h3>
         {{end}}
-        <div class="row" id="rr">
-          <div class="col s2">
+        <div class="row rr">
+          <div class="col s4 m3 l2">
             {{with.Site.Data.services.developprocess2}}
             <img src="{{.img | absURL}}" alt="Software development">
             {{end}}
           </div>
-          <div class="col s10">
+          <div class="col s8 m9 l10">
             {{range .Site.Data.services.developprocess2.content}}
             <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
             {{end}}
@@ -226,12 +227,25 @@
         {{with .Site.Data.services.developprocess2}}
         <h6 class="pip mr-1">{{.descrip2}}</h6>
         {{end}}
-      </div><!------------------------------------------------------------------------------------------>
+      </div><!------------------------------------testing------------------------------------------------>
       <div class="box-text hide" id="demo3">
         {{with .Site.Data.services.developprocess3}}
-           <p>{{.descrip}}</p>
+        <h3 class="des-head">{{.descrip}}</h3>
         {{end}}
+        <div class="row rr">
+          <div class="col s4 m3 l2">
+            {{with.Site.Data.services.developprocess3}}
+            <img src="{{.img | absURL}}" alt="Software development">
+            {{end}}
+          </div>
+          <div class="col s8 m9 l10">
+            {{range .Site.Data.services.developprocess3.content}}
+            <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
+            {{end}}
+          </div>
+        </div>        
       </div>
+      <!------------------------------------------------------------------------------------------------>
       <div class="box-text hide" id="demo4">
         {{with .Site.Data.services.developprocess4}}
            <p>{{.descrip}}</p>
