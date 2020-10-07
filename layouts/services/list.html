@@ -89,9 +89,10 @@
       <!----------------------------data visualization section------------------------------------------------->  
       <div class="accordionItem close">
         {{ with .Site.Data.services.serviceItem3 }}
-            <h3 class="accordionItemHeading">{{.title}}</h3>
+            <h3 class="accordionItemHeading">{{.title}}</h3>            
             <div class="accordionItemContent">
-              {{end}}
+              <h6 class="ph6 mr-2">{{.descrip}}</h6> 
+              {{end}}             
               {{range .Site.Data.services.serviceItem3.content}}
                 <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
               {{end}}             
@@ -103,6 +104,7 @@
         {{ with .Site.Data.services.serviceItem4 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
+              <h6 class="ph6 mr-2">{{.descrip}}</h6> 
               {{end}} 
               {{range .Site.Data.services.serviceItem4.content}}
               <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>

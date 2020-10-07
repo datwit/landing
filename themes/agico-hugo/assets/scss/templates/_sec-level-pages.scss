@@ -337,6 +337,7 @@
   @media only screen and (max-width: 1295px) {
     background: none !important;
     background-color: $bg-secondary !important;
+    overflow-x: hidden;
   }
   @media only screen and (max-width: 730px){
     height: 500px !important;
