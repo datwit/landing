@@ -126,16 +126,16 @@ img{
     a {
       i {
         width: 40px;
-        height: 40px;
-        line-height: 32px;
+        height: 40px;        
         color: $white;
         text-align: center;
-        border: 2px solid $secondary-color2;
-        display: block;
+        border: 2px solid $secondary-color2;        
         border-radius: 50%;
-        font-size: 20px;
-        padding: 0 0 15px 0;
+        font-size: 20px;        
         background-color: $secondary-color2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         &:hover {
           color: $primary-color;
@@ -146,6 +146,10 @@ img{
       
     }
   }
+}
+//overriding fontawesome property
+.fa{
+  padding: 0px !important;
 }
 
 /* list style */

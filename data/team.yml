@@ -75,8 +75,28 @@ team:
     
 
 # partners
-#partners:
-#  subtitle: "We are proud of our great partners"
-#  ourPartners:
-#    - partnerAlt: "legal advisory agency"
-#      partnerLogo: "images/toolset/vuejs.png"
+partners:
+  title: "Collaborators"  
+  subtitle: "Behind Datwit there are a group of amazing collaborators, they have proven to be invaluable:"
+  #  ourPartners:
+  #    - partnerAlt: "legal advisory agency"
+  #      partnerLogo: "images/toolset/vuejs.png"
+  collab:
+    - name: "Danay Meneses Abad"
+      image: "images/team/danay.png"
+      designation: "Backend Developer"
+      socialIcon:
+        - icon: "fa-github"
+          URL: "https://github.com/DanayMeneses"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/danaymeneses"
+
+    - name: "Karell Lexander Garcés Gallardo"
+      image: "images/team/karell.png"
+      designation: "Firmware Engineering"
+      socialIcon:
+        - icon: "fa-github"
+          URL: "https://github.com/KarellGarces"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/karellgarces"
+

@@ -36,7 +36,7 @@
     </div><!------------------------------------------------------->  
     <div class="row"><!-------------------------------------------->
       {{ range $element:= .Site.Data.team.team.teamMember }}
-      <div class="col s12 m6 l4">
+      <div class="col s12 m6 l3">
         <div class="team-member"><!----------------------picture-->
           <img src="{{ .image | absURL }}">
         </div><!-------------------------------------------------->
@@ -56,6 +56,37 @@
       {{end}}
     </div>     
   </div><!------------------------------------------------------->  
+</section>
+<!---------------------collaborators------------------------------------->
+<section class="mr-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        {{with .Site.Data.team.partners}}
+        <h2>{{.title}}</h2>
+        <h6>{{.subtitle}}</h6>
+        {{end}}
+      </div>
+      <div class="row">
+      {{range .Site.Data.team.partners.collab}}
+        <div class="col s6">
+          <img src=" {{.image | absURL }}" alt="collaborator image">
+          <h5 class="team-member-name">{{.name }}</h5>
+          <div class="team-member-designation">{{ .designation }}</div>
+          <div class="row">
+            <div class="container-social">
+              <ul class="list-inline social-icons">
+                {{ range .socialIcon }}
+                <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+            </div>          
+          </div>        
+        </div> 
+      {{end}}
+      </div>     
+    </div>
+  </div>
 </section>
 
 {{ end }}
