@@ -4,11 +4,14 @@ pgtitle :
   description: "These are our creations, all made with spirit and perseverance. By all means, stroll along..."
 
   productItem :
-    -  image : "images/product/pilar.png"
-       title : "Pilar"
-       content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor"
-       linktext: "More"
-       url: ""
+    -  image : "images/product/preprocess.png"
+       title : "preprocess"
+       content : "Python3 package for text preprocessing, based on NLTK, Stanford NLP models, and other less popular NLP python libraries. This library intended to be use as a reference material to those who want to dive in the preprocessing world."
+       linktext: "Read more"
+       url: "https://github.com/sorice/preprocess/blob/master/docs/collab/about.rst"      
+       solution: "See the entire solution at:"       
+       icon: "fa-github"
+       url2: "https://github.com/sorice/preprocess/blob/master/docs/edu/applied_preprocessing.ipynb"
     
    
        
