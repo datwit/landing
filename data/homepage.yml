@@ -69,7 +69,7 @@ toolset:
 # About
 about:
   sectiontitle: "What you get"
-  image: "images/about/about-2.png"
+  image: "images/about/about-2.svg"
   subtitle: "Datwit can help you to grow faster with less cost by:"
   title: "Quality and good prices"
 
@@ -82,7 +82,7 @@ about:
             
 
 about2:
-  image : "images/about/about-3.png"
+  image : "images/about/about-3.svg"
   subtitle : "We help you to improve your business with time-saving apps and:"
   title : "Easier and ready to use"
   content :
@@ -97,7 +97,7 @@ about2:
     - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
 
 about3:
-  image : "images/about/about-1.png"
+  image : "images/about/about-1.svg"
   subtitle : "Take control of all of your data with: "
   title : "Security and privacy first"
   content :  
