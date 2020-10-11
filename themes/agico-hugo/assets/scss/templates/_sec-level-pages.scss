@@ -294,11 +294,11 @@
   }
 }
 .ph6{
- text-align: justify !important;
+ text-align: left !important;
 }
 .icc{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   i{
     border-radius: 50%;
     color: white !important;

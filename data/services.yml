@@ -86,8 +86,10 @@ developprocess4:
     - var: "Securely deploy your project to on-cloud servers"
     - var: "Long-term technical support"
     - var: "Maintenance"
+
 #describing services page
 # software development
+dataservicetitle: "Data Intelligence"
 serviceItem1:
   title : "Software Development"  
   url: "images/services/soft-develop.png" 
