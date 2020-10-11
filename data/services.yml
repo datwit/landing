@@ -20,27 +20,27 @@ servicekey:
     - var: "Together, as a team we are a force to be reckoned with."
 
 
-  serviceItem:
-      #listing
+#services icons homepage
+  serviceItem:      
 
       - title: "Software Development"
         src: "images/services/soft-developm.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: "We will never forget where we came from, so we are eager to share our experiences building products that people will enjoy using."
         # url: "services#sd"
 
       - title: "Data Analysis"
         src: "images/services/data-anal.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: " Less cholesterol in your data makes your business' heart lead you to the goal faster."
         # url: "services#da"
 
       - title: "Data Visualization"
         src: "images/services/data-visualiz.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: "From your side of the view you can only see beautifull diagrams like mountains and clouds."
         # url: "services#sd"
 
-      - title: "Internet of Things"
+      - title: "Research on IoT"
         src: "images/services/domotic.png"
-        shortcontent: "Voluptate anim enim ex irure excepteur adipisicing. Adipisicing sit qui aliqua dolor"
+        shortcontent: "No matter the device success starts by expanding your data sources."
         
   
 #toggle panel diagram
