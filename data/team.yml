@@ -90,6 +90,8 @@ partners:
           URL: "https://github.com/DanayMeneses"
         - icon: "fa-linkedin"
           URL:  "https://www.linkedin.com/in/danaymeneses"
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/DanayMeneses"
 
     - name: "Karell Lexander Garcés Gallardo"
       image: "images/team/karell.png"
@@ -99,4 +101,5 @@ partners:
           URL: "https://github.com/KarellGarces"
         - icon: "fa-linkedin"
           URL:  "https://www.linkedin.com/in/karellgarces"
-
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/KarellGarces"
