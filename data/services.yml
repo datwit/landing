@@ -130,6 +130,7 @@ serviceItem1:
 serviceItem2:
   title : "Data Analysis"   
   content1 : "Nowadays Machine Learnign offer endless oppotunities for business owners, from decision making to efficient business processes."
+  img: "images/services/data-analy.png"
   # "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
   
   subtitle: "What you can get by working with us?"
@@ -143,8 +144,8 @@ serviceItem2:
 
 #data visualization  
 serviceItem3:
-  title : "Data Visualization"
-  icon : "/images/services/i-dat-visual.png"
+  title : "Data Visualization"  
+  img: "images/services/data-visual.png"
   descrip: "We truly believe in creative visualization design as the better way to analyze data behavior to its fullest potential. That's why we do: "   
   content : 
     - var: "Descriptive reports"
@@ -157,7 +158,7 @@ serviceItem3:
 
 serviceItem4:
   title : "Research on IoT"
-  icon : "/images/services/i-dat-visual.png"
+  img: "images/services/iot.png"  
   descrip: "Every day we take our limits even further, but still, the sky is the limit..."
   content : 
     
