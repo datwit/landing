@@ -32,7 +32,7 @@ service:
 
       - title: "Data Visualization"
         src: "images/services/data-visualiz.png"
-        shortcontent: "From your side of the view you can only see beautifull diagrams like mountains and clouds."
+        shortcontent: "Because we love UX/UI and amazing data visualization designs we want to take it to every possible solution."
         # url: "services#sd"
 
       - title: "Research on IoT"

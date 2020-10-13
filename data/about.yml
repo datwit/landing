@@ -1,8 +1,6 @@
 # about
 about:
-#  videoThumbBg : "images/about/about-3.jpg"
-#  videoThumb : "images/about/about-4.jpg"
-#  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
+
   aboutImg: "images/about/about-us1.png"
   aboutAlt: "about datwit"
 #  subtitle: "About datwit"

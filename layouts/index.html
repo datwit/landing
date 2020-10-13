@@ -44,11 +44,11 @@
 <section class="mr-3 light-gray2" id="b-serv">
   <div class="container">
     <div class="row">
-      {{with .Site.Data.services.service}}
+      <!-- {{with .Site.Data.services.service}}
       <h2 class="serv-tit">{{.title}}</h2>
-      {{end}}
+      {{end}} -->
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 l3" id="col-height">
         <a href="/services.html"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>  
         <div id="text-continous">
           <a href="/services.html"><h6 class="subt">{{ .title }}</h6></a>
@@ -158,9 +158,9 @@
 <section class="mr-2 light-gray" id="tool-bg">
   <div class="container">
     <div class="row">  
-      {{with .Site.Data.homepage}}
+     <!--  {{with .Site.Data.homepage}}
       <h2>{{ .toolsettitle }}</h2>
-      {{end}}
+      {{end}} -->
       {{ range .Site.Data.homepage.toolset }}        
         <div id="col1">
           <ul class="rib">

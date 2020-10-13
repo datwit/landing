@@ -3,20 +3,20 @@ banner:
   bgImage : "images/background/banner.png"
   title : "Integrating machine learning into your web apps!"
   #belgrade illustration team section
-  ilimage : "images/belgrade-illustration.png"
+  ilimage : "images/belgrade-illustration.svg"
 
 
 # Toolset
-toolsettitle: "How we do it"
+# toolsettitle: "How we do it"
 toolset: 
   
     - tool: "python"
       toolName: "Python"
-      toolsetLogo: "images/toolset/python.png"
+      toolsetLogo: "images/toolset/python.svg"
 
     - tool: "aws"
       toolName: "Amazon Web Services"
-      toolsetLogo: "images/toolset/aws.png"
+      toolsetLogo: "images/toolset/aws.svg"
       
     # - tool: "panel"
     #   toolName: "Panel Dashboards for Python"
@@ -29,38 +29,42 @@ toolset:
 
     - tool: "sklearn"
       toolName: "Sklearn Toolkit"
-      toolsetLogo: "images/toolset/sklearn.png"
+      toolsetLogo: "images/toolset/sklearn.svg"
 
         
     - tool: "keras"
       toolName: "Deep learning API"
-      toolsetLogo: "images/toolset/keras.png"
+      toolsetLogo: "images/toolset/keras.svg"
 
     - tool: "chalice"
       toolName: "Python Serverless Microframework for AWS"
-      toolsetLogo: "images/toolset/chalice.png"
+      toolsetLogo: "images/toolset/chalice.svg"
 
     - tool: "sagemaker"
       toolName: "Amazon Sagemaker"
-      toolsetLogo: "images/toolset/sagemaker.png"
+      toolsetLogo: "images/toolset/sagemaker.svg"
 
 # toolset2:
    
     - tool: "vega"
       toolName: "Vega Vizualization Grammar"
-      toolsetLogo: "images/toolset/vega.png"
+      toolsetLogo: "images/toolset/vega.svg"
 
     - tool: "nuxtjs"
       toolName: "VUE Framework"
-      toolsetLogo: "images/toolset/nuxtjs.png"
+      toolsetLogo: "images/toolset/nuxtjs.svg"
     
     - tool: "tensorflow"
       toolName: "TensorFlow Library"
-      toolsetLogo: "images/toolset/tensorflow.png"
+      toolsetLogo: "images/toolset/tensorflow.svg"
 
-    - tool: "bokeh"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/bokeh.png"
+    - tool: "mathplotlib"
+      toolName: "Mathplotlib"
+      toolsetLogo: "images/toolset/math.svg"  
+
+    # - tool: "bokeh"
+    #   toolName: "Bokeh Visualization Library"
+    #   toolsetLogo: "images/toolset/bokeh.png"
           
     # - tool: "altair"
     #   toolName: "Bokeh Visualization Library"
@@ -69,7 +73,7 @@ toolset:
 # About
 about:
   sectiontitle: "What you get"
-  image: "images/about/about-2.png"
+  image: "images/about/about-2.svg"
   subtitle: "Datwit can help you to grow faster with less cost by:"
   title: "Quality and good prices"
 
@@ -82,7 +86,7 @@ about:
             
 
 about2:
-  image : "images/about/about-3.png"
+  image : "images/about/about-3.svg"
   subtitle : "We help you to improve your business with time-saving apps and:"
   title : "Easier and ready to use"
   content :
@@ -97,7 +101,7 @@ about2:
     - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
 
 about3:
-  image : "images/about/about-1.png"
+  image : "images/about/about-1.svg"
   subtitle : "Take control of all of your data with: "
   title : "Security and privacy first"
   content :  
