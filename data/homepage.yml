@@ -4,25 +4,19 @@ banner:
   title : "Integrating machine learning into your web apps!"
   #belgrade illustration team section
   ilimage : "images/belgrade-illustration.png"
-  #watermark : "Dream"
-  #content : "Multipurpose software solutions integrated with Machine Learning microservices."
-  #image : "images/banner/banner-1.svg"
-#  button:
-#    btnText : "See more"
-#    URL : "#"
-
 
 
 # Toolset
-toolset:
+toolsettitle: "How we do it"
+toolset: 
   
     - tool: "python"
       toolName: "Python"
-      toolsetLogo: "images/toolset/python.png"
+      toolsetLogo: "images/toolset/python.svg"
 
     - tool: "aws"
       toolName: "Amazon Web Services"
-      toolsetLogo: "images/toolset/aws.png"
+      toolsetLogo: "images/toolset/aws.svg"
       
     # - tool: "panel"
     #   toolName: "Panel Dashboards for Python"
@@ -35,38 +29,42 @@ toolset:
 
     - tool: "sklearn"
       toolName: "Sklearn Toolkit"
-      toolsetLogo: "images/toolset/sklearn.png"
+      toolsetLogo: "images/toolset/sklearn.svg"
 
         
     - tool: "keras"
       toolName: "Deep learning API"
-      toolsetLogo: "images/toolset/keras.png"
+      toolsetLogo: "images/toolset/keras.svg"
 
     - tool: "chalice"
       toolName: "Python Serverless Microframework for AWS"
-      toolsetLogo: "images/toolset/chalice.png"
+      toolsetLogo: "images/toolset/chalice.svg"
 
     - tool: "sagemaker"
       toolName: "Amazon Sagemaker"
-      toolsetLogo: "images/toolset/sagemaker.png"
+      toolsetLogo: "images/toolset/sagemaker.svg"
 
 # toolset2:
    
     - tool: "vega"
       toolName: "Vega Vizualization Grammar"
-      toolsetLogo: "images/toolset/vega.png"
+      toolsetLogo: "images/toolset/vega.svg"
 
     - tool: "nuxtjs"
       toolName: "VUE Framework"
-      toolsetLogo: "images/toolset/nuxtjs.png"
+      toolsetLogo: "images/toolset/nuxtjs.svg"
     
     - tool: "tensorflow"
       toolName: "TensorFlow Library"
-      toolsetLogo: "images/toolset/tensorflow.png"
+      toolsetLogo: "images/toolset/tensorflow.svg"
 
-    - tool: "bokeh"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/bokeh.png"
+    - tool: "mathplotlib"
+      toolName: "Mathplotlib"
+      toolsetLogo: "images/toolset/math.svg"  
+
+    # - tool: "bokeh"
+    #   toolName: "Bokeh Visualization Library"
+    #   toolsetLogo: "images/toolset/bokeh.png"
           
     # - tool: "altair"
     #   toolName: "Bokeh Visualization Library"
@@ -74,6 +72,7 @@ toolset:
 
 # About
 about:
+  sectiontitle: "What you get"
   image: "images/about/about-2.png"
   subtitle: "Datwit can help you to grow faster with less cost by:"
   title: "Quality and good prices"
@@ -87,7 +86,7 @@ about:
             
 
 about2:
-  image : "images/about/about-1.png"
+  image : "images/about/about-3.png"
   subtitle : "We help you to improve your business with time-saving apps and:"
   title : "Easier and ready to use"
   content :
@@ -102,70 +101,22 @@ about2:
     - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
 
 about3:
-  image : "images/about/about-3.png"
+  image : "images/about/about-1.png"
   subtitle : "Take control of all of your data with: "
   title : "Security and privacy first"
-  content : 
-    
-  - title: "Clean and anonymous data without sharing information."
+  content :  
     
   - title: " On-premises solutions that can guarantee your ownership and data security."
+
+  - title: "Clean and anonymous data without sharing information."
 
   - title: "Scaling your data services and spreading your data sources with smart protections."
     
   - title: " Full role separated access to all of our solutions." 
-    
-      
-           
 
 #  button:
 #    btnText : "read more"
 #    URL : "#"
-
-# video
-#video:
-#  videoThumb : "images/check-video.png"
-#  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
-#  subtitle : "Check Video"
-#  title : "Best Way to Chat with Your Customers."
-#  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat. duis aute.
-#  <br><br>
-#  Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
-
-# testimonial
-#testimonial:
-#  subtitle : "testimonial"
-#  title : "What Do Our Clients Say?"
-#  testimonialItem:
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
-#
-#    - name : "Alice kelly"
-#      designation : "Happy client"
-#      content : Lorem ipsum dolor amet constur adipi sicing elit sed eiusmtempor incid dolore magna aliqu.
-#            enim minim veniam quis nostrud exercittion.ullamco laboris nisi ut aliquip excepteur sint occaecat cuida
-#            tat nonproident sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis.
 
 # Know more
 know_more:

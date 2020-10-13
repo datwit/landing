@@ -45,10 +45,10 @@
   <div class="container">
     <div class="row">
       {{with .Site.Data.services.service}}
-      <h2 class="serv-tit">{{.sectiontitle}}</h2>
+      <h2 class="serv-tit">{{.title}}</h2>
       {{end}}
       {{ range $element:= .Site.Data.services.service.serviceItem }} 
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 l3" id="col-height">
         <a href="/services.html"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>  
         <div id="text-continous">
           <a href="/services.html"><h6 class="subt">{{ .title }}</h6></a>
@@ -77,18 +77,18 @@
           <div class="card-content">
             <span class="card-title activator">
               <h3 class="activator crev">{{ .title}}</h3>
-              <i class="material-icons grey-text text-darken-4">more_vert</i>
+              <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
             </span>
           </div>
           <div class="card-reveal">
             <span class="card-title activator">
               <h3 class="activator crev">{{ .title}}</h3>
-              <i class="material-icons grey-text text-darken-4">close</i>
+              <i class="material-icons grey-text text-darken-4 beb">close</i>
             </span>
-            <p>{{.subtitle}}</p>
+            <h6 class="psub">{{.subtitle}}</h6>
             {{ end }}
             {{ range .Site.Data.homepage.about.content }}
-            <p>{{ .title }}</p>
+            <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
             {{end}}
           </div>
         </div>
@@ -105,18 +105,18 @@
         <div class="card-content">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">more_vert</i>
+            <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">close</i>
+            <i class="material-icons grey-text text-darken-4 beb">close</i>
           </span>
-          <p>{{.subtitle}}</p>
+          <h6 class="psub">{{.subtitle}}</h6>
           {{ end }}
           {{ range .Site.Data.homepage.about2.content }}
-          <p>{{ .title }}</p>
+          <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
           {{end}}
         </div>
       </div>
@@ -132,18 +132,18 @@
         <div class="card-content">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">more_vert</i>
+            <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
           </span>
         </div>
         <div class="card-reveal">
           <span class="card-title activator">
             <h3 class="activator crev">{{ .title}}</h3>
-            <i class="material-icons grey-text text-darken-4">close</i>
+            <i class="material-icons grey-text text-darken-4 beb">close</i>
           </span>  
-          <p>{{.subtitle}}</p>        
+          <h6 class="psub">{{.subtitle}}</h6>        
           {{ end }}
           {{ range .Site.Data.homepage.about3.content }}
-          <p>{{ .title }}</p>
+          <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
           {{end}}
         </div>
       </div>
@@ -153,10 +153,15 @@
  </div>
 </section>    
 {{"<!-- /goals -->"| safeHTML}}
+
+{{"<!-- toolset -->"| safeHTML}}
 <section class="mr-2 light-gray" id="tool-bg">
   <div class="container">
     <div class="row">  
-      {{ range .Site.Data.homepage.toolset }}
+      {{with .Site.Data.homepage}}
+      <h2>{{ .toolsettitle }}</h2>
+      {{end}}
+      {{ range .Site.Data.homepage.toolset }}        
         <div id="col1">
           <ul class="rib">
               <li id="lis" ><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
@@ -164,8 +169,7 @@
         </div>
       {{end}}
     </div>
-  </div>
- <!-------------------------------------------------------------------------------------> 
+  </div> 
 </section>
 {{"<!-- /toolset -->"| safeHTML}}
 

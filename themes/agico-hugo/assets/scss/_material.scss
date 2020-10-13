@@ -11,9 +11,7 @@
 .input-field .prefix.active {
     color:$secondary-color !important;
 }
-button:focus {
-    background-color: $secondary-color;
-}
+
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
@@ -32,10 +30,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
     box-shadow: 0 1px 0 0 $secondary-color !important;
 }
 
-button:focus {
-    outline: none;
-    background-color: $secondary-color !important;
-}
 input:not([type]):focus:not([readonly])+label,
 input[type=text]:not(.browser-default):focus:not([readonly])+label,
 input[type=password]:not(.browser-default):focus:not([readonly])+label,

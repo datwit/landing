@@ -90,36 +90,28 @@
 .card .card-content .card-title{
   line-height: 25px !important;
   display:flex !important;
-  justify-content:space-between;
+  justify-content:space-between;  
 
-  i{
-    &:active{
-      color: $secondary-color2 !important;
-    }
-    &:hover{
-      color: $secondary-color2 !important;
-    }
+}
+.beb{
+  &:active{
+    color: $secondary-color2 !important;
   }
-
+  &:hover{
+    color: $secondary-color2 !important;
+  }
 }
 
 .card .card-reveal{
   z-index:1 !important;
+  padding: 22px !important;
   .card-title{
     line-height: 25px !important;
     display:flex !important;
     justify-content:space-between;
+    
   }
   
-  i{
-    &:active{
-      color: $secondary-color2 !important;
-    }
-    &:hover{
-      color: $secondary-color2 !important;
-    }
-  }
-
 }
 
 //card reveal title
@@ -190,3 +182,14 @@
   }
 } 
 
+/*************************case studies card************************************/
+#ce-card{
+  display: flex;
+  justify-content: center;
+}
+.git-link{
+  display: inline-flex;
+  i{
+    margin-left: 10px;
+  }
+}
