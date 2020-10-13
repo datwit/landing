@@ -35,7 +35,7 @@
                 {{with .Site.Data.services.serviceItem1 }}              
                 <h6 class="ph6 mr-2">{{.firstsectiontitle2}}</h6>
                 {{end}}
-                <div class="col s12 m4 l4">
+                <div class="col s12 m12 l4">
                   {{ with .Site.Data.services.serviceItem1.col1 }}
                   <img src="{{.img | absURL}}" alt="{{.title}}">                   
                   <h3>{{.title}}</h3>
@@ -45,7 +45,7 @@
                   <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
                   {{end}}                  
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m12 l4">
                   {{ with .Site.Data.services.serviceItem1.col2 }}
                   <img src="{{.img | absURL}}" alt="{{.title}}">                   
                   <h3>{{.title}}</h3>
@@ -55,7 +55,7 @@
                   <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
                   {{end}}                
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m12 l4">
                   {{ with .Site.Data.services.serviceItem1.col3 }}
                   <img src="{{.img | absURL}}" alt="{{.title}}">                   
                   <h3>{{.title}}</h3>
@@ -70,48 +70,54 @@
             </div>
       </div>
       <!---------------------/software development section------------------------------------------------->
-      <!---------------------data analysis section--------------------------------------------------------->    
+      <!---------------------data intelligence section--------------------------------------------------------->    
       <div class="accordionItem close">
-        {{ with .Site.Data.services.serviceItem2 }}
-            <h3 class="accordionItemHeading">{{.title}}</h3>
+            {{ with .Site.Data.services }}
+            <h3 class="accordionItemHeading">{{.dataservicetitle}}</h3>
+            {{end}}
             <div class="accordionItemContent">
+              <div class="row"> 
+                {{ with .Site.Data.services.serviceItem2 }}               
+                <h3 class="tttt">{{.subtitle}}</h3> 
+                {{end}}               
+              </div> 
               <div class="row">
-                <h6 class="ph6">{{.content1}}</h6>
-                <h3>{{.subtitle}}</h3>
-                {{end}}
-                {{range .Site.Data.services.serviceItem2.content}}
-                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
-                {{end}}
-              </div>                         
-            </div>
+                <!----------------------------------->
+                <div class="col s12 m12 l4">                  
+                  {{ with .Site.Data.services.serviceItem2 }}
+                  <img src="{{.img | absURL }}" alt="{{.title}}">
+                  <h3 class="texttt">{{.title}}</h3>
+                  <h6 class="mr-2 dess">{{.content1}}</h6>
+                  {{end}}
+                  {{range .Site.Data.services.serviceItem2.content}}
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}}
+                </div>
+                <!----------------------------------->
+                <div class="col s12 m12 l4">
+                  {{ with .Site.Data.services.serviceItem3 }}
+                  <img src="{{.img | absURL }}" alt="{{.title}}">
+                  <h3 class="texttt">{{.title}}</h3>
+                  <h6 class="mr-2 dess">{{.descrip}}</h6> 
+                  {{end}}             
+                  {{range .Site.Data.services.serviceItem3.content}}
+                    <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}} 
+                </div>
+                <!------------------------------------>
+                <div class="col s12 m12 l4">
+                  {{ with .Site.Data.services.serviceItem4 }}
+                  <img src="{{.img | absURL }}" alt="{{.title}}">
+                  <h3 class="texttt">{{.title}}</h3>
+                  <h6 class="mr-2 dess">{{.descrip}}</h6> 
+                  {{end}} 
+                  {{range .Site.Data.services.serviceItem4.content}}
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}} 
+                </div>
+              </div>                                   
+            </div><!----content-->
       </div>        
-      <!----------------------------/data analysis section-------------------------------------------------> 
-      <!----------------------------data visualization section------------------------------------------------->  
-      <div class="accordionItem close">
-        {{ with .Site.Data.services.serviceItem3 }}
-            <h3 class="accordionItemHeading">{{.title}}</h3>            
-            <div class="accordionItemContent">
-              <h6 class="ph6 mr-2">{{.descrip}}</h6> 
-              {{end}}             
-              {{range .Site.Data.services.serviceItem3.content}}
-                <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
-              {{end}}             
-            </div>
-      </div>          
-    <!----------------------------/data visualization section------------------------------------------------->  
-    <!----------------------------internet of things section------------------------------------------------>      
-      <div class="accordionItem close">
-        {{ with .Site.Data.services.serviceItem4 }}
-            <h3 class="accordionItemHeading">{{.title}}</h3>
-            <div class="accordionItemContent">
-              <h6 class="ph6 mr-2">{{.descrip}}</h6> 
-              {{end}} 
-              {{range .Site.Data.services.serviceItem4.content}}
-              <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
-              {{end}}           
-            </div>
-      </div>           
-    <!----------------------------/internet of things section------------------------------------------------>        
   </div>
 </section> 
 <!----------------------------------------------------------------------------------------------->

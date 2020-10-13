@@ -12,11 +12,11 @@ toolset:
   
     - tool: "python"
       toolName: "Python"
-      toolsetLogo: "images/toolset/python.png"
+      toolsetLogo: "images/toolset/python.svg"
 
     - tool: "aws"
       toolName: "Amazon Web Services"
-      toolsetLogo: "images/toolset/aws.png"
+      toolsetLogo: "images/toolset/aws.svg"
       
     # - tool: "panel"
     #   toolName: "Panel Dashboards for Python"
@@ -29,38 +29,42 @@ toolset:
 
     - tool: "sklearn"
       toolName: "Sklearn Toolkit"
-      toolsetLogo: "images/toolset/sklearn.png"
+      toolsetLogo: "images/toolset/sklearn.svg"
 
         
     - tool: "keras"
       toolName: "Deep learning API"
-      toolsetLogo: "images/toolset/keras.png"
+      toolsetLogo: "images/toolset/keras.svg"
 
     - tool: "chalice"
       toolName: "Python Serverless Microframework for AWS"
-      toolsetLogo: "images/toolset/chalice.png"
+      toolsetLogo: "images/toolset/chalice.svg"
 
     - tool: "sagemaker"
       toolName: "Amazon Sagemaker"
-      toolsetLogo: "images/toolset/sagemaker.png"
+      toolsetLogo: "images/toolset/sagemaker.svg"
 
 # toolset2:
    
     - tool: "vega"
       toolName: "Vega Vizualization Grammar"
-      toolsetLogo: "images/toolset/vega.png"
+      toolsetLogo: "images/toolset/vega.svg"
 
     - tool: "nuxtjs"
       toolName: "VUE Framework"
-      toolsetLogo: "images/toolset/nuxtjs.png"
+      toolsetLogo: "images/toolset/nuxtjs.svg"
     
     - tool: "tensorflow"
       toolName: "TensorFlow Library"
-      toolsetLogo: "images/toolset/tensorflow.png"
+      toolsetLogo: "images/toolset/tensorflow.svg"
 
-    - tool: "bokeh"
-      toolName: "Bokeh Visualization Library"
-      toolsetLogo: "images/toolset/bokeh.png"
+    - tool: "mathplotlib"
+      toolName: "Mathplotlib"
+      toolsetLogo: "images/toolset/math.svg"  
+
+    # - tool: "bokeh"
+    #   toolName: "Bokeh Visualization Library"
+    #   toolsetLogo: "images/toolset/bokeh.png"
           
     # - tool: "altair"
     #   toolName: "Bokeh Visualization Library"

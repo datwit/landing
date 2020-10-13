@@ -294,11 +294,11 @@
   }
 }
 .ph6{
- text-align: justify !important;
+ text-align: left !important;
 }
 .icc{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   i{
     border-radius: 50%;
     color: white !important;
@@ -307,7 +307,15 @@
     margin-right: 10px;
   }
 }
-
+.dess{
+  text-align: justify;
+}
+.texttt{
+ height: 50px;
+}
+.tttt{
+  margin-top: 0px;
+}
 //bullet section
 #list-keys{
 
@@ -326,11 +334,11 @@
   }       
 }
 #bullet-section{
-  background: url('../images/services/background-board.png') $bg-secondary;
+  background: url('../images/services/bullets-back.svg') $bg-secondary;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right bottom;
-  height: 400px;
+  height: 450px;
   width: auto; 
   
 
