@@ -21,25 +21,26 @@ servicekey:
 
 
 #services icons homepage
-  serviceItem:      
+serviceItem:      
 
-      - title: "Software Development"
-        src: "images/services/soft-developm.png"
-        shortcontent: "We will never forget where we came from, so we are eager to share our experiences building products that people will enjoy using."
-        # url: "services#sd"
+    - title: "Software Development"
+      src: "images/services/soft-developm.png"
+      shortcontent: "We will never forget where we came from, so we are eager to share our experiences building products that people will enjoy using."
+      # url: "services#sd"
 
-      - title: "Data Analysis"
-        src: "images/services/data-anal.png"
-        shortcontent: " Less cholesterol in your data makes your business' heart lead you to the goal faster."
-        # url: "services#da"
+    - title: "Data Analysis"
+      src: "images/services/data-anal.png"
+      shortcontent: " Less cholesterol in your data makes your business' heart lead you to the goal faster."
+      # url: "services#da"
 
-      - title: "Data Visualization"
-        src: "images/services/data-visualiz.png"
-        shortcontent: "From your side of the view you can only see beautifull diagrams like mountains and clouds."
-        # url: "services#sd"
-      - title: "Research on IoT"
-        src: "images/services/domotic.png"
-        shortcontent: "No matter the device success starts by expanding your data sources."
+    - title: "Data Visualization"
+      src: "images/services/data-visualiz.png"
+      shortcontent: "Because we love UX/UI and amazing data visualization designs we want to take it to every possible solution."
+
+    # url: "services#sd"
+    - title: "Research on IoT"
+      src: "images/services/domotic.png"
+      shortcontent: "No matter the device success starts by expanding your data sources."
         
   
 #toggle panel diagram
