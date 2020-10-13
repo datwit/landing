@@ -47,7 +47,7 @@
       <!-- {{with .Site.Data.services.service}}
       <h2 class="serv-tit">{{.title}}</h2>
       {{end}} -->
-      {{ range $element:= .Site.Data.services.service.serviceItem }} 
+      {{ range .Site.Data.services.serviceItem }} 
       <div class="col s12 m6 l3" id="col-height">
         <a href="/services.html"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>  
         <div id="text-continous">
