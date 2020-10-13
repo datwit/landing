@@ -1,0 +1,13 @@
+name: 'Delete old artifacts'
+on:
+  schedule:
+    - cron: '0 */6 * * *' # At minute 0 past every 6th hour.
+
+jobs:
+  delete-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kolpav/purge-artifacts-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          expire-in: 1day # Setting this to 0 will delete all artifacts
