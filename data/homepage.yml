@@ -7,7 +7,7 @@ banner:
 
 
 # Toolset
-toolsettitle: "How we do it"
+# toolsettitle: "How we do it"
 toolset: 
   
     - tool: "python"
