@@ -15,71 +15,132 @@
         {{ end }}
       </div>
     </div><!-------------/first row title------------> 
-    
+    <!---------------------software development section------------------------------------------------->
       <div class="accordionItem close">
-           {{ with .Site.Data.services.serviceItem1 }}
+              {{ with .Site.Data.services.serviceItem1 }}
             <h3 class="accordionItemHeading">{{.title}}</h3>
             <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
+              <h6 class="ph6">{{ .content}}</h6>               
+              <h6 class="ph6 mr-2">{{.firstsectiontitle}}</h6>               
+              <div class="row"> 
+                {{end}}  
+                {{range .Site.Data.services.serviceItem1.columns}}                        
+                <div class="col s12 m6 l6 col-services">                                              
+                  <div class="tet"><i class=" small material-icons">chevron_right</i><h3>{{.title}}</h3></div>   
+                  <h6>{{.descrip}}</h6>          
+                </div>
+                {{end}}                  
+              </div> 
+              <div class="row mr-1">  
+                {{with .Site.Data.services.serviceItem1 }}              
+                <h6 class="ph6 mr-2">{{.firstsectiontitle2}}</h6>
+                {{end}}
+                <div class="col s12 m12 l4">
+                  {{ with .Site.Data.services.serviceItem1.col1 }}
+                  <img src="{{.img | absURL}}" alt="{{.title}}">                   
+                  <h3>{{.title}}</h3>
+                  <h6 class="ph6">{{.description}}</h6>
+                  {{end}}
+                  {{range .Site.Data.services.serviceItem1.col1.content}}
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}}                  
+                </div>
+                <div class="col s12 m12 l4">
+                  {{ with .Site.Data.services.serviceItem1.col2 }}
+                  <img src="{{.img | absURL}}" alt="{{.title}}">                   
+                  <h3>{{.title}}</h3>
+                  <h6 class="ph6">{{.description}}</h6>
+                  {{end}}
+                  {{range .Site.Data.services.serviceItem1.col2.content}}
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}}                
+                </div>
+                <div class="col s12 m12 l4">
+                  {{ with .Site.Data.services.serviceItem1.col3 }}
+                  <img src="{{.img | absURL}}" alt="{{.title}}">                   
+                  <h3>{{.title}}</h3>
+                  <h6 class="ph6">{{.description}}</h6>
+                  {{end}}
+                  {{range .Site.Data.services.serviceItem1.col3.content}}
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}}   
+                  
+                </div>
+              </div>                                 
             </div>
       </div>
-          {{end}}
+      <!---------------------/software development section------------------------------------------------->
+      <!---------------------data intelligence section--------------------------------------------------------->    
       <div class="accordionItem close">
-        {{ with .Site.Data.services.serviceItem2 }}
-            <h3 class="accordionItemHeading">{{.title}}</h3>
+            {{ with .Site.Data.services }}
+            <h3 class="accordionItemHeading">{{.dataservicetitle}}</h3>
+            {{end}}
             <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
-            </div>
-      </div>
-          {{end}}
-      <div class="accordionItem close">
-        {{ with .Site.Data.services.serviceItem3 }}
-            <h3 class="accordionItemHeading">{{.title}}</h3>
-            <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
-            </div>
-      </div>
-          {{end}}
-      <div class="accordionItem close">
-        {{ with .Site.Data.services.serviceItem4 }}
-            <h3 class="accordionItemHeading">{{.title}}</h3>
-            <div class="accordionItemContent">
-              <p>{{ .content | markdownify }}</p>              
-            </div>
-      </div>
-          {{end}}    
+              <div class="row"> 
+                {{ with .Site.Data.services.serviceItem2 }}               
+                <h3 class="tttt">{{.subtitle}}</h3> 
+                {{end}}               
+              </div> 
+              <div class="row">
+                <!----------------------------------->
+                <div class="col s12 m12 l4">                  
+                  {{ with .Site.Data.services.serviceItem2 }}
+                  <img src="{{.img | absURL }}" alt="{{.title}}">
+                  <h3 class="texttt">{{.title}}</h3>
+                  <h6 class="mr-2 dess">{{.content1}}</h6>
+                  {{end}}
+                  {{range .Site.Data.services.serviceItem2.content}}
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}}
+                </div>
+                <!----------------------------------->
+                <div class="col s12 m12 l4">
+                  {{ with .Site.Data.services.serviceItem3 }}
+                  <img src="{{.img | absURL }}" alt="{{.title}}">
+                  <h3 class="texttt">{{.title}}</h3>
+                  <h6 class="mr-2 dess">{{.descrip}}</h6> 
+                  {{end}}             
+                  {{range .Site.Data.services.serviceItem3.content}}
+                    <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}} 
+                </div>
+                <!------------------------------------>
+                <div class="col s12 m12 l4">
+                  {{ with .Site.Data.services.serviceItem4 }}
+                  <img src="{{.img | absURL }}" alt="{{.title}}">
+                  <h3 class="texttt">{{.title}}</h3>
+                  <h6 class="mr-2 dess">{{.descrip}}</h6> 
+                  {{end}} 
+                  {{range .Site.Data.services.serviceItem4.content}}
+                  <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="ph6">{{.var}}</h6></div>
+                  {{end}} 
+                </div>
+              </div>                                   
+            </div><!----content-->
+      </div>        
   </div>
 </section> 
 <!----------------------------------------------------------------------------------------------->
-<section class="light-gray">
+<section class="light-gray" id="bullet-section">
   <div class="container">
-    <div class="row">       
-      <div class="col s12 m6 l6">        
+    <div class="row">            
+      <div class="col s12 m12 l12">        
         <div id="list-keys">
-          <h3>Design</h3> 
-          <div class="col s12 push-s4 m4 push-m4 l4 push-l4">                  
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Research</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Wireframing</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>UI/UX</h6></div>
+          {{with .Site.Data.services.servicekey}}
+          <h3>{{.title}}</h3> 
+          {{end}}
+          <div class="col s12 m12 l12">  
+            {{range .Site.Data.services.servicekey.content}}                
+            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>{{.var}}</h6></div>                     
+            {{end}}            
           </div>            
         </div>
-      </div>
-      <div class="col s12 m6 l6">
-        <div id="list-keys">
-          <h3>Programming</h3> 
-          <div class="col s12 push-s4 m4 push-m3 l4 push-l3">            
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Frontend</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Backend</h6></div>
-            <div class="te"><i class=" tiny material-icons">play_arrow</i><h6>Testing</h6></div>  
-          </div>         
-        </div>
-      </div>
-      
+      </div>                 
     </div>
-  </div>  
+  </div>     
 </section>
-<!-------------------------------------------------------------------------------------------------->
-<section>
+<!------------------------------------graphic and toggle panle section------------------------------------>
+<section class="mr-3">
   <div class="container">
     <div class="row">
       {{with .Site.Data.services.diagram}}
@@ -87,37 +148,133 @@
       <h6 class="mr-2">{{.subtitle}}</h6>
       {{end}}
     </div>
-    <div class="row"><!--------------------------graphic------------------------------------>  
-      <div class="graphic mb-1 mr-3">
+    <!--------------------------------------------graphic------------------------------------------------->
+    <div class="row mb-1 mr-3">
+      <div class="wrapper">
         <div class="line">
-          <div class="col s3 m3 l3 list-dots4">
-            <div class="dot1" id="dot"></div>
+          <div class="inner"></div>          
+          <div class="col s3 m3 l3">
+            <a onclick="toggleText(1)"><div class="dot1" id="dot1"></div></a>
             {{with .Site.Data.services.developprocess1}}
-            <div class="tit1" data-aos="fade-up"data-aos-offset="0"><h6>{{.title}}</h6></div>
+            <div class="tit1" id="tit1"><h6>{{.title}}</h6></div>
             {{end}}
-          </div> 
-          <div class="col s3 m3 l3 list-dots2">
-            <div class="dot2" id="dot"></div>
+          </div>
+          <div class="col s3 m3 l3" id="col2">
+            <a onclick="toggleText(2)"><div class="dot2" id="dot2"></div></a>
             {{with .Site.Data.services.developprocess2}}
-            <div class="tit2" data-aos="fade-up" data-aos-offset="100"><h6>{{.title}}</h6></div>
+            <div class="tit2" id="tit2"><h6>{{.title}}</h6></div>
             {{end}}
-          </div>
-          <div class="col s3 m3 l3 list-dots3">
-            <div class="dot3" id="dot"></div>
+          </div>  
+          <div class="col s3 m3 l3" id="col3">
+            <a onclick="toggleText(3)"><div class="dot3" id="dot3"></div></a>
             {{with .Site.Data.services.developprocess3}}
-            <div class="tit3" data-aos="fade-up" data-aos-offset="200"><h6>{{.title}}</h6></div>
+            <div class="tit3" id="tit3"><h6>{{.title}}</h6></div>
             {{end}}
           </div>
-          <div class="col s3 m3 l3 list-dots1">
-            <div class="dot4" id="dot"></div>
+          <div class="col s3 m3 l3" id="coll4">
+            <a onclick="toggleText(4)"><div class="dot4" id="dot4"></div></a>
             {{with .Site.Data.services.developprocess4}}
-            <div class="tit4"data-aos="fade-up" data-aos-offset="300"><h6>{{.title}}</h6></div>
+            <div class="tit4" id="tit4"><h6>{{.title}}</h6></div>
             {{end}}
           </div>
-        </div>      
+        </div>
       </div>
-    </div><!--------------------------/graphic------------------------------------------------>  
-    
+    </div>
+    <!-------------------------------------tpggle panels------------------------------------------------>
+    <!-----------------------------------------design--------------------------------------------------->
+    <div class="row">
+      <div class="box-text hide"  id="demo">
+        {{with .Site.Data.services.developprocess1}}            
+           <h3 class="des-head">{{.descrip}}</h3>
+           <div class="row mr-2 rr">
+             <div class="col s4 m3 l2">
+              <img src="{{.img | absURL}}" alt="UX research">
+             </div>
+             <div class="col s8 m9 l10">
+              <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>UX Research:</h6></div>
+              <h6 class="pip">{{.content1}}</h6>
+             </div>            
+           </div><!---------------------------------------->
+           <div class="row mr-2 rr">
+            <div class="col s4 m3 l2">
+             <img src="{{.img2 | absURL}}" alt="Analysis">
+            </div>
+            <div class="col s8 m9 l10">
+              <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>Analysis:</h6></div>
+              <h6 class="pip">{{.content2}}</h6>
+            </div>            
+          </div><!----------------------------------------->
+          <div class="row mr-2 rr">
+            <div class="col s4 m3 l2">
+             <img src="{{.img3 | absURL}}" alt="Prototyping">
+            </div>
+            <div class="col s8 m9 l10">
+              <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>Wireframing:</h6></div>
+              <h6 class="pip">{{.content3}}</h6>
+            </div>            
+          </div>
+        {{end}}
+      </div><!---------------------------------------/design-------------------------------------------->
+      <!----------------------------------development--------------------------------------------------->
+      <div class="box-text hide" id="demo2">
+        {{with .Site.Data.services.developprocess2}}
+        <h3 class="des-head">{{.descrip}}</h3>
+        {{end}}
+        <div class="row rr">
+          <div class="col s4 m3 l2">
+            {{with.Site.Data.services.developprocess2}}
+            <img src="{{.img | absURL}}" alt="Software development">
+            {{end}}
+          </div>
+          <div class="col s8 m9 l10">
+            {{range .Site.Data.services.developprocess2.content}}
+            <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
+            {{end}}
+          </div>
+        </div>
+        
+        {{with .Site.Data.services.developprocess2}}
+        <h6 class="pip mr-1">{{.descrip2}}</h6>
+        {{end}}
+      </div><!------------------------------------testing------------------------------------------------>
+      <div class="box-text hide" id="demo3">
+        {{with .Site.Data.services.developprocess3}}
+        <h3 class="des-head">{{.descrip}}</h3>
+        {{end}}
+        <div class="row rr">
+          <div class="col s4 m3 l2">
+            {{with.Site.Data.services.developprocess3}}
+            <img src="{{.img | absURL}}" alt="Software development">
+            {{end}}
+          </div>
+          <div class="col s8 m9 l10">
+            {{range .Site.Data.services.developprocess3.content}}
+            <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
+            {{end}}
+          </div>
+        </div>        
+      </div>
+      <!--------------------------------------deployment----------------------------------------------------->
+      <div class="box-text hide" id="demo4">
+        {{with .Site.Data.services.developprocess4}}
+        <h3 class="des-head">{{.descrip}}</h3>
+        {{end}}
+        <div class="row rr">
+          <div class="col s4 m3 l2">
+            {{with.Site.Data.services.developprocess4}}
+            <img src="{{.img | absURL}}" alt="Software development">
+            {{end}}
+          </div>
+          <div class="col s8 m9 l10">
+            {{range .Site.Data.services.developprocess4.content}}
+            <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
+            {{end}}
+          </div>
+        </div> 
+      </div>
+    </div>   
+    <!--------------------------------------------------------------------------------------------------->       
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
   </div>  
 </section>
   

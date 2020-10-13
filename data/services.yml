@@ -4,18 +4,21 @@ service:
   title : "What we do"
   description: "This is what makes us enjoy working on new projects whatever the size. We love to provide not only
   an intuitive design but also a great development to back it up. Our goal is to get close to the product you have in mind..."
-  #keywords
-  servicekey:   
-     - title1: "Design"
-     - title2: "Programming"
-  # servicelist1:
-  #    - title: "Research"
-  #    - title: "Wireframing"
-  #    - title: "Wireframing"
-  # servicelist2:
-  #   - title: "Frontend"
-  #   - title: "Backend"
-  #   - title: "Testing" 
+  img: "images/services/background-board.png"
+
+  #keywords bullets
+servicekey:   
+  title: "Datwit has amazing people that create solutions because believe in:"  
+  content: 
+    - var: "Quality as our priority."
+    - var: "Challenges as our day to day motivation."
+    - var: "Keeping learning every day, as professionals and also as human beings."
+    - var: "Settling with no less than perfect."
+    - var: "Doing the best and get things done."
+    - var: "Straightforwardness and transparency."
+    - var: "Transforming our client's needs into an opportunnity for success."
+    - var: "Together, as a team we are a force to be reckoned with."
+
 
 #services icons homepage
   serviceItem:      
@@ -40,55 +43,133 @@ service:
         shortcontent: "No matter the device success starts by expanding your data sources."
         
   
- #slides
+#toggle panel diagram
+#design 
 developprocess1: 
-  img: "images/diagram.png"
-  title: "Design"
-  descrip: "lorem ipsum"
+  img: "images/services/ux-research.png"
+  img2: "images/services/analysis.png"
+  img3: "images/services/prototyping.png"
+  title: "Design"  
+  descrip: "Because we are all about UX/UI design we really enjoy beautifull and usable apps. We believe that an user friendly design is key to achieve all the business goals you can have. Therefor we focus on:"
+  content1: "Agreat design requires a complete understanding about every user need. That´s why we keep UX research along the whole development process."
+  content2: "We build on the certainty that a strong communication is essential to collect product requirements and to lead the path to success."
+  content3: "Every product is born from an idea. The fun part begins with the creation of the concept and the continous search of the right features that fulfill your objetives."
+#development
 developprocess2:
-  img: "images/diagram.png"
+  img: "images/services/development.png"  
   title: "Development"
-  descrip: "lorem ipsum"
+  descrip: "In Datwit we build ready to use software using reliable technologies and following innovative trends. We are proud to help you to:"
+  content: 
+    - var: "Efficiently solve real-world problems."
+    - var: "Enhace youur business productivity"
+    - var: "Smoothly run your every day processes "
+  descrip2: "In order to do that we take our time to carefully plan every sprint because it is our goal to deliver working products as soon as possible."  
+
+#testing
 developprocess3:
-  img: "images/diagram.png"
+  img: "images/services/testing.png"  
   title: "Testing"
-  descrip: "lorem ipsum"
+  descrip: "Together let's get as far as we can and aim to perfection. Our Quality Assurance team is capable of performing continous agile testing and keep improving to achieve:"
+  content:
+    - var: "Flawless code"
+    - var: "Responsive design"
+    - var: "User-centered design"
+    - var: "On point functionality"
+
+#deployment
 developprocess4:
-  img: "images/diagram.png"
+  img: "images/services/deploy.png"  
   title: "Deployment"
-  descrip: "lorem ipsum"
+  descrip: "Once development is finished, deployment can be exhausting; that's why you can rely on us for:"
+  content:
+    - var: "Domain registration"
+    - var: "Securely deploy your project to on-cloud servers"
+    - var: "Long-term technical support"
+    - var: "Maintenance"
 
 #describing services page
+# software development
+dataservicetitle: "Data Intelligence"
 serviceItem1:
-  title : "Software Development"
-  icon : "/images/services/i-soft-dev.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit provides software development services to other software companies. The company also design and develop customized software for small clientes. Primary products are web apps based on javascript and django, backend design and development on Flask/Chalice, and python scripts for automation. Our services include the deployment on-cloud or local servers with all the needed configuration. All our solutions can include machine learning funtionalities."
-  url: "images/services/soft-develop.png"
+  title : "Software Development"  
+  url: "images/services/soft-develop.png" 
+  content: "Datwit is a company run by a bunch of people passionate about technology and who have experience designing and developing IT solutions. In addition to that we incorporate machine learning funcionalities which improve the way of using data on a daily basis."
+  columns:
+    - title: "Full custom software"
+      descrip: "Helping other small companies to lunch their businesses is our best way to persue interesting projects."
 
-serviceItem2:
-  title : "Data Analysis"
-  icon : "/images/services/i-dat-analy.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit Data Analysis services provide data exploration, variable correlations studies, and general sumarization of your data. Customized queries to simplify your data requests. We also offer cleanning data services throug our on-cloud solution or on-premise workflow. Datwit provide services for the creation and evaluation of machine learning models. In general full data analysis development life cycle"
-  url: "images/services/data-analy.png"
+    - title: "Enterprise software integrations"
+      descrip: "We provide the support that other companies need to preserve their long lasting solutions."
   
+  firstsectiontitle: " We focus on build full-cycle development  services such as: "         
+  firstsectiontitle2: "Even though we can make a variety of softwares we believe our biggest strength resides on website development... "
+  col1:  
+    title: "Frontend"
+    description: "We offer visual appealing and accessible apps, built using:"
+    img: "images/services/frontend.png"
+    content: 
+    - var: "HTML5"
+    - var: "CSS3"
+    - var: "JavaScript/Vue.js/Nuxt.js"
+  col2:  
+    title: "Backend"
+    description: "Our services focused on create functional applications, tailored to your specifications, therefor we use:"
+    img: "images/services/backend.png"
+    content: 
+    - var: "Flask/Chalice"
+    - var: "Python scripts"
+  col3:  
+    title: "Deployment"
+    description: "We have everyting covered! And because we like to get involved all the way, we support our clients even when the final product goes live implementing:"
+    img: "images/services/deployment.png"
+    content: 
+    - var: "On-cloud services"
+    - var: "Local servers"
+    
+#data analysis    
+serviceItem2:
+  title : "Data Analysis"   
+  content1 : "Nowadays Machine Learnign offer endless oppotunities for business owners, from decision making to efficient business processes."
+  img: "images/services/data-analy.png"
+  # "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
+  
+  subtitle: "What you can get by working with us?"
+  content:
+    - var: "Data exploration"
+    - var: "Data collection from streaming data sources"
+    - var: "Data cleaning and anonymization"
+    - var: "Studying relationship between variables"
+    - var: "Development of APIs that serve your data"
+    - var: "Data management tech consulting"
+
+#data visualization  
 serviceItem3:
-  title : "Data Visualization"
-  icon : "/images/services/i-dat-visual.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.  
-  content : "Datwit provide BI solutions using professional opensource javascript libraries; the visualization of your data according to your needs, and the integration with your web apps, notebooks, phone-apps and so on. Customized scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. Also add complements to your web for monitoring models or your business data of interest. Smart interfaces to improve feedback integration made by humans into new models."
-  url: "images/services/data-visual.png"
+  title : "Data Visualization"  
+  img: "images/services/data-visual.png"
+  descrip: "We truly believe in creative visualization design as the better way to analyze data behavior to its fullest potential. That's why we do: "   
+  content : 
+    - var: "Descriptive reports"
+    - var: "Graphic reports about your data"
+    - var: "Strategic and operational dashboards"
+    - var: "Small addons with business variables of interest"
+    - var: "Models monitoring"
+    - var: "Feedback interface to improve human-in-the-loop"          
+        
 
 serviceItem4:
-  title : "Internet on Things"
-  icon : "/images/services/i-dat-visual.png"
-  iconColor : "blue" # available color : primary, yellow, purple, cyan, red, green, orange, blue.
-  content : "Consequat consectetur magna eu velit aute duis ex duis ut excepteur et exercitation nostrud est. Non labore sint sunt incididunt mollit consequat id cupidatat consequat quis Lorem. Culpa et non consectetur sunt mollit duis officia reprehenderit amet amet. Commodo ad cillum cupidatat ut labore exercitation quis ad id esse."
-  url: "images/services/data-visual.png"
+  title : "Research on IoT"
+  img: "images/services/iot.png"  
+  descrip: "Every day we take our limits even further, but still, the sky is the limit..."
+  content : 
+    
+    - var: "Firmware Engineering"
+    - var: "Network communication and security"
+    - var: "Data Analysis"
+    - var: "API design" 
+    - var: "Mobile/PC Application Interface" 
 
 #diagram
 diagram:
-  title : "How we work"
-  subtitle : "We are Agile. So we like to take every step at a time, just to make make sure your initial idea becomes a working product..."
-  img : "images/diagram.png"
+  title : "How we get it done"
+  subtitle : "We are Agile. So, in order to make sure your initial idea becomes a working product we take advantaje of the great beneffits of Scrum and some of the best practices of XP."
+  
