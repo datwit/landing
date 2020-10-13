@@ -3,11 +3,11 @@ banner:
   bgImage : "images/background/banner.png"
   title : "Integrating machine learning into your web apps!"
   #belgrade illustration team section
-  ilimage : "images/belgrade-illustration.svg"
+  ilimage : "images/belgrade-illustration.png"
 
 
 # Toolset
-# toolsettitle: "How we do it"
+toolsettitle: "How we do it"
 toolset: 
   
     - tool: "python"
@@ -73,7 +73,7 @@ toolset:
 # About
 about:
   sectiontitle: "What you get"
-  image: "images/about/about-2.svg"
+  image: "images/about/about-2.png"
   subtitle: "Datwit can help you to grow faster with less cost by:"
   title: "Quality and good prices"
 
@@ -86,7 +86,7 @@ about:
             
 
 about2:
-  image : "images/about/about-3.svg"
+  image : "images/about/about-3.png"
   subtitle : "We help you to improve your business with time-saving apps and:"
   title : "Easier and ready to use"
   content :
@@ -101,7 +101,7 @@ about2:
     - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
 
 about3:
-  image : "images/about/about-1.svg"
+  image : "images/about/about-1.png"
   subtitle : "Take control of all of your data with: "
   title : "Security and privacy first"
   content :  

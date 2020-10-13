@@ -35,9 +35,8 @@ servicekey:
 
       - title: "Data Visualization"
         src: "images/services/data-visualiz.png"
-        shortcontent: "Because we love UX/UI and amazing data visualization designs we want to take it to every possible solution."
+        shortcontent: "From your side of the view you can only see beautifull diagrams like mountains and clouds."
         # url: "services#sd"
-
       - title: "Research on IoT"
         src: "images/services/domotic.png"
         shortcontent: "No matter the device success starts by expanding your data sources."

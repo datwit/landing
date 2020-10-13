@@ -182,3 +182,14 @@
   }
 } 
 
+/*************************case studies card************************************/
+#ce-card{
+  display: flex;
+  justify-content: center;
+}
+.git-link{
+  display: inline-flex;
+  i{
+    margin-left: 10px;
+  }
+}
