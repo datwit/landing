@@ -22,7 +22,3 @@ jobs:
           CONTACT_MANAGER_ENDPOINT: "https://icv8e1h418.execute-api.eu-west-1.amazonaws.com/dev/process-contact-form"
         with:
           args: --minify
-
-      - uses: actions/upload-artifact@v2
-        with:
-            path: './public'
