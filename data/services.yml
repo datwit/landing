@@ -61,7 +61,7 @@ developprocess2:
   descrip: "In Datwit we build ready to use software using reliable technologies and following innovative trends. We are proud to help you to:"
   content: 
     - var: "Efficiently solve real-world problems."
-    - var: "Enhace youur business productivity"
+    - var: "Enhace your business productivity"
     - var: "Smoothly run your every day processes "
   descrip2: "In order to do that we take our time to carefully plan every sprint because it is our goal to deliver working products as soon as possible."  
 
@@ -106,7 +106,7 @@ serviceItem1:
   col1:  
     title: "Frontend"
     description: "We offer visual appealing and accessible apps, built using:"
-    img: "images/services/frontend.png"
+    img: "images/services/frontend.svg"
     content: 
     - var: "HTML5"
     - var: "CSS3"
@@ -114,14 +114,14 @@ serviceItem1:
   col2:  
     title: "Backend"
     description: "Our services focused on create functional applications, tailored to your specifications, therefor we use:"
-    img: "images/services/backend.png"
+    img: "images/services/backend.svg"
     content: 
     - var: "Flask/Chalice"
     - var: "Python scripts"
   col3:  
     title: "Deployment"
     description: "We have everyting covered! And because we like to get involved all the way, we support our clients even when the final product goes live implementing:"
-    img: "images/services/deployment.png"
+    img: "images/services/deployment.svg"
     content: 
     - var: "On-cloud services"
     - var: "Local servers"
@@ -130,7 +130,7 @@ serviceItem1:
 serviceItem2:
   title : "Data Analysis"   
   content1 : "Nowadays Machine Learnign offer endless oppotunities for business owners, from decision making to efficient business processes."
-  img: "images/services/data-analy.png"
+  img: "images/services/data-analy.svg"
   # "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
   
   subtitle: "What you can get by working with us?"
@@ -145,7 +145,7 @@ serviceItem2:
 #data visualization  
 serviceItem3:
   title : "Data Visualization"  
-  img: "images/services/data-visual.png"
+  img: "images/services/data-visual.svg"
   descrip: "We truly believe in creative visualization design as the better way to analyze data behavior to its fullest potential. That's why we do: "   
   content : 
     - var: "Descriptive reports"
@@ -158,7 +158,7 @@ serviceItem3:
 
 serviceItem4:
   title : "Research on IoT"
-  img: "images/services/iot.png"  
+  img: "images/services/iot.svg"  
   descrip: "Every day we take our limits even further, but still, the sky is the limit..."
   content : 
     

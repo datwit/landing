@@ -110,15 +110,17 @@
   z-index: 99; /* Make sure it does not overlap */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  background-color: $secondary-color;
+  background-color: $secondary-color; 
   
-}
-
-#myBtn{
   &:hover {
     background-color: $bg-secondary; /* Add a dark-grey background on hover */
+    
     i{
     color: $primary-color;
     }
+    
   }
 }
+
+
+ 
