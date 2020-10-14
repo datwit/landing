@@ -1,0 +1,28 @@
+name: Test workflow on PR action
+
+on: 
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - development
+      - master
+
+jobs:
+  test-build:
+    name: test build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: srt32/hugo-action@master
+        env:
+          # define the access point to the contact form handler
+          CONTACT_MANAGER_CLIENT: "https://icv8e1h418.execute-api.eu-west-1.amazonaws.com/dev/static/js/app.js"
+          CONTACT_MANAGER_ENDPOINT: "https://icv8e1h418.execute-api.eu-west-1.amazonaws.com/dev/process-contact-form"
+        with:
+          args: --minify
+
+      - uses: actions/upload-artifact@v2
+        with:
+            path: './public'
