@@ -187,28 +187,28 @@
         {{with .Site.Data.services.developprocess1}}            
            <h3 class="des-head">{{.descrip}}</h3>
            <div class="row mr-2 rr">
-             <div class="col s4 m3 l2">
+             <div class="col s12 m3 l2">
               <img src="{{.img | absURL}}" alt="UX research">
              </div>
-             <div class="col s8 m9 l10">
+             <div class="col s12 m9 l10">
               <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>UX Research:</h6></div>
               <h6 class="pip">{{.content1}}</h6>
              </div>            
            </div><!---------------------------------------->
            <div class="row mr-2 rr">
-            <div class="col s4 m3 l2">
+            <div class="col s12 m3 l2">
              <img src="{{.img2 | absURL}}" alt="Analysis">
             </div>
-            <div class="col s8 m9 l10">
+            <div class="col s12 m9 l10">
               <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>Analysis:</h6></div>
               <h6 class="pip">{{.content2}}</h6>
             </div>            
           </div><!----------------------------------------->
           <div class="row mr-2 rr">
-            <div class="col s4 m3 l2">
+            <div class="col s12 m3 l2">
              <img src="{{.img3 | absURL}}" alt="Prototyping">
             </div>
-            <div class="col s8 m9 l10">
+            <div class="col s12 m9 l10">
               <div class="ttt"><i class=" small material-icons">chevron_right</i><h6>Wireframing:</h6></div>
               <h6 class="pip">{{.content3}}</h6>
             </div>            
@@ -221,12 +221,12 @@
         <h3 class="des-head">{{.descrip}}</h3>
         {{end}}
         <div class="row rr">
-          <div class="col s4 m3 l2">
+          <div class="col s12 m3 l2">
             {{with.Site.Data.services.developprocess2}}
             <img src="{{.img | absURL}}" alt="Software development">
             {{end}}
           </div>
-          <div class="col s8 m9 l10">
+          <div class="col s12 m9 l10">
             {{range .Site.Data.services.developprocess2.content}}
             <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
             {{end}}
@@ -242,12 +242,12 @@
         <h3 class="des-head">{{.descrip}}</h3>
         {{end}}
         <div class="row rr">
-          <div class="col s4 m3 l2">
+          <div class="col s12 m3 l2">
             {{with.Site.Data.services.developprocess3}}
             <img src="{{.img | absURL}}" alt="Software development">
             {{end}}
           </div>
-          <div class="col s8 m9 l10">
+          <div class="col s12 m9 l10">
             {{range .Site.Data.services.developprocess3.content}}
             <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
             {{end}}
@@ -260,12 +260,12 @@
         <h3 class="des-head">{{.descrip}}</h3>
         {{end}}
         <div class="row rr">
-          <div class="col s4 m3 l2">
+          <div class="col s12 m3 l2">
             {{with.Site.Data.services.developprocess4}}
             <img src="{{.img | absURL}}" alt="Software development">
             {{end}}
           </div>
-          <div class="col s8 m9 l10">
+          <div class="col s12 m9 l10">
             {{range .Site.Data.services.developprocess4.content}}
             <div class="icc"><i class=" tiny material-icons">play_arrow</i><h6 class="pip">{{.var}}</h6></div>        
             {{end}}
