@@ -40,6 +40,24 @@ team:
           URL: "https://github.com/sorice"
 
     # team member
+    - name: "Yanet Conde González"
+      image: "images/team/yanet.png"
+      # image2: "images/team/abelma2.png"
+      designation: "CCO"
+      role : "Customer Relationship, Digital Content Manager"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: ""
+
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/yanetcg1983/"
+
+        - icon: "fa-github"
+          URL: "https://github.com/yanetcg1983"
+
+  teamMember2:
+    # team member
     - name: "Enma Lidia Muñoz García"
       image: "images/team/enma.png"
       # image2: "images/team/abelma2.png"
@@ -72,6 +90,7 @@ team:
 
         - icon: "fa-github"
           URL: "https://github.com/ybenitezf"
+
     
 
 # partners
@@ -103,3 +122,25 @@ partners:
           URL:  "https://www.linkedin.com/in/karellgarces"
         - icon: "fa-twitter"
           URL: "https://twitter.com/KarellGarces"
+
+    - name: "Karel Rodríguez Varona"
+      image: "images/team/karel.png"
+      designation: "DataSci Team Member"
+      socialIcon:
+        - icon: "fa-github"
+          URL: " https://github.com/kwaref"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/karel-rodr%C3%ADguez-varona-5609aaa5/"
+        - icon: "fa-twitter"
+          URL: ""
+
+    - name: "Oskar L. Garcell"
+      image: "images/team/oskar.png"
+      designation: "DataSci Team Member"
+      socialIcon:
+        - icon: "fa-github"
+          URL: "https://github.com/codeshard"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/ozkar-garcell/"
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/codeshard"

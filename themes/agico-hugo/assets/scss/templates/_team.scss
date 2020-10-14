@@ -29,6 +29,19 @@
     opacity: 1;
     text-align: center;
     color: #727374;
+
+    @media only screen and (max-width: 1433px) {
+      height: 48px; 
+    }
+    @media only screen and (max-width: 621px) {
+      height: 72px; 
+    }
+    @media only screen and (max-width: 600px) {
+      height: 24px; 
+    }
+    @media only screen and (max-width: 369px) {
+      height: 48px; 
+    }
   }
 
   @include mobile-xs{
