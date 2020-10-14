@@ -71,15 +71,15 @@ h2,
 //adjusting text size for responsiveness
     @include mobile-xs {
         font-size: 30px;
-        margin: 0.3em 0 0 0  !important;
+        // margin: 0.3em 0 0 0  !important;
     }
     @include mobile {
         font-size: 30px;
-        margin: 0.3em 0 0 0 !important;
+        // margin: 0.3em 0 0 0 !important;
     } 
     @include tablet {
         font-size: 30px;
-        margin: 0px 0 0.1em 0 !important;
+        // margin: 0.3em 0 0.1em 0 !important;
         line-height: 1em;
     }
   

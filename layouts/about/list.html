@@ -34,9 +34,30 @@
         {{ end }}
       </div>
     </div><!------------------------------------------------------->  
-    <div class="row"><!-------------------------------------------->
+    <div class="row"><!----------------1st row 3 members------------------------>
       {{ range $element:= .Site.Data.team.team.teamMember }}
-      <div class="col s12 m6 l3">
+      <div class="col s12 m4 l4">
+        <div class="team-member"><!----------------------picture-->
+          <img src="{{ .image | absURL }}">
+        </div><!-------------------------------------------------->
+        <h5 class="team-member-name">{{.name }}</h5>
+        <div class="team-member-designation">{{ .designation }}</div>
+        <div class="team-member-role">{{ .role }}</div>
+        <div class="row">
+          <div class="container-social">
+            <ul class="list-inline social-icons">
+              {{ range .socialIcon }}
+              <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </div>          
+        </div> 
+      </div> 
+      {{end}}
+    </div> <!-------------------------------------------------------->
+    <div class="row"><!------------2nd row 2 members-------------------------------->
+      {{ range $element:= .Site.Data.team.team.teamMember2 }}
+      <div class="col s12 m4 push-m2 l4 push-l2">
         <div class="team-member"><!----------------------picture-->
           <img src="{{ .image | absURL }}">
         </div><!-------------------------------------------------->
@@ -68,7 +89,7 @@
         {{end}}
       </div>
       <div class="row">
-      {{range .Site.Data.team.partners.collab}}
+        {{range .Site.Data.team.partners.collab}}
         <div class="col s12 m6 l3">
           <img src=" {{.image | absURL }}" alt="collaborator image">
           <h5 class="team-member-name">{{.name }}</h5>
@@ -82,9 +103,9 @@
               </ul>
             </div>          
           </div>        
-        </div> 
-      {{end}}
-      </div>     
+        </div>        
+        {{end}}
+      </div>           
     </div>
   </div>
 </section>

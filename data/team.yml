@@ -40,6 +40,24 @@ team:
           URL: "https://github.com/sorice"
 
     # team member
+    - name: "Yanet Conde González"
+      image: "images/team/yanet.png"
+      # image2: "images/team/abelma2.png"
+      designation: "CCO"
+      role : "Customer Relationship, Digital Content Manager"
+      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: ""
+
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/yanetcg1983/"
+
+        - icon: "fa-github"
+          URL: "https://github.com/yanetcg1983"
+
+  teamMember2:
+    # team member
     - name: "Enma Lidia Muñoz García"
       image: "images/team/enma.png"
       # image2: "images/team/abelma2.png"
@@ -72,6 +90,7 @@ team:
 
         - icon: "fa-github"
           URL: "https://github.com/ybenitezf"
+
     
 
 # partners
