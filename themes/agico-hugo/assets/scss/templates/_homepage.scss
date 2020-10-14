@@ -64,6 +64,16 @@
 }
 #col-height{
   height: 320px;
+
+  @media only screen and (max-width: 600px) {
+    height: 250px !important;
+  }
+  @media only screen and (max-width: 345px) {
+    height: 270px !important;
+  }
+  @media only screen and (max-width: 296px) {
+    height: 300px !important;
+  }
 }
 /*******************goals section***************************************/
 #g-title{
@@ -136,7 +146,8 @@ padding-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+    //adding paddings in smaller devices so it can fit the text and button
     @media only screen and (max-width: 600px) {
       padding: 50px 0 50px 0;
     }
@@ -159,6 +170,26 @@ padding-bottom: 10px;
 .light-gray3{
   background-color: $bg-secondary;
    padding: 0px !important;    
+}
+.light-gray4{
+  background-color: $bg-secondary;
+   padding: 0px !important;  
+   
+  @media only screen and (max-width: 1530px) {
+    padding: 10px 0 50px 0 !important;
+  }
+  @media only screen and (max-width: 1250px) {
+    padding: 10px 0 70px 0 !important;
+  }
+  @media only screen and (max-width: 1130px) {
+    padding: 10px 0 90px 0 !important;
+  }
+  @media only screen and (max-width: 1050px) {
+    padding: 10px 0 100px 0 !important;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 0 !important;
+  }    
 }
 
 .adj{
