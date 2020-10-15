@@ -27,7 +27,7 @@
             <span class="card-title" id="ce-card">{{.title}}</span>
             <p>{{.content}}</p>
             <a href="{{ .url | absURL}}"><button class="btn waves-effect waves-light" type="submit" name="action" id="call1">{{.linktext}}<i class="fa fa-eye"></i></button></a>
-            <div class="git-link mb-3"><h6>{{.solution}}</h6><a href="{{ .url2 }}" class="text-reset"><i class="fa fa-2x {{ .icon }}"></i></a></div>
+            <h6>{{.solution}}<a href="{{ .url2 }}" class="text-reset"><i class="fa fa-2x {{ .icon }} git-align"></i></a></h6>
           </div>
         {{end}}  
         </div>
