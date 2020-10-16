@@ -2,16 +2,15 @@ team:
   title : "The Team"
   subtitle: "Meet our team"
   description: "We are self-driven and enthusiastic young people who enjoy creating exciting solutions"
-  image: "images/team/team section.png"
-#  title : "Expert Person"
+  
+
   teamMember:
     # team member
     - name : "Leonel Salazar Videaux"
-      image : "images/team/lordford.png"
-      # image2: "images/team/lordford2.png"
+      image : "images/team/lordford.png"      
       designation : "Founder / CEO"
       role : "Software Engineer"
-      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon : "fa-twitter"
           URL : "https://twitter.com/leonel_lordford"
@@ -24,11 +23,10 @@ team:
           
     # team member
     - name: "Abel Meneses Abad"
-      image: "images/team/abelma.png"
-      # image2: "images/team/abelma2.png"
+      image: "images/team/abelma.png"      
       designation: "Founder / COO"
       role : "Data Scientist"
-      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
           URL: "https://twitter.com/abelma1980"
@@ -41,11 +39,10 @@ team:
 
     # team member
     - name: "Yanet Conde González"
-      image: "images/team/yanet.png"
-      # image2: "images/team/abelma2.png"
+      image: "images/team/yanet.png"      
       designation: "CCO"
       role : "Customer Relationship, Digital Content Manager"
-      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
           URL: ""
@@ -59,11 +56,10 @@ team:
   teamMember2:
     # team member
     - name: "Enma Lidia Muñoz García"
-      image: "images/team/enma.png"
-      # image2: "images/team/abelma2.png"
+      image: "images/team/enma.png"      
       designation: "CXO"
       role : "Frontend Developer"
-      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
           URL: "https://twitter.com/enma_lidia"
@@ -76,11 +72,10 @@ team:
 
     # team member
     - name: "Yoel Benítez Fonseca"
-      image: "images/team/yoel.png"
-      # image2: "images/team/abelma2.png"
+      image: "images/team/yoel.png"     
       designation: "CTO"
       role : "DevOps"
-      bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         # - icon: "fa-twitter"
         #   URL: ""
@@ -97,9 +92,7 @@ team:
 partners:
   title: "Collaborators"  
   subtitle: "Behind Datwit there are a group of amazing collaborators, they have proven to be invaluable:"
-  #  ourPartners:
-  #    - partnerAlt: "legal advisory agency"
-  #      partnerLogo: "images/toolset/vuejs.png"
+  
   collab:
     - name: "Danay Meneses Abad"
       image: "images/team/danay.png"

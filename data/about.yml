@@ -1,11 +1,7 @@
 # about
 about:
-#  videoThumbBg : "images/about/about-3.jpg"
-#  videoThumb : "images/about/about-4.jpg"
-#  videoURL : "https://www.youtube.com/watch?v=VufDd-QL1c0"
+
   aboutImg: "images/about/about-us1.svg"
-  aboutAlt: "about datwit"
-#  subtitle: "About datwit"
   title: "DatWit"
   content: "We are a Serbian Company dedicated to create multi purpose software solutions integrating modern techniques
           like Cloud Computing, Machine Learning, Data Analysis and microservices.
@@ -13,6 +9,3 @@ about:
   linkDescription: "Take a look at our open solutions"
   github: "https://github.com/datwit"
 
-#  button:
-#    btnText : "Contact Us"
-#    URL : "/contact"
