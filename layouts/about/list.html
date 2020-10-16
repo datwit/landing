@@ -5,8 +5,9 @@
 <!------------------------------------------------------------------------------------------------------------------>
 
 {{"<!-- about -->" | safeHTML }}
+<!--**********************header section about the company********************-->
 {{ with .Site.Data.about.about }}
-<section class="mb-2 mr-2" id="team"><!--**********************header section about the company********************-->
+<section class="mb-2 mr-2" id="team">
   <div class="container">
     <div class="row" id="comp-cont">
       <div class="col s12 m6 l6">
@@ -22,7 +23,7 @@
       </div> 
     </div>
   </div>
-</section><!--**************************************************************************************** -->
+</section>
 {{end}}
 <!------------------------------team members------------------------------------------------------------>
 <section class="light-gray2">
@@ -107,6 +108,7 @@
         {{end}}
       </div>           
     </div>
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
   </div>
 </section>
 

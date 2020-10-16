@@ -1,10 +1,12 @@
 {{ define "main" }}
 
 <!-----------------------------navbar ------------------------------------------------------------------>
-{{ partial "pheader-search.html" . }}
+{{ partial "page-header.html" . }}
 <!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------>
+{{"<!-- search -->"| safeHTML}}
 <!------------------search results--------------------------------->
-<section class="mb-2">
+<section class="mb-2 mb-1">
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -19,7 +21,12 @@
           </script>
       </div>
     </div>
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
   </div>
 </section>
+
+{{"<!-- /search -->"| safeHTML}}
+
+{{ partial "contact-access-gray.html" . }}
 
 {{ end }}
