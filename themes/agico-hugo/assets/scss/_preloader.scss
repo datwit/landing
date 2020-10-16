@@ -84,20 +84,7 @@
       transform: rotate(360deg);
     }
   }
-  
-  /* -webkit-@keyframes spin {
-    -webkit-from {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    -webkit-to {
-      -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-   */
+
   @-webkit-keyframes spin {
     from {
       -webkit-transform: rotate(0deg);
@@ -311,14 +298,4 @@
       flex: 0 0 100%;
     }
   }
-  
-
- /* a{
-    color: #009688;
-    display: block;
-    text-align: center; 
-    font-size: 26px;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 2rem auto;
-  }  */
+ 

@@ -116,12 +116,7 @@ img{
     bottom: 10px;
   }
 }
-.orange-divider{
-  border-top: 3px dotted $secondary-color2;
-}
-.orange-divider2{
-  border-bottom: 3px dotted $secondary-color2;
-}
+
 
 /* social icons oranges */
 .social-icons {
@@ -182,18 +177,4 @@ img{
     }
   }
  
-}
-
-.list-hover-underline {
-  li {
-    a {
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-.bg-primary {
-  background-color: $primary-color;
 }

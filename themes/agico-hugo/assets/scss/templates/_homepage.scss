@@ -6,29 +6,47 @@
  * Copyright (c) 2020 Dynamic Witty Analytics
  */
 
-
-/********************features section homepage mobile****************/
-.service-card{
-  display: flex;
-  justify-content: center;
-
-  &:active{
-    transform: translateY(3px);
-    transition: all .05s linear;
+ // gray background
+.light-gray{
+  background-color: $bg-secondary;
+   padding: 50px 0 50px 0;    
 }
+.light-gray2{
+  background-color: $bg-secondary;
+   padding: 0 0 60px 0;    
 }
-.feat{
-  @media only screen and (min-width: 751px) {
-    display:none;
+//gray brackground no paddings for the homepage illustration
+.light-gray3{
+  background-color: $bg-secondary;
+   padding: 0px !important;    
+}
+
+//gray brackground no paddings but adjusting padding in responsive
+.light-gray4{
+  background-color: $bg-secondary;
+   padding: 0px !important;  
+   
+  @media only screen and (max-width: 1530px) {
+    padding: 10px 0 50px 0 !important;
   }
- 
+  @media only screen and (max-width: 1250px) {
+    padding: 10px 0 70px 0 !important;
+  }
+  @media only screen and (max-width: 1130px) {
+    padding: 10px 0 90px 0 !important;
+  }
+  @media only screen and (max-width: 1050px) {
+    padding: 10px 0 100px 0 !important;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 0 !important;
+  }    
 }
 /************************services section*********************************/ 
 #text-continous{
   // word-wrap: break-word;
   font-size: 17px;    
-  color: $primary-color;
-  /* text-align: justify; */
+  color: $primary-color;  
   margin: 15px 10px 0 10px;
 
    .subt{
@@ -48,6 +66,7 @@
     }
   }  
 }
+
 #p-descrip{
   color: black !important; 
   margin-top:0px !important;
@@ -75,33 +94,6 @@
     height: 300px !important;
   }
 }
-/*******************goals section***************************************/
-#g-title{
-  margin-top: 0px !important;
-  // padding-top: 20px;
-}
-.be{
-  display: flex;
-  align-items: baseline;
-    i{
-      border-radius: 50%;
-      border: solid 1px $secondary-color2; 
-      background-color: $secondary-color2;
-      margin-right: 10px;     
-    }
-    p{
-      margin: 0 !important;
-      line-height: 25px;
-    }
-  
-}
-.psub{
-  line-height: 25px;
-  color: $primary-color;  
-  text-align: justify !important;
-  margin: 10px 0 10px 0;
-}
-/******************toolset section styling*******************************/
 //-------------custom grid and columns ----------------------------------
 .rib{
     #lis{
@@ -156,40 +148,6 @@ padding-bottom: 10px;
       position: absolute;
       z-index: 1;  
     }
-}
-// gray background
-.light-gray{
-  background-color: $bg-secondary;
-   padding: 50px 0 50px 0;    
-}
-.light-gray2{
-  background-color: $bg-secondary;
-   padding: 0 0 60px 0;    
-}
-//gray brackground no paddings for the homepage illustration
-.light-gray3{
-  background-color: $bg-secondary;
-   padding: 0px !important;    
-}
-.light-gray4{
-  background-color: $bg-secondary;
-   padding: 0px !important;  
-   
-  @media only screen and (max-width: 1530px) {
-    padding: 10px 0 50px 0 !important;
-  }
-  @media only screen and (max-width: 1250px) {
-    padding: 10px 0 70px 0 !important;
-  }
-  @media only screen and (max-width: 1130px) {
-    padding: 10px 0 90px 0 !important;
-  }
-  @media only screen and (max-width: 1050px) {
-    padding: 10px 0 100px 0 !important;
-  }
-  @media only screen and (max-width: 992px) {
-    padding: 0 !important;
-  }    
 }
 
 .adj{
