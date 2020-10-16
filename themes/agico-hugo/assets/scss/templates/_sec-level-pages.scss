@@ -32,7 +32,6 @@
    height: 64px;
   } 
 }
-
   
 #t-content, #p-content{
   position: relative;
@@ -54,9 +53,9 @@
     max-height: 100vh;
     background-color: #1e4159;
   }
-  #404card{
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 3px 1px -2px rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.8);
-  }
+#404card{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 3px 1px -2px rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.8);
+}
 
 /*********************************case studies page************************************************/
 #case-sect{
@@ -70,10 +69,6 @@
       padding-top: 100px !important;
     }
   }
-#card-container{
-  display: flex;
-  justify-content: center;
-}
 /****************************************about us page********************************************/
 #comp-cont{
   @media only screen and (min-width: 601px) {
@@ -98,12 +93,7 @@
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 3px 1px -2px rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.8);
     margin-bottom: 30px;
   }
- 
-// text area adjustments contact us form 
-  #messagejdjkdkd{
-    // height: 8rem !important;
-    overflow-y: scroll;
-}
+
 // map section
 #map-section {
     padding: 50px 0;
@@ -120,7 +110,6 @@
       margin-top: 10px;
     }
 }
-
 #larg-map{
   font-size: 15px;
 }
@@ -135,16 +124,6 @@
       display: flex;
       flex-direction: column-reverse;            
     }
-}
-.esp1{
- 
-  display: flex;
-  align-items: center;
-  
-  @media only screen and (max-width: 992px){
-    display: block;
-  }
-  
 } 
 
 #serv-sect{
@@ -159,50 +138,11 @@
   }
 }  
 
-.icon-line{
-  display: flex;
-  align-items: center;
-  margin-bottom: 0px !important;
-  text-align: left;  
-
-  img{
-    margin: 0 10px 0 10px;
-    width: 64px;
-    height: 64px;
-  }
-  @media only screen and (min-width: 1375px){
-    font-size: 34px !important;
-  } 
-  @media only screen and (max-width: 1374px){
-    font-size: 30px !important;
-  }
-  @media only screen and (max-width: 1224px){
-    font-size: 25px !important;
-  }
-  @media only screen and (max-width: 1068px){
-    font-size: 22px !important;
-  }
- /*  @media only screen and (max-width: 378px){
-    font-size: 17px !important;
-   
-  }  */ 
-}
-
-#adj2{
-  
-  @media only screen and (max-width: 378px){
-    font-size: 16spx !important;
-    line-height: 25px !important;
-  }
-   
-}
-
 //collapsible
 .accordionItem{
     display:block;
     width:100%;
-    box-sizing: border-box;
-    // font-family:'Open-sans',Arial,sans-serif;
+    box-sizing: border-box;    
     padding: 0 !important;
     margin: 0 !important;
     
@@ -222,58 +162,63 @@
     box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12); 
     
 }
-.close .accordionItemContent{
-    height:0px;
-    transition:height 1s ease-out;
-    -webkit-transform: scaleY(0);
-	-o-transform: scaleY(0);
-	-ms-transform: scaleY(0);
-	transform: scaleY(0);
-    float:left;
-    display:block;
-    
-    
+.close {
+  .accordionItemContent{
+      height:0px;
+      transition:height 1s ease-out;
+      -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+      float:left;
+      display:block;
+      
+  }    
 }
-.open .accordionItemContent{
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    width: 100%;
-    // margin: 0px 0px 10px 0px;
-    display:block;
-    -webkit-transform: scaleY(1);
-	-o-transform: scaleY(1);
-	-ms-transform: scaleY(1);
-	transform: scaleY(1);
-    -webkit-transform-origin: top;
-	-o-transform-origin: top;
-	-ms-transform-origin: top;
-	transform-origin: top;
+.open {
+  .accordionItemContent{
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      width: 100%;
+      // margin: 0px 0px 10px 0px;
+      display:block;
+      -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+      -webkit-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
 
-	-webkit-transition: -webkit-transform 0.4s ease-out;
-	-o-transition: -o-transform 0.4s ease;
-	-ms-transition: -ms-transform 0.4s ease;
-	transition: transform 0.4s ease;
-        box-sizing: border-box;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease;
+    -ms-transition: -ms-transform 0.4s ease;
+    transition: transform 0.4s ease;
+          box-sizing: border-box;
+  }
 }
-
-.open .accordionItemHeading{
-    margin:0px;
-        -webkit-border-top-left-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    -moz-border-radius-bottomright: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background-color: $bg-secondary;
-    color: $secondary-color2;
+.open {
+  .accordionItemHeading{
+      margin:0px;
+          -webkit-border-top-left-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      -moz-border-radius-topleft: 3px;
+      -moz-border-radius-topright: 3px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      -webkit-border-bottom-right-radius: 0px;
+      -webkit-border-bottom-left-radius: 0px;
+      -moz-border-radius-bottomright: 0px;
+      -moz-border-radius-bottomleft: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      background-color: $bg-secondary;
+      color: $secondary-color2;
+  }
 }
+//software development two columnns
 .col-services{
    h3{
      text-align: left !important;
@@ -330,7 +275,7 @@
 .tttt{
   margin-top: 0px;
 }
-//bullet section
+//bullets section
 #list-keys{
 
   .te{
@@ -492,8 +437,8 @@
   display: flex;
   justify-content: center;
 }
-// collapsible text
 
+// collapsible text
 .box-text{  
   .hide{
   display: none;   

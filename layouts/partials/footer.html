@@ -3,6 +3,7 @@
   <section class="section border-color">
     <div class="container">
       <div class="row">
+        <!-------------------------------------------------->
         <div class="footer-blocks col s12 m4 l4">
           <h4>{{ .Site.Params.footer.service.title }}</h4>
           {{ range .Site.Menus.footer }}
@@ -11,12 +12,14 @@
           {{ end }}
           </ul>
         </div>
+        <!-------------------------------------------------->
         <div class="footer-blocks col s12 m4 l4">
           <h4>{{ .Site.Params.footer.contact.title }}</h4>
-          <ul class=" list-hover-underline" id="i-email">
+          <ul id="i-email">
             <li><i class="material-icons">email</i><a href="mailto:{{.Site.Params.footer.contact.email}}?subject=About DatWit" class="text-light">{{.Site.Params.footer.contact.email}}</a></li>
           </ul>
         </div>
+        <!-------------------------------------------------->
         <div class="footer-blocks col s12 m12 l4">
           <h4>{{ .Site.Params.footer.content }}</h4>
           <ul class="list-inline">
@@ -25,8 +28,10 @@
             {{ end }}
           </ul>
         </div>
+        <!-------------------------------------------------->
       </div>
-    </section>
+    </div>  
+  </section>
 
 {{"  <!-- footer part end -->" | safeHTML }}
 
@@ -45,6 +50,7 @@
     </div>
   </section>
 {{"  <!-- copyright part end -->" | safeHTML }}
+
 </footer>
   
 
@@ -67,6 +73,7 @@
 </script>
 
 {{ range .Site.Params.plugins.js}}
+
 <script src="{{ .URL | absURL }}"></script>
 {{ end }}
 {{ "<!-- Main Script -->" | safeHTML }}

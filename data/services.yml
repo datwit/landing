@@ -6,7 +6,7 @@ service:
   an intuitive design but also a great development to back it up. Our goal is to get close to the product you have in mind..."
   img: "images/services/background-board.png"
 
-  #keywords bullets
+#keywords bullets services page
 servicekey:   
   title: "Datwit has amazing people that create solutions because believe in:"  
   content: 
@@ -26,23 +26,27 @@ serviceItem:
     - title: "Software Development"
       src: "images/services/soft-developm.png"
       shortcontent: "We will never forget where we came from, so we are eager to share our experiences building products that people will enjoy using."
-      # url: "services#sd"
+      
 
     - title: "Data Analysis"
       src: "images/services/data-anal.png"
       shortcontent: " Less cholesterol in your data makes your business' heart lead you to the goal faster."
-      # url: "services#da"
+      
 
     - title: "Data Visualization"
       src: "images/services/data-visualiz.png"
       shortcontent: "Because we love UX/UI and amazing data visualization designs we want to take it to every possible solution."
 
-    # url: "services#sd"
+    
     - title: "Research on IoT"
       src: "images/services/domotic.png"
       shortcontent: "No matter the device success starts by expanding your data sources."
         
-  
+#diagram
+diagram:
+  title : "How we get it done"
+  subtitle : "We are Agile. So, in order to make sure your initial idea becomes a working product we take advantaje of the great beneffits of Scrum and some of the best practices of XP."  
+
 #toggle panel diagram
 #design 
 developprocess1: 
@@ -87,9 +91,8 @@ developprocess4:
     - var: "Long-term technical support"
     - var: "Maintenance"
 
-#describing services page
+#collapsible services page
 # software development
-dataservicetitle: "Data Intelligence"
 serviceItem1:
   title : "Software Development"  
   url: "images/services/soft-develop.png" 
@@ -126,12 +129,13 @@ serviceItem1:
     - var: "On-cloud services"
     - var: "Local servers"
     
-#data analysis    
+#data intelligence 
+dataservicetitle: "Data Intelligence"  
+#data analysis
 serviceItem2:
   title : "Data Analysis"   
   content1 : "Nowadays Machine Learnign offer endless oppotunities for business owners, from decision making to efficient business processes."
-  img: "images/services/data-analy.svg"
-  # "Datwit Data Analysis services provide customized queries to simplify your data analysis, scripts for static and dynamic visualization with matplotlib and Altair using Vega & Vega-Lite standards. We also offer cleanning data services throug our on-cloud solutions. Datwit provide services for the Creation and Evaluation of AI models."
+  img: "images/services/data-analy.svg"  
   
   subtitle: "What you can get by working with us?"
   content:
@@ -155,7 +159,7 @@ serviceItem3:
     - var: "Models monitoring"
     - var: "Feedback interface to improve human-in-the-loop"          
         
-
+#research on iot
 serviceItem4:
   title : "Research on IoT"
   img: "images/services/iot.svg"  
@@ -168,8 +172,5 @@ serviceItem4:
     - var: "API design" 
     - var: "Mobile/PC Application Interface" 
 
-#diagram
-diagram:
-  title : "How we get it done"
-  subtitle : "We are Agile. So, in order to make sure your initial idea becomes a working product we take advantaje of the great beneffits of Scrum and some of the best practices of XP."
+
   
