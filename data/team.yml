@@ -41,7 +41,7 @@ team:
     - name: "Yanet Conde González"
       image: "images/team/yanet.png"      
       designation: "CCO"
-      role : "Customer Relationship, Digital Content Manager"
+      role : "Customer Relationship"
       # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
@@ -91,7 +91,7 @@ team:
 # partners
 partners:
   title: "Collaborators"  
-  subtitle: "Behind Datwit there are a group of amazing collaborators, they have proven to be invaluable:"
+  subtitle: "Our amazing collaborators help drive Datwit towards being a cutting-edge company"
   
   collab:
     - name: "Danay Meneses Abad"
@@ -105,7 +105,7 @@ partners:
         - icon: "fa-twitter"
           URL: "https://twitter.com/DanayMeneses"
 
-    - name: "Karell Lexander Garcés Gallardo"
+    - name: "Karell Lexander Garcés"
       image: "images/team/karell.png"
       designation: "Firmware Engineering"
       socialIcon:

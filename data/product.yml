@@ -1,12 +1,15 @@
 # Product
 pgtitle : 
   title: "Check out our solutions"
-  description: "These are our creations, all made with spirit and perseverance. By all means, stroll along..."
+  description: "Commitment and creativity mark our creations. By all means, stroll along..."
 
   productItem :
     -  image : "images/product/preproc.svg"
        title : ""
-       content : "Python3 package for text preprocessing, based on NLTK, Stanford NLP models, and other less popular NLP python libraries. This library intended to be use as a reference material to those who want to dive in the preprocessing world."
+       content : "Python3 package for text preprocessing, based on NLTK, Stanford 
+                  NLP models, and other less popular NLP python libraries. This 
+                  library is intended to be used as a reference material by those 
+                  who want to start diving into the preprocessing world."
        linktext: "Read more"
        url: "https://github.com/sorice/preprocess/blob/master/docs/collab/about.rst"      
        solution: "See the entire solution at:"       

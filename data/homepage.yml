@@ -58,15 +58,15 @@ toolset:
 about:
   sectiontitle: "What you get"
   image: "images/about/about-2.svg"
-  subtitle: "Datwit can help you to grow faster with less cost by:"
+  subtitle: "Datwit can help you to grow faster with lower costs by:"
   title: "Quality and good prices"
 
   content: 
-      - title: "Saving money with cheaper products and best open source quality."
+      - title: "Saving money with economic products and best open source quality."
 
       - title: "Improving your products and services with cost saving & accurate models."
 
-      - title: "Reducing your risks, get to your must important data, monitore your service quality."                          
+      - title: "Reducing your risks, getting to your most important data, monitoring your service quality."                          
             
 
 about2:
@@ -80,22 +80,20 @@ about2:
       
     - title: "Simple, optimized, tested apps ready for production."
       
-    - title: " High information architecture standards."
-      
-    - title:  "Single-service in a full package including: deployment, monitoring and maintenance."         
+    - title:  "Full package of deployment, monitoring and maintenance in one single service."         
 
 about3:
   image : "images/about/about-1.svg"
-  subtitle : "Take control of all of your data with: "
+  subtitle : "Take control of all your data with: "
   title : "Security and privacy first"
   content :  
     
-  - title: " On-premises solutions that can guarantee your ownership and data security."
+  - title: "On-premises solutions that guarantee your ownership and data security."
 
-  - title: "Clean and anonymous data without sharing information."
+  - title: "Clean and anonymized data to prevent privacy leaks."
 
-  - title: "Scaling your data services and spreading your data sources with smart protections."
+  - title: "Scaled data services with smart protections."
     
-  - title: " Full role separated access to all of our solutions." 
+  - title: "Access to your whole app by users and roles." 
 
 
