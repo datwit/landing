@@ -10,7 +10,7 @@
 baseURL = "https://development.datwit.com/"
 
 languageCode = "en-us"
-title = "DatWit"
+title = "Datwit"
 theme = "agico-hugo"
 summaryLength = "10"
 paginate = 6
@@ -149,7 +149,7 @@ uglyURLs = true
 
   # copyright
   [params.copyright]
-  copyright = "DatWit"
+  copyright = "Datwit"
 
 #Footer menu
 
@@ -167,7 +167,7 @@ logomin = "images/logo-min.png"
 home = "Home"
 # Meta data
 description = "Dynamic Witty Analytics Company"
-author = "DatWit Team"
+author = "Datwit Team"
 # google map
 #gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 # gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCFz41K58LkBFXXw_a4Oy_xQAtBqdFTFaA&libraries=places"

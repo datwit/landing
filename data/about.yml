@@ -2,11 +2,10 @@
 about:
 
   aboutImg: "images/about/about-us1.svg"
-  title: "DatWit"
+  title: "Datwit"
   content: "We are a Serbian Company dedicated to creating multipurpose software solutions 
           integrating modern techniques
           like Cloud Computing, Machine Learning, Data Analysis and microservices.
-          DatWit develops small web apps with full artificial intelligence capabilities."
+          Datwit develops small web apps with full artificial intelligence capabilities."
   linkDescription: "Take a look at our open solutions"
   github: "https://github.com/datwit"
-
