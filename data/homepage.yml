@@ -86,7 +86,7 @@ about3:
   image : "images/about/about-1.svg"
   subtitle : "Take control of all your data with: "
   title : "Security and privacy first"
-  content :  
+  content :
     
   - title: "On-premises solutions that guarantee your ownership and data security."
 
@@ -94,6 +94,6 @@ about3:
 
   - title: "Scaled data services with smart protections."
     
-  - title: "Access to your whole app by users and roles." 
+  - title: "Role-based access to all your apps."
 
 

@@ -2,8 +2,8 @@
 service:
 #  subtitle : "Services"
   title : "What we do"
-  description: "Our goal is to get close to the product you have in mind,
-  that's why we provide intuitive designs with great tools to back them up. 
+  description: "Our goal is to get close to the product you have in mind through 
+  intuitive designs and great tools to back them up. 
   "
   img: "images/services/background-board.png"
 
@@ -11,13 +11,12 @@ global:
   summary : "Our experience creating IT solutions includes:"
   columns:
     - title: "Custom software"
-      descrip: "We help companies launching their businesses, highlighting 
+      descrip: "We help companies launch their businesses, highlighting 
       qualities as their main assets, creating complete software solutions
       according to each client's requirements."
 
     - title: "Software integrations"
-      descrip: "We provide support for our clients, help them to start using new
-      technologies preserving their long lasting solutions."
+      descrip: "We offer the support that other companies need to preserve and improve their long lasting solutions."
 
 #keywords bullets services page
 servicekey:   
@@ -42,12 +41,12 @@ serviceItem:
 
     - title: "Data Analysis"
       src: "images/services/data-anal.png"
-      shortcontent: " Less cholesterol in your data makes your business' heart lead you to the goal faster."
+      shortcontent: "Less cholesterol in your data makes your business' heart lead you to the goal faster."
       
 
     - title: "Data Visualization"
       src: "images/services/data-visualiz.png"
-      shortcontent: "If your dashboards look good they will increase your business intelligence."
+      shortcontent: "Business intelligence can increase using a very well designed dashboard."
 
     
     - title: "Research on IoT"
@@ -122,23 +121,23 @@ serviceItem1:
   firstsectiontitle2: "Our developers give the best in:"
   col1:  
     title: "Frontend"
-    description: "We offer visual appeal and accessible apps, built using:"
+    description: "We offer visually appealing and accessible apps, built using:"
     img: "images/services/frontend.svg"
     content: 
     - var: "HTML5 & CSS3"
     - var: "JavaScript/Vue.js/Nuxt.js"
   col2:  
     title: "Backend"
-    description: "Our services focus on simplicity,  
-                tailored to your specifications, by using:"
+    description: "Our services focus on creating functional applications, 
+                tailored to your specifications, therefore we use:"
     img: "images/services/backend.svg"
     content: 
     - var: "Flask/Chalice"
     - var: "Python scripts"
   col3:  
     title: "Deployment"
-    description: "We can support our clients when the final product goes live by
-                implementing:"
+    description: "We can get involved and support our clients when the final 
+                product goes live by implementing:"
     img: "images/services/deployment.svg"
     content: 
     - var: "On-cloud services"
@@ -149,11 +148,11 @@ dataservicetitle: "Data Intelligence"
 #data analysis
 serviceItem2:
   title : "Data Analysis"   
-  content1 : "Using machine learning state of the art algorithms with customized
-              apps, we provide:"
+  content1 : "By using machine learning state of the art algorithms with customized
+              apps, we ensure:"
   img: "images/services/data-analy.svg"  
   
-  subtitle: "Our data science division can provide:"
+  subtitle: "Our data science division can deliver:"
   content:
     - var: "Data exploration"
     - var: "Data collection from streaming data sources"
@@ -167,7 +166,7 @@ serviceItem3:
   title : "Data Visualization"  
   img: "images/services/data-visual.svg"
   descrip: "Our dashboard philosophy allows faster discoveries with
-          small changes to your apps, so we provide:"   
+          small changes to your apps, so we supply:"   
   content : 
     - var: "Descriptive reports"
     - var: "Graphic reports about your data"
