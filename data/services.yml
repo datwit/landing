@@ -7,6 +7,18 @@ service:
   "
   img: "images/services/background-board.png"
 
+global:
+  summary : "Our experience creating IT solutions includes:"
+  columns:
+    - title: "Custom software"
+      descrip: "We help companies launching their businesses, highlighting 
+      qualities as their main assets, creating complete software solutions
+      according to each client's requirements."
+
+    - title: "Software integrations"
+      descrip: "We provide support for our clients, help them to start using new
+      technologies preserving their long lasting solutions."
+
 #keywords bullets services page
 servicekey:   
   title: "Datwit team believes in:"  
@@ -51,14 +63,11 @@ diagram:
 
 #toggle panel diagram
 #design 
-developprocess1: 
-  img: "images/services/ux-research.png"
-  img2: "images/services/analysis.png"
-  img3: "images/services/prototyping.png"
+developprocess1:
+  img: "images/services/prototyping.png"
   title: "Design"  
-  descrip: "Because we are all about UX/UI design, we believe that an user friendly 
-          design is key to achieve all the business goals you can have. Therefore 
-          we focus on:"
+  descrip: "We believes good UX/UI design is key to achieve all the business goals you are
+  expecting. Therefore we focus on:"
   content1: "A great design requires a complete understanding of every user's need. 
           That's why we keep UX research along the whole development process."
   content2: "We build on the certainty that strong communication is essential to 
@@ -66,23 +75,27 @@ developprocess1:
   content3: "Every product is born from an idea. The fun part begins with the 
           creation of the concept and the continuous search of the right features 
           that fulfill your objectives."
+  content: 
+    - var: "UX Research"
+    - var: "UI Analysis"
+    - var: "Wireframing"
 #development
 developprocess2:
   img: "images/services/development.png"  
   title: "Development"
-  descrip: "In Datwit we build ready to use software using reliable technologies and following innovative trends. We are proud to help you to:"
+  descrip: "We build ready to use software using reliable technologies and following innovative trends. We are proud to help you to:"
   content: 
-    - var: "Efficiently solve real-world problems."
     - var: "Enhace your business productivity"
-    - var: "Smoothly run your every day processes "
+    - var: "Smoothly run your every day processes"
+    - var: "Efficiently solve real-world problems"
   descrip2: "In order to do that we take our time to carefully plan every sprint because it is our goal to deliver working products as soon as possible."  
 
 #testing
 developprocess3:
   img: "images/services/testing.png"  
   title: "Testing"
-  descrip: "Together let's get as far as we can and aim to perfection. Our quality 
-          roadmap performs continuous agile testing and keeps improving to achieve:"
+  descrip: "Our quality roadmap performs continuous testing aiming to perfection 
+  and keeps improving to achieve:"
   content:
     - var: "Flawless code"
     - var: "Responsive design"
@@ -93,7 +106,7 @@ developprocess3:
 developprocess4:
   img: "images/services/deploy.png"  
   title: "Deployment"
-  descrip: "Once development is finished, deployment can be exhausting; that's why you can rely on us for:"
+  descrip: "Once development is finished, deployment can be exhausting. That's why you can rely on us for:"
   content:
     - var: "Domain registration"
     - var: "Securely deploy your project to on-cloud servers"
@@ -104,23 +117,9 @@ developprocess4:
 # software development
 serviceItem1:
   title : "Software Development"  
-  url: "images/services/soft-develop.png" 
-  content: "We are a bunch of people who are passionate about 
-          technology and who have experience in designing and developing IT 
-          solutions. In addition, we incorporate machine learning functionalities 
-          to improve the way of using data on a daily basis."
-  columns:
-    - title: "Full custom software"
-      descrip: "We help small companies to lunch their businesses, highlighting their
-              qualities as their main asset."
-
-    - title: "Enterprise software integrations"
-      descrip: "We provide the support that other companies need to preserve their 
-              long lasting solutions."
-  
+  url: "images/services/soft-develop.png"   
   firstsectiontitle: " We focus on building full-cycle development services such as: "         
-  firstsectiontitle2: "Even though we can make a variety of software 
-            our biggest strength resides on website development:"
+  firstsectiontitle2: "Our developers give the best in:"
   col1:  
     title: "Frontend"
     description: "We offer visual appeal and accessible apps, built using:"
