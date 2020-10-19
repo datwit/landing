@@ -64,7 +64,7 @@ diagram:
 #toggle panel diagram
 #design 
 developprocess1:
-  img: "images/services/prototyping.png"
+  img: "images/services/prototyping.svg"
   title: "Design"  
   descrip: "We believes good UX/UI design is key to achieve all the business goals you are
   expecting. Therefore we focus on:"
@@ -81,7 +81,7 @@ developprocess1:
     - var: "Wireframing"
 #development
 developprocess2:
-  img: "images/services/development.png"  
+  img: "images/services/development.svg"  
   title: "Development"
   descrip: "We build ready to use software using reliable technologies and following innovative trends. We are proud to help you to:"
   content: 
@@ -92,7 +92,7 @@ developprocess2:
 
 #testing
 developprocess3:
-  img: "images/services/testing.png"  
+  img: "images/services/testing.svg"  
   title: "Testing"
   descrip: "Our quality roadmap performs continuous testing aiming to perfection 
   and keeps improving to achieve:"
@@ -104,7 +104,7 @@ developprocess3:
 
 #deployment
 developprocess4:
-  img: "images/services/deploy.png"  
+  img: "images/services/deploy.svg"  
   title: "Deployment"
   descrip: "Once development is finished, deployment can be exhausting. That's why you can rely on us for:"
   content:
