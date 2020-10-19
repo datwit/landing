@@ -1,0 +1,476 @@
+/*
+ * _common.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
+
+/**************************privacy policy & terms and conditions pages**********************************/
+#terms-background, #privacy-background{
+  opacity: 0.5;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#terms-background{
+  width: 15%;
+  height: 15%; 
+
+  @media only screen and (max-width: 749px) {
+    width: 112px;
+    height: 55px;
+   }    
+}
+#privacy-background{ 
+  width: 7%;
+  height:7%;
+  opacity: 0.5; 
+
+  @media only screen and (max-width: 749px) {
+   width: 52px;
+   height: 64px;
+  } 
+}
+  
+#t-content, #p-content{
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    padding-top: 100px !important;
+  }
+  @include mobile {
+    padding-top: 100px !important;
+  }
+  @include mobile-xs {
+    padding-top: 100px !important;
+  }
+}
+/*********************************404 page***********************************************************/
+#main{
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #1e4159;
+  }
+#404card{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 3px 1px -2px rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+/*********************************case studies page************************************************/
+#case-sect{
+    @include tablet {
+      padding-top: 100px !important;
+    }
+    @include mobile {
+      padding-top: 100px !important;
+    }
+    @include mobile-xs {
+      padding-top: 100px !important;
+    }
+  }
+/****************************************about us page********************************************/
+#comp-cont{
+  @media only screen and (min-width: 601px) {
+    display: flex;
+    align-items: center;
+  } 
+}    
+//github icon company
+.text-reset {
+    text-decoration: none;
+    color: $secondary-color2;
+    &:hover{
+      color: $primary-color;
+    }
+}
+/**************************************contact us page*********************************************/
+#belg{
+    display:block;
+    max-width:100%;
+    height:100%;
+    overflow:hidden !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 3px 1px -2px rgba(0, 0, 0, 0.5), 0 1px 5px 0 rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+  }
+
+// map section
+#map-section {
+    padding: 50px 0;
+}
+#map {
+    margin: 20px 0;
+    @include mobile {
+      margin-top: 30px !important;
+    }
+}
+.section-header {
+    padding: 20px 0;
+    @include mobile {
+      margin-top: 10px;
+    }
+}
+#larg-map{
+  font-size: 15px;
+}
+/****************************************what we do page*********************************************/ 
+//section arrange
+.esp{
+
+  display: flex;
+  align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column-reverse;            
+    }
+} 
+
+#serv-sect{
+  @include tablet {
+    padding-top: 100px !important;
+  }
+  @include mobile {
+    padding-top: 100px !important;
+  }
+  @include mobile-xs {
+    padding-top: 100px !important;
+  }
+}  
+
+//collapsible
+.accordionItem{
+    display:block;
+    width:100%;
+    box-sizing: border-box;    
+    padding: 0 !important;
+    margin: 0 !important;
+    
+}
+.accordionItemHeading{
+    cursor:pointer;
+    // margin:0px 0px 10px 0px;
+    padding:10px;
+    background:white;
+    color: $primary-color;
+    width:100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 15px 0 15px 0px !important; 
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12); 
+    
+}
+.close {
+  .accordionItemContent{
+      height:0px;
+      transition:height 1s ease-out;
+      -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+      float:left;
+      display:block;
+      
+  }    
+}
+.open {
+  .accordionItemContent{
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      width: 100%;
+      // margin: 0px 0px 10px 0px;
+      display:block;
+      -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+      -webkit-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease;
+    -ms-transition: -ms-transform 0.4s ease;
+    transition: transform 0.4s ease;
+          box-sizing: border-box;
+  }
+}
+.open {
+  .accordionItemHeading{
+      margin:0px;
+          -webkit-border-top-left-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      -moz-border-radius-topleft: 3px;
+      -moz-border-radius-topright: 3px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      -webkit-border-bottom-right-radius: 0px;
+      -webkit-border-bottom-left-radius: 0px;
+      -moz-border-radius-bottomright: 0px;
+      -moz-border-radius-bottomleft: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      background-color: $bg-secondary;
+      color: $secondary-color2;
+  }
+}
+//software development two columnns
+.col-services{
+   h3{
+     text-align: left !important;
+   }
+   h6{
+    text-align: left !important;
+    margin-top: 15px;
+   }
+}
+.tet{
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 1242px) {
+    height: 53px;
+  }
+  @media only screen and (max-width: 351px) {
+    height: 75px;  
+  }
+  h3{
+    margin: 0;    
+  }
+  i{
+    margin-right: 10px;
+  }
+}
+.ph6{
+ text-align: left !important;
+}
+.icc{
+  display: flex;
+  align-items: baseline;
+  i{
+    border-radius: 50%;
+    color: white !important;
+    border: solid 1px $primary-color; 
+    background-color: $primary-color;
+    margin-right: 10px;
+  }
+}
+.dess{
+  text-align: justify;
+}
+.texttt{
+ height: 50px;
+
+  @media only screen and (max-width: 992px) {
+    height: 25px !important;  
+  }
+  @media only screen and (max-width: 291px) {
+    height: 50px !important;  
+  }
+}
+.tttt{
+  margin-top: 0px;
+}
+//bullets section
+#list-keys{
+
+  .te{
+    display: flex;
+    align-items: center;
+    i{
+      border-radius: 50%;
+      border: solid 1px $secondary-color2; 
+      background-color: $secondary-color2;
+      margin-right: 10px;
+    }
+  }
+  h3{
+    margin-top: 0px !important;
+  }       
+}
+#bullet-section{
+  background: url('../images/services/bullets-back.svg') $bg-secondary;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  height: 450px;
+  width: auto; 
+  
+
+  @media only screen and (max-width: 1295px) {
+    background: none !important;
+    background-color: $bg-secondary !important;
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 730px){
+    height: 500px !important;
+  }
+  @media only screen and (max-width: 555px){
+    height: 520px !important;
+  }
+  @media only screen and (max-width: 475px){
+    height: 530px !important;
+  }
+  @media only screen and (max-width: 397px){
+    height: 600px !important;
+  }
+  @media only screen and (max-width: 379px){
+    height: 630px !important;
+  }
+  @media only screen and (max-width: 356px){
+    height: 670px !important;
+  }
+  @media only screen and (max-width: 331px){
+    height: 700px !important;
+  }
+  @media only screen and (max-width: 300px){
+    height: 800px !important;
+  }
+  h6{
+    text-align: left;
+    @media only screen and (max-width: 465px){
+     font-size: 16px;
+    }
+  }
+  
+}
+ 
+
+//drawing diagram
+.wrapper {
+//  width: 500px;
+ height: 30px;
+ border-radius: 30px;
+ position: relative;
+
+}
+.line {
+ width: 100%;
+ height: 50%;
+ position: absolute;
+ left: 0;
+ top: 50%;
+ margin-top: -8px;
+ background: $primary-color;
+ border-radius: inherit;
+//  z-index: 100;
+}
+.inner {
+  width: 0%;
+ height: 100%;
+ background: #2b8095;
+ background: -webkit-linear-gradient(left,$primary-color, $secondary-color2,$secondary-color);
+ background: linear-gradient(to right, $primary-color, $secondary-color2, $secondary-color);
+ animation: line 5s ease-out infinite;
+ border-radius: inherit;
+}
+
+.dot1,.dot2,.dot3,.dot4{
+//   content: "";
+ position: absolute;
+ top: -8px;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ background: $primary-color;
+
+ &:hover{
+ border: 3px solid $secondary-color2;
+ }
+
+}
+.draw-orange{
+  background: $secondary-color2;
+}
+.bold-title{
+  h6{    
+    font-weight: bolder !important;
+    color: $secondary-color;
+  }
+    
+}
+
+.dot1{
+  left: -10px;
+}
+.l-dot4, .l-dot3{
+  display: flex;
+  justify-content: end;
+}
+.dot4{
+  right: -10px;
+}
+
+@keyframes line {
+ 100% { width: 100%; } 
+}
+
+.tit2, .tit4{
+  position: absolute;
+  top: 35px;
+
+}
+.tit1, .tit3{
+  position: absolute;
+  top: -48px;
+}
+
+.tit1, .tit2, .tit3, .tit4{
+  h6{
+  @media only screen and (max-width: 330px){
+    font-size: 12px !important;
+    font-weight: bold;
+  }
+  }
+}
+
+#coll4{
+  display: flex;
+  justify-content: end;
+
+}
+#col2, #col3{
+  display: flex;
+  justify-content: center;
+}
+
+// collapsible text
+.box-text{  
+  .hide{
+  display: none;   
+  }
+}
+.box-text{
+  border: 1px solid #ddd !important;
+  padding: 10px;
+  .show{
+    
+    display: block;
+  } 
+}
+.ttt{
+  display: flex;
+  align-items: flex-start; 
+  h6{
+    font-weight: bold;
+  }
+}
+.pip{
+  text-align: justify !important;
+}
+.des-head{
+  line-height: 30px !important;
+  margin-bottom: 2rem;
+}
+.rr{
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    display: block !important; 
+  }
+}
+

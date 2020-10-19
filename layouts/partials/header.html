@@ -1,17 +1,16 @@
 {{"<!-- navigation -->" | safeHTML }}
-<div class="naviagtion fixed-top transition">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark p-0">
-      <a class="navbar-brand p-0" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="wittylytics"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav mx-auto">
+
+<nav class="navbar">
+  <div class="nav-wrapper">
+    <div class="row">
+      <div class="col s3" id="logo">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="datwit"></a>
+      </div>
+      <div class="col s8" id="navigation"><!--------------------------desktop menu--------------------------->
+        <ul class="navbar-nav hide-on-small">
           <li class="nav-item">
-            <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+              <a class="nav-link text-white text-capitalize se" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
           </li>
           {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
@@ -22,23 +21,59 @@
             </a>
             <div class="dropdown-menu" >
               {{ range .Children }}
-              <a class="dropdown-item text-color" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              <a class="dropdown-item text-color" href="{{ .URL | absURL }}.html">{{ .Name }}</a>
               {{ end }}
             </div>
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a class="nav-link text-white text-capitalize" href="{{ .URL | absURL }}.html">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
         </ul>
-        {{ if .Site.Params.navBtn.enable }}
-        {{ "<!-- get start btn -->" | safeHTML }}
-        <a href="{{ with .Site.Params.navBtn.URL }}{{ . | absURL }}{{ end }}" class="btn btn-outline-primary text-white ml-3">{{ with .Site.Params.navBtn.btnText }}{{ . }}{{ end }} </a>
-        {{ end }}
+      </div><!------------------------------------------------------------------------------------------>
+     
+  <!--------------------------------------responsive sidenav---------------------------------------------->
+        <ul id="slide-out" class="sidenav">
+          <div class="user-view">
+            <div class="background"></div>
+            <div class="row">
+              <div class="col s6">
+              <img src="{{ .Site.Params.logomin | absURL }}" alt="sidenav-logo" class="logo-img">
+              </div>
+              <div class="col s6">
+              <a class="nav-link text-white text-capitalize  sidenav-close" href="#!" id="close-icon"><i class="material-icons">chevron_left</i></a>
+              </div>  
+            </div>
+          </div>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+          </li>
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="list nav-item dropdown">
+            <a class="nav-link text-white text-capitalize dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu" >
+              {{ range .Children }}
+              <a class="dropdown-item text-color " href="{{ .URL | absURL }}.html">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .URL | absURL }}.html">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
       </div>
-    </nav>
-  </div>
-</div>
+    </div>
+</nav>      
+
+
 {{"<!-- nav part end -->" | safeHTML }}

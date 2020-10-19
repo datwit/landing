@@ -1,30 +1,34 @@
 {{ define "main" }}
 
-{{ partial "page-blog-header.html" . }}
-
-<section class="section section-lg-bottom">
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "pheader-blogpst.html" . }}
+<!------------------------------------------------------------------------------------------------------>
+<section class="section mb-2">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 rounded-sm pr-5">
-        <img src="{{ .Params.Image | absURL }}" class="rounded-sm img-fluid w-100 mb-5" alt="post-thumb">
-        <p class="text-color card-date position-relative d-inline-block">BY <span class="text-dark font-weight-bold">{{ .Params.Author }}</span> / ON <span class="text-dark font-weight-bold">{{ .PublishDate.Format "Jan 02, 2006" }}</span></p>
+      <div class="col s12 m12 l12">
+        <img src="{{ .Params.Image | absURL }}" class="rounded-sm" alt="post-thumb">
+        <p class="text-color card-date position-relative d-inline-block">BY <span class="text-dark">{{ .Params.Author }}</span> / ON <span class="text-dark">{{ .PublishDate.Format "Jan 02, 2006" }}</span></p>
+        <ul>
+          {{ range .Params.categories }}
+            <li class="filter-tags"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}.html">{{ . }}</li></a>
+        </ul> 
+          {{end}}
         <div class="content">
           {{ .Content }}
         </div>
-        <div class="my-5">
-          <h5 class="d-inline-block mr-3">Share:</h5>
-          <ul class="list-inline d-inline-block">
+        <div class="row">
+          <h5 class="d-inline-block">Share:</h5>
+          <ul class="list-inline social-icons center-align">
             {{ range .Site.Params.sharePost }}
-            <li class="list-inline-item"><a href="{{ .URL }}" class="text-color"><i class="fa {{ .icon }}"></i></a></li>
+            <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
             {{ end }}
           </ul>
         </div>
       </div>
-      {{ partial "sidebar.html" . }}
     </div>
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
   </div>
 </section>
-
-{{ partial "subscription-white.html" . }}
 
 {{ end }}

@@ -1,0 +1,208 @@
+###
+###{% if local_mode %}
+###        <link href="{% static 'assets/fonts/MaterialIcons/material-icons.css' %}" rel="stylesheet">
+###        <link href="{% static 'assets/css/materialize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+###        <link href="{% static 'assets/css/datwit.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+###    {% else %}
+###        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+###
+
+baseURL = "https://datwit.com/"
+
+languageCode = "en-us"
+title = "Datwit"
+theme = "agico-hugo"
+summaryLength = "10"
+paginate = 6
+uglyURLs = true
+
+[outputs]
+  home = ["HTML", "AMP", "RSS", "JSON"]
+  page = ["HTML"]
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/font-awesome/font-awesome.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+  [[params.plugins.css]]
+  URL = "plugins/aos/aos.css"
+  [[params.plugins.css]]
+  URL = "plugins/materializecss/MaterialIcons/material-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/materializecss/materialize.css"
+  # last one for our own styles
+  [[params.plugins.css]]
+  URL = "plugins/datwit/style.css"
+  
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  # [[params.plugins.js]]
+  # URL = "plugins/google-map/gmap.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+  [[params.plugins.js]]
+  URL = "plugins/aos/aos.js"
+  [[params.plugins.js]]
+  URL = "plugins/mixitup/mixitup.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/materializecss/materialize.min.js"
+  # last one for our own scripts
+  [[params.plugins.js]]
+  URL = "plugins/datwit/script.js"
+  
+
+
+  
+# navigation
+[menu]
+    
+  [[menu.main]]
+  name = "Services"
+  URL = "services"
+  weight = 2
+  
+   
+  [[menu.main]]
+  name = "Case Studies"
+  URL = "casestudies"
+  weight = 4
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 5
+
+  [[menu.main]]
+  name = "About Us"
+  URL = "about"
+  weight = 7
+
+  [[menu.main]]
+    name = "Contact us"
+    URL = "contact"
+    weight = 8
+
+#  [[menu.main]]
+#  weight = 8
+#  name = "More"
+#  hasChildren = true
+
+#    [[menu.main]]
+#    parent = "More"
+#    name = "Terms"
+#    URL = "terms"
+
+#    [[menu.main]]
+#    parent = "More"
+#    name = "Privacy"
+#    URL = "privacy"
+
+# Footer
+
+  [params.footer]
+  content = "Follow us"
+
+    [[params.footer.socialIcon]]
+    icon = "fa-facebook"
+    URL = "https://facebook.com/datwit"
+
+    [[params.footer.socialIcon]]
+    icon = "fa-twitter"
+    URL = "https://twitter.com/datwit"
+
+    [[params.footer.socialIcon]]
+    icon = "fa-linkedin"
+    URL = "https://linkedin.com/datwit"
+
+    [[params.footer.socialIcon]]
+    icon = "fa-github"
+    URL = "https://github.com/datwit"
+
+#    [[params.footer.socialIcon]]
+#    icon = "fa-instagram"
+#    URL = "https://instagram.com/datwit"
+
+  [params.footer.service]
+  title = "Data Protection"
+
+  [params.footer.contact]
+  title = "Contact Info"
+#  address = "Serbian address"
+#  mobile = "+1234567890"
+  email = "contact@datwit.com"
+
+  # copyright
+  [params.copyright]
+  copyright = "Datwit"
+
+#Footer menu
+
+  [[menu.footer]]
+  name = "Privacy Policy"
+  URL = "privacy.html"
+
+  [[menu.footer]]
+  name = "Terms and Conditions"
+  URL = "terms.html"
+
+[params]
+logo = "images/logo.png"
+logomin = "images/logo-min.png"
+home = "Home"
+# Meta data
+description = "Dynamic Witty Analytics Company"
+author = "Datwit Team"
+# google map
+#gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+# gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCFz41K58LkBFXXw_a4Oy_xQAtBqdFTFaA&libraries=places"
+# #mapLatitude = "51.5223477"
+#mapLongitude = "-0.1622023"
+# mapLatitude = "20.882842"
+# mapLongitude = "-76.262690"
+# mapMarker = "images/marker.png"
+# Google Analitycs
+#googleAnalitycsID = "Your ID"
+
+  # Preloader
+[params.preloader]
+enable = true
+
+  # Navigation get start button
+#  [params.navBtn]
+#  enable = true
+#  btnText = "sign up"
+#  URL = "#"
+
+  # Subscription
+#  [params.subscription]
+#  title = "Subscribe <br> to our newsletter"
+#  formAction = "#"
+
+# share blog post
+[[params.sharePost]]
+icon = "fa-facebook"
+URL = "https://facebook.com/datwit"
+
+[[params.sharePost]]
+icon = "fa-twitter"
+URL = "https://twitter.com/datwit"
+
+[[params.sharePost]]
+icon = "fa-linkedin"
+URL = "https://linkedin.com/datwit"

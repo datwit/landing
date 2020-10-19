@@ -1,0 +1,14 @@
+name: 'Delete artifacts after PR merged'
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  delete-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kolpav/purge-artifacts-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          expire-in: 1day # Setting this to 0 will delete all artifacts

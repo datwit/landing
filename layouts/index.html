@@ -1,277 +1,194 @@
 {{ define "main" }}
 
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "pheader-home.html" . }}
+<!------------------------------------------------------------------------------------------------------>
+
 {{"<!-- banner -->"| safeHTML}}
-<section class="hero-area bg-cover" data-background="{{ .Site.Data.homepage.banner.bgImage | absURL }}">
+<section>
+  <div class="hero-image-full">
+    <div class="im">
+      <div class="imge1"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image1.png"></div>
+      <div class="imge2"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image2.png">
+        <a class="btn-floating btn-large white pulse tooltipped" data-position="bottom" data-tooltip="What we do" id="floatb" href="{{ .Site.BaseURL }}services.html"><i class=" small material-icons">arrow_forward</i></a>
+      </div>
+      <div class="imge3"> <img alt="Hero-image-full" src="{{ .Site.BaseURL }}images/background/image3.png"></div>
+      
+    </div>
+    {{ with .Site.Data.homepage.banner }}
+    <div class="container">
+      <h1 id="main-text" >{{ .title }}</h1>
+      <a href="{{ .Site.BaseURL }}contact.html"><button class="btn waves-effect waves-light" type="submit" name="action" id="call">Contact us<i class="material-icons">send</i></button></a>  
+    </div>
+    {{end}}
+  </div>
+  <div class="hero-image-mobile">
+    <img alt="Hero-image-mobile" src="{{ .Site.BaseURL }}images/background/banner-mobile.png">
+    {{ with .Site.Data.homepage.banner }}
+      <div class="container">
+      <h1>{{ .title }}</h1>
+      <a href="{{ .Site.BaseURL }}contact.html"><button class="btn waves-effect waves-light" type="submit" name="action" id="call2">Contact us<i class="material-icons">send</i></button></a>
+    </div>
+    {{end}}
+    
+  </div>  
+</section>
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>  -->
+<a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
+        
+<!-------------------------------------------------->
+
+{{"<!-- /banner -->"| safeHTML}}
+
+{{"<!-- services -->"| safeHTML}}
+<section class="mr-3 light-gray4" id="b-serv">
   <div class="container">
-    <div class="row align-items-center justify-content-between">
-      {{ with .Site.Data.homepage.banner }}
-      <div class="col-lg-6 pl-lg-0 text-center text-lg-left">
-        <h1 class="text-white position-relative" data-aos="fade-up" data-aos-delay="1000">{{ .title }}<span class="watermark">{{ .watermark }}</span></h1>
-        <p class="text-white pt-2 pb-3" data-aos="fade-up" data-aos-delay="1200">{{ .content | markdownify }}</p>
-        {{ with .button }}
-        <a href="{{ .URL }}" class="btn btn-primary" data-aos="fade-up" data-aos-delay="1400">{{ .btnText }}</a>
-        {{ end }}
+    <div class="row">
+      <!-- {{with .Site.Data.services.service}}
+      <h2 class="serv-tit">{{.title}}</h2>
+      {{end}} -->
+      {{ range .Site.Data.services.serviceItem }} 
+      <div class="col s12 m6 l3" id="col-height">
+        <a href="/services.html"><img src="{{ .src | absURL }}" alt="{{ .title }}"></a>  
+        <div id="text-continous">
+          <a href="/services.html"><h6 class="subt">{{ .title }}</h6></a>
+          <p id="p-descrip">{{.shortcontent}}</p>
+        </div>             
       </div>
-      <div class="col-lg-5 pl-lg-0 pt-5 pt-lg-0 text-lg-right text-center">
-        <img src="{{ .image | absURL }}" class="img-fluid rounded" alt="illustration" data-aos="zoom-in" data-aos-delay="1500">
-      </div>
-      {{ end }}
+      {{end}}
     </div>
   </div>
 </section>
-{{"<!-- /banner -->"| safeHTML}}
+{{"<!-- /services -->"| safeHTML}}
 
-{{"<!-- toolset -->"| safeHTML}}
-<section>
+
+{{"<!-- goals -->"| safeHTML}}
+<section class="mr-2 mr-4">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <ul class="list-inline d-flex justify-content-between py-3 py-lg-5 border-bottom align-items-center">
-          {{ range .Site.Data.homepage.toolset }}
-          <li class="list-inline-item"><img class="img-fluid p-2" src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
+      <!--first card------------------------>
+      {{ with .Site.Data.homepage.about }}
+      <h2 id="g-title" >{{.sectiontitle}}</h2>
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">
+              <h3 class="activator crev">{{ .title}}</h3>
+              <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
+            </span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title activator">
+              <h3 class="activator crev">{{ .title}}</h3>
+              <i class="material-icons grey-text text-darken-4 beb">close</i>
+            </span>
+            <h6 class="psub">{{.subtitle}}</h6>
+            {{ end }}
+            {{ range .Site.Data.homepage.about.content }}
+            <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
+            {{end}}
+          </div>
+        </div>
+      </div>  
+      
+      <!--/first card------------------------> 
+      <!--second card------------------------>
+    {{ with .Site.Data.homepage.about2 }}
+    <div class="col s12 m4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator">
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
+          </span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title activator">
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4 beb">close</i>
+          </span>
+          <h6 class="psub">{{.subtitle}}</h6>
           {{ end }}
-        </ul>
+          {{ range .Site.Data.homepage.about2.content }}
+          <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
+          {{end}}
+        </div>
       </div>
+    </div>    
+  <!--/second card------------------------> 
+  <!--third card------------------------>
+    {{ with .Site.Data.homepage.about3 }}
+    <div class="col s12 m4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{ .image | absURL}}" class="rounded" alt="about-image">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator">
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4 beb">more_vert</i>
+          </span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title activator">
+            <h3 class="activator crev">{{ .title}}</h3>
+            <i class="material-icons grey-text text-darken-4 beb">close</i>
+          </span>  
+          <h6 class="psub">{{.subtitle}}</h6>        
+          {{ end }}
+          {{ range .Site.Data.homepage.about3.content }}
+          <div class="be"><i class=" tiny material-icons">play_arrow</i><p>{{ .title }}</p></div>
+          {{end}}
+        </div>
+      </div>
+    </div>     
+  <!--/third card------------------------>   
+   </div>      
+ </div>
+</section>    
+{{"<!-- /goals -->"| safeHTML}}
+
+{{"<!-- toolset -->"| safeHTML}}
+<section class="mr-2 light-gray" id="tool-bg">
+  <div class="container">
+    <div class="row">  
+      {{with .Site.Data.homepage}}
+      <h2>{{ .toolsettitle }}</h2>
+      {{end}}
+      {{ range .Site.Data.homepage.toolset }}        
+        <div id="col1">
+          <ul class="rib">
+              <li id="lis" ><img src="{{ .toolsetLogo | absURL }}" alt="{{ .tool }}" title="{{ .toolName }}"></li>
+          </ul>
+        </div>
+      {{end}}
     </div>
-  </div>
+  </div> 
 </section>
 {{"<!-- /toolset -->"| safeHTML}}
 
-<!--{{"&lt;!&ndash; feature &ndash;&gt;"| safeHTML}}-->
-<!--<section class="section pb-0">-->
-<!--  <div class="container">-->
-<!--    <div class="row">-->
-<!--      <div class="col-lg-12 text-center">-->
-<!--        {{ with .Site.Data.homepage.feature }}-->
-<!--        <p class="subtitle" data-aos="fade-up">{{ .subtitle }}</p>-->
-<!--        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">{{ .title }}</h2>-->
-<!--        {{ end }}-->
-<!--      </div>-->
-<!--      {{ range $index, $element:= where .Site.RegularPages "Type" "feature" }}-->
-<!--      {{ $delay := mul $index 200 }}-->
-<!--      <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="{{ $delay }}">-->
-<!--        <div class="hover-bg-primary text-center position-relative px-4 py-5 rounded-lg shadow">-->
-<!--          <img src="{{ .Params.Image | absURL }}" class="img-fluid" alt="feature-image">-->
-<!--          <h5 class="pt-5 pb-3 card-title">{{ .Title }}</h5>-->
-<!--          <p class="mb-4">{{ .Summary }}</p>-->
-<!--          <a class="btn btn-outline-primary" href="{{ .Permalink }}">read more</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      {{ end }}-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--{{"&lt;!&ndash; feature &ndash;&gt;"| safeHTML}}-->
-
-{{"<!-- about -->"| safeHTML}}
-<section class="section mt-5 py-1">
-  <div class="container">
-    <div class="row align-items-center">
-      {{ with .Site.Data.homepage.about }}
-      <div class="col-lg-6 col-md-5 text-center text-md-left mb-4 mb-md-0">
-        <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image" data-aos="fade-right">
-      </div>
-      <div class="col-lg-6 col-md-7 text-center text-md-left">
-        <p class="subtitle" data-aos="fade-left">{{ .subtitle }}</p>
-        <h2 class="section-title" data-aos="fade-left" data-aos-delay="200">{{ .title }}</h2>
-        <p class="mb-4" data-aos="fade-left" data-aos-delay="300">{{ .content | markdownify }}</p>
-        {{ with .button }}
-        <a href="{{ .URL }}" class="btn btn-outline-primary" data-aos="fade-left" data-aos-delay="500">{{ .btnText }}</a>
-        {{ end }}
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{"<!-- /about -->"| safeHTML}}
-
-{{"<!-- about -->"| safeHTML}}
-<section class="section py-1">
-  <div class="container">
-    <div class="row align-items-center">
-      {{ with .Site.Data.homepage.about2 }}
-      <div class="col-lg-6 col-md-7 text-center text-md-left order-md-1 order-2">
-        <p class="subtitle" data-aos="fade-right">{{ .subtitle }}</p>
-        <h2 class="section-title" data-aos="fade-right" data-aos-delay="200">{{ .title }}</h2>
-        <p class="mb-4" data-aos="fade-right" data-aos-delay="300">{{ .content | markdownify }}</p>
-        {{ with .button }}
-        <a href="{{ .URL }}" class="btn btn-outline-primary" data-aos="fade-right" data-aos-delay="500">{{ .btnText }}</a>
-        {{ end }}
-      </div>
-      <div class="col-lg-6 col-md-5 text-center text-md-left order-1 order-md-2 mb-4 mb-md-0">
-        <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image" data-aos="fade-left">
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{"<!-- /about -->"| safeHTML}}
-
-{{"<!-- about -->"| safeHTML}}
-<section class="section py-1 mb-5">
-  <div class="container">
-    <div class="row align-items-center">
-      {{ with .Site.Data.homepage.about3 }}
-      <div class="col-lg-6 col-md-5 text-center text-md-left mb-4 mb-md-0">
-        <img src="{{ .image | absURL}}" class="img-fluid rounded" alt="about-image" data-aos="fade-right">
-      </div>
-      <div class="col-lg-6 col-md-7 text-center text-md-left">
-        <p class="subtitle" data-aos="fade-left">{{ .subtitle }}</p>
-        <h2 class="section-title" data-aos="fade-left" data-aos-delay="200">{{ .title }}</h2>
-        <p class="mb-4" data-aos="fade-left" data-aos-delay="300">{{ .content | markdownify }}</p>
-        {{ with .button }}
-        <a href="{{ .URL }}" class="btn btn-outline-primary" data-aos="fade-left" data-aos-delay="500">{{ .btnText }}</a>
-        {{ end }}
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{"<!-- /about -->"| safeHTML}}
-
-<!--{{"&lt;!&ndash; video &ndash;&gt;"| safeHTML}}-->
-<!--<section class="section-lg pb-0 bg-cover" data-background="{{`images/background/check-video.png` | absURL }}">-->
-<!--  <div class="container">-->
-<!--    <div class="row align-items-center">-->
-<!--      {{ with .Site.Data.homepage.video }}-->
-<!--      <div class="col-md-6 pr-lg-5 mb-md-0 mb-5">-->
-<!--        <div class="mobile-height position-relative rounded-lg overlay-gradient"-->
-<!--          data-background="{{ .videoThumb | absURL }}" data-aos="zoom-in">-->
-<!--          <div class="pulse-container">-->
-<!--            <div class="pulse-box">-->
-<!--              <a class="venobox play-icon icon-center" data-autoplay="true" data-vbtype="video"-->
-<!--                href="{{ .videoURL }}"><i class="fa fa-play text-secondary"></i></a>-->
-<!--              <svg class="pulse-svg" width="90px" height="90px" viewBox="0 0 50 50" version="1.1"-->
-<!--                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
-<!--                <circle class="circle first-circle" fill="#fff" cx="25" cy="25" r="25"></circle>-->
-<!--                <circle class="circle second-circle" fill="#fff" cx="25" cy="25" r="25"></circle>-->
-<!--                <circle class="circle third-circle" fill="#fff" cx="25" cy="25" r="25"></circle>-->
-<!--                <circle class="circle" fill="#fff" cx="25" cy="25" r="25"></circle>-->
-<!--              </svg>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="col-md-6 px-4">-->
-<!--        <p class="subtitle" data-aos="fade-up">{{ .subtitle }}</p>-->
-<!--        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>-->
-<!--        <p class="mb-4" data-aos="fade-up" data-aos-delay="400">{{ .content | markdownify }}</p>-->
-<!--      </div>-->
-<!--      {{ end }}-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--{{"&lt;!&ndash; video &ndash;&gt;"| safeHTML}}-->
-
-<!--{{"&lt;!&ndash; testimonial &ndash;&gt;"| safeHTML}}-->
-<!--<section class="section bg-shape-triangles">-->
-<!--  <div class="container">-->
-<!--    <div class="row">-->
-<!--      <div class="col-lg-12 text-center">-->
-<!--        {{ with .Site.Data.homepage.testimonial }}-->
-<!--        <p class="subtitle" data-aos="fade-up">{{ .subtitle }}</p>-->
-<!--        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">{{ .title }}</h2>-->
-<!--        {{ end }}-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="row testimonial-slider" data-aos="fade-up" data-aos-delay="200">-->
-<!--      {{ range .Site.Data.homepage.testimonial.testimonialItem }}-->
-<!--      <div class="col-lg-4">-->
-<!--        <div class="card px-4 py-5 border-0 rounded-lg shadow text-center card-border-bottom mb-5 mt-3">-->
-<!--          <i class="fa fa-quote-right icon-quote mb-4 mx-auto text-primary"></i>-->
-<!--          <p class="mb-4">{{ .content | markdownify }}</p>-->
-<!--          <h4>{{ .name }}</h4>-->
-<!--          <span class="h6">{{ .designation }}</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      {{ end }}-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--{{"&lt;!&ndash; testimonial &ndash;&gt;"| safeHTML}}-->
-
-{{"<!-- know more -->"| safeHTML}}
-<section class="bg-triangles bg-gradient-primary">
-  <div class="container">
+{{"<!-- team -->" | safeHTML}}
+<section class="mb-1 mr-3">
+  <div class="container" id="team-cont">
     <div class="row">
-      {{ with .Site.Data.homepage.know_more }}
-      <div class="col-lg-6 text-center text-lg-left">
-        <div class="section">
-          <h2 class="section-title text-white" data-aos="fade-up">{{ .title }}</h2>
-          <p class="text-white mb-4" data-aos="fade-up" data-aos-delay="200">{{ .content | markdownify }}</p>
-          <ul class="list-inline">
-            <li class="list-inline-item mb-3 mb-lg-0">
-              {{ with .morebtn }}
-              <a class="btn btn-white" href="{{ .URL }}" data-aos="zoom-in" data-aos-delay="400">{{ .btnText }}</a>
-              {{ end }}
-            </li>
-<!--            <li class="list-inline-item">-->
-<!--              {{ with .appstore }}-->
-<!--              <a class="btn btn-outline-white" href="{{ .URL }}" data-aos="zoom-in" data-aos-delay="500"><i class="fa fa-apple mr-2"></i>{{ .btnText }}</a>-->
-<!--              {{ end }}-->
-<!--            </li>-->
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-6 align-self-end">
-        <img src="{{ .image | absURL }}" class="img-fluid w-100 rounded" alt="mobile" data-aos="fade-left" data-aos-delay="600">
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{"<!-- /know more -->"| safeHTML}}
-
-{{"<!-- contact -->"| safeHTML}}
-<section class="section section-lg-bottom bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        {{ with .Site.Data.contact.contactForm }}
-        <p class="subtitle">{{ .subtitle }}</p>
-        <h2 class="section-title">{{ .title }}</h2>
+      <div class="col s12"><!-------------------------first row title------->
+        {{ with .Site.Data.team.team }}
+        <h2>{{ .title }}</h2>
+        <h6>{{.description}}</h6>
+        <h6>{{.subtitle}}<a class="btn-floating pulse" data-position="bottom" id="floatc" href="{{ .Site.BaseURL }}about.html"><i class=" small material-icons">navigate_next</i></a></h6>
         {{ end }}
       </div>
-      <div class="col-lg-12 text-center p-0">
-        <form action="{{ .Site.Data.contact.contactForm.formAction }}" method="post" class="row">
-          <div class="col-lg-6">
-            <input type="text" class="form-control mb-4 border disabled" disabled placeholder="Your email">
-          </div>
-          <div class="col-lg-6">
-            <input type="text" class="form-control mb-4 border disabled" disabled placeholder="Your Name">
-          </div>
-          <div class="col-lg-12">
-            <input type="text" class="form-control mb-4 border disabled" disabled placeholder="Subject">
-          </div>
-          <div class="col-lg-12">
-            <textarea name="message" class="form-control mb-4 border disabled" disabled placeholder="Message"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="button" class="btn btn-primary disabled" disabled>Coming soon</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-{{"<!-- /contact -->"| safeHTML}}
+    </div>  
+  </div>  
+ </section>
+{{"<!-- /team -->" | safeHTML}}
 
-<!--{{"&lt;!&ndash; pricing &ndash;&gt;"| safeHTML}}-->
-<!--<section class="section section-lg-bottom">-->
-<!--  <div class="container">-->
-<!--    <div class="row">-->
-<!--      <div class="col-lg-12 text-center">-->
-<!--        {{ with .Site.Data.pricing.pricing }}-->
-<!--        <p class="subtitle" data-aos="fade-up">{{ .subtitle }}</p>-->
-<!--        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">{{ .title }}</h2>-->
-<!--        {{ end }}-->
-<!--      </div>-->
-<!--      {{ partial "pricing-table.html" . }}-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--{{"&lt;!&ndash; pricing &ndash;&gt;"| safeHTML}}-->
-
-<!--{{ partial "subscription.html" . }}-->
+{{ partial "contact-access.html" . }}
 
 {{ end }}

@@ -1,33 +1,115 @@
 {{ define "main" }}
 
-{{ partial "page-header.html" . }}
+<!-----------------------------navbar -------s----------------------------------------------------------->
+{{ partial "pheader-about.html" . }}
+<!------------------------------------------------------------------------------------------------------------------>
 
 {{"<!-- about -->" | safeHTML }}
+<!--**********************header section about the company********************-->
 {{ with .Site.Data.about.about }}
-<section class="section">
+<section class="mb-2 mr-2" id="team">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 pr-lg-4 mb-4 mb-md-0">
-        <div class="position-relative" data-aos="fade-right">
-          <img src="{{ .aboutImg | absURL }}" class="img-fluid rounded-sm" alt="{{ .aboutAlt }}">
-        </div>
+    <div class="row" id="comp-cont">
+      <div class="col s12 m6 l6">
+        <img src="{{ .aboutImg | absURL }}" alt="about datwit">
       </div>
-      <div class="col-md-6 align-self-center pl-lg-4">
-        <p class="subtitle" data-aos="fade-up">{{ .subtitle }}</p>
-        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .title }}</h2>
-        <p data-aos="fade-up" data-aos-delay="100">
+      <div class="col s12 m6 l6">
+        <p class="subtitle">{{ .subtitle }}</p>
+        <h2>{{ .title }}</h2>
+        <p>
           {{ .content | markdownify }} <br><br>
-            Take a look to our open solutions <a href="{{.github }}" class="p-2 text-reset"><i class="fa fa-2x fa-github icon-gray"></i></a>
+            {{ .linkDescription }} <a href="{{.github }}" class="text-reset"><i class="fa fa-2x fa-github"></i></a>
         </p>
-      </div>
+      </div> 
     </div>
   </div>
 </section>
-{{ end }}
-{{"<!-- about -->" | safeHTML }}
-
-<!--{{ partial "services.html" . }}-->
-
-<!-- {{ partial "subscription-white.html" . }} -->
+{{end}}
+<!------------------------------team members------------------------------------------------------------>
+<section class="light-gray2">
+  <div class="container">
+    <div class="row"><!-------------------------------------------->
+      <div class="col s12">
+        {{ with .Site.Data.team.team }}
+        <h2>{{ .subtitle }}</h2>
+        {{ end }}
+      </div>
+    </div><!------------------------------------------------------->  
+    <div class="row"><!----------------1st row 3 members------------------------>
+      {{ range $element:= .Site.Data.team.team.teamMember }}
+      <div class="col s12 m4 l4">
+        <div class="team-member"><!----------------------picture-->
+          <img src="{{ .image | absURL }}">
+        </div><!-------------------------------------------------->
+        <h5 class="team-member-name">{{.name }}</h5>
+        <div class="team-member-designation">{{ .designation }}</div>
+        <div class="team-member-role">{{ .role }}</div>
+        <div class="row">
+          <div class="container-social">
+            <ul class="list-inline social-icons">
+              {{ range .socialIcon }}
+              <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </div>          
+        </div> 
+      </div> 
+      {{end}}
+    </div> <!-------------------------------------------------------->
+    <div class="row"><!------------2nd row 2 members-------------------------------->
+      {{ range $element:= .Site.Data.team.team.teamMember2 }}
+      <div class="col s12 m4 push-m2 l4 push-l2">
+        <div class="team-member"><!----------------------picture-->
+          <img src="{{ .image | absURL }}">
+        </div><!-------------------------------------------------->
+        <h5 class="team-member-name">{{.name }}</h5>
+        <div class="team-member-designation">{{ .designation }}</div>
+        <div class="team-member-role">{{ .role }}</div>
+        <div class="row">
+          <div class="container-social">
+            <ul class="list-inline social-icons">
+              {{ range .socialIcon }}
+              <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </div>          
+        </div> 
+      </div> 
+      {{end}}
+    </div>     
+  </div><!------------------------------------------------------->  
+</section>
+<!---------------------collaborators------------------------------------->
+<section class="mr-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        {{with .Site.Data.team.partners}}
+        <h2>{{.title}}</h2>
+        <h6>{{.subtitle}}</h6>
+        {{end}}
+      </div>
+      <div class="row">
+        {{range .Site.Data.team.partners.collab}}
+        <div class="col s12 m6 l3">
+          <img src=" {{.image | absURL }}" alt="collaborator image">
+          <h5 class="team-member-name">{{.name }}</h5>
+          <div class="team-member-designation">{{ .designation }}</div>
+          <div class="row">
+            <div class="container-social">
+              <ul class="list-inline social-icons">
+                {{ range .socialIcon }}
+                <li class="list-inline-item"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+            </div>          
+          </div>        
+        </div>        
+        {{end}}
+      </div>           
+    </div>
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
+  </div>
+</section>
 
 {{ end }}

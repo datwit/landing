@@ -1,19 +1,20 @@
 {{ define "main" }}
-
+<!-----------------------------navbar ------------------------------------------------------------------>
 {{ partial "page-header.html" . }}
+<!------------------------------------------------------------------------------------------------------>
 
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col s12">
         <div class="content">
-          {{.Content }}
+          {{.Content | markdownify  }}
         </div>
       </div>
     </div>
   </div>
 </section>
 
-{{ partial "subscription-white.html" . }}
-
 {{ end }}
+
+

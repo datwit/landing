@@ -2,3 +2,5 @@
 _gen/
 public/
 .directory
+*.code-workspace
+config.local.toml

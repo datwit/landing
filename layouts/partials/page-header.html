@@ -1,20 +1,71 @@
-{{ "<!-- page-header -->" | safeHTML }}
-<section class="page-title page-title-overlay bg-cover" data-background="{{ .Params.BgImage | absURL }}">
-  <div class="container">
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{"<!-- navigation -->" | safeHTML }}
+
+<nav class="navbar">
+  <div class="nav-wrapper">
     <div class="row">
-      <div class="col-lg-7">
-        <h1 class="text-white position-relative">{{ .Title }}<span class="watermark-sm">{{ .Params.Watermark }}</span></h1>
-        <p class="text-white pt-4 pb-4">{{ .Params.ShortDescription | markdownify }}</p>
+      <div class="col s3" id="logo">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="datwit"></a>
       </div>
-      <div class="col-lg-3 ml-auto align-self-end">
-        <nav class="position-relative zindex-1" aria-label="breadcrumb">
-          <ol class="breadcrumb justify-content-end bg-transparent">
-            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}" class="text-white">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a></li>
-            <li class="breadcrumb-item text-white" aria-current="page">{{ .Title }}</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </div>
-</section>
-{{ "<!-- /page-header -->" | safeHTML }}
+      <div class="col s8" id="navigation"><!--------------------------desktop menu--------------------------->
+        <ul class="navbar-nav hide-on-small" id="nav-list">
+          <li class="nav-item">
+              <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}casestudies.html">Cases Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-capitalize" href="{{ .Site.BaseURL }}contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div><!------------------------------------------------------------------------------------------>
+     
+  <!--------------------------------------responsive sidenav---------------------------------------------->
+        <ul id="slide-out" class="sidenav">
+          <div class="user-view">
+            <div class="background"></div>
+            <div class="row">
+              <div class="col s6">
+              <img src="{{ .Site.Params.logomin | absURL }}" alt="sidenav-logo" class="logo-img">
+              </div>
+              <div class="col s6">
+              <a class="nav-link text-white text-capitalize  sidenav-close" href="#!" id="close-icon"><i class="material-icons">chevron_left</i></a>
+              </div>  
+            </div>
+          </div>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}services.html">Services</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}casestudies.html">Cases Studies</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}blog.html">Blog</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}about.html">About Us</a>
+          </li>
+          <li class="list">
+            <a class="nav-link text-white text-capitalize " href="{{ .Site.BaseURL }}contact.html">Contact Us</a>
+          </li>
+          
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+    </nav>      
+  </div> 
+</div>
+
+{{"<!-- nav part end -->" | safeHTML }}

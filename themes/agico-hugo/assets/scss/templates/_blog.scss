@@ -1,100 +1,76 @@
-.blog-slider {
-  .arrow-left,
-  .arrow-right {
-    position: absolute;
-    top: -80px;
-    right: 0;
-    cursor: pointer;
-  }
-
-  .arrow-right {
-    right: 17px;
-  }
-
-  .arrow-left {
-    right: 77px;
-    z-index: 1;
-  }
-}
+/*
+ * _blog.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
 
 /* sidebar */
-.widget{
-  padding: 40px 30px 0;
-}
+// .widget{
+//   padding:0px 20px 20px 20px;
+// }
 
-.search-btn{
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-}
+// .sidebar-border{    
+//   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+//   border-radius: 3px;
+// }
 
-.tag-list {
-  li {
-    a {
-      padding: 12px 15px;
-      display: block;
-      border-radius: 40px;
+.filter-tags{
+  font-size:16px;
+  padding: 0.1rem 0.8rem 0.1rem 0.8rem;
+  line-height:20px;
+  border: 3px solid white;
+  background-color: $secondary-color ;
+  border-radius: 3rem;
+  text-align:center;
+  transition-duration: 60ms;
+  
+  &:hover{
+    // border: 3px solid $secondary-color2;
+    transition-duration: 60ms;
+  }
 
-      &:hover {
-        background: $btn-gradient-primary;
-        color: $white !important;
-      }
-    }
+  a:hover{
+    color:white;
+  }
+  a{
+    color: $primary-color;
   }
 }
 
-/* sidebar */
-
-/* blog single */
-
-blockquote {
-  box-shadow: inset 0px 7px 0px 0px rgba(255, 255, 255, 0.596);
-  padding: 34px 40px 37px 40px;
-  background-image: $bg-gradient-secondary;
-  border-radius: 10px;
-  margin: 40px 0;
-  p {
-    position:relative;
-    font-style: italic;
-    color: $white;
-    /* &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: -10px;
-      width: 55px;
-      height: 40px;
-      background: url(images/blockquote.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.7;
-    } */
-  }
-  h6{
-    color: $white;
-  }
+ul:not(.browser-default) > li{
+  display: inline-block;
 }
 
-.media {
-  img {
-    height: 75px;
-    width: 75px;
-  }
 
-  .reply-btn {
-    font-size: 16px;
-    font-weight: 500;
-  }
+//social icon center align blog pages
+.list-inline.d-inline-block{
+  display: flex;
+  justify-content: center;
 }
 
-form {
-  textarea {
-    height: 180px;
+#search{
+  padding-top: 100px;
+  
+  .search-field{
+  display: flex;
+  align-items: center;
   }
 }
-
-/* /blog single */
+#blog-h{
+   margin-top: 0px !important;
+}
+#blog-p{
+  p{
+    margin: 0px !important;
+  }
+}
+#slider-cap{
+  a{
+    color: $secondary-color2 !important;
+  }
+}
+#slid-head{
+  margin-top: 0px !important;
+}

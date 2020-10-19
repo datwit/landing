@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<!-----------------------------navbar ------------------------------------------------------------------>
+{{ partial "page-header.html" . }}
+<!------------------------------------------------------------------------------------------------------>
+{{"<!-- terms -->"| safeHTML}}
+
+<section class="mb-1" id="t-content">
+  <div class="container">
+   <div class="row" >
+    {{with .Site.Data.terms.terms}}
+      <div class="col s12">
+        <h2>{{ .title }}</h2>
+        <p>{{ .content | markdownify }}</p>     
+      </div>
+    </div>
+  </div>
+  <img class="responsive-img"  src="{{ .background | absURL }}" alt="" id="terms-background">
+  {{ end }}
+  <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
+</section>
+
+{{"<!-- /terms -->"| safeHTML}}
+
+{{ partial "contact-access-gray.html" . }}
+
+{{ end }}

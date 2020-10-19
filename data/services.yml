@@ -1,0 +1,192 @@
+# service
+service:
+#  subtitle : "Services"
+  title : "What we do"
+  description: "Our goal is to get close to the product you have in mind through 
+  intuitive designs and great tools to back them up. 
+  "
+  img: "images/services/background-board.png"
+
+global:
+  summary : "Our experience creating IT solutions includes:"
+  columns:
+    - title: "Custom software"
+      descrip: "We help companies launch their businesses, highlighting 
+      qualities as their main assets, creating complete software solutions
+      according to each client's requirements."
+
+    - title: "Software integrations"
+      descrip: "We offer the support that other companies need to preserve and improve their long lasting solutions."
+
+#keywords bullets services page
+servicekey:   
+  title: "Datwit team believes in:"  
+  content: 
+    - var: "Quality as our priority."
+    - var: "Challenges as our day to day motivation."
+    - var: "Keeping learning every day, as professionals and also as human beings."
+    - var: "Settling with no less than perfect."
+    - var: "Doing the best and get things done."
+    - var: "Straightforwardness and transparency."
+    - var: "Transforming our clients' needs into an opportunity for success."
+
+
+#services icons homepage
+serviceItem:      
+
+    - title: "Software Development"
+      src: "images/services/soft-developm.png"
+      shortcontent: "Good products are a result of planning a highly intelligent and precise process."
+      
+
+    - title: "Data Analysis"
+      src: "images/services/data-anal.png"
+      shortcontent: "Less cholesterol in your data makes your business' heart lead you to the goal faster."
+      
+
+    - title: "Data Visualization"
+      src: "images/services/data-visualiz.png"
+      shortcontent: "Business intelligence can increase using a very well designed dashboard."
+
+    
+    - title: "Research on IoT"
+      src: "images/services/domotic.png"
+      shortcontent: "No matter the device success starts by expanding your data sources."
+        
+#diagram
+diagram:
+  title : "How we get it done"
+  subtitle : "We are Agile. So, in order to make sure your initial idea becomes 
+          a working product we take advantage of the great benefits of Scrum 
+          and some of the best practices of XP."  
+
+#toggle panel diagram
+#design 
+developprocess1:
+  img: "images/services/prototyping.svg"
+  title: "Design"  
+  descrip: "We believes good UX/UI design is key to achieve all the business goals you are
+  expecting. Therefore we focus on:"
+  content1: "A great design requires a complete understanding of every user's need. 
+          That's why we keep UX research along the whole development process."
+  content2: "We build on the certainty that strong communication is essential to 
+          collect product requirements and to lead the path to success."
+  content3: "Every product is born from an idea. The fun part begins with the 
+          creation of the concept and the continuous search of the right features 
+          that fulfill your objectives."
+  content: 
+    - var: "UX Research"
+    - var: "UI Analysis"
+    - var: "Wireframing"
+#development
+developprocess2:
+  img: "images/services/development.svg"  
+  title: "Development"
+  descrip: "We build ready to use software using reliable technologies and following innovative trends. We are proud to help you to:"
+  content: 
+    - var: "Enhace your business productivity"
+    - var: "Smoothly run your every day processes"
+    - var: "Efficiently solve real-world problems"
+  descrip2: "In order to do that we take our time to carefully plan every sprint because it is our goal to deliver working products as soon as possible."  
+
+#testing
+developprocess3:
+  img: "images/services/testing.svg"  
+  title: "Testing"
+  descrip: "Our quality roadmap performs continuous testing aiming to perfection 
+  and keeps improving to achieve:"
+  content:
+    - var: "Flawless code"
+    - var: "Responsive design"
+    - var: "User-centered design"
+    - var: "On point functionality"
+
+#deployment
+developprocess4:
+  img: "images/services/deploy.svg"  
+  title: "Deployment"
+  descrip: "Once development is finished, deployment can be exhausting. That's why you can rely on us for:"
+  content:
+    - var: "Domain registration"
+    - var: "Securely deploy your project to on-cloud servers"
+    - var: "Long-term technical support"
+    - var: "Maintenance"
+
+#collapsible services page
+# software development
+serviceItem1:
+  title : "Software Development"  
+  url: "images/services/soft-develop.png"   
+  firstsectiontitle: " We focus on building full-cycle development services such as: "         
+  firstsectiontitle2: "Our developers give the best in:"
+  col1:  
+    title: "Frontend"
+    description: "We offer visually appealing and accessible apps, built using:"
+    img: "images/services/frontend.svg"
+    content: 
+    - var: "HTML5 & CSS3"
+    - var: "JavaScript/Vue.js/Nuxt.js"
+  col2:  
+    title: "Backend"
+    description: "Our services focus on creating functional applications, 
+                tailored to your specifications, therefore we use:"
+    img: "images/services/backend.svg"
+    content: 
+    - var: "Flask/Chalice"
+    - var: "Python scripts"
+  col3:  
+    title: "Deployment"
+    description: "We can get involved and support our clients when the final 
+                product goes live by implementing:"
+    img: "images/services/deployment.svg"
+    content: 
+    - var: "On-cloud services"
+    - var: "On-premises services"
+    
+#data intelligence 
+dataservicetitle: "Data Intelligence"  
+#data analysis
+serviceItem2:
+  title : "Data Analysis"   
+  content1 : "By using machine learning state of the art algorithms with customized
+              apps, we ensure:"
+  img: "images/services/data-analy.svg"  
+  
+  subtitle: "Our data science division can deliver:"
+  content:
+    - var: "Data exploration"
+    - var: "Data collection from streaming data sources"
+    - var: "Data cleaning and anonymization"
+    - var: "Study of relationship between variables"
+    - var: "APIs that serve your data"
+    - var: "Data management tech consulting"
+
+#data visualization  
+serviceItem3:
+  title : "Data Visualization"  
+  img: "images/services/data-visual.svg"
+  descrip: "Our dashboard philosophy allows faster discoveries with
+          small changes to your apps, so we supply:"   
+  content : 
+    - var: "Descriptive reports"
+    - var: "Graphic reports about your data"
+    - var: "Strategic and operational dashboards"
+    - var: "Addons with business variables of interest"
+    - var: "Models monitoring"
+    - var: "Feedback interface to improve human-in-the-loop"          
+        
+#research on iot
+serviceItem4:
+  title : "Research on IoT"
+  img: "images/services/iot.svg"  
+  descrip: "We provide research in IoT to close the loop of innovation
+            of our technologies, as a long term investment, on:"
+  content : 
+    - var: "Firmware Engineering"
+    - var: "Network communication and security"
+    - var: "Data Analysis"
+    - var: "API design" 
+    - var: "Mobile/PC Application Interface" 
+
+
+  

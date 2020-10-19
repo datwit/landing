@@ -1,0 +1,160 @@
+/*
+ * _common.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
+
+ // gray background
+.light-gray{
+  background-color: $bg-secondary;
+   padding: 50px 0 50px 0;    
+}
+.light-gray2{
+  background-color: $bg-secondary;
+   padding: 0 0 60px 0;    
+}
+//gray brackground no paddings for the homepage illustration
+.light-gray3{
+  background-color: $bg-secondary;
+   padding: 0px !important;    
+}
+
+//gray brackground no paddings but adjusting padding in responsive
+.light-gray4{
+  background-color: $bg-secondary;
+   padding: 0px !important;  
+   
+  @media only screen and (max-width: 1530px) {
+    padding: 10px 0 50px 0 !important;
+  }
+  @media only screen and (max-width: 1250px) {
+    padding: 10px 0 70px 0 !important;
+  }
+  @media only screen and (max-width: 1130px) {
+    padding: 10px 0 90px 0 !important;
+  }
+  @media only screen and (max-width: 1050px) {
+    padding: 10px 0 100px 0 !important;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 0 !important;
+  }    
+}
+/************************services section*********************************/ 
+#text-continous{
+  // word-wrap: break-word;
+  font-size: 17px;    
+  color: $primary-color;  
+  margin: 15px 10px 0 10px;
+
+   .subt{
+    
+    font-weight: bolder;    
+    color: $primary-color;
+    margin: 0 !important;
+    width: 100px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+
+    &:hover{
+      color: $secondary-color2;
+    }
+    &:active{
+      color: $secondary-color2;
+    }
+  }  
+}
+
+#p-descrip{
+  color: black !important; 
+  margin-top:0px !important;
+  line-height: 25px;
+     
+}
+
+.serv-tit{  
+    margin-top: 0px !important;
+    padding-top:20px ;  
+}
+#b-serv{
+  border-top: 1.5px solid #dbdbdb;
+}
+#col-height{
+  height: 320px;
+
+  @media only screen and (max-width: 600px) {
+    height: 250px !important;
+  }
+  @media only screen and (max-width: 345px) {
+    height: 270px !important;
+  }
+  @media only screen and (max-width: 296px) {
+    height: 300px !important;
+  }
+}
+//-------------custom grid and columns ----------------------------------
+.rib{
+    #lis{
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  }
+  #col1{
+    width: 19.5%;
+    display: inline-block !important;
+  
+    img{
+      width: 160px !important;
+      height: auto;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    
+    @include tablet{
+      width: 49% !important;
+    }
+    @media only screen and (max-width: 300px) {
+      width: 100% !important;
+    }
+  }
+
+#tool-bg{
+padding-top: 10px;
+padding-bottom: 10px;
+    h2{
+    margin-top: 0px !important;
+    }
+
+}
+
+/**********************contact us section homepage*************************/
+.bg-illustration{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //adding paddings in smaller devices so it can fit the text and button
+    @media only screen and (max-width: 600px) {
+      padding: 50px 0 50px 0;
+    }
+  
+    .content-cont{
+      position: absolute;
+      z-index: 1;  
+    }
+}
+
+.adj{
+  margin-bottom: 0px;
+
+  @media only screen and (min-width: 601px) {
+    display: flex;
+    align-items: center;
+  }
+}

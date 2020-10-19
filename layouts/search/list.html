@@ -1,11 +1,15 @@
 {{ define "main" }}
 
+<!-----------------------------navbar ------------------------------------------------------------------>
 {{ partial "page-header.html" . }}
-
-<section class="section section-lg-bottom">
+<!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------>
+{{"<!-- search -->"| safeHTML}}
+<!------------------search results--------------------------------->
+<section class="mb-2 mb-1">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col s12">
           <div id="search-results"></div>
           <script id="search-result-template" type="text/x-js-template">
             <div class="search-result" id="summary-${key}">
@@ -17,9 +21,12 @@
           </script>
       </div>
     </div>
+    <a class="btn-floating btn-large waves-effect waves-light" onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></a>
   </div>
 </section>
 
-{{ partial "subscription-white.html" . }}
+{{"<!-- /search -->"| safeHTML}}
+
+{{ partial "contact-access-gray.html" . }}
 
 {{ end }}

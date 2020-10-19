@@ -1,0 +1,106 @@
+/*
+ * _material.scss - https://datwit.com/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Dynamic Witty Analytics
+ */
+
+
+//these are the MD overriden styles 
+.input-field .prefix.active {
+    color:$secondary-color !important;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $secondary-color !important;
+    -webkit-box-shadow: 0 1px 0 0 $secondary-color !important;
+    box-shadow: 0 1px 0 0 $secondary-color !important;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: $secondary-color !important;
+  
+}
+.input-field > label{
+  font-size: 1.2em !important;
+}
+
+textarea {
+    height: 8rem !important;
+}
+.slider .indicators .indicator-item.active{
+    background-color: $secondary-color;
+}
+.slider .slides li .caption{
+    top: 60% !important;
+}
+
+.pagination li.active{
+    background-color: $primary-color;
+    height: 40px !important;
+    width: 40px;
+    border-radius: 50%;
+    
+    a{
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+        
+        
+    }
+    &:hover{
+        color: $secondary-color2; 
+        
+        border-radius: 50% !important;
+    }
+    
+}
+.pagination li{
+
+    height: 40px !important;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+
+    a{
+        display: flex;
+        justify-content: center;
+        color: $primary-color;
+        padding-top: 4px;
+        font-weight: bolder;
+        
+    }
+    &:hover{
+        a{
+        color: $secondary-color2; 
+        }
+    }
+}
+.materialboxed{
+    background-color: white;
+}

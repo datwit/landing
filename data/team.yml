@@ -1,11 +1,16 @@
 team:
-  subtitle : "Meet our team"
-#  title : "Expert Person"
+  title : "The Team"
+  subtitle: "Meet our team"
+  description: "We are self-driven and enthusiastic young people who enjoy creating exciting solutions"
+  
+
   teamMember:
     # team member
     - name : "Leonel Salazar Videaux"
-      image : "images/team/lordford.jpg"
+      image : "images/team/lordford.png"      
       designation : "Founder / CEO"
+      role : "Software Engineer"
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon : "fa-twitter"
           URL : "https://twitter.com/leonel_lordford"
@@ -17,9 +22,11 @@ team:
           URL : "https://github.com/leonel-lordford"
           
     # team member
-    - name: "Abel Meneses-Abad"
-      image: "images/team/abelma.jpg"
+    - name: "Abel Meneses Abad"
+      image: "images/team/abelma.png"      
       designation: "Founder / COO"
+      role : "Data Scientist"
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
           URL: "https://twitter.com/abelma1980"
@@ -31,50 +38,102 @@ team:
           URL: "https://github.com/sorice"
 
     # team member
-    - name: "Alejandro N&uacute;&ntilde;ez Madrazo"
-      image: "images/team/alejandrojnm.jpg"
-      designation: "Founder / CTO"
+    - name: "Yanet Conde González"
+      image: "images/team/yanet.png"      
+      designation: "CCO"
+      role : "Customer Relationship"
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
       socialIcon:
         - icon: "fa-twitter"
-          URL: "https://twitter.com/alejandrojnm"
+          URL: ""
 
         - icon: "fa-linkedin"
-          URL: "https://www.linkedin.com/in/alejandrojnm"
+          URL: "https://www.linkedin.com/in/yanetcg1983/"
 
         - icon: "fa-github"
-          URL: "https://github.com/alejandrojnm"
+          URL: "https://github.com/yanetcg1983"
+
+  teamMember2:
+    # team member
+    - name: "Enma Lidia Muñoz García"
+      image: "images/team/enma.png"      
+      designation: "CXO"
+      role : "Frontend Developer"
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/enma_lidia"
+
+        - icon: "fa-linkedin"
+          URL: "https://www.linkedin.com/in/enma-lidia-muñoz-garcía"
+
+        - icon: "fa-github"
+          URL: "https://github.com/enmalidia"
 
     # team member
-#    - name: "Karel Rodr&iacute;z Varona"
-#      image: "images/team/team-member-1.jpg"
-#      designation: "Founder / Data Analyst"
-#      socialIcon:
-#        - icon: "fa-twitter"
-#          URL: "#"
+    - name: "Yoel Benítez Fonseca"
+      image: "images/team/yoel.png"     
+      designation: "CTO"
+      role : "DevOps"
+      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
+      socialIcon:
+        # - icon: "fa-twitter"
+        #   URL: ""
 
-#        - icon: "fa-linkedin"
-#          URL: "#"
+        # - icon: "fa-linkedin"
+        #   URL: "https://www.linkedin.com/in/"
 
-#        - icon: "fa-github"
-#          URL: "#"
+        - icon: "fa-github"
+          URL: "https://github.com/ybenitezf"
 
-    # team member
-#    - name: "Jorge Palacio"
-#      image: "images/team/team-member-1.jpg"
-#      designation: "Software Developer"
-#      socialIcon:
-#        - icon: "fa-twitter"
-#          URL: "#"
-
-#        - icon: "fa-linkedin"
-#          URL: "#"
-
-#        - icon: "fa-github"
-#          URL: "#"
+    
 
 # partners
-#partners:
-#  subtitle: "We are proud of our great partners"
-#  ourPartners:
-#    - partnerAlt: "legal advisory agency"
-#      partnerLogo: "images/toolset/vuejs.png"
+partners:
+  title: "Collaborators"  
+  subtitle: "Our amazing collaborators help drive Datwit towards being a cutting-edge company"
+  
+  collab:
+    - name: "Danay Meneses Abad"
+      image: "images/team/danay.png"
+      designation: "Backend Developer"
+      socialIcon:
+        - icon: "fa-github"
+          URL: "https://github.com/DanayMeneses"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/danaymeneses"
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/DanayMeneses"
+
+    - name: "Karell Lexander Garcés"
+      image: "images/team/karell.png"
+      designation: "Firmware Engineering"
+      socialIcon:
+        - icon: "fa-github"
+          URL: "https://github.com/KarellGarces"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/karellgarces"
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/KarellGarces"
+
+    - name: "Karel Rodríguez Varona"
+      image: "images/team/karel.png"
+      designation: "DataSci Team Member"
+      socialIcon:
+        - icon: "fa-github"
+          URL: " https://github.com/kwaref"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/karel-rodr%C3%ADguez-varona-5609aaa5/"
+        - icon: "fa-twitter"
+          URL: ""
+
+    - name: "Oskar L. Garcell"
+      image: "images/team/oskar.png"
+      designation: "DataSci Team Member"
+      socialIcon:
+        - icon: "fa-github"
+          URL: "https://github.com/codeshard"
+        - icon: "fa-linkedin"
+          URL:  "https://www.linkedin.com/in/ozkar-garcell/"
+        - icon: "fa-twitter"
+          URL: "https://twitter.com/codeshard"

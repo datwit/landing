@@ -8,6 +8,12 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
+  <!--Import Google Icon Font-->
+  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+
+  
+  <!--Import materialize.css-->
+  <!--<link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>-->
 
   {{ "<!-- plugins -->" | safeHTML }}
   <noscript>
@@ -19,9 +25,10 @@
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ $styles := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  
 
   {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
-  <link rel="icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "images/favicon-64.ico" | absURL }} " type="image/x-icon">
+  <link rel="icon" href="{{ "images/favicon-64.ico" | absURL }} " type="image/x-icon">
 
 </head>
