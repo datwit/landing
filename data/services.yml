@@ -41,12 +41,12 @@ serviceItem:
 
     - title: "Data Analysis"
       src: "images/services/data-anal.png"
-      shortcontent: " Less cholesterol in your data makes your business' heart lead you to the goal faster."
+      shortcontent: "Less cholesterol in your data makes your business' heart lead you to the goal faster."
       
 
     - title: "Data Visualization"
       src: "images/services/data-visualiz.png"
-      shortcontent: "If your dashboards look good they will increase your business intelligence."
+      shortcontent: "Business intelligence can increase using a very well designed dashboard."
 
     
     - title: "Research on IoT"
