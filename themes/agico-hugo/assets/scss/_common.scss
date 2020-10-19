@@ -181,3 +181,8 @@ img{
 .bg-primary {
   background-color: $primary-color;
 }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
