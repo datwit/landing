@@ -65,7 +65,7 @@ diagram:
 developprocess1:
   img: "images/services/prototyping.svg"
   title: "Design"  
-  descrip: "We believes good UX/UI design is key to achieve all the business goals you are
+  descrip: "We believe a good UX/UI design is key to achieve all the business goals you are
   expecting. Therefore we focus on:"
   content1: "A great design requires a complete understanding of every user's need. 
           That's why we keep UX research along the whole development process."
