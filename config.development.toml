@@ -166,7 +166,7 @@ logo = "images/logo.png"
 logomin = "images/logo-min.png"
 home = "Home"
 # Meta data
-description = "Dynamic Witty Analytics"
+description = "Data Witty Analytics"
 author = "Datwit Team"
 # google map
 #gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
