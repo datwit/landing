@@ -25,47 +25,45 @@ uglyURLs = true
 
   # CSS Plugins
   [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
+  URL = "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  #[[params.plugins.css]]
+  #URL = "plugins/font-awesome/font-awesome.min.css"
   [[params.plugins.css]]
-  URL = "plugins/font-awesome/font-awesome.min.css"
+  URL = "//veno.es/venobox/js/venobox/venobox/venobox.css"
   [[params.plugins.css]]
-  URL = "plugins/venobox/venobox.css"
+  URL = "//unpkg.com/aos@2.3.1/dist/aos.css"
   [[params.plugins.css]]
-  URL = "plugins/aos/aos.css"
+  URL = "//fonts.googleapis.com/icon?family=Material+Icons"
   [[params.plugins.css]]
-  URL = "plugins/materializecss/MaterialIcons/material-icons.css"
-  [[params.plugins.css]]
-  URL = "plugins/materializecss/materialize.css"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
   # last one for our own styles
   [[params.plugins.css]]
   URL = "plugins/datwit/style.css"
-  
 
   # JS Plugins
   [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
   [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
+  URL = "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   [[params.plugins.js]]
-  URL = "plugins/venobox/venobox.min.js"
+  URL = "//veno.es/venobox/js/venobox/venobox/venobox.min.js"
   # [[params.plugins.js]]
   # URL = "plugins/google-map/gmap.js"
   [[params.plugins.js]]
-  URL = "plugins/search/fuse.min.js"
+  URL = "//cdn.jsdelivr.net/npm/fuse.js@3.2.0"
   [[params.plugins.js]]
-  URL = "plugins/search/mark.js"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"
   [[params.plugins.js]]
   URL = "plugins/search/search.js"
   [[params.plugins.js]]
-  URL = "plugins/aos/aos.js"
+  URL = "//unpkg.com/aos@2.3.1/dist/aos.js"
   [[params.plugins.js]]
-  URL = "plugins/mixitup/mixitup.min.js"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
   [[params.plugins.js]]
-  URL = "plugins/materializecss/materialize.min.js"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
   # last one for our own scripts
   [[params.plugins.js]]
   URL = "plugins/datwit/script.js"
-  
 
 
   
