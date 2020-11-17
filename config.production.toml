@@ -25,13 +25,13 @@ uglyURLs = true
 
   # CSS Plugins
   [[params.plugins.css]]
-  URL = "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-  #[[params.plugins.css]]
-  #URL = "plugins/font-awesome/font-awesome.min.css"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
   [[params.plugins.css]]
-  URL = "//veno.es/venobox/js/venobox/venobox/venobox.css"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   [[params.plugins.css]]
-  URL = "//unpkg.com/aos@2.3.1/dist/aos.css"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/venobox/1.9.1/venobox.min.css"
+  [[params.plugins.css]]
+  URL = "//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
   [[params.plugins.css]]
   URL = "//fonts.googleapis.com/icon?family=Material+Icons"
   [[params.plugins.css]]
@@ -44,19 +44,19 @@ uglyURLs = true
   [[params.plugins.js]]
   URL = "//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
   [[params.plugins.js]]
-  URL = "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
   [[params.plugins.js]]
-  URL = "//veno.es/venobox/js/venobox/venobox/venobox.min.js"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/venobox/1.9.1/venobox.min.js"
   # [[params.plugins.js]]
   # URL = "plugins/google-map/gmap.js"
   [[params.plugins.js]]
-  URL = "//cdn.jsdelivr.net/npm/fuse.js@3.2.0"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"
   [[params.plugins.js]]
   URL = "//cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"
   [[params.plugins.js]]
   URL = "plugins/search/search.js"
   [[params.plugins.js]]
-  URL = "//unpkg.com/aos@2.3.1/dist/aos.js"
+  URL = "//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
   [[params.plugins.js]]
   URL = "//cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
   [[params.plugins.js]]
@@ -64,7 +64,6 @@ uglyURLs = true
   # last one for our own scripts
   [[params.plugins.js]]
   URL = "plugins/datwit/script.js"
-
 
   
 # navigation
