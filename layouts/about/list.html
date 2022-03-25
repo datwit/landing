@@ -58,7 +58,7 @@
     </div> <!-------------------------------------------------------->
     <div class="row"><!------------2nd row 2 members-------------------------------->
       {{ range $element:= .Site.Data.team.team.teamMember2 }}
-      <div class="col s12 m4 push-m2 l4 push-l2">
+      <div class="col s12 m4 push-m3 l6 push-l3">
         <div class="team-member"><!----------------------picture-->
           <img src="{{ .image | absURL }}">
         </div><!-------------------------------------------------->
@@ -91,7 +91,7 @@
       </div>
       <div class="row">
         {{range .Site.Data.team.partners.collab}}
-        <div class="col s12 m6 l3">
+        <div class="col s12 m4 push-m3 l6 push-l3">
           <img src=" {{.image | absURL }}" alt="collaborator image">
           <h5 class="team-member-name">{{.name }}</h5>
           <div class="team-member-designation">{{ .designation }}</div>
