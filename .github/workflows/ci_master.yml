@@ -13,21 +13,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: setup hugo config
-        run: |
-          mv config.production.toml config.toml
+#       - name: setup hugo config
+#         run: |
+#           mv config.production.toml config.toml
       
-      - uses: srt32/hugo-action@master
-        env:
-          # define the access point to the contact form handler
-          CONTACT_MANAGER_CLIENT: "https://w1mlphe6e0.execute-api.eu-west-1.amazonaws.com/production/static/js/app.js"
-          CONTACT_MANAGER_ENDPOINT: "https://w1mlphe6e0.execute-api.eu-west-1.amazonaws.com/production/process-contact-form"
-        with:
-          args: --minify
+#       - uses: srt32/hugo-action@master
+#         env:
+#           # define the access point to the contact form handler
+#           CONTACT_MANAGER_CLIENT: "https://w1mlphe6e0.execute-api.eu-west-1.amazonaws.com/production/static/js/app.js"
+#           CONTACT_MANAGER_ENDPOINT: "https://w1mlphe6e0.execute-api.eu-west-1.amazonaws.com/production/process-contact-form"
+#         with:
+#           args: --minify
       
-      - uses: actions/upload-artifact@v2
-        with:
-          name: website
+#       - uses: actions/upload-artifact@v2
+#         with:
+#           name: website
           path: './public'
 
   deploy:
