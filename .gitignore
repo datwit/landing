@@ -4,3 +4,4 @@ public/
 .directory
 *.code-workspace
 config.local.toml
+*.DS_Store
