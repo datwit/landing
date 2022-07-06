@@ -28,7 +28,7 @@ jobs:
 #       - uses: actions/upload-artifact@v2
 #         with:
 #           name: website
-          path: './public'
+#           path: './public'
 
   deploy:
     name: Deploy to AWS
