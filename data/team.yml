@@ -55,22 +55,6 @@ team:
 
   teamMember2:
     # team member
-    - name: "Enma Lidia Muñoz García"
-      image: "images/team/enma.png"      
-      designation: "CXO"
-      role : "Frontend Developer"
-      # bio: "Est aute deserunt deserunt cillum ea sit. Fugiat commodo irure nulla deserunt dolore dolor laborum labore mollit dolore et."
-      socialIcon:
-        - icon: "fa-twitter"
-          URL: "https://twitter.com/enma_lidia"
-
-        - icon: "fa-linkedin"
-          URL: "https://www.linkedin.com/in/enma-lidia-muñoz-garcía"
-
-        - icon: "fa-github"
-          URL: "https://github.com/enmalidia"
-
-    # team member
     - name: "Yoel Benítez Fonseca"
       image: "images/team/yoel.png"     
       designation: "CTO"
@@ -94,39 +78,6 @@ partners:
   subtitle: "Our amazing collaborators help drive Datwit towards being a cutting-edge company"
   
   collab:
-    - name: "Danay Meneses Abad"
-      image: "images/team/danay.png"
-      designation: "Backend Developer"
-      socialIcon:
-        - icon: "fa-github"
-          URL: "https://github.com/DanayMeneses"
-        - icon: "fa-linkedin"
-          URL:  "https://www.linkedin.com/in/danaymeneses"
-        - icon: "fa-twitter"
-          URL: "https://twitter.com/DanayMeneses"
-
-    - name: "Karell Lexander Garcés"
-      image: "images/team/karell.png"
-      designation: "Firmware Engineering"
-      socialIcon:
-        - icon: "fa-github"
-          URL: "https://github.com/KarellGarces"
-        - icon: "fa-linkedin"
-          URL:  "https://www.linkedin.com/in/karellgarces"
-        - icon: "fa-twitter"
-          URL: "https://twitter.com/KarellGarces"
-
-    - name: "Karel Rodríguez Varona"
-      image: "images/team/karel.png"
-      designation: "DataSci Team Member"
-      socialIcon:
-        - icon: "fa-github"
-          URL: " https://github.com/kwaref"
-        - icon: "fa-linkedin"
-          URL:  "https://www.linkedin.com/in/karel-rodr%C3%ADguez-varona-5609aaa5/"
-        - icon: "fa-twitter"
-          URL: ""
-
     - name: "Oskar L. Garcell"
       image: "images/team/oskar.png"
       designation: "DataSci Team Member"
